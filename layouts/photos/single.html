@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="photos-gallery">
+    <div class="photo-grid">
+        {{ range .Pages }}
+        <div class="photo-item">
+            <a href="{{ .Permalink }}">
+                <img src="{{ .Params.image }}" alt="{{ .Params.alt }}">
+                <h2>{{ .Title }}</h2>
+            </a>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,25 @@
+baseURL = "/personal_website/"
+languageCode = "en-us"
+title = "My Personal Website"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Articles"
+    url = "/articles/"
+    weight = 2
+  [[menu.main]]
+    name = "Photos"
+    url = "/photos/"
+    weight = 3
+  [[menu.main]]
+    name = "Music"
+    url = "/music/"
+    weight = 4
+  [[menu.main]]
+    name = "Resume"
+    url = "/resume/"
+    weight = 5

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    <header style="background-color: #f0f0f0; padding: 10px 0; text-align: center;">
+        <nav>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+                {{ $currentPage := . }}
+                {{ range site.Menus.main }}
+                    <li style="display: inline; margin: 0 10px;">
+                        <a href="{{ .URL }}" {{ if $currentPage.IsMenuCurrent "main" . }}style="font-weight: bold;"{{ end }}>
+                            {{ .Name }}
+                        </a>
+                    </li>
+                {{ else }}
+                    <li style="display: inline; margin: 0 10px;"><a href="/">Home</a></li>
+                    <li style="display: inline; margin: 0 10px;"><a href="/articles">Writing</a></li>
+                    <li style="display: inline; margin: 0 10px;"><a href="/photos">Photos</a></li>
+                    <li style="display: inline; margin: 0 10px;"><a href="/music">Music</a></li>
+                    <li style="display: inline; margin: 0 10px;"><a href="/resume">Resume</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+    </header>
+
+    <main style="max-width: 800px; margin: 20px auto; padding: 0 20px;">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer style="text-align: center; margin-top: 20px; padding: 10px 0; background-color: #f0f0f0;">
+        <p>&copy; {{ now.Format "2006" }} James Kettle</p>
+    </footer>
+</body>
+</html>
