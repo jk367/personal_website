@@ -2,10 +2,16 @@
     <h1>{{ .Title }}</h1>
     {{ range .Pages }}
         <article>
-            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-            <time>{{ .Date.Format "January 2, 2006" }}</time>
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            {{ if eq .Section "photos" }}
+                {{ with .Params.image }}
+                    <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+                {{ end }}
+            {{ else }}
+                <time>{{ .Date.Format "January 2, 2006" }}</time>
+            {{ end }}
         </article>
     {{ else }}
-        <p>No articles found.</p>
+        <p>No content found</p>
     {{ end }}
 {{ end }}

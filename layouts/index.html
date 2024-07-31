@@ -1,16 +1,14 @@
 {{ define "main" }}
 <style>
     .content {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     .featured-section {
-        margin-bottom: 3rem;
-    }
-    .featured-section h2 {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 0.5rem;
-        margin-bottom: 1.5rem;
-    }
+    margin-bottom: 2rem;
+}
+.featured-section h2 {
+    
+}
     .photo-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -25,24 +23,16 @@
     .music-player {
         margin-bottom: 1.5rem;
     }
-    article {
-        padding: 1rem;
-        border-radius: 4px;
-    }
-    article h3 {
-        margin-top: 0;
-    }
 </style>
 
 <h1>{{ .Title }}</h1>
 <h1>James Kettle</h1>
-
+<p>I am a writer, photographer, and musician. I also run a startup. Currently based in NYC.</p>
 <div class="featured-section">
     <h2>Featured Writing</h2>
     {{ range first 1 (where .Site.RegularPages "Section" "articles") }}
         <article>
             <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-            <p>{{ .Summary }}</p>
         </article>
     {{ else }}
         <p>No featured articles available.</p>

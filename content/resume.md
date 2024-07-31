@@ -1,12 +1,7 @@
 ---
-title: "James Kettle"
-address: "257 Dean Street, Brooklyn, NY 11217"
-phone: "917-270-3250"
-email: "james.kettle@columbia.edu"
-linkedin: "www.linkedin.com/in/jameskettle"
+title: "James Kettle Resume"
 ---
-## Education
-
+### Education
 ### Columbia University
 **Dual Bachelor of Arts Degree Program**  
 *Bachelor of Arts in Information Science (Computer Science & Sociology)*  

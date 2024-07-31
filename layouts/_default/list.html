@@ -1,10 +1,16 @@
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
-    {{ range .Pages }}
-        <article>
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            <time>{{ .Date.Format "January 2, 2006" }}</time>
-            {{ .Summary }}
-        </article>
-    {{ end }}
+    <div class="content-list">
+        <h1>{{ .Title }}</h1>
+        {{ range .Pages }}
+            <article>
+                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                {{ if not .Date.IsZero }}
+                    <time>{{ .Date.Format "January 2, 2006" }}</time>
+                {{ end }}
+                <p>{{ .Summary }}</p>
+            </article>
+        {{ else }}
+            <p>No content found.</p>
+        {{ end }}
+    </div>
 {{ end }}

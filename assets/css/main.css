@@ -1,0 +1,4 @@
+.content h1, .markdown h1 {
+    font-size: 2em;  /* Match this to your desired H1 size */
+    font-weight: normal;
+}

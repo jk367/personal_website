@@ -1,6 +1,6 @@
-baseURL = "/personal_website/"
+baseURL = "http://localhost:1313/"
 languageCode = "en-us"
-title = "My Personal Website"
+title = "James Kettle"
 
 [menu]
   [[menu.main]]
@@ -23,3 +23,6 @@ title = "My Personal Website"
     name = "Resume"
     url = "/resume/"
     weight = 5
+
+[markup.goldmark.renderer]
+  unsafe = true
