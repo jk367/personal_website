@@ -1,31 +1,83 @@
 {{ define "main" }}
+<style>
+    .content {
+        margin-bottom: 2rem;
+    }
+    .featured-section {
+        margin-bottom: 3rem;
+    }
+    .featured-section h2 {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+    .photo-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+    .music-player {
+        margin-bottom: 1.5rem;
+    }
+    article {
+        padding: 1rem;
+        border-radius: 4px;
+    }
+    article h3 {
+        margin-top: 0;
+    }
+</style>
+
 <h1>{{ .Title }}</h1>
-<div class="content">
-    {{ .Content }}
-</div>
 <h1>James Kettle</h1>
-<h2>Featured Writing</h2>
-{{ range first 1 (where .Site.RegularPages "Section" "articles") }}
-    <article class="brutalist-border">
-        <h3><a href="{{ .Permalink }}">{{ .Title }}</a> </h3> 
 
-    </article>
-{{ end }}
-
-<h2> Featured Photos</h2>
-<div class="brutalist-border">
-    {{ range first 3 (where .Site.RegularPages "Section" "photos") }}
-    <h3>{{ .Title }}</h3>    
-    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+<div class="featured-section">
+    <h2>Featured Writing</h2>
+    {{ range first 1 (where .Site.RegularPages "Section" "articles") }}
+        <article>
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <p>{{ .Summary }}</p>
+        </article>
+    {{ else }}
+        <p>No featured articles available.</p>
     {{ end }}
-   
 </div>
 
-<h2> Featured Music</h2>
-<div>
-    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1795661050&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/kettle9999" title="Kettle" target="_blank" style="color: #cccccc; text-decoration: none;">Kettle</a> · <a href="https://soundcloud.com/kettle9999/spring-time" title="Spring Time" target="_blank" style="color: #cccccc; text-decoration: none;">Spring Time</a></div>
+<div class="featured-section">
+    <h2>Featured Photos</h2>
+    <div class="photo-grid">
+        {{ range first 3 (where .Site.RegularPages "Section" "photos") }}
+            <div class="photo-item">
+                <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                <h3>{{ .Title }}</h3>
+            </div>
+        {{ else }}
+            <p>No featured photos available.</p>
+        {{ end }}
+    </div>
 </div>
-<div>
-    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1882470234&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/kettle9999" title="Kettle" target="_blank" style="color: #cccccc; text-decoration: none;">Kettle</a> · <a href="https://soundcloud.com/kettle9999/running" title="Running" target="_blank" style="color: #cccccc; text-decoration: none;">Running</a></div>
+
+<div class="featured-section">
+    <h2>Featured Music</h2>
+    <div class="music-player">
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1795661050&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/kettle9999" title="Kettle" target="_blank" style="color: #cccccc; text-decoration: none;">Kettle</a> · 
+            <a href="https://soundcloud.com/kettle9999/spring-time" title="Spring Time" target="_blank" style="color: #cccccc; text-decoration: none;">Spring Time</a>
+        </div>
+    </div>
+    <div class="music-player">
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1882470234&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/kettle9999" title="Kettle" target="_blank" style="color: #cccccc; text-decoration: none;">Kettle</a> · 
+            <a href="https://soundcloud.com/kettle9999/running" title="Running" target="_blank" style="color: #cccccc; text-decoration: none;">Running</a>
+        </div>
+    </div>
 </div>
 {{ end }}

@@ -3,7 +3,11 @@
     {{ range .Pages }}
         <div>
             <h2>{{ .Title }}</h2>
-            <img src="{{ .Params.image }}" alt="{{ .Title }}">
+            {{ with .Params.image }}
+                <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+            {{ else }}
+                <p>No image available</p>
+            {{ end }}
         </div>
     {{ else }}
         <p>No photos found</p>
