@@ -1,17 +1,16 @@
 {{ define "main" }}
+<div class="photos-gallery photos-list-page">
     <h1>{{ .Title }}</h1>
-    {{ range .Pages }}
-        <article>
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            {{ if eq .Section "photos" }}
-                {{ with .Params.image }}
-                    <img src="{{ . | relURL }}" alt="{{ $.Title }}">
-                {{ end }}
-            {{ else }}
-                <time>{{ .Date.Format "January 2, 2006" }}</time>
-            {{ end }}
-        </article>
-    {{ else }}
-        <p>No content found</p>
-    {{ end }}
+    <div class="photo-grid">
+        {{ range .Pages }}
+            <div class="photo-item">
+                <a href="{{ .Permalink }}">
+                    <img src="/{{ .Params.image }}" alt="{{ .Title }}">
+                </a>
+            </div>
+        {{ else }}
+            <p>No photos available.</p>
+        {{ end }}
+    </div>
+</div>
 {{ end }}

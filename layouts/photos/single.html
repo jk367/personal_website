@@ -1,14 +1,12 @@
 {{ define "main" }}
-<div class="photos-gallery">
-    <div class="photo-grid">
-        {{ range .Pages }}
-        <div class="photo-item">
-            <a href="{{ .Permalink }}">
-                <img src="{{ .Params.image }}" alt="{{ .Params.alt }}">
-                <h2>{{ .Title }}</h2>
-            </a>
-        </div>
-        {{ end }}
+<article class="single-photo">
+    <h1>{{ .Title }}</h1>
+    <img src="/{{ .Params.image }}" alt="{{ .Title }}">
+    <div class="photo-content">
+        {{ .Content }}
     </div>
-</div>
+    {{ with .Params.date }}
+    <time>{{ .Format "January 2, 2006" }}</time>
+    {{ end }}
+</article>
 {{ end }}
