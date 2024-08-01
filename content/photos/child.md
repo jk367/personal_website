@@ -6,4 +6,4 @@ alt: "Child Outside of Church in Georgia"
 draft: false
 ---
 
-Took this photo during my Georgia Trip. In Kutaisi.
+Took this photo during my Georgia Trip. In Kutaisi, outside the main church. 
