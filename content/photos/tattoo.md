@@ -1,7 +1,7 @@
 ---
 title: "tattoo"
 date: 2024-07-30
-image: "images/tattoo.jpeg"
+image: "/images/tattoo.jpeg"
 alt: "man with tattoos on his face"
 draft: false
 ---

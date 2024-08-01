@@ -65,7 +65,7 @@
         {{ range first 3 (where .Site.RegularPages "Section" "photos") }}
             <div class="photo-item">
                 <a href="{{ .Permalink }}">
-                    <img src="/{{ .Params.image }}" alt="{{ .Title }}">
+                    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
                 </a>
             </div>
         {{ else }}

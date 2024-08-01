@@ -5,7 +5,7 @@
             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2> 
             {{ if eq .Section "photos" }}
                 {{ with .Params.image }}
-                    <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+                    <img src="{{ . | absURL }}" alt="{{ $.Title }}">
                 {{ end }}
             {{ else }}
                 

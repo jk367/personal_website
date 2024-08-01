@@ -1,7 +1,7 @@
 ---
 title: "man"
 date: 2024-07-30
-image: "images/man.jpeg"
+image: "/images/man.jpeg"
 alt: "portrait of a man"
 draft: false
 ---
