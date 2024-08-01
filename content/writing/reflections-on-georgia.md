@@ -7,21 +7,21 @@ I am back in NYC, in my childhood room, writing this essay. It feels as if the p
 
 A new chapter of my life is starting, which is exciting but overwhelming. The journey in Georgia was almost like a life in miniature. I was born in July and moved on in December. Beyond the beauties of Georgia and the kindness of the Georgian people, I think the feelings/regrets/thoughts that I felt just after returning home were the most valuable part of the whole trip. Here are a few below.
 
-### I wish I had taken more pictures and I wish I had written more.
+**I wish I had taken more pictures and I wish I had written more.**
 
 As readers of the blog know, I started to dabble in photography and writing. I can say that my only regret was not taking more pictures and not writing better blogs. Taking photos and writing are both odd things because in the moment, I don't really like doing them, but they turn out to be extremely rewarding. To even get started on this essay took a Herculean effort. But after the work is done, and the creative output is in the record, it serves as an anchor of my memory. It is evidence that my life really did happen. All the pictures will be there to convince me that I really did go to Tbilisi, that I really had a wonderful time, that I made some wonderful friends.
 
 The blog wasn't a success or a failure, per se, but it was nice to write and improve on it. So the only thing to do now is to write more.
 
-## I wish I hadn't stressed so much.
+**I wish I hadn't stressed so much.**
 
 During the trip, there were periods in which I had several really bad days and was really stressed out. One of the main reasons of my stress was looking for a job. I didn't find one, and I think it's probably better that way. I felt that I spent the right amount of effort looking for one, but the amount of stress that I allowed myself to feel had very little effect on the outcome. Worrying about finding a job while looking and not worrying about finding a job while looking has the same effect on the outcome but completely changes how one experiences life. There is no reason to sweat the small stuff.
 
-## I'm happy that I was out all of the time.
+**I'm happy that I was out all of the time.**
 
 My apartment in Tbilisi was small and very Soviet, and the cabs were cheap, so I was out almost every night. Mutant Radio, the Jam Session, Bassiani, Left Bank. Every night I went somewhere to see friends. It was a bit exhausting, but it was how I made all of my memories. I really had no choice about getting out because I was new to the city. Saying yes to trips, yes to club nights, yes to coffees made me meet new people and feel more involved in the community. If you are young, you should be out as much as you possibly can; it's the easiest way to make your life better.
 
-## The (old) world is really a crazy place.
+**The (old) world is really a crazy place.**
 
 There really is a stark difference between the old and new world. In America, no one really cares which village you are from, or which ethnic group you belong to (beyond the major racial categories), but in the old world, these things really do matter. Things felt more serious, the histories are longer, the grievances are more intense, and every group is a victim and perpetrator of some historical crime.
 
@@ -31,7 +31,7 @@ The problems in Georgia felt more serious. It felt that there were no adults in 
 
 The way I describe it to people is that in NYC, or America, it feels like someone is in charge and that things will be okay, but in the old world, it doesn't feel like that. Things were fluid; I wouldn't know if my favorite store would be around the next day, or if the laws around my apartment would change, or if we would get invaded. The whole experience felt far freer than anything I experienced in the west.
 
-### History is complex.
+**History is complex.**
 
 "History is complex" is something someone says to usually shut down a conversation, but it's actually true. I probably know more Georgian history than 98-99% of Americans, but I would say that I really don't know the whole story. Georgia is a tiny tiny tiny country of 3.5 million people, but there are 3.5 million perspectives, points of view, and VERY strong opinions.
 
@@ -39,7 +39,7 @@ I would make a joke about Georgian coffee being the shitty instant Jacobs, one t
 
 I had my views on Georgian politics, but they were shaped, twisted, and poked by my realities living in the country. For example, I originally thought that Georgia should 100% join the EU. But after being in the country for quite a long time, I don't think Georgia is ready, or it would actually be very positive for anyone. There is an EU section of Georgia, where the clubs are, the tourists go, and the photographs are taken. But, there is a larger, poor, ultra-conservative part of Georgia that I feel Brussels would overlook and steamroll. That being said, Georgia is no longer post-Soviet. There is such a deep hatred of Russia and Russians that it honestly made me feel uncomfortable at times. While I understood it, I felt that many of my friends were caught in the political crossfire. Georgia is a paradoxical place; it's eastern, western, Christian, secular, gay, ultra-straight, conservative, and liberal. There is not one Georgia; there are hundreds, and I was able to explore many of them.
 
-## Clubbing is best in Tbilisi.
+**Clubbing is best in Tbilisi.**
 
 My clubbing days are numbered. I'm getting older, and my priorities are changing. I will no longer be the club rat in the front left at 8 am in the morning. I just don't really have it in me anymore. That being said, clubbing in Tbilisi is a euphoric experience. I love techno, and I've been to clubs all over the world, and Tbilisi is my favorite place to go out, without question. I wrote a long essay about Bassiani when I just arrived in Georgia. Looking back on it, most of what I said was true, but some of it needs to be revised.
 
@@ -55,7 +55,7 @@ Tbilisi is very chill. Like, sooooooooooooo chill. Like nothing is open before 1
 
 Also, the young talent in Tbilisi is unbelievable. There was a Sunday party called SOD (Sunday Open Decks) where young kids would play their first shows at TES (local club) and it was some of the best music that I have ever heard. For such a small city, around the size of Dallas, it was brimming with artists, creatives, and incredible DJs. The cultural output per capita was honestly unparalleled.
 
-## Georgians, Russians, Leftover Westerners.
+**Georgians, Russians, Leftover Westerners.**
 
 I love Georgia and I love Tbilisi, but I actually had to defend my living there many times. Every time I told a Georgian that I decided to move to Tbilisi, they would always ask me "Why?! You're from New York?? Why are you here?" I never really got my final answer down, and even to this day, I'm not really sure. I only know that Tbilisi is not the first destination people think of going to, especially to live in. You can group the people living in Tbilisi into a few categories, but of course, there are lots of subcategories and exceptions.
 
@@ -71,13 +71,13 @@ The last group was the Western leftovers, or the Americans/Canadians/Europeans w
 
 So, if you write UX copy, are a teacher, or just sell cars online, you have the same social value. It's like anti-NYC, in the sense that in NYC, your social status and job are the two most important things. I met a lot of people in this group. Most of my friends were Western Leftovers. This term is also not meant to be derogatory; life in the West is challenging. Rents are high and good jobs are in stiff competition. Fun cities with a thriving art scene are usually unbearably expensive, thus pushing artists and creatives further and further from the center. Whereas in Tbilisi, you can live right in the center, work a remote job that pays 30,000 USD a year, be an artist, and live very comfortably, which would be impossible in any other city. So, because of these realities, Tbilisi turns out to be a really cool place to stay. Also, because it's not very close to anything, not many people can go, which means it's not becoming like Lisbon, which is way too expensive, crowded, and just not cute.
 
-## Life is weird.
+**Life is weird.**
 
 People live very different lives from you or I. I think most people know this, but few actually see it. Unless you seek it out, it's very easy to stay in your social/cultural/ethnic circle. I know Georgians who have never left the country, Jews who only know other Jewish people, Americans who have never traveled out of their town. While it is easier now to see other people on social media, it is different to see other people in real life. In the six months post-college traveling to Spain, Paris, Portugal, Georgia, Berlin, back to Georgia, then back to Berlin, then back to NYC, I made an effort to seek out the fringe, to see the other, and it was scary, overwhelming, and fun. I could tell you the stories of the Ukrainian tattoo artists in Berghain, the Georgian farms in Bolnisi, the tech worker in Portugal, but as the old saying goes, you just had to be there.
 
 Seeing all these people live such different lives, believe such different things, and act in such different ways put my little life into perspective. I am not the center of the universe, I have no clout, I am not famous, but I have the power to live the life I want to. At any given hour I have friends sleeping on club couches, working on spreadsheets, or just hiking the mountains, which takes the pressure off of me; I can just do what feels right. The fact that there are so many different lives that people are living means that there is not one “correct life,” only the life that you live. Before college, it seemed that life played out in a certain rhythm: 4 years of college, 2 years of a job, then a new job, then an MBA, then getting married, then a new job, then kids, and so on. While this timeline does exist, it is not platonic and applies to a very small percentage of people. Almost everyone else has a path that is different, and it's important to see the lives of others to make sure the one you are living is actually something you want to be doing.
 
-## No more giving advice.
+**No more giving advice.**
 
 I used to give a lot of advice (often on this blog), “you should write more, you should travel, you should work hard.” Now that I have left Georgia, I realize that my advice is meaningless. Georgia worked for me, it made sense, and I had the personality to make the most of it; however, it probably wouldn’t have worked for others. Most of my life choices have been responses to chance events that I just made the best call at the time. I have no master plan; I’m just going ahead and doing my best. What purpose does giving advice serve? It makes everyone feel better without actually accomplishing much. If I told a sophomore in college that he should go travel, I would feel good about traveling, he would feel good that he might travel, but the words are cheap and don’t change anything. From now on, I can describe my thoughts, my story, and why I did the things that I did and do currently. I can’t give advice; I can only describe.
 
@@ -87,7 +87,7 @@ The fact that things just are or it will be means that every second has the same
 
 I like to chase the weird and exotic, and in moments of novelty, I feel really alive, but now that my Georgian odyssey is over, I realized that it’s not novelty that I’m searching for, but life. Luckily for me, I’m living right now.
 
-## Teaching is awesome, teaching is terrible.
+**Teaching is awesome, teaching is terrible.**
 
 I will not be a teacher in the US, but I am very happy I did it for 5 months when I was in Georgia. After you graduate college and become a yuppie, there is a distinct lack of children in one’s life, which is sad because kids are awesome. I taught 4th-12th grade and it was amazing seeing my kids grow up before me. I was not the best teacher (I was the coolest, though), but I tried to be the teacher that I would have wanted. I saw my childhood in front of me, the different stages of life unfolding every day. Kids are also just funny, smart, and see the world in such a beautiful way.
 
@@ -95,6 +95,6 @@ Kids are also annoying sometimes, 6th graders are the worst, by far. Being a tea
 
 Teaching actually did give me a lot of skills that will be transferable (not just saying that for future jobs). I think everyone should try teaching something they like at least once. It makes you get up on stage, speak for 40 minutes, build relationships, and make plans. Being a teacher made me a better person. It made me more understanding, explain things better, and see the beauty in the mundane. I don’t see myself being a teacher forever, but education will always be a part of my life, and it was an excellent choice after college.
 
-## Final thougths 
+**Final thougths**
 
 I am really happy I went to Georgia. It was a trip with a lot of ups and downs. I was lonely a lot but I made a lot of friends. It was kind of on personal brand, but was not in the Columbia play-by-play. Georgia itself is a beautiful country with amazing people and spectacular music and wine. Some of the best times of the trip were when I had no plan and just went and did stupid stuff with my camera. The other good times required work and planning, so life is a balance between being spontaneous and being thoughtful. Before Georgia, I was really worried about what other people thought of me, especially how I looked. Now, I don’t really care so much. Life is good, life is bad, you’re only on God’s green earth for the amount of time He decides is right, so don’t stress out, get the work done and (cliché incoming) enjoy the moment.
