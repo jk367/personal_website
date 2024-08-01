@@ -1,23 +1,24 @@
 {{ define "main" }}
 <div class="music-content">
     <h1>{{ .Title }}</h1>
-    <p>I have been making music since 2016 under many different names: Breeq, Mark X Steiner, ^%(!@@$$$, now I go by Kettle. I mostly make electronic music, but sometimes venture off into other genres. I also DJ on occasion, I prefer to do longer sets and playing on vinyl.</p>
+    <p>I have been making music since 2016 under many different names: Breeq, Mark X Steiner, ^%(!@@$$$, J-Ket, but now I go by Kettle. I mostly make electronic music, but sometimes venture off into other genres. I also DJ on occasion, I prefer to do longer sets and playing on vinyl.</p>
     
     <style>
     button {
-        background-color: black;
-        color: white;
-        border: none;
+        background-color: white;
+        color: black;
+        border: 1px solid black;
         padding: 1px 5px;
         font-family: Garamond, serif;
         font-size: 16px;
-        transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease, color 0.3s ease;
         cursor: pointer;
         margin: 0 2px 5px 2px;
     }
 
     button:hover {
-        background-color: #333;
+        background-color: black;
+        color: white;
     }
 
     .button-group {
@@ -29,6 +30,10 @@
 
     #mixesContent, #productionsContent {
         margin-bottom: 20px;
+    }
+
+    iframe {
+        margin-bottom: 10px;
     }
     </style>
 

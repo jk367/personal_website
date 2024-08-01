@@ -1,6 +1,5 @@
-baseURL = "https://jmkettle.com/"
-languageCode = "en-us"
-title = "James Kettle"
+[markup.goldmark.renderer]
+  unsafe = true
 
 [menu]
   [[menu.main]]
@@ -8,8 +7,8 @@ title = "James Kettle"
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "Articles"
-    url = "/articles/"
+    name = "Writing"
+    url = "/writing/"
     weight = 2
   [[menu.main]]
     name = "Photos"
@@ -20,9 +19,6 @@ title = "James Kettle"
     url = "/music/"
     weight = 4
   [[menu.main]]
-    name = "Resume"
-    url = "/resume/"
+    name = "About"
+    url = "/about/"
     weight = 5
-
-[markup.goldmark.renderer]
-  unsafe = true

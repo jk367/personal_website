@@ -1,13 +1,13 @@
 ---
 title: "Goodbye Georgia"
-date: 2024-1-9T11:23:36+02:00
+date: 2024-01-04T11:23:36+02:00
 draft: false
 ---
 I am back in NYC, in my childhood room, writing this essay. It feels as if the past 6 months were a dream or a hallucination. It all went by so quickly and so slowly, but now it is over. I have such overwhelming love for Tbilisi and the people of Georgia, it almost feels like I have left home to go somewhere new. The air and atmosphere are different in NYC; it's hard to explain, but it feels a bit less serious, a bit more new world-y, as if we are all just making it up as we walk the streets of Brooklyn. New York is also much busier and louder, making the transition a bit more jarring.
 
 A new chapter of my life is starting, which is exciting but overwhelming. The journey in Georgia was almost like a life in miniature. I was born in July and moved on in December. Beyond the beauties of Georgia and the kindness of the Georgian people, I think the feelings/regrets/thoughts that I felt just after returning home were the most valuable part of the whole trip. Here are a few below.
 
-## I wish I had taken more pictures and I wish I had written more.
+### I wish I had taken more pictures and I wish I had written more.
 
 As readers of the blog know, I started to dabble in photography and writing. I can say that my only regret was not taking more pictures and not writing better blogs. Taking photos and writing are both odd things because in the moment, I don't really like doing them, but they turn out to be extremely rewarding. To even get started on this essay took a Herculean effort. But after the work is done, and the creative output is in the record, it serves as an anchor of my memory. It is evidence that my life really did happen. All the pictures will be there to convince me that I really did go to Tbilisi, that I really had a wonderful time, that I made some wonderful friends.
 
@@ -31,7 +31,7 @@ The problems in Georgia felt more serious. It felt that there were no adults in 
 
 The way I describe it to people is that in NYC, or America, it feels like someone is in charge and that things will be okay, but in the old world, it doesn't feel like that. Things were fluid; I wouldn't know if my favorite store would be around the next day, or if the laws around my apartment would change, or if we would get invaded. The whole experience felt far freer than anything I experienced in the west.
 
-## History is complex.
+### History is complex.
 
 "History is complex" is something someone says to usually shut down a conversation, but it's actually true. I probably know more Georgian history than 98-99% of Americans, but I would say that I really don't know the whole story. Georgia is a tiny tiny tiny country of 3.5 million people, but there are 3.5 million perspectives, points of view, and VERY strong opinions.
 

@@ -14,59 +14,70 @@ Since then I have been running the startup out of NYC, planning on moving to SF 
 
 ## Previous Work 
 
-Here is a copy of my current resume, but below is a list of every job I've ever had. <button id="toggleAll" onclick="toggleAll()">Expand All</button>
+Here is a copy of my current resume, but below is a list of every job I've ever had. <button id="toggleAll">Expand All</button>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleAllButton = document.getElementById('toggleAll');
+        if (toggleAllButton) {
+            toggleAllButton.addEventListener('click', toggleAll);
+        }
+    });
 
-
-
+    function toggleAll() {
+        const details = document.querySelectorAll('details');
+        const button = document.getElementById('toggleAll');
+        const isExpanded = button.textContent === 'Collapse All';
+        
+        details.forEach(detail => detail.open = !isExpanded);
+        button.textContent = isExpanded ? 'Expand All' : 'Collapse All';
+    }
+    </script>
 <style>
-button {
-        background-color: black;
-        color: white;
-        border: none;
+    button {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
         padding: 1px 5px;
         font-family: Garamond, serif;
         font-size: 16px;
-        transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+        margin: 0 2px 5px 2px;
     }
 
     button:hover {
-        background-color: #333;
+        background-color: black;
+        color: white;
     }
 
-    #toggleAll {
-        margin-bottom: 20px;
-    }
-
-    details {
+    .button-group {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
         margin-bottom: 15px;
     }
 
-    summary {
-        cursor: pointer;
-    }
-
-    summary h4 {
-        display: inline;
-        font-weight: normal;
-    }
-
-    summary strong {
-        font-weight: bold;
-    }
-</style>
-
-</style>
-
-<script>
-function toggleAll() {
-  const details = document.querySelectorAll('details');
-  const button = document.getElementById('toggleAll');
-  const isExpanded = button.textContent === 'Collapse All';
-  
-  details.forEach(detail => detail.open = !isExpanded);
-  button.textContent = isExpanded ? 'Expand All' : 'Collapse All';
+#toggleAll {
+    margin-bottom: 20px;
 }
-</script>
+
+details {
+    margin-bottom: 15px;
+}
+
+summary {
+    cursor: pointer;
+}
+
+summary h4 {
+    display: inline;
+    font-weight: normal;
+}
+
+summary strong {
+    font-weight: bold;
+}
+</style>
 
 <details>
 <summary><h4><strong>Co-Founder/CEO</strong> - CloudCap - 2024 to Present</h4></summary>

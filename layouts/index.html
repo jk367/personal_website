@@ -4,10 +4,11 @@
         margin-bottom: 1rem;
     }
     .featured-section {
-}
-.featured-section h2 {
-    padding-bottom: 0.2em;
-}
+        margin-bottom: 2rem;
+    }
+    .featured-section h2 {
+        padding-bottom: 0.2em;
+    }
     .photo-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -22,7 +23,6 @@
     .music-player {
         margin-bottom: 1.5rem;
     }
-    /* ... (previous styles remain unchanged) ... */
     .photo-item {
         position: relative;
         overflow: hidden;
@@ -43,24 +43,45 @@
     .photo-item:hover img {
         transform: scale(1.05);
     }
+    /* New styles for articles */
+    .article-list {
+        margin-top: 0.5rem;
+    }
+    .article-item {
+        margin-bottom: 0.5rem;
+    }
+    .article-title {
+        display: inline;
+        margin-right: 0.5rem;
+    }
+    .article-date {
+        display: inline;
+        font-size: 0.9em;
+        color: #666;
+    }
 </style>
 
 <h1>{{ .Title }}</h1>
 <h1>James Kettle</h1>
 <p>I am a writer, photographer, and musician. I also run a startup. Currently based in NYC.</p>
+
 <div class="featured-section">
-    <h2>Featured Writing</h2>
-    {{ range first 3 (where .Site.RegularPages "Section" "articles") }}
-        <article>
-            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-        </article>
-    {{ else }}
-        <p>No featured articles available.</p>
-    {{ end }}
+    <h2>Writing</h2>
+    <div class="article-list">
+        {{ $writingPages := where .Site.RegularPages "Section" "writing" }}
+        {{ range first 3 $writingPages }}
+            <article class="article-item">
+                <h3 class="article-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <span class="article-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+            </article>
+        {{ else }}
+            <p>No featured articles available.</p>
+        {{ end }}
+    </div>
 </div>
 
 <div class="featured-section">
-    <h2>Featured Photos</h2>
+    <h2>Photos</h2>
     <div class="photo-grid">
         {{ range first 3 (where .Site.RegularPages "Section" "photos") }}
             <div class="photo-item">
@@ -75,7 +96,7 @@
 </div>
 
 <div class="featured-section">
-    <h2>Featured Music</h2>
+    <h2>Music</h2>
     <div class="music-player">
         <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1795661050&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
         <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">

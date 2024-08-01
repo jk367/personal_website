@@ -1,0 +1,37 @@
+{{ define "main" }}
+    <style>
+        .article-list {
+            margin-top: 1rem;
+        }
+        .article-item {
+            margin-bottom: 1rem;
+        }
+        .article-title {
+            display: inline;
+            margin-right: 0.5rem;
+        }
+        .article-date {
+            display: inline;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .photo-item img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 0.5rem;
+        }
+    </style>
+
+    <h1>{{ .Title }}</h1>
+    <div class="article-list">
+        {{ range .Pages }}
+            <article class="article-item">
+                <h2 class="article-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                <span class="article-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+            
+            </article>
+        {{ else }}
+            <p>No content found</p>
+        {{ end }}
+    </div>
+{{ end }}
