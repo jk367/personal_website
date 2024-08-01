@@ -19,19 +19,42 @@ Here is a copy of my current resume, but below is a list of every job I've ever 
 
 
 <style>
-details {
-  margin-bottom: 15px;
-}
-summary {
-  cursor: pointer;
-}
-summary h4 {
-  display: inline;
-  font-weight: normal;
-}
-summary strong {
-  font-weight: bold;
-}
+button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 1px 5px;
+        font-family: Garamond, serif;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #333;
+    }
+
+    #toggleAll {
+        margin-bottom: 20px;
+    }
+
+    details {
+        margin-bottom: 15px;
+    }
+
+    summary {
+        cursor: pointer;
+    }
+
+    summary h4 {
+        display: inline;
+        font-weight: normal;
+    }
+
+    summary strong {
+        font-weight: bold;
+    }
+</style>
+
 </style>
 
 <script>

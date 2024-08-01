@@ -3,22 +3,54 @@
     <h1>{{ .Title }}</h1>
     <p>I have been making music since 2016 under many different names: Breeq, Mark X Steiner, ^%(!@@$$$, now I go by Kettle. I mostly make electronic music, but sometimes venture off into other genres. I also DJ on occasion, I prefer to do longer sets and playing on vinyl.</p>
     
+    <style>
+    button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 1px 5px;
+        font-family: Garamond, serif;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        margin: 0 2px 5px 2px;
+    }
+
+    button:hover {
+        background-color: #333;
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #mixesContent, #productionsContent {
+        margin-bottom: 20px;
+    }
+    </style>
+
     <h2>Mixes</h2>
     <div id="mixes">
         <div id="mixesContent"></div>
-        <button onclick="showMore('mixes', 3)" id="showSomeMixes">Show Some</button>
-        <button onclick="showMore('mixes', 'all')" id="showAllMixes">Show All</button>
-        <button onclick="hideContent('mixes')" id="hideMixes" style="display: none;">Hide</button>
+        <div class="button-group">
+            <button onclick="showMore('mixes', 3)" id="showSomeMixes">Show Some</button>
+            <button onclick="showMore('mixes', 'all')" id="showAllMixes">Show All</button>
+            <button onclick="hideContent('mixes')" id="hideMixes" style="display: none;">Hide</button>
+        </div>
     </div>
 
     <h2>Original Productions</h2>
     <div id="productions">
         <div id="productionsContent"></div>
-        <button onclick="showMore('productions', 3)" id="showSomeProductions">Show Some</button>
-        <button onclick="showMore('productions', 'all')" id="showAllProductions">Show All</button>
-        <button onclick="hideContent('productions')" id="hideProductions" style="display: none;">Hide</button>
+        <div class="button-group">
+            <button onclick="showMore('productions', 3)" id="showSomeProductions">Show Some</button>
+            <button onclick="showMore('productions', 'all')" id="showAllProductions">Show All</button>
+            <button onclick="hideContent('productions')" id="hideProductions" style="display: none;">Hide</button>
+        </div>
     </div>
-
     <script>
     const mixes = [
         'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1825102770',
