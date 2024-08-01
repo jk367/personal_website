@@ -1,7 +1,7 @@
 ---
 title: "first day"
 date: 2024-07-30
-image: "/images/first day.jpeg" 
+image: "/images/first_day.jpeg" 
 alt: "Child on the first day of School"
 draft: false
 ---
