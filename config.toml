@@ -1,3 +1,12 @@
+
+baseURL = "https://jmkettle.com/"
+title = "James Kettle"
+languageCode = "en-us"
+
+[params]
+  author = "James Kettle"
+  description = "Personal website of James Kettle"
+
 [markup.goldmark.renderer]
   unsafe = true
 

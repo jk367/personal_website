@@ -51,7 +51,7 @@ I like music and throwing parties. I've been throwing parties for a long time an
 <li>Favorite BPM - 133.33</li>
 <li>Favorite Club - Tie between Berghain & Bassiani.</li>
 <li>Favorite Record - Strings of Life by Derrick May</li>
-<li>Favorite DJ - Can't pick,  a few: NDRX, NEWA, Kancheli, Luigi de Venere, KR!Z, Luke Slater, Buttechno</li>
+<li>Favorite DJ - Can't pick,  a few: NDRX, NEWA, Kancheli, Luigi di Venere, KR!Z, Luke Slater, Buttechno</li>
 <li>Favorite Party - Bassiani Season closing 2023</li>
 </ul>
 </details>
