@@ -113,4 +113,4 @@ When I was 16, I wanted more money to buy books, so I worked as a waiter for 2 w
 </details>
 
 ### Contact 
-If you want to get in touch, you can email me at Email @ email.com
+If you want to get in touch, you can email me at jameskettle2018 [@] gmail dot com

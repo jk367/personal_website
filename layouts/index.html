@@ -50,7 +50,7 @@
 <p>I am a writer, photographer, and musician. I also run a startup. Currently based in NYC.</p>
 <div class="featured-section">
     <h2>Featured Writing</h2>
-    {{ range first 1 (where .Site.RegularPages "Section" "articles") }}
+    {{ range first 3 (where .Site.RegularPages "Section" "articles") }}
         <article>
             <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         </article>

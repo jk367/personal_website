@@ -1,7 +1,7 @@
 ---
-title: "brooklyn"
+title: "protest"
 date: 2024-07-30
-image: "/images/brooklyn.jpeg"
+image: "/images/protest.jpeg"
 ---
 
-This is a very famous place in Bushwick. It's more of a joke if anything. 
+A picture of a protest I attended in Tbilisi.

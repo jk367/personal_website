@@ -1,9 +1,9 @@
 ---
-title: "man"
+title: "georgian woman"
 date: 2024-07-30
-image: "/images/man.jpeg"
-alt: "portrait of a man"
+image: "/images/georgian_woman.jpeg"
+alt: "portrait of a woman"
 draft: false
 ---
 
-This is a picture of my friend in NYC at a reading in the lower east side. 
+portrait of my friend from Georgia.  
