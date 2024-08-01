@@ -1,22 +1,11 @@
 ---
 title: "James Kettle Resume"
 ---
-### Education
+## Education
 ### Columbia University
-**Dual Bachelor of Arts Degree Program**  
-*Bachelor of Arts in Information Science (Computer Science & Sociology)*  
-GPA: 3.6  
-*2018- 2023*  
-New York, NY
-
-**Relevant coursework**: Advanced Programming, Artificial Intelligence, Data Structures and Algorithms, Computational Linear Algebra, Social Networks, Calculus-based Statistics and Probability, Micro-Economics, and Sociology of Innovation.
-
+*Bachelor of Arts in Information Science (Computer Science & Sociology)* 
 ### Paris Institute of Political Studies
-**Bachelor of Arts in Economics**  
-Paris, France
-
-**Relevant coursework**: Micro-Economics, Macro-Economics, Statistics, Public Policy Evaluation, Economics of Globalization, Econometrics, Calculus I – III
-
+*Bachelor of Arts in Economics*
 ## Professional Experience
 
 ### FPGA Focused Tech Startup

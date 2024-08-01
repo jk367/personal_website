@@ -1,16 +1,41 @@
 {{ define "main" }}
-<div class="photos-gallery photos-list-page">
-    <h1>{{ .Title }}</h1>
-    <div class="photo-grid">
-        {{ range .Pages }}
-            <div class="photo-item">
-                <a href="{{ .Permalink }}">
-                    <img src="/{{ .Params.image }}" alt="{{ .Title }}">
-                </a>
-            </div>
-        {{ else }}
-            <p>No photos available.</p>
-        {{ end }}
+<div class="photo-grid">
+  {{ range .Pages }}
+    <div class="photo-item">
+      <a href="{{ .Permalink }}">
+        <img src="/{{ .Params.image }}" alt="{{ .Title }}">
+      </a>
     </div>
+  {{ end }}
 </div>
+
+<style>
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: .5rem;
+  }
+
+  .photo-item {
+    aspect-ratio: 320 / 213;
+    overflow: hidden;
+  }
+
+  .photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .photo-item:hover img {
+    transform: scale(1.05);
+  }
+
+  @media (min-width: 992px) {
+    .photo-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
 {{ end }}

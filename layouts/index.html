@@ -4,11 +4,8 @@
         margin-bottom: 1rem;
     }
     .featured-section {
-    margin-bottom: 2rem;
 }
 .featured-section h2 {
-    
-
     padding-bottom: 0.2em;
 }
     .photo-grid {
@@ -24,6 +21,27 @@
     }
     .music-player {
         margin-bottom: 1.5rem;
+    }
+    /* ... (previous styles remain unchanged) ... */
+    .photo-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+    .photo-item a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .photo-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 4px;
+        transition: transform 0.3s ease;
+    }
+    .photo-item:hover img {
+        transform: scale(1.05);
     }
 </style>
 
@@ -46,8 +64,9 @@
     <div class="photo-grid">
         {{ range first 3 (where .Site.RegularPages "Section" "photos") }}
             <div class="photo-item">
-                <img src="{{ .Params.image }}" alt="{{ .Title }}">
-                <h3>{{ .Title }}</h3>
+                <a href="{{ .Permalink }}">
+                    <img src="/{{ .Params.image }}" alt="{{ .Title }}">
+                </a>
             </div>
         {{ else }}
             <p>No featured photos available.</p>
