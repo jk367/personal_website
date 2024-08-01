@@ -106,6 +106,19 @@ When I was 16, I wanted more money to buy books, so I worked as a waiter for 2 w
 
 </div>
 
+## Links <button class="sectionToggle" data-section="links">Expand links</button>
+
+<div class="section" id="linksSection" style="display:none;">
+
+- **[Goodreads](https://www.goodreads.com/user/show/176910457-james-kettle)**
+- **[Discogs](https://www.discogs.com/user/jkettle/collection)**
+- **[Substack](https://jameskettle.substack.com/publish/home/)**
+- **[SoundCloud](https://soundcloud.com/kettle9999)**
+- **[GitHub](https://github.com/jk367)**
+- **[LinkedIn](https://www.linkedin.com/in/jameskettle/)**
+
+</div>
+
 ## Contact 
 If you want to get in touch, you can email me at jameskettle2018 [@] gmail dot com
 
@@ -134,22 +147,40 @@ If you want to get in touch, you can email me at jameskettle2018 [@] gmail dot c
         margin-bottom: 15px;
     }
 
-#globalToggle {
-    margin-left: 20px;
-}
+    #globalToggle {
+        margin-left: 20px;
+    }
 
-.section {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
+    .section {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 
-details {
-    margin-bottom: 15px;
-}
+    details {
+        margin-bottom: 15px;
+    }
 
-summary {
-    cursor: pointer;
-}
+    summary {
+        cursor: pointer;
+    }
+        #linksSection ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    #linksSection li {
+        margin-bottom: 10px;
+    }
+
+    #linksSection a {
+        color: black;
+        text-decoration: none;
+        transition: border-bottom 0.3s ease;
+    }
+
+    #linksSection a:hover {
+        border-bottom: 1px solid black;
+    }
 </style>
 
 <script>
@@ -157,13 +188,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const globalToggle = document.getElementById('globalToggle');
     const sectionToggles = document.querySelectorAll('.sectionToggle');
     const expandAllJobs = document.getElementById('expandAllJobs');
+    const expandAllLinks = document.getElementById('expandAllLinks');
     
     globalToggle.addEventListener('click', toggleAllSections);
     sectionToggles.forEach(button => {
         button.addEventListener('click', (event) => toggleSection(event.target.dataset.section));
     });
     expandAllJobs.addEventListener('click', toggleAllJobs);
+    expandAllLinks.addEventListener('click', toggleAllLinks);
 });
+
 
 function toggleAllSections() {
     const allSections = document.querySelectorAll('.section');
@@ -198,4 +232,5 @@ function toggleAllJobs() {
     
     document.getElementById('expandAllJobs').textContent = isExpanded ? 'Expand All Jobs' : 'Collapse All Jobs';
 }
+
 </script>
