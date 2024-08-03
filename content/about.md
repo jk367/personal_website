@@ -12,6 +12,8 @@ I generally don't like to be categorized as one thing, but right now I mainly ru
 
 I grew up in NYC, went to Brooklyn Tech, then went to Columbia and Sciences Po. In college I studied a lot of different things, mostly a combination of economics, computer science, and sociology.  
 
+In oustide of the classrom I played rugby for 3 years, but after my 3rd concussion had to quit. When I was at Sciences Po I was apart of the poetry club, Sciences Poesie, and wrote for the student newspaper. I also threw a lot events and parties was a DJ. 
+
 After I graduated, I moved to Georgia, the country, for 7 months to be a math teacher. 
 
 I returned to NYC in January of 2024. I was a freelance photographer for 2 months, then I started a company with my old professor. 

@@ -6,4 +6,4 @@ alt: "Woman"
 draft: false
 ---
 
-Party at Jeans in NYC. Striking woman, very nice. 
+Party at Jeans in NYC. 
