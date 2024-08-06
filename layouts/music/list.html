@@ -4,7 +4,7 @@
     <p>I have been making music since 2016 under many different names: Breeq, Mark X Steiner, ^%(!@@$$$, J-Ket, but now I go by Kettle. I mostly make electronic music, but sometimes venture off into other genres. I also DJ on occasion, I prefer to do longer sets and playing on vinyl.</p>
     
     <div class="button-group" id="genreFilters">
-        <button class="genre-filter active" data-genre="all">All Genres</button>
+        <button class="genre-filter" data-genre="all">All Genres</button>
         {{ range $genre := .Site.Taxonomies.genres }}
             <button class="genre-filter" data-genre="{{ $genre.Page.Title }}">{{ $genre.Page.Title }}</button>
         {{ end }}
@@ -13,8 +13,9 @@
     <h2>Mixes</h2>
     <div id="mixes" class="track-section">
         {{ $mixes := where .Pages "Params.music_categories" "intersect" (slice "mixes") }}
-        {{ range sort $mixes "Params.rank" "desc" }}
-            <div class="track-item" data-genres="{{ delimit .Params.genres " " }}">
+        {{ $sortedMixes := sort $mixes "Params.rank" "desc" }}
+        {{ range $index, $element := $sortedMixes }}
+            <div class="track-item{{ if ge $index 4 }} hidden{{ end }}" data-genres="{{ delimit .Params.genres " " }}">
                 {{ .Content }}
             </div>
         {{ else }}
@@ -25,14 +26,16 @@
     <h2>Original Productions</h2>
     <div id="productions" class="track-section">
         {{ $productions := where .Pages "Params.music_categories" "intersect" (slice "productions") }}
-        {{ range sort $productions "Params.rank" "desc" }}
-            <div class="track-item" data-genres="{{ delimit .Params.genres " " }}">
+        {{ $sortedProductions := sort $productions "Params.rank" "desc" }}
+        {{ range $index, $element := $sortedProductions }}
+            <div class="track-item{{ if ge $index 4 }} hidden{{ end }}" data-genres="{{ delimit .Params.genres " " }}">
                 {{ .Content }}
             </div>
         {{ else }}
             <p>No productions found.</p>
         {{ end }}
     </div>
+
     <style>
         button {
             background-color: white;
@@ -51,21 +54,42 @@
         }
     
         .track-section {
-            margin-bottom: 20px;
+            margin-bottom: 5px;
         }
     
         .track-item {
-            margin-bottom: 20px;
+            margin-bottom: 5px;
         }
     
         iframe {
             margin-bottom: 10px;
         }
+        .hidden {
+            display: none;
+        }
+        .genre-filter.active {
+            background-color: black;
+            color: white;
+        }
         </style>
-    <script>
+ <script>
     document.addEventListener('DOMContentLoaded', function() {
         const genreFilters = document.querySelectorAll('.genre-filter');
         const trackItems = document.querySelectorAll('.track-item');
+        let hasUserInteracted = false;
+
+        function applyFilter(genre) {
+            trackItems.forEach(item => {
+                if (hasUserInteracted) {
+                    item.classList.remove('hidden');
+                }
+                if (genre === 'all' || item.getAttribute('data-genres').includes(genre)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
 
         genreFilters.forEach(filter => {
             filter.addEventListener('click', function() {
@@ -74,15 +98,13 @@
                 genreFilters.forEach(btn => btn.classList.remove('active'));
                 this.classList.add('active');
 
-                trackItems.forEach(item => {
-                    if (genre === 'all' || item.getAttribute('data-genres').includes(genre)) {
-                        item.style.display = '';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
+                hasUserInteracted = true;
+                applyFilter(genre);
             });
         });
+
+        // Initial filter application
+        applyFilter('all');
     });
     </script>
 </div>
