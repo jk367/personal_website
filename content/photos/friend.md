@@ -3,6 +3,7 @@ title: "friend"
 date: 2024-07-30
 image: "/images/friend.jpeg"
 alt: "friend in dark resturant"
+categories: ["georgia", "portrait"]
 draft: false
 ---
 

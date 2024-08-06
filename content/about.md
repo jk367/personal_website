@@ -77,7 +77,7 @@ In my sophomore summer I worked for Plural Strategy. I did a lot of PowerPoint a
 </details>
 
 <details>
-<summary><strong>Hedge Fund Intern - Precision Global (defunct) - Summer 2021</strong></summary>
+<summary><strong>Hedge Fund Intern - Precision Global - Summer 2021</strong></summary>
 
 During the Summer of Covid I worked for a small hedge fund, I did research and generally internship tasks like making the website and listening on company calls. It was exciting and fun. The trades were mostly based in Asia so my hours were a bit crazy. 
 </details>
@@ -117,12 +117,13 @@ When I was 16, I wanted more money to buy books, so I worked as a waiter for 2 w
 - **[Substack](https://jameskettle.substack.com/publish/home/)**
 - **[SoundCloud](https://soundcloud.com/kettle9999)**
 - **[GitHub](https://github.com/jk367)**
-- **[LinkedIn](https://www.linkedin.com/in/jameskettle/)**
+
 
 </div>
 
 ## Contact 
-If you want to get in touch, you can email me at jameskettle2018 [@] gmail dot com
+If you want to get in touch, you can email me at contact@jmkettle.com
+
 
 <style>
     button {

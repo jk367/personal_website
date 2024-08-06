@@ -3,6 +3,7 @@ title: "back tattoo"
 date: 2024-07-30
 image: "/images/back_tattoo.jpeg"
 alt: "back tattoo"
+categories: ["georgia", "nightlife"]
 draft: false
 ---
 

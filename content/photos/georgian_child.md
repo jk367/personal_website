@@ -3,6 +3,7 @@ title: "hallway"
 date: 2024-07-30
 image: "/images/georgian_child.jpeg"
 alt: "child on fence"
+categories: ["georgia", "portrait"]
 draft: false
 ---
 

@@ -3,6 +3,7 @@ title: "forever young"
 date: 2024-07-30
 image: "/images/forever_young.jpeg"
 alt: "Bryan Johnson"
+categories: ["portrait"]
 draft: false
 ---
 

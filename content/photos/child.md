@@ -3,6 +3,7 @@ title: "child"
 date: 2024-07-30
 image: "/images/child.jpeg"
 alt: "Child Outside of Church in Georgia"
+categories: ["georgia", "portrait"]
 draft: false
 ---
 

@@ -9,7 +9,8 @@ languageCode = "en-us"
 
 [markup.goldmark.renderer]
   unsafe = true
-
+[taxonomies]
+  category = "categories"
 [menu]
   [[menu.main]]
     name = "Home"

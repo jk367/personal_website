@@ -2,11 +2,18 @@
 <h1>{{ .Title }}</h1>
 <p>I'm a photographer, I've been taking photos seriously for since 2022. I pretty much only use a Cannon EOS M-50 with the stock lens and the built in black and white filter. I don't touch up my pictures or radically change them.</p>
 
-<p>You can hire me as a photographer. I only shoot black and white, do single portraits and nightlife. All of these photos are for sale as prints. </p>
+<p>You can hire me as a photographer. I only shoot black and white, do single portraits and nightlife. All of these photos are for sale as prints.</p>
+
+<div class="category-buttons">
+    <button class="category-button active" data-category="all">All</button>
+    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+    <button class="category-button" data-category="{{ $name }}">{{ $name }}</button>
+    {{ end }}
+</div>
+
 <div class="photo-grid">
-    
   {{ range .Pages }}
-    <div class="photo-item">
+    <div class="photo-item" data-categories="{{ delimit .Params.categories " " }}">
       <a href="{{ .Permalink }}">
         <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
       </a>
@@ -24,6 +31,7 @@
   .photo-item {
     aspect-ratio: 320 / 213;
     overflow: hidden;
+    position: relative;
   }
 
   .photo-item img {
@@ -37,10 +45,55 @@
     transform: scale(1.05);
   }
 
+  .category-buttons {
+    margin: 1rem 0;
+  }
+  .category-button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-family: Garamond, serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    margin: 0 5px 5px 0;
+  }
+  .category-button:hover, .category-button.active {
+    background-color: black;
+    color: white;
+  }
+
   @media (min-width: 992px) {
     .photo-grid {
       grid-template-columns: repeat(3, 1fr);
     }
   }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryButtons = document.querySelectorAll('.category-button');
+    const photoItems = document.querySelectorAll('.photo-item');
+
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const category = this.getAttribute('data-category');
+            
+            // Remove active class from all buttons
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+
+            photoItems.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-categories').includes(category)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
 {{ end }}

@@ -3,6 +3,7 @@ title: "German Friend"
 date: 2024-07-30
 image: "/images/german_friend.jpeg"
 alt: "Woman looking at camera"
+categories: ["georgia", "nightlife", "portrait"]
 draft: false
 ---
 

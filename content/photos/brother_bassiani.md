@@ -3,6 +3,7 @@ title: "brother at bassiani"
 date: 2024-07-30
 image: "/images/brother_bassiani.jpeg"
 alt: "Man standing outside nightclub"
+categories: ["georgia", "portrait"]
 draft: false
 ---
 

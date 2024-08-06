@@ -3,6 +3,7 @@ title: "lovers"
 date: 2024-07-30
 image: "/images/lovers.jpeg"
 alt: "blurry picture of two people kissing"
+categories: ["georgia", "nightlife"]
 draft: false
 ---
 

@@ -3,6 +3,7 @@ title: "scared woman"
 date: 2024-07-30
 image: "/images/scared_woman.jpeg"
 alt: "scared woman"
+categories: ["nightlife", "portrait"]
 draft: false
 ---
 

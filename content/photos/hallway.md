@@ -3,6 +3,7 @@ title: "hallway"
 date: 2024-07-30
 image: "/images/hallway.jpeg"
 alt: "dark hallway"
+categories: ["georgia"]
 draft: false
 ---
 
