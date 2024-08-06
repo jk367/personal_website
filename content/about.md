@@ -112,12 +112,12 @@ When I was 16, I wanted more money to buy books, so I worked as a waiter for 2 w
 
 <div class="section" id="linksSection" style="display:none;">
 
-- **[Goodreads](https://www.goodreads.com/user/show/176910457-james-kettle)**
-- **[Discogs](https://www.discogs.com/user/jkettle/collection)**
-- **[Substack](https://jameskettle.substack.com/publish/home/)**
-- **[SoundCloud](https://soundcloud.com/kettle9999)**
-- **[GitHub](https://github.com/jk367)**
-
+- **[Goodreads](https://www.goodreads.com/user/show/176910457-j-m-kettle)** - Books 
+- **[Discogs](https://www.discogs.com/user/jkettle/collection)** - Records 
+- **[Substack](https://substack.com/@jmkettle)** - Substack 
+- **[SoundCloud](https://soundcloud.com/kettle9999)** - Music
+- **[GitHub](https://github.com/jk367)** - Code 
+- **[BandCamp](https://bandcamp.com/jmkettle)** - Tracks
 
 </div>
 

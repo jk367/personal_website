@@ -1,7 +1,9 @@
 ---
 title: "Goodbye Georgia"
 date: 2024-01-04T11:23:36+02:00
+writing_categories: ["reflection", "georgia"]
 draft: false
+
 ---
 I am back in NYC, in my childhood room, writing this essay. It feels as if the past 6 months were a dream or a hallucination. It all went by so quickly and so slowly, but now it is over. I have such overwhelming love for Tbilisi and the people of Georgia, it almost feels like I have left home to go somewhere new. The air and atmosphere are different in NYC; it's hard to explain, but it feels a bit less serious, a bit more new world-y, as if we are all just making it up as we walk the streets of Brooklyn. New York is also much busier and louder, making the transition a bit more jarring.
 

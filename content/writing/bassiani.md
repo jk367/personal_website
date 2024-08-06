@@ -1,7 +1,9 @@
 ---
 title: "Bassiani"
 date: 2024-07-30T11:23:36+02:00
+writing_categories: ["nightlife", "georgia"]
 draft: false
+
 ---
 
 Bassiani is a club in Tbilisi. Some say it’s the best techno club in the world. It was founded 9 year ago in the empty swimming pool of the city's soccer stadium. The stadium is a relic of Tbilisi's Soviet past, a gigantic concrete monument to the once-command economy. 

@@ -10,7 +10,8 @@ languageCode = "en-us"
 [markup.goldmark.renderer]
   unsafe = true
 [taxonomies]
-  category = "categories"
+  category = "categories"  # This is for your photos
+  writing_category = "writing_categories"  # This is for your writing
 [menu]
   [[menu.main]]
     name = "Home"
