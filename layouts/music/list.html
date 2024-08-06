@@ -3,173 +3,87 @@
     <h1>{{ .Title }}</h1>
     <p>I have been making music since 2016 under many different names: Breeq, Mark X Steiner, ^%(!@@$$$, J-Ket, but now I go by Kettle. I mostly make electronic music, but sometimes venture off into other genres. I also DJ on occasion, I prefer to do longer sets and playing on vinyl.</p>
     
-    <style>
-    button {
-        background-color: white;
-        color: black;
-        border: 1px solid black;
-        padding: 1px 5px;
-        font-family: Garamond, serif;
-        font-size: 16px;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        cursor: pointer;
-        margin: 0 2px 5px 2px;
-    }
-
-    button:hover {
-        background-color: black;
-        color: white;
-    }
-
-    .button-group {
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    #mixesContent, #productionsContent {
-        margin-bottom: 20px;
-    }
-
-    iframe {
-        margin-bottom: 10px;
-    }
-    </style>
+    <div class="button-group" id="genreFilters">
+        <button class="genre-filter active" data-genre="all">All Genres</button>
+        {{ range $genre := .Site.Taxonomies.genres }}
+            <button class="genre-filter" data-genre="{{ $genre.Page.Title }}">{{ $genre.Page.Title }}</button>
+        {{ end }}
+    </div>
 
     <h2>Mixes</h2>
-    <div id="mixes">
-        <div id="mixesContent"></div>
-        <div class="button-group">
-            <button onclick="showMore('mixes', 3)" id="showSomeMixes">Show Some</button>
-            <button onclick="showMore('mixes', 'all')" id="showAllMixes">Show All</button>
-            <button onclick="hideContent('mixes')" id="hideMixes" style="display: none;">Hide</button>
-        </div>
+    <div id="mixes" class="track-section">
+        {{ $mixes := where .Pages "Params.music_categories" "intersect" (slice "mixes") }}
+        {{ range sort $mixes "Params.rank" "desc" }}
+            <div class="track-item" data-genres="{{ delimit .Params.genres " " }}">
+                {{ .Content }}
+            </div>
+        {{ else }}
+            <p>No mixes found.</p>
+        {{ end }}
     </div>
 
     <h2>Original Productions</h2>
-    <div id="productions">
-        <div id="productionsContent"></div>
-        <div class="button-group">
-            <button onclick="showMore('productions', 3)" id="showSomeProductions">Show Some</button>
-            <button onclick="showMore('productions', 'all')" id="showAllProductions">Show All</button>
-            <button onclick="hideContent('productions')" id="hideProductions" style="display: none;">Hide</button>
-        </div>
+    <div id="productions" class="track-section">
+        {{ $productions := where .Pages "Params.music_categories" "intersect" (slice "productions") }}
+        {{ range sort $productions "Params.rank" "desc" }}
+            <div class="track-item" data-genres="{{ delimit .Params.genres " " }}">
+                {{ .Content }}
+            </div>
+        {{ else }}
+            <p>No productions found.</p>
+        {{ end }}
     </div>
+    <style>
+        button {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            padding: 5px 10px;
+            font-family: Garamond, serif;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+            margin: 0 5px 5px 0;
+            }
+        button:hover, button.active {
+            background-color: black;
+            color: white;
+        }
+    
+        .track-section {
+            margin-bottom: 20px;
+        }
+    
+        .track-item {
+            margin-bottom: 20px;
+        }
+    
+        iframe {
+            margin-bottom: 10px;
+        }
+        </style>
     <script>
-    const mixes = [
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1795661050',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1825102770',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1817578374',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1816093140',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1708467204',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1588782111',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1458448270',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1381216534',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1377198835',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1396118524'
-    ];
+    document.addEventListener('DOMContentLoaded', function() {
+        const genreFilters = document.querySelectorAll('.genre-filter');
+        const trackItems = document.querySelectorAll('.track-item');
 
-    const productions = [
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1882470234',    
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1419450289',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1419450397',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1419450418',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1390111690',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1374410173',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1356287605',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1356136564',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/734780524',
-        'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/808481677'
-    ];
+        genreFilters.forEach(filter => {
+            filter.addEventListener('click', function() {
+                const genre = this.getAttribute('data-genre');
+                
+                genreFilters.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
 
-    let mixesVisible = 1;
-    let productionsVisible = 1;
-
-    function createIframe(src) {
-        const iframe = document.createElement('iframe');
-        iframe.width = '100%';
-        iframe.height = '166';
-        iframe.scrolling = 'no';
-        iframe.frameBorder = 'no';
-        iframe.allow = 'autoplay';
-        iframe.src = src;
-        iframe.style.display = 'none';
-        return iframe;
-    }
-
-    function preloadTracks() {
-        const mixesContent = document.getElementById('mixesContent');
-        const productionsContent = document.getElementById('productionsContent');
-
-        mixes.forEach(src => {
-            mixesContent.appendChild(createIframe(src));
+                trackItems.forEach(item => {
+                    if (genre === 'all' || item.getAttribute('data-genres').includes(genre)) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
         });
-
-        productions.forEach(src => {
-            productionsContent.appendChild(createIframe(src));
-        });
-
-        // Show first track of each section
-        mixesContent.children[0].style.display = 'block';
-        productionsContent.children[0].style.display = 'block';
-    }
-
-    function showMore(section, amount) {
-        const content = document.getElementById(section + 'Content');
-        const tracks = section === 'mixes' ? mixes : productions;
-        let visibleTracks = section === 'mixes' ? mixesVisible : productionsVisible;
-        
-        const toShow = amount === 'all' ? tracks.length : Math.min(visibleTracks + amount, tracks.length);
-        
-        for (let i = visibleTracks; i < toShow; i++) {
-            content.children[i].style.display = 'block';
-        }
-
-        if (section === 'mixes') {
-            mixesVisible = toShow;
-            if (mixesVisible >= mixes.length) {
-                document.getElementById('showSomeMixes').style.display = 'none';
-                document.getElementById('showAllMixes').style.display = 'none';
-            }
-        } else {
-            productionsVisible = toShow;
-            if (productionsVisible >= productions.length) {
-                document.getElementById('showSomeProductions').style.display = 'none';
-                document.getElementById('showAllProductions').style.display = 'none';
-            }
-        }
-
-        // Show the hide button
-        document.getElementById('hide' + section.charAt(0).toUpperCase() + section.slice(1)).style.display = 'inline-block';
-    }
-
-    function hideContent(section) {
-        const content = document.getElementById(section + 'Content');
-        
-        // Hide all tracks except the first one
-        for (let i = 1; i < content.children.length; i++) {
-            content.children[i].style.display = 'none';
-        }
-        
-        if (section === 'mixes') {
-            mixesVisible = 1;
-            document.getElementById('showSomeMixes').style.display = 'inline-block';
-            document.getElementById('showAllMixes').style.display = 'inline-block';
-        } else {
-            productionsVisible = 1;
-            document.getElementById('showSomeProductions').style.display = 'inline-block';
-            document.getElementById('showAllProductions').style.display = 'inline-block';
-        }
-
-        // Hide the hide button
-        document.getElementById('hide' + section.charAt(0).toUpperCase() + section.slice(1)).style.display = 'none';
-    }
-
-    // Preload tracks and set up initial state on page load
-    window.onload = function() {
-        preloadTracks();
-    }
+    });
     </script>
 </div>
 {{ end }}

@@ -9,9 +9,13 @@ languageCode = "en-us"
 
 [markup.goldmark.renderer]
   unsafe = true
+
 [taxonomies]
-  category = "categories"  # This is for your photos
-  writing_category = "writing_categories"  # This is for your writing
+  category = "categories"
+  writing_category = "writing_categories"
+  music_category = "music_categories"
+  genre = "genres"
+
 [menu]
   [[menu.main]]
     name = "Home"
