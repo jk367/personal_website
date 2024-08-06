@@ -1,7 +1,7 @@
 ---
 title: "Goodbye Georgia"
 date: 2024-01-04T11:23:36+02:00
-writing_categories: ["reflection", "georgia"]
+writing_categories: ["georgia"]
 draft: false
 
 ---
