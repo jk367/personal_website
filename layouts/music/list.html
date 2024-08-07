@@ -4,7 +4,7 @@
     <p>I have been making music since 2016 under many different names: Breeq, Mark X Steiner, ^%(!@@$$$, J-Ket, but now I go by Kettle. I mostly make electronic music, but sometimes venture off into other genres. I also DJ on occasion, I prefer to do longer sets and playing on vinyl.</p>
     
     <div class="button-group" id="genreFilters">
-        <button class="genre-filter" data-genre="all">All Genres</button>
+        <button class="genre-filter active" data-genre="all">All Genres</button>
         {{ range $genre := .Site.Taxonomies.genres }}
             <button class="genre-filter" data-genre="{{ $genre.Page.Title }}">{{ $genre.Page.Title }}</button>
         {{ end }}
@@ -16,7 +16,9 @@
         {{ $sortedMixes := sort $mixes "Params.rank" "desc" }}
         {{ range $index, $element := $sortedMixes }}
             <div class="track-item{{ if ge $index 4 }} hidden{{ end }}" data-genres="{{ delimit .Params.genres " " }}">
-                {{ .Content }}
+                <div class="soundcloud-embed">
+                    {{ .Content | safeHTML }}
+                </div>
             </div>
         {{ else }}
             <p>No mixes found.</p>
@@ -29,12 +31,16 @@
         {{ $sortedProductions := sort $productions "Params.rank" "desc" }}
         {{ range $index, $element := $sortedProductions }}
             <div class="track-item{{ if ge $index 4 }} hidden{{ end }}" data-genres="{{ delimit .Params.genres " " }}">
-                {{ .Content }}
+                <div class="soundcloud-embed">
+                    {{ .Content | safeHTML }}
+                </div>
             </div>
         {{ else }}
             <p>No productions found.</p>
         {{ end }}
     </div>
+
+    <button id="loadMore" style="display: none;">Load More</button>
 
     <style>
         button {
@@ -47,7 +53,7 @@
             transition: background-color 0.3s ease, color 0.3s ease;
             cursor: pointer;
             margin: 0 5px 5px 0;
-            }
+        }
         button:hover, button.active {
             background-color: black;
             color: white;
@@ -71,41 +77,77 @@
             background-color: black;
             color: white;
         }
-        </style>
- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const genreFilters = document.querySelectorAll('.genre-filter');
-        const trackItems = document.querySelectorAll('.track-item');
-        let hasUserInteracted = false;
-
-        function applyFilter(genre) {
-            trackItems.forEach(item => {
-                if (hasUserInteracted) {
-                    item.classList.remove('hidden');
-                }
-                if (genre === 'all' || item.getAttribute('data-genres').includes(genre)) {
-                    item.style.display = '';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
+        .hidden {
+            display: none;
         }
+    </style>
 
-        genreFilters.forEach(filter => {
-            filter.addEventListener('click', function() {
-                const genre = this.getAttribute('data-genre');
-                
-                genreFilters.forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
+    </style>
 
-                hasUserInteracted = true;
-                applyFilter(genre);
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const genreFilters = document.querySelectorAll('.genre-filter');
+            const trackItems = document.querySelectorAll('.track-item');
+            const loadMoreButton = document.getElementById('loadMore');
+            let hasUserInteracted = false;
+            let currentPage = 1;
+            const itemsPerPage = 4;
+    
+            function applyFilter(genre) {
+                let visibleMixes = 0;
+                let visibleProductions = 0;
+                trackItems.forEach(item => {
+                    const isMix = item.closest('#mixes') !== null;
+                    if (hasUserInteracted) {
+                        item.classList.remove('hidden');
+                    }
+                    if (genre === 'all' || item.getAttribute('data-genres').includes(genre)) {
+                        if ((isMix && visibleMixes < itemsPerPage) || (!isMix && visibleProductions < itemsPerPage) || hasUserInteracted) {
+                            item.style.display = '';
+                            if (isMix) visibleMixes++;
+                            else visibleProductions++;
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                loadMoreButton.style.display = ((visibleMixes >= itemsPerPage || visibleProductions >= itemsPerPage) && !hasUserInteracted) ? 'block' : 'none';
+            }
+    
+            genreFilters.forEach(filter => {
+                filter.addEventListener('click', function() {
+                    const genre = this.getAttribute('data-genre');
+                    genreFilters.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    hasUserInteracted = true;
+                    currentPage = 1;
+                    applyFilter(genre);
+                });
             });
+    
+            loadMoreButton.addEventListener('click', function() {
+                currentPage++;
+                const startIndex = (currentPage - 1) * itemsPerPage;
+                const endIndex = currentPage * itemsPerPage;
+                let newlyVisibleCount = 0;
+    
+                trackItems.forEach((item, index) => {
+                    if (item.style.display === 'none' && !item.classList.contains('hidden')) {
+                        item.style.display = '';
+                        newlyVisibleCount++;
+                    }
+                });
+    
+                if (newlyVisibleCount === 0) {
+                    this.style.display = 'none';
+                }
+            });
+    
+            // Initial filter application
+            applyFilter('all');
         });
-
-        // Initial filter application
-        applyFilter('all');
-    });
-    </script>
-</div>
-{{ end }}
+        </script>
+    </div>
+    {{ end }}
