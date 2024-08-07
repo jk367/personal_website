@@ -6,5 +6,5 @@ type: "track"
 genres: ["techno"]
 music_categories: ["mixes"]
 rank: 11
+soundcloud_url: "https://soundcloud.com/kettle9999/yearning"
 ---
-<iframe width="100%" height="125" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1588782111&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>

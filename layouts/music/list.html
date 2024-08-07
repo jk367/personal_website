@@ -16,8 +16,8 @@
         {{ $sortedMixes := sort $mixes "Params.rank" "desc" }}
         {{ range $index, $element := $sortedMixes }}
             <div class="track-item{{ if ge $index 4 }} hidden{{ end }}" data-genres="{{ delimit .Params.genres " " }}">
-                <div class="soundcloud-embed">
-                    {{ .Content | safeHTML }}
+                <div class="soundcloud-embed" data-src="{{ .Params.soundcloud_url }}">
+                    <div class="placeholder">Loading...</div>
                 </div>
             </div>
         {{ else }}
@@ -31,16 +31,15 @@
         {{ $sortedProductions := sort $productions "Params.rank" "desc" }}
         {{ range $index, $element := $sortedProductions }}
             <div class="track-item{{ if ge $index 4 }} hidden{{ end }}" data-genres="{{ delimit .Params.genres " " }}">
-                <div class="soundcloud-embed">
-                    {{ .Content | safeHTML }}
+                
+                <div class="soundcloud-embed" data-src="{{ .Params.soundcloud_url }}">
+                    <div class="placeholder">Loading...</div>
                 </div>
             </div>
         {{ else }}
             <p>No productions found.</p>
         {{ end }}
     </div>
-
-    <button id="loadMore" style="display: none;">Load More</button>
 
     <style>
         button {
@@ -77,77 +76,134 @@
             background-color: black;
             color: white;
         }
-        .hidden {
-            display: none;
+        .placeholder {
+            width: 100%;
+            height: 166px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: italic;
+            color: #888;
         }
     </style>
 
-    </style>
+<script>
+    // Preload SoundCloud Widget API
+    var sc = document.createElement('script');
+    sc.src = 'https://w.soundcloud.com/player/api.js';
+    document.head.appendChild(sc);
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const genreFilters = document.querySelectorAll('.genre-filter');
-            const trackItems = document.querySelectorAll('.track-item');
-            const loadMoreButton = document.getElementById('loadMore');
-            let hasUserInteracted = false;
-            let currentPage = 1;
-            const itemsPerPage = 4;
-    
-            function applyFilter(genre) {
-                let visibleMixes = 0;
-                let visibleProductions = 0;
-                trackItems.forEach(item => {
-                    const isMix = item.closest('#mixes') !== null;
-                    if (hasUserInteracted) {
-                        item.classList.remove('hidden');
-                    }
-                    if (genre === 'all' || item.getAttribute('data-genres').includes(genre)) {
-                        if ((isMix && visibleMixes < itemsPerPage) || (!isMix && visibleProductions < itemsPerPage) || hasUserInteracted) {
-                            item.style.display = '';
-                            if (isMix) visibleMixes++;
-                            else visibleProductions++;
-                        } else {
-                            item.style.display = 'none';
-                        }
+    document.addEventListener('DOMContentLoaded', function() {
+        const genreFilters = document.querySelectorAll('.genre-filter');
+        const trackItems = document.querySelectorAll('.track-item');
+        const loadMoreButton = document.getElementById('loadMore');
+        let hasUserInteracted = false;
+        let currentPage = 1;
+        const itemsPerPage = 4;
+
+        function loadSoundCloudWidget(element) {
+            if (!element || element.classList.contains('loaded')) return;
+            const iframe = document.createElement('iframe');
+            iframe.setAttribute('src', 'https://w.soundcloud.com/player/?url=' + encodeURIComponent(element.dataset.src));
+            iframe.setAttribute('width', '100%');
+            iframe.setAttribute('height', '125');
+            iframe.setAttribute('frameborder', 'no');
+            iframe.setAttribute('scrolling', 'no');
+            iframe.setAttribute('allow', 'autoplay');
+            element.innerHTML = '';
+            element.appendChild(iframe);
+            element.classList.add('loaded');
+        }
+
+        function lazyLoad() {
+            const lazyEmbeds = document.querySelectorAll('.soundcloud-embed:not(.loaded)');
+            lazyEmbeds.forEach(embed => {
+                if (isInViewport(embed)) {
+                    loadSoundCloudWidget(embed);
+                }
+            });
+        }
+
+        function isInViewport(element) {
+            if (!element) return false;
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function applyFilter(genre) {
+            let visibleMixes = 0;
+            let visibleProductions = 0;
+            trackItems.forEach(item => {
+                if (!item) return;
+                const isMix = item.closest('#mixes') !== null;
+                if (hasUserInteracted) {
+                    item.classList.remove('hidden');
+                }
+                if (genre === 'all' || item.getAttribute('data-genres').includes(genre)) {
+                    if ((isMix && visibleMixes < itemsPerPage) || (!isMix && visibleProductions < itemsPerPage) || hasUserInteracted) {
+                        item.style.display = '';
+                        if (isMix) visibleMixes++;
+                        else visibleProductions++;
                     } else {
                         item.style.display = 'none';
                     }
-                });
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            if (loadMoreButton) {
                 loadMoreButton.style.display = ((visibleMixes >= itemsPerPage || visibleProductions >= itemsPerPage) && !hasUserInteracted) ? 'block' : 'none';
             }
-    
-            genreFilters.forEach(filter => {
-                filter.addEventListener('click', function() {
-                    const genre = this.getAttribute('data-genre');
-                    genreFilters.forEach(btn => btn.classList.remove('active'));
-                    this.classList.add('active');
-                    hasUserInteracted = true;
-                    currentPage = 1;
-                    applyFilter(genre);
-                });
+            lazyLoad();
+        }
+
+        genreFilters.forEach(filter => {
+            filter.addEventListener('click', function() {
+                const genre = this.getAttribute('data-genre');
+                genreFilters.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                hasUserInteracted = true;
+                currentPage = 1;
+                applyFilter(genre);
             });
-    
+        });
+
+        if (loadMoreButton) {
             loadMoreButton.addEventListener('click', function() {
                 currentPage++;
-                const startIndex = (currentPage - 1) * itemsPerPage;
-                const endIndex = currentPage * itemsPerPage;
                 let newlyVisibleCount = 0;
-    
-                trackItems.forEach((item, index) => {
-                    if (item.style.display === 'none' && !item.classList.contains('hidden')) {
+
+                trackItems.forEach((item) => {
+                    if (item && item.style.display === 'none' && !item.classList.contains('hidden')) {
                         item.style.display = '';
                         newlyVisibleCount++;
                     }
                 });
-    
+
                 if (newlyVisibleCount === 0) {
                     this.style.display = 'none';
                 }
+                lazyLoad();
             });
-    
-            // Initial filter application
-            applyFilter('all');
-        });
-        </script>
-    </div>
-    {{ end }}
+        }
+
+        // Initial filter application and lazy load
+        applyFilter('all');
+
+        // Lazy load on scroll and resize, with debounce
+        let lazyLoadTimeout;
+        function debouncedLazyLoad() {
+            clearTimeout(lazyLoadTimeout);
+            lazyLoadTimeout = setTimeout(lazyLoad, 100);
+        }
+        window.addEventListener('scroll', debouncedLazyLoad);
+        window.addEventListener('resize', debouncedLazyLoad);
+    });
+</script>
+{{ end }}
