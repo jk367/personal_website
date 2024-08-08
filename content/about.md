@@ -114,7 +114,7 @@ When I was 16, I wanted more money to buy books, so I worked as a waiter for 2 w
 
 - **[Goodreads](https://www.goodreads.com/user/show/176910457-j-m-kettle)** - Books 
 - **[Discogs](https://www.discogs.com/user/jkettle/collection)** - Records 
-- **[Substack](https://substack.com/@jmkettle)** - Substack 
+- **[Substack](https://jmkettle.substack.com/)** - Substack 
 - **[SoundCloud](https://soundcloud.com/kettle9999)** - Music
 - **[BandCamp](https://bandcamp.com/jmkettle)** - Tracks
 
