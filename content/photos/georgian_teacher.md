@@ -1,5 +1,5 @@
 ---
-title: "georgian_teacher"
+title: "georgian teacher"
 date: 2023-09-29
 image: "/images/georgian_teacher.jpeg"
 alt: ""

@@ -1,5 +1,5 @@
 ---
-title: "German Friend"
+title: "german friend"
 date: 2024-07-30
 image: "/images/german_friend.jpeg"
 alt: "Woman looking at camera"

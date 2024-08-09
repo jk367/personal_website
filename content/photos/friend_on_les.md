@@ -1,5 +1,5 @@
 ---
-title: "friend_on_les"
+title: "friend on LES"
 date: 2024-02-05
 image: "/images/friend_on_les.jpeg"
 alt: ""

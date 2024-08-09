@@ -1,5 +1,5 @@
 ---
-title: "Mother and daughter"
+title: "mother and daughter"
 date: 2023-07-19
 image: "/images/Mother and daughter.jpeg"
 alt: ""

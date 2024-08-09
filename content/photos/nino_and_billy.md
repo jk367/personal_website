@@ -1,5 +1,5 @@
 ---
-title: "nino_and_billy"
+title: "nino and billy"
 date: 2023-12-14
 image: "/images/nino_and_billy.jpeg"
 alt: ""

@@ -1,5 +1,5 @@
 ---
-title: "father_and_son"
+title: "father and son"
 date: 2023-07-19
 image: "/images/father_and_son.jpeg"
 alt: ""

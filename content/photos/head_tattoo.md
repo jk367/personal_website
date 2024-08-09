@@ -1,5 +1,5 @@
 ---
-title: "head_tattoo"
+title: "head tattoo"
 date: 2023-09-02
 image: "/images/head_tattoo.jpeg"
 alt: ""

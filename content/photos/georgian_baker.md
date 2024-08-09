@@ -1,5 +1,5 @@
 ---
-title: "georgian_baker"
+title: "georgian baker"
 date: 2023-11-12
 image: "/images/georgian_baker.jpeg"
 alt: ""

@@ -1,5 +1,5 @@
 ---
-title: "Hole"
+title: "hole"
 date: 2023-08-08
 image: "/images/Hole.jpeg"
 alt: ""

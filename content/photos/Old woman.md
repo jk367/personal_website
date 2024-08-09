@@ -1,5 +1,5 @@
 ---
-title: "Old woman"
+title: "old woman"
 date: 2023-08-31
 image: "/images/Old woman.jpeg"
 alt: ""

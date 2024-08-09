@@ -1,5 +1,5 @@
 ---
-title: "smoking_georgian_girl"
+title: "smoking georgian girl"
 date: 2023-12-10
 image: "/images/smoking_georgian_girl.jpeg"
 alt: ""
