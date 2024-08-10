@@ -1,6 +1,6 @@
 ---
 title: "hair"
-date: 2024-07-30
+date: 2024-03-01
 image: "/images/hair.jpeg"
 alt: "Hair"
 categories: ["nyc", "nightlife", "portrait"]

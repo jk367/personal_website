@@ -1,6 +1,6 @@
 ---
 title: "tattoo"
-date: 2024-07-30
+date: 2023-11-17
 image: "/images/tattoo.jpeg"
 alt: "man with tattoos on his face"
 categories: ["georgia", "nightlife","portrait"]

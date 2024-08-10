@@ -1,6 +1,6 @@
 ---
 title: "german friend"
-date: 2024-07-30
+date: 2023-09-20
 image: "/images/german_friend.jpeg"
 alt: "Woman looking at camera"
 categories: ["georgia", "nightlife", "portrait"]

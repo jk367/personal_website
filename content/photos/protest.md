@@ -1,6 +1,6 @@
 ---
 title: "protest"
-date: 2024-07-30
+date: 2023-08-15
 image: "/images/protest.jpeg"
 categories: ["georgia"]
 ---

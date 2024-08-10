@@ -1,6 +1,6 @@
 ---
 title: "georgian man"
-date: 2024-07-30
+date: 2023-11-04
 image: "/images/georgian_man.jpeg"
 alt: "Georgian man with beard"
 categories: ["georgia", "portrait"]

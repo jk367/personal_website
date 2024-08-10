@@ -1,6 +1,6 @@
 ---
 title: "smiling woman"
-date: 2024-07-30
+date: 2024-03-01
 image: "/images/smiling_woman.jpeg"
 alt: "Woman looking at Camera"
 categories: ["nyc", "nightlife","portrait"]

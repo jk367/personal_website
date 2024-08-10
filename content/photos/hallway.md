@@ -1,6 +1,6 @@
 ---
 title: "hallway"
-date: 2024-07-30
+date: 2023-11-24
 image: "/images/hallway.jpeg"
 alt: "dark hallway"
 categories: ["georgia"]

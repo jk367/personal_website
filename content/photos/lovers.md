@@ -1,6 +1,6 @@
 ---
 title: "lovers"
-date: 2024-07-30
+date: 2024-11-12
 image: "/images/lovers.jpeg"
 alt: "blurry picture of two people kissing"
 categories: ["georgia", "nightlife"]
