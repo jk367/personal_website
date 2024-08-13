@@ -7,4 +7,4 @@ categories: ["portrait", "nyc"]
 draft: false
 ---
 
-riska is a writer friend from NYC. She's one of the smartest people I know. Also tells a lot of jokes, hard to keep track of whats true or not.
+Riska is a writer friend from NYC. She's one of the smartest people I know. Also tells a lot of jokes, hard to keep track of whats true or not.

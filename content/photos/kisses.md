@@ -7,4 +7,4 @@ categories: ["nyc", "nightlife","portrait"]
 draft: false
 ---
 
-smooch! at jeans.
+Smooch!

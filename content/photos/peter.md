@@ -7,4 +7,5 @@ categories: ["portrait","nyc"]
 draft: false
 ---
 
-peter vack, well known actor in the nyc scene. 
+
+Peter Vack, well known actor in the nyc scene. 

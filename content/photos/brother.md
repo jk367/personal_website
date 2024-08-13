@@ -7,4 +7,4 @@ categories: ["georgia","portrait","nightlife"]
 draft: false
 ---
 
-picture of my brother outside a nightclub in Tbilisi. 
+Picture of my brother outside a nightclub in Tbilisi. 

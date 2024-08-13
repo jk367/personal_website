@@ -6,4 +6,5 @@ alt: ""
 categories: ["nyc","nightlife"]
 draft: false
 ---
-people like to kiss at parties. At Jeans.
+
+People like to kiss at parties. At Jeans.

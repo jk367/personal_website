@@ -7,4 +7,4 @@ categories: ["nyc","portrait"]
 draft: false
 ---
 
-portrait of a brooklyn DJ. Didn't speak to him much, but he was really good.
+Portrait of a Brooklyn DJ. Didn't speak to him much, but he was really good.

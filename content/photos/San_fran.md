@@ -1,5 +1,5 @@
 ---
-title: "Palace of fine arts"
+title: "Palace of Fine Arts"
 date: 2024-06-10
 image: "/images/San_fran.jpeg"
 alt: ""

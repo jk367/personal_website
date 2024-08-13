@@ -7,4 +7,4 @@ categories: ["nightlife", "georgia"]
 draft: false
 ---
 
-people love to drink in georgia. 
+People love to drink in Georgia. 

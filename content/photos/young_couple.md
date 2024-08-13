@@ -7,4 +7,4 @@ categories: ["nyc","nightlife","portrait"]
 draft: false
 ---
 
-my brothers friends at a party. Very nice people.
+My brothers friends at a party. Very nice people.

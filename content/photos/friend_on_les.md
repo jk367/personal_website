@@ -7,4 +7,4 @@ categories: ["portrait", "nightlife","nyc"]
 draft: false
 ---
 
-friend in the scene. She's really cool and smart. She's kinda in and kinda out of it, like me. 
+Friend in the scene. She's really cool and smart. She's kinda in and kinda out of it, like me. 

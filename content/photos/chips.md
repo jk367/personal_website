@@ -7,4 +7,4 @@ categories: ["berlin","landscape"]
 draft: false
 ---
 
-holocaust memorial in berlin. Showing signs of wear. 
+Holocaust memorial in Berlin. Showing signs of wear. 

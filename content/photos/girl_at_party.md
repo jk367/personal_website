@@ -7,4 +7,4 @@ categories: ["portrait", "nyc"]
 draft: false
 ---
 
-Girl at party. I think she follows me on instagram.
+Girl at party. I think she follows me on Instagram.

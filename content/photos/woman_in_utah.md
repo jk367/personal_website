@@ -7,4 +7,4 @@ categories: ["utah","portrait"]
 draft: false
 ---
 
-woman from South America, working temporarily in park city. She had like 10k instagram followers. Said I was too close. 
+Woman from South America, working temporarily in Park City. She had like 10k Instagram followers. Said I was too close. 

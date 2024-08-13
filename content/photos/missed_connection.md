@@ -7,4 +7,4 @@ categories: ["nightlife","nyc","portrait"]
 draft: false
 ---
 
-party at jeans. We didn't talk during the party. She found me on instagram. She was moving to austin and I was going to europe for the summer. Never met her again. 
+Party at jeans. We didn't talk during the party. She found me on Instagram. She was moving to Austin and I was going to Europe for the summer. Never met her again. 

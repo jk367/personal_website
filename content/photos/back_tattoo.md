@@ -7,4 +7,4 @@ categories: ["georgia", "nightlife"]
 draft: false
 ---
 
-One night, in the russia bar below my flat in Tbilisi, I commented on my friends tattoo. He took off his shirt and showed me his back.
+One night, in the Russian bar below my flat in Tbilisi, I commented on my friends tattoo. He took off his shirt and showed me his back.

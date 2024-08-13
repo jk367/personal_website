@@ -7,4 +7,4 @@ categories: ["portrait", "nyc", "nightlife"]
 draft: false
 ---
 
-cassidy runs confessions, a reading event. She's a good friend of mine. 
+Cassidy runs confessions, a reading event. She's a good friend of mine. 

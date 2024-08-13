@@ -7,4 +7,4 @@ categories: ["georgia", "portrait"]
 draft: false
 ---
 
-picture of my two friends in Georgia. They said they are moving to NYC. They haven't as of august, but we shall see.
+Picture of my two friends in Georgia. They said they are moving to NYC. They haven't as of August, but we shall see.

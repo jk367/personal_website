@@ -7,4 +7,4 @@ categories: ["portrait"]
 draft: false
 ---
 
-This is Bryan Johnson. He's trying to live forever. I went to his rave in brooklyn. He was very nice to me. 
+This is Bryan Johnson. He's trying to live forever. I went to his rave in Brooklyn. He was very nice to me. 

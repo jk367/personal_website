@@ -7,4 +7,4 @@ categories: ["portrait","georgia","nightlife"]
 draft: false
 ---
 
-artist in Tbilisi.
+Artist in Tbilisi.

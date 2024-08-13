@@ -7,4 +7,4 @@ categories: ["portrait", "nyc"]
 draft: false
 ---
 
-Woman at sov house. She runs the short film event. At the time of photo was dating the tallest man in NYC.
+Woman at Sovereign house. She runs the short film event. At the time of photo was dating the tallest man in NYC.

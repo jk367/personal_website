@@ -7,4 +7,4 @@ categories: ["portrait"]
 draft: false
 ---
 
-woman I met when I was solo traveling in Kutaisi. She was very sweat. I think she lives in england. We had an ice cream and walked around a bunch. Not sure I'll ever see her again. 
+Woman I met when I was solo traveling in Kutaisi. She was very sweat. I think she lives in England. We had an ice cream and walked around a bunch. Not sure I'll ever see her again. 

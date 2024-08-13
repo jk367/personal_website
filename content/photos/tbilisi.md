@@ -7,4 +7,4 @@ categories: ["georgia","landscape"]
 draft: false
 ---
 
-Coca cola in georgain script. Also memorial to fallen soldiers.
+Coca Cola in Georgain script. Also memorial to fallen soldiers.

@@ -7,4 +7,4 @@ categories: ["nyc","portrait"]
 draft: false
 ---
 
-photo of my father. 
+Photo of my father. 

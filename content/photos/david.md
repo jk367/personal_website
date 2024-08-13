@@ -7,4 +7,4 @@ categories: ["georgia","portrait"]
 draft: false
 ---
 
-I met david in Georgia. He was my best friend during my time there. He's a writer and a really good guy.
+I met David in Georgia. He was my best friend during my time there. He's a writer and a really good guy.

@@ -7,5 +7,5 @@ categories: ["georgia","portrait"]
 draft: false
 ---
 
-family friend playing soccer in utsera, georgia. 
+Family friend playing soccer in Utsera, Georgia. 
 

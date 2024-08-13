@@ -7,4 +7,4 @@ categories: ["utah","portrait"]
 draft: false
 ---
 
-brother's friend charlie in an elevator in park city. charlie is a really good guy. Very kind, every year we go to utah as a family, its a nice tradition, we also bring friends too.
+Brother's friend Charlie in an elevator in park city. Charlie is a really good guy. Very kind, every year we go to Utah as a family, its a nice tradition, we also bring friends too.

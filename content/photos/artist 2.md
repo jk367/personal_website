@@ -7,4 +7,4 @@ categories: ["georgia","nightlife"]
 draft: false
 ---
 
-Tbilisi has an amazing creative scene. In fact, it was one of the most creative places I have ever been to. This was apart of a dance show that was at left bank. Snuck my camera in. 
+Tbilisi has an amazing creative scene. In fact, it was one of the most creative places I have ever been to. This was apart of a dance show that was at left bank. I snuck my camera in. 

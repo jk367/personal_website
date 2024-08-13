@@ -7,4 +7,4 @@ categories: ["portrait","georgia"]
 draft: false
 ---
 
-father and son. My georgian family. The father spends all year in Brooklyn driving uber to send the kids to private school, gets to see them only for one month in august. 
+Father and son. My Georgian family. The father spends all year in Brooklyn driving Uber to send the kids to private school, gets to see them only for one month in august. 

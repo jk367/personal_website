@@ -6,4 +6,4 @@ alt: ""
 categories: ["georgia","portrait"]
 draft: false
 ---
-two friends in georgia. Both russian, in the country because of the war with Ukraine
+Two friends in Georgia. Both Russian, in the country because of the war with Ukraine

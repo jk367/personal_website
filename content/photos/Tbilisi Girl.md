@@ -7,4 +7,4 @@ categories: ["portrait", "georgia"]
 draft: false
 ---
 
-portrait of a family friend. She's very smart, but spent too much time on her phone.
+Portrait of a family friend. She's very smart, but spent too much time on her phone.

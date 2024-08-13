@@ -7,6 +7,6 @@ categories: ["georgia","portrait"]
 draft: false
 ---
 
-I met a lot of cool people in tbilisi. He was doing a masters thesis on gay russians in Georgia. He threw great parties.
+I met a lot of cool people in Tbilisi. He was doing a masters thesis on gay Russians in Georgia. He threw great parties.
 
 

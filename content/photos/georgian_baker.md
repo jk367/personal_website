@@ -7,4 +7,4 @@ categories: ["portrait","georgia"]
 draft: false
 ---
 
-In rural georgia. Baker, didn't speak a word of english. 
+In rural Georgia. Baker, didn't speak a word of English. 

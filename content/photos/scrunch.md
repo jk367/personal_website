@@ -7,4 +7,4 @@ categories: ["portrait", "nyc", "nightlife"]
 draft: false
 ---
 
-fun times in NYC. Its fun to make faces for photos. 
+Fun times in NYC. It's fun to make faces for photos. 

@@ -7,4 +7,4 @@ categories: ["georgia","landscape"]
 draft: false
 ---
 
-I took this photo on a tour of tbilisi. The tour guide was a math major, was moving to london in a few weeks to do finance. Probably won't return to Georgia. Many cases like this. 
+I took this photo on a tour of Tbilisi. The tour guide was a math major, was moving to London in a few weeks to do Finance. Probably won't return to Georgia. Many cases like this. 

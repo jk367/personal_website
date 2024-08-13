@@ -7,4 +7,4 @@ categories: ["portrait","berlin"]
 draft: false
 ---
 
-yogo is a greek artist, I met him when I went to berghain. He's really sweet. 
+Yogo is a Greek artist, I met him when I went to Berghain. He's really sweet. 

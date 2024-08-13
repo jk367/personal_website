@@ -7,4 +7,4 @@ categories: ["nyc","portrait"]
 draft: false
 ---
 
-banker friend in NYC. She is very sweet and smart. Currently makes a lot more money than me. 
+Banker friend in NYC. She is very sweet and smart. Currently makes a lot more money than me. 

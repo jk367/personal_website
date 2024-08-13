@@ -7,4 +7,4 @@ categories: ["nyc", "nightlife","portrait"]
 draft: false
 ---
 
-very cool looking bartender at NYC party.
+Very cool looking bartender at NYC party.

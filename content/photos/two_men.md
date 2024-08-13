@@ -7,4 +7,4 @@ categories: ["nyc","nightlife"]
 draft: false
 ---
 
-two men at nyc party
+Two men at nyc party.

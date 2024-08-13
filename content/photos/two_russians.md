@@ -7,4 +7,4 @@ categories: ["georgia","nightlife","portrait"]
 draft: false
 ---
 
-two russians at a party in Georgia. At the cafe below my apartment. 
+Two russians at a party in Georgia. At the cafe below my apartment. 

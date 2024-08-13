@@ -7,4 +7,4 @@ categories: ["portrait","nyc"]
 draft: false
 ---
 
-Twitter friend. Taken at a house party (my house)
+Twitter friend. Taken at a house party.

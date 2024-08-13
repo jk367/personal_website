@@ -7,4 +7,4 @@ categories: ["nyc","landscape"]
 draft: false
 ---
 
-beach trip to long island. almost got arrested, just got a parking ticket. Turns out private beach really means private, no matter if its the winter and its almost midnight. 
+Beach trip to long island. Almost got arrested, just got a parking ticket. Turns out private beach really means private, no matter if its the winter and its almost midnight. 

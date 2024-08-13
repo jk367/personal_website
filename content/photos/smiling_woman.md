@@ -7,4 +7,4 @@ categories: ["nyc", "nightlife","portrait"]
 draft: false
 ---
 
-Took this at a party in NYC. She was in alaska last time I checked on instagram.
+Took this at a party in NYC. She was in Alaska last time I checked on Instagram.

@@ -7,4 +7,4 @@ categories: ["portrait","nyc"]
 draft: false
 ---
 
-"I am exactly like lana del ray." same
+"I am exactly like Lana Del Ray." same

@@ -7,4 +7,4 @@ categories: ["portrait", "georgia"]
 draft: false
 ---
 
-My very good friend in Tbilsi. One of the smartest people i've met. At the time, she was planning her move to nyc.
+My very good friend in Tbilisi. One of the smartest people I've met. At the time, she was planning her move to nyc.

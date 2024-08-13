@@ -7,4 +7,4 @@ categories: ["portrait","georgia"]
 draft: false
 ---
 
-surpirse! taken at fabrika, the hipster spot in Tbilsi. 
+Surprise! taken at Fabrika, the hipster spot in Tbilisi. 

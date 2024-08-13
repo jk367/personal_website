@@ -6,4 +6,5 @@ alt: ""
 categories: ["portrait","nyc"]
 draft: false
 ---
+
 Joesph is a good friend of mine from college. Very good actor and all around great guy.

@@ -7,4 +7,4 @@ categories: ["georgia","portrait","tattoo","nightlife"]
 draft: false
 ---
 
-modern tattoo in tbilisi. Everyone had tattoos. I did not have any tattoos, nor planning on getting any. 
+Modern tattoo in tbilisi. Everyone had tattoos. I did not have any tattoos, nor planning on getting any. 

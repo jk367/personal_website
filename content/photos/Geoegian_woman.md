@@ -7,4 +7,4 @@ categories: ["georgia", "portrait"]
 draft: false
 ---
 
-portrait of my friend from Georgia.  
+Portrait of my friend from Georgia.  

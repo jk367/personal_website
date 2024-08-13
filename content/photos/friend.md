@@ -7,4 +7,4 @@ categories: ["georgia", "portrait"]
 draft: false
 ---
 
-My friend from blackrock visited me in Georgia while he was studying for his masters in England. This was taken on my birthday.
+My friend from Blackrock visited me in Georgia while he was studying for his masters in England. This was taken on my birthday.

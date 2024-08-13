@@ -7,4 +7,4 @@ categories: ["nyc","nightlife"]
 draft: false
 ---
 
-sometimes the party is a bit too much. At Jeans.
+Sometimes the party is a bit too much. At Jeans.

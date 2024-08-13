@@ -7,4 +7,4 @@ categories: ["georgia","landscape"]
 draft: false
 ---
 
-sandbags. 
+Sandbags. 

@@ -7,4 +7,4 @@ categories: ["portrait", "nyc"]
 draft: false
 ---
 
-portrait of a woman at NYC party. 
+Portrait of a woman at NYC party. 

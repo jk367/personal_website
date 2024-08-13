@@ -7,4 +7,4 @@ categories: ["georgia","landscape"]
 draft: false
 ---
 
-during my time in the goergian mountains the boundry of nature and not was very blury. 
+During my time in the Goergian mountains the boundary of nature and not was very blurry. 

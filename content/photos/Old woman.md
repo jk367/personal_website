@@ -6,4 +6,5 @@ alt: ""
 categories: ["georgia", "portrait"]
 draft: false
 ---
-old georgian woman. Taken in the Kutasi bazar. She wasn't happy with the photo.
+
+Old Georgian woman. Taken in the Kutasi bazar. She wasn't happy with the photo.

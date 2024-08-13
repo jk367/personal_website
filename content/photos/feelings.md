@@ -7,4 +7,4 @@ categories: ["georgia","portrait"]
 draft: false
 ---
 
-friend in georgia, one of my favourite photos. 
+Friend in georgia, one of my favourite photos. 

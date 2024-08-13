@@ -7,4 +7,4 @@ categories: ["nyc","portrait"]
 draft: false
 ---
 
-actor friend in NYC. 
+Actor friend in NYC. 

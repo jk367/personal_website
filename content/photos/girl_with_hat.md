@@ -7,4 +7,4 @@ categories: ["georgia","portrait"]
 draft: false
 ---
 
-russian girl in tbilisi. She was nice, not quite a friend but I saw her around. 
+Russian girl in tbilisi. She was nice, not quite a friend but I saw her around. 
