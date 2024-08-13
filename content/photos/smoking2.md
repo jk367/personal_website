@@ -3,7 +3,7 @@ title: "smoking"
 date: 2024-02-18
 image: "/images/smoking2.jpeg"
 alt: ""
-categories: ["nyc","nigthlife","portrait"]
+categories: ["nyc","nightlife","portrait"]
 draft: false
 ---
 
