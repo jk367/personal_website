@@ -3,7 +3,7 @@ title: "party"
 date: 2023-11-12
 image: "/images/party.jpeg"
 alt: ""
-categories: ["nightlife", "georgia"]
+categories: ["nightlife", "georgia","intense"]
 draft: false
 ---
 

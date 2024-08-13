@@ -3,7 +3,7 @@ title: "adam"
 date: 2024-01-30
 image: "/images/adam.jpeg"
 alt: ""
-categories: ["nyc","portrait"]
+categories: ["nyc","portrait","intense"]
 draft: false
 ---
 

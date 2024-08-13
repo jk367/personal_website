@@ -3,7 +3,7 @@ title: "demuri"
 date: 2023-09-02
 image: "/images/demuri.jpeg"
 alt: ""
-categories: ["portrait","georgia"]
+categories: ["portrait","georgia","intense"]
 draft: false
 ---
 

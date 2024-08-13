@@ -3,7 +3,7 @@ title: "marie"
 date: 2023-08-30
 image: "/images/Marie.jpeg"
 alt: ""
-categories: ["portrait"]
+categories: ["portrait","intense"]
 draft: false
 ---
 

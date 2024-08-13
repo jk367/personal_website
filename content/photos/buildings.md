@@ -7,4 +7,4 @@ categories: ["georgia","landscape"]
 draft: false
 ---
 
-Classic soviet buildings in georgia. I passed them often when I was going out. 
+Classic soviet buildings in Georgia. I passed them often when I was going out. 

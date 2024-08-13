@@ -3,7 +3,7 @@ title: "blocks"
 date: 2024-07-22
 image: "/images/blocks.jpeg"
 alt: ""
-categories: ["berlin", "landscape"]
+categories: ["berlin", "landscape","intense"]
 draft: false
 ---
 

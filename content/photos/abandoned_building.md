@@ -3,7 +3,7 @@ title: "abandoned building"
 date: 2023-11-23
 image: "/images/abandoned_building.jpeg"
 alt: ""
-categories: ["georgia","landscape"]
+categories: ["georgia","landscape","intense"]
 draft: false
 ---
 

@@ -7,4 +7,4 @@ categories: ["landscape","georgia"]
 draft: false
 ---
 
-Taken at georgian nightclub.
+Taken at Georgian nightclub.

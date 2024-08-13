@@ -3,7 +3,7 @@ title: "smoking"
 date: 2024-08-04
 image: "/images/smoking.jpeg"
 alt: "Smoking artist"
-categories: ["georgia", "nightlife","portrait"]
+categories: ["georgia", "nightlife","portrait","intense"]
 draft: false
 ---
 

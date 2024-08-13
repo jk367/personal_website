@@ -3,7 +3,7 @@ title: "tattoo"
 date: 2023-11-17
 image: "/images/tattoo.jpeg"
 alt: "man with tattoos on his face"
-categories: ["georgia", "nightlife","portrait","tattoo"]
+categories: ["georgia", "nightlife","portrait","tattoo","intense"]
 draft: false
 ---
 

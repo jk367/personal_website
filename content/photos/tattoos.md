@@ -3,7 +3,7 @@ title: "tattoos"
 date: 2023-09-29
 image: "/images/tattoos.jpeg"
 alt: ""
-categories: ["nightlife","tattoo","georgia"]
+categories: ["nightlife","tattoo","georgia","intense"]
 draft: false
 ---
 

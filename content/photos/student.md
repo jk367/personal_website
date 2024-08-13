@@ -7,4 +7,4 @@ categories: ["portrait", "georgia"]
 draft: false
 ---
 
-photo of my student. On the last day. She was very smart. From russia. 
+Photo of my student. On the last day. She was very smart. From Russia. 
