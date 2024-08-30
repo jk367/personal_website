@@ -79,12 +79,12 @@
         .soundcloud-embed {
             margin-bottom: 1.5rem;
             position: relative;
-            height: 166px; /* Match the iframe height */
+            height: 125px; /* Updated height */
             background-color: #f5f5f5; /* Light grey background */
         }
         .soundcloud-embed iframe {
             width: 100%;
-            height: 166px;
+            height: 125px; /* Updated height */
             border: none;
             position: absolute;
             top: 0;
@@ -110,6 +110,7 @@
     (function() {
         var sc = document.createElement('script');
         sc.src = 'https://w.soundcloud.com/player/api.js';
+        sc.async = true;
         document.head.appendChild(sc);
     })();
 
@@ -139,14 +140,12 @@
             };
             Object.entries(params).forEach(([key, value]) => url.searchParams.append(key, value));
             
-            Object.assign(iframe, {
-                src: url.toString(),
-                width: '100%',
-                height: '166',
-                scrolling: 'no',
-                frameBorder: 'no',
-                allow: 'autoplay'
-            });
+            iframe.src = url.toString();
+            iframe.width = '100%';
+            iframe.height = '125'; // Updated height
+            iframe.scrolling = 'no';
+            iframe.frameBorder = 'no';
+            iframe.allow = 'autoplay';
             
             iframe.onload = () => {
                 element.querySelector('.placeholder').style.display = 'none';
@@ -168,11 +167,13 @@
         };
 
         const lazyLoad = () => {
-            document.querySelectorAll('.soundcloud-embed:not(.loaded)').forEach(embed => {
-                if (isInViewport(embed)) {
-                    loadSoundCloudWidget(embed);
-                }
-            });
+            const visibleEmbeds = Array.from(document.querySelectorAll('.soundcloud-embed:not(.loaded)'))
+                .filter(embed => isInViewport(embed));
+            
+            if (visibleEmbeds.length > 0) {
+                loadSoundCloudWidget(visibleEmbeds[0]);
+                setTimeout(lazyLoad, 100); // Load next embed after a short delay
+            }
         };
 
         const applyFilter = (genre) => {
