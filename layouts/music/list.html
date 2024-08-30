@@ -90,9 +90,11 @@
 
 <script>
     // Preload SoundCloud Widget API
-    var sc = document.createElement('script');
-    sc.src = 'https://w.soundcloud.com/player/api.js';
-    document.head.appendChild(sc);
+    (function() {
+        var sc = document.createElement('script');
+        sc.src = 'https://w.soundcloud.com/player/api.js';
+        document.head.appendChild(sc);
+    })();
 
     document.addEventListener('DOMContentLoaded', function() {
         const genreFilters = document.querySelectorAll('.genre-filter');
@@ -102,42 +104,38 @@
         let currentPage = 1;
         const itemsPerPage = 4;
 
-        function loadSoundCloudWidget(element) {
+        const loadSoundCloudWidget = (element) => {
             if (!element || element.classList.contains('loaded')) return;
             const iframe = document.createElement('iframe');
             const url = new URL('https://w.soundcloud.com/player/');
-            url.searchParams.append('url', element.dataset.src);
-            url.searchParams.append('color', '%23ff5500');
-            url.searchParams.append('auto_play', 'false');
-            url.searchParams.append('hide_related', 'true');
-            url.searchParams.append('show_comments', 'false');
-            url.searchParams.append('show_user', 'true');
-            url.searchParams.append('show_reposts', 'false');
-            url.searchParams.append('show_teaser', 'false');
-            url.searchParams.append('visual', 'false');
-            url.searchParams.append('hide_mobile_message', 'true');
+            const params = {
+                url: element.dataset.src,
+                color: '%23ff5500',
+                auto_play: 'false',
+                hide_related: 'true',
+                show_comments: 'false',
+                show_user: 'true',
+                show_reposts: 'false',
+                show_teaser: 'false',
+                visual: 'false',
+                hide_mobile_message: 'true'
+            };
+            Object.entries(params).forEach(([key, value]) => url.searchParams.append(key, value));
             
-            iframe.setAttribute('src', url.toString());
-            iframe.setAttribute('width', '100%');
-            iframe.setAttribute('height', '125');
-            iframe.setAttribute('frameborder', 'no');
-            iframe.setAttribute('scrolling', 'no');
-            iframe.setAttribute('allow', 'autoplay');
+            Object.assign(iframe, {
+                src: url.toString(),
+                width: '100%',
+                height: '125',
+                frameBorder: 'no',
+                scrolling: 'no',
+                allow: 'autoplay'
+            });
             element.innerHTML = '';
             element.appendChild(iframe);
             element.classList.add('loaded');
-        }
+        };
 
-        function lazyLoad() {
-            const lazyEmbeds = document.querySelectorAll('.soundcloud-embed:not(.loaded)');
-            lazyEmbeds.forEach(embed => {
-                if (isInViewport(embed)) {
-                    loadSoundCloudWidget(embed);
-                }
-            });
-        }
-
-        function isInViewport(element) {
+        const isInViewport = (element) => {
             if (!element) return false;
             const rect = element.getBoundingClientRect();
             return (
@@ -146,9 +144,17 @@
                 rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
                 rect.right <= (window.innerWidth || document.documentElement.clientWidth)
             );
-        }
+        };
 
-        function applyFilter(genre) {
+        const lazyLoad = () => {
+            document.querySelectorAll('.soundcloud-embed:not(.loaded)').forEach(embed => {
+                if (isInViewport(embed)) {
+                    loadSoundCloudWidget(embed);
+                }
+            });
+        };
+
+        const applyFilter = (genre) => {
             let visibleMixes = 0;
             let visibleProductions = 0;
             trackItems.forEach(item => {
@@ -157,23 +163,20 @@
                 if (hasUserInteracted) {
                     item.classList.remove('hidden');
                 }
-                if (genre === 'all' || item.getAttribute('data-genres').includes(genre)) {
-                    if ((isMix && visibleMixes < itemsPerPage) || (!isMix && visibleProductions < itemsPerPage) || hasUserInteracted) {
-                        item.style.display = '';
-                        if (isMix) visibleMixes++;
-                        else visibleProductions++;
-                    } else {
-                        item.style.display = 'none';
-                    }
-                } else {
-                    item.style.display = 'none';
+                const shouldShow = genre === 'all' || item.getAttribute('data-genres').includes(genre);
+                const isWithinLimit = (isMix && visibleMixes < itemsPerPage) || (!isMix && visibleProductions < itemsPerPage);
+                
+                item.style.display = shouldShow && (isWithinLimit || hasUserInteracted) ? '' : 'none';
+                
+                if (shouldShow && item.style.display === '') {
+                    isMix ? visibleMixes++ : visibleProductions++;
                 }
             });
             if (loadMoreButton) {
                 loadMoreButton.style.display = ((visibleMixes >= itemsPerPage || visibleProductions >= itemsPerPage) && !hasUserInteracted) ? 'block' : 'none';
             }
             lazyLoad();
-        }
+        };
 
         genreFilters.forEach(filter => {
             filter.addEventListener('click', function() {
@@ -198,9 +201,7 @@
                     }
                 });
 
-                if (newlyVisibleCount === 0) {
-                    this.style.display = 'none';
-                }
+                this.style.display = newlyVisibleCount === 0 ? 'none' : 'block';
                 lazyLoad();
             });
         }
@@ -209,11 +210,14 @@
         applyFilter('all');
 
         // Lazy load on scroll and resize, with debounce
-        let lazyLoadTimeout;
-        function debouncedLazyLoad() {
-            clearTimeout(lazyLoadTimeout);
-            lazyLoadTimeout = setTimeout(lazyLoad, 100);
-        }
+        const debouncedLazyLoad = (() => {
+            let timeout;
+            return () => {
+                clearTimeout(timeout);
+                timeout = setTimeout(lazyLoad, 100);
+            };
+        })();
+        
         window.addEventListener('scroll', debouncedLazyLoad);
         window.addEventListener('resize', debouncedLazyLoad);
     });
