@@ -87,29 +87,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 observer.unobserve(img);
             }
         });
-    }, {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1 // Load when 10% of the image is visible
     });
 
-    // Check if it's a mobile device
-    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-    if (isMobile) {
-        // Preload more images on mobile
-        lazyImages.forEach((img, index) => {
-            if (index < 9) { // Preload first 9 images on mobile
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-            } else {
-                lazyLoadObserver.observe(img);
-            }
-        });
-    } else {
-        // Use normal lazy loading for desktop
-        lazyImages.forEach(img => lazyLoadObserver.observe(img));
-    }
+    lazyImages.forEach(img => lazyLoadObserver.observe(img));
 
     // Existing category filter code
     categoryButtons.forEach(button => {
