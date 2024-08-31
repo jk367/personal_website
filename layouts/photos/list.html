@@ -18,12 +18,12 @@
 </div>
 
 <div class="photo-grid">
-  {{ $photoItems := .Pages }}
+  {{ $photoItems := .Pages.ByDate.Reverse }}
   {{ $today := now.Format "20060102" }}
   {{ $seed := mod (int $today) 1000000 }}
   {{ $randomPhotos := first (len $photoItems) (after $seed ($photoItems | shuffle) | append ($photoItems | shuffle)) }}
   {{ range $randomPhotos }}
-    <div class="photo-item" data-categories="{{ delimit .Params.categories " " }}">
+    <div class="photo-item" data-categories="{{ delimit .Params.categories " " }}" data-date="{{ .Date.Format "2006-01-02" }}">
       <a href="{{ .Permalink }}">
         <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
       </a>
@@ -99,9 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const photoGrid = document.querySelector('.photo-grid');
     const photoItems = Array.from(document.querySelectorAll('.photo-item'));
     
-    // Store original order for chronological sorting
-    const originalOrder = [...photoItems];
-
     // Store seeded random order
     const seededRandomOrder = [...photoItems];
 
@@ -150,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 shuffleArray(photoItems);
             } else if (sortType === 'chronological') {
                 photoItems.sort((a, b) => {
-                    return originalOrder.indexOf(a) - originalOrder.indexOf(b);
+                    return new Date(b.dataset.date) - new Date(a.dataset.date);
                 });
             } else if (sortType === 'seeded') {
                 photoItems.sort((a, b) => {
