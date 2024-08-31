@@ -18,7 +18,11 @@
 </div>
 
 <div class="photo-grid">
-  {{ range .Pages }}
+  {{ $photoItems := .Pages }}
+  {{ $today := now.Format "20060102" }}
+  {{ $seed := mod (int $today) 1000000 }}
+  {{ $randomPhotos := first (len $photoItems) (after $seed ($photoItems | shuffle) | append ($photoItems | shuffle)) }}
+  {{ range $randomPhotos }}
     <div class="photo-item" data-categories="{{ delimit .Params.categories " " }}">
       <a href="{{ .Permalink }}">
         <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
@@ -98,9 +102,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Store original order for chronological sorting
     const originalOrder = [...photoItems];
 
-    // Initial random shuffle
-    shuffleArray(photoItems);
-    photoItems.forEach(item => photoGrid.appendChild(item));
+    // Store seeded random order
+    const seededRandomOrder = [...photoItems];
 
     // Lazy loading implementation
     const lazyImages = document.querySelectorAll('img.lazy');
@@ -122,9 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', function() {
             const category = this.getAttribute('data-category');
             
-            // Remove active class from all buttons
             categoryButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
             this.classList.add('active');
 
             photoItems.forEach(item => {
@@ -137,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // New sorting functionality
+    // Modified sorting functionality
     sortButtons.forEach(button => {
         button.addEventListener('click', function() {
             const sortType = this.getAttribute('data-sort');
@@ -150,6 +151,10 @@ document.addEventListener('DOMContentLoaded', function() {
             } else if (sortType === 'chronological') {
                 photoItems.sort((a, b) => {
                     return originalOrder.indexOf(a) - originalOrder.indexOf(b);
+                });
+            } else if (sortType === 'seeded') {
+                photoItems.sort((a, b) => {
+                    return seededRandomOrder.indexOf(a) - seededRandomOrder.indexOf(b);
                 });
             }
 

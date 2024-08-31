@@ -85,7 +85,10 @@
     <div class="photo-grid">
         {{ $photoPages := where .Site.RegularPages "Section" "photos" }}
         {{ $scratch := newScratch }}
-        {{ $scratch.Set "randomPhotos" (shuffle $photoPages) }}
+        {{ $today := now.Format "20060102" }}
+        {{ $seed := mod (int $today) 1000000 }}
+        {{ $scratch.Set "randomPhotos" (sort $photoPages "Title" "asc") }}
+        {{ $scratch.Set "randomPhotos" (first (len $photoPages) (after $seed ($scratch.Get "randomPhotos") | append ($scratch.Get "randomPhotos"))) }}
         {{ range first 3 ($scratch.Get "randomPhotos") }}
             <div class="photo-item">
                 <a href="{{ .Permalink }}">
