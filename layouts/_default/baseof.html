@@ -87,6 +87,18 @@
         .footer-link:hover {
             border-bottom: 1px solid #000;
         }
+        #backToTopBar {
+            margin-bottom: 10px;
+        }
+
+        #backToTopLink {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        #backToTopLink:hover {
+            text-decoration: underline;
+        }
     </style>
     <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
 </head>
@@ -119,7 +131,17 @@
     </div>
 
     <footer>
+        <p id="backToTopBar">
+            <a href="#" id="backToTopLink">back to top</a>
+        </p>
         <p>&copy; {{ now.Format "2006" }} <a href="/" class="footer-link">J.M. Kettle</a></p>
     </footer>
+
+    <script>
+        document.getElementById('backToTopLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    </script>
 </body>
 </html>

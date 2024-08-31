@@ -5,10 +5,16 @@
 <p>You can hire me as a photographer. I only shoot black and white, do portraits or nightlife.</p>
 
 <div class="category-buttons">
-    <button class="category-button active" data-category="all">All</button>
-    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-    <button class="category-button" data-category="{{ $name }}">{{ $name }}</button>
-    {{ end }}
+    <div class="filter-buttons">
+        <button class="category-button active" data-category="all">All</button>
+        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        <button class="category-button" data-category="{{ $name }}">{{ $name }}</button>
+        {{ end }}
+    </div>
+    <div class="sort-buttons">
+        <button class="sort-button" data-sort="random">random</button>
+        <button class="sort-button" data-sort="chronological">chronological</button>
+    </div>
 </div>
 
 <div class="photo-grid">
@@ -48,7 +54,14 @@
   .category-buttons {
     margin: 1rem 0;
   }
-  .category-button {
+  .filter-buttons {
+    margin-bottom: 0.5rem;
+  }
+  .sort-buttons {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .category-button, .sort-button {
     background-color: white;
     color: black;
     border: 1px solid black;
@@ -59,9 +72,13 @@
     cursor: pointer;
     margin: 0 5px 5px 0;
   }
-  .category-button:hover, .category-button.active {
+  .category-button:hover, .category-button.active,
+  .sort-button:hover, .sort-button.active {
     background-color: black;
     color: white;
+  }
+  .sort-button {
+    text-transform: lowercase;
   }
 
   @media (min-width: 992px) {
@@ -74,8 +91,17 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const categoryButtons = document.querySelectorAll('.category-button');
-    const photoItems = document.querySelectorAll('.photo-item');
+    const sortButtons = document.querySelectorAll('.sort-button');
+    const photoGrid = document.querySelector('.photo-grid');
+    const photoItems = Array.from(document.querySelectorAll('.photo-item'));
     
+    // Store original order for chronological sorting
+    const originalOrder = [...photoItems];
+
+    // Initial random shuffle
+    shuffleArray(photoItems);
+    photoItems.forEach(item => photoGrid.appendChild(item));
+
     // Lazy loading implementation
     const lazyImages = document.querySelectorAll('img.lazy');
     const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
@@ -110,6 +136,34 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    // New sorting functionality
+    sortButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const sortType = this.getAttribute('data-sort');
+            
+            sortButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            if (sortType === 'random') {
+                shuffleArray(photoItems);
+            } else if (sortType === 'chronological') {
+                photoItems.sort((a, b) => {
+                    return originalOrder.indexOf(a) - originalOrder.indexOf(b);
+                });
+            }
+
+            photoItems.forEach(item => photoGrid.appendChild(item));
+        });
+    });
 });
+
+// Fisher-Yates shuffle algorithm
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
 </script>
 {{ end }}
