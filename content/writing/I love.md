@@ -117,7 +117,7 @@ OHM
 Bassiani  
 TES  
 Berghain  
-Public record  
+Public records  
 Paragon  
 Mansions  
 Kosher Chinese food  
