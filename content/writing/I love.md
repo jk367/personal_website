@@ -18,14 +18,14 @@ Dancing in a good club
 Reading a good book  
 Writing a good article  
 Taking a good picture  
-the Moma  
+The Moma  
 Sand  
 Funny stories  
 Wine  
 Well designed apartments  
 Beautiful buildings  
 My family  
-Levi’s 505s (36,34)  
+Levi’s 550s (38,34)  
 Running 3 miles  
 Sardines on toast  
 Bagels  

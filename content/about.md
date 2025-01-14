@@ -8,7 +8,7 @@ title: "About"
 
 <div class="section" id="bioSection" style="display:none;">
 
-I generally don't like to be categorized as one thing, but right now I mainly run a startup.
+I generally don't like to be categorized as one thing, but right now I mainly work at a startup.
 
 I grew up in NYC, went to Brooklyn Tech, then went to Columbia and Sciences Po. In college I studied a lot of different things, mostly a combination of economics, computer science, and sociology.  
 
@@ -16,9 +16,11 @@ In oustide of the classrom I played rugby for 3 years, but after my 3rd concussi
 
 After I graduated, I moved to Georgia, the country, for 7 months to be a math teacher. 
 
-I returned to NYC in January of 2024. I was a freelance photographer for 2 months, then I started a company with my old professor. 
+I returned to NYC in January of 2024. I was a freelance photographer for 2 months, then I started a company with my old professor. We shut down the company in September of 2024. 
 
-Since then I have been running the startup out of NYC, planning on moving to SF soon. 
+I then started working at Upfront, a real estate finance company. I'm the 2nd hire and I do sales and product. My friend is the founder and he is a genius and very smart. Its a lot of fun and less stressful than running a company. 
+
+I am based in NYC and have no plans on leaving anytime soon, unless I find an insane amount of money, then I would move to Paris, or maybe rural New Hampshire, or just buy a house in Brookyln. I'm not sure, but right now, I'm based in NYC.  
 
 </div>
 
@@ -27,10 +29,16 @@ Since then I have been running the startup out of NYC, planning on moving to SF 
 <div class="section" id="workSection" style="display:none;">
 
 ### 2016-Present <button id="expandAllJobs">Expand All Jobs</button>
-<details>
-<summary><strong>Co-Founder/CEO - CloudCap - 2024 to Present</strong></summary>
 
-In March of 2024, I had a chance encounter with my old computer science professor and we started a company. I'm in charge of sales, fundraising, product development. Running a company is hard, but also mentally rewarding. I think people should start companies or join early stage companies when they're young, it's a lot more fun than bigger shops.
+<details>
+<summary><strong>Manager of Strategic Partnerships - Upfront - 2024 to present </strong></summary>
+My friend runs a real estate finance company and I am the 2nd hire. I do sales and product. I think the company is awesome, I'm really enjoying the work currently. 
+</details>
+
+<details>
+<summary><strong>Co-Founder/CEO - CloudCap - 2024 to 2024 </strong></summary>
+In March of 2024, I had a chance encounter with my old computer science professor and we started a company. I was in charge of sales, fundraising, product development. Running a company is hard, but also mentally rewarding. I think people should start companies or join early stage companies when they're young, it's a lot more fun than bigger shops.
+In September we shut down the company. It was a really fun 7 months, and we learned a lot, mostly that I don't want to run a company. I actually think that most people shouldn't run companies, but there are some people who should, and for the rest of us, it better to work for them. 
 </details>
 
 <details>
@@ -48,13 +56,13 @@ I consider myself mainly a writer, I've been writing, mostly for myself, since I
 <details>
 <summary><strong>DJ - 2018 - Present</strong></summary>
 
-I like music and throwing parties. I've been throwing parties for a long time and at some point wanted to do it full time. I realized it's not for me, but still DJ from time to time. I do it for fun now because I like collecting records. If you want to book me for your party, I charge $200 a night. 
+I like music and throwing parties. I've been throwing parties for a long time and at some point wanted to do it full time. I realized it's not for me, but still DJ from time to time. I do it for fun now because I like collecting records. If you want to book me for your party, I charge $200 a night, unless you're a friend then it's free. 
 <ul>
 <li>Favorite BPM - 133.33</li>
 <li>Favorite Club - Tie between Berghain & Bassiani.</li>
 <li>Favorite Record - Strings of Life by Derrick May</li>
 <li>Favorite DJ - Can't pick,  a few: NDRX, NEWA, Kancheli, Luigi di Venere, KR!Z, Luke Slater, Buttechno</li>
-<li>Favorite Party - Bassiani Season closing 2023</li>
+<li>Favorite Party - Silvester klubnacht 2025 Berghain</li>
 </ul>
 </details>
 
