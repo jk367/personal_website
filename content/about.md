@@ -31,12 +31,13 @@ I am based in NYC and have no plans on leaving anytime soon, unless I find an in
 ### 2016-Present <button id="expandAllJobs">Expand All Jobs</button>
 
 <details>
-<summary><strong>Manager of Strategic Partnerships - Upfront - 2024 to present </strong></summary>
-My friend runs a real estate finance company and I am the 2nd hire. I do sales and product. I think the company is awesome, I'm really enjoying the work currently. 
+<summary><strong>Manager of Strategic Partnerships - Upfront - 2024 to 2025 </strong></summary>
+I worked for my friend start up for around 8 months between 2024 and 2025. My title was "Manager of Strategic Initiatives". I worked on everything non-technical, sales, operations, and design. Me and the founders had diffrent visions on where the company was going, so I left. 
 </details>
 
 <details>
 <summary><strong>Co-Founder/CEO - CloudCap - 2024 to 2024 </strong></summary>
+
 In March of 2024, I had a chance encounter with my old computer science professor and we started a company. I was in charge of sales, fundraising, product development. Running a company is hard, but also mentally rewarding. I think people should start companies or join early stage companies when they're young, it's a lot more fun than bigger shops.
 In September we shut down the company. It was a really fun 7 months, and we learned a lot, mostly that I don't want to run a company. I actually think that most people shouldn't run companies, but there are some people who should, and for the rest of us, it better to work for them. 
 </details>
@@ -44,13 +45,13 @@ In September we shut down the company. It was a really fun 7 months, and we lear
 <details>
 <summary><strong>Freelance Photographer - 2022 - Present</strong></summary>
 
-I really like taking photos, mostly of people and mostly at night. Sometimes people pay me. I work exclusively in Black and White, don't do birthdays, and prefer some creative freedom when doing portraits. If you want to book me for a portrait session it's $300 for 2 hours, not including studio, and if you want me to work your party it's $400 for the night. Friend prices are lower, generally free. It's just for fun. 
+I really like taking photos, mostly of people and mostly at night. I work exclusively in Black and White, don't do birthdays, and prefer some creative freedom when doing portraits. If you want to book me for a portrait session it's $300 for 2 hours, not including studio, and if you want me to work your party it's $400 for the night. 
 </details>
 
 <details>
 <summary><strong>Freelance Writer - 2019 - Present</strong></summary>
 
-I consider myself mainly a writer, I've been writing, mostly for myself, since I was 13. I write poetry, fiction, and non-fiction. Sometimes I write for publications. If you want me to write for you it's $100 per article. 
+I consider myself mainly a writer, I've been writing, mostly for myself, since I was 13. I write poetry, fiction, and non-fiction. Sometimes I write for publications.
 </details>
 
 <details>
