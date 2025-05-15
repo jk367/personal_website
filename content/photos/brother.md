@@ -1,10 +1,8 @@
 ---
-title: "brother outside of leftbank"
-date: 2023-12-09
-image: "/images/brother.jpeg"
+title: "Brother"
+date: 2023-07-19
+image: "https://photos.jmkettle.com/brother.jpg"
 alt: ""
-categories: ["georgia","portrait","nightlife"]
+categories: []
 draft: false
 ---
-
-Picture of my brother outside a nightclub in Tbilisi. 

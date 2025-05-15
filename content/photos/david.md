@@ -1,10 +1,8 @@
 ---
-title: "david"
-date: 2023-12-07
-image: "/images/david.jpeg"
+title: "David"
+date: 2023-07-19
+image: "https://photos.jmkettle.com/david.jpg"
 alt: ""
-categories: ["georgia","portrait"]
+categories: []
 draft: false
 ---
-
-I met David in Georgia. He was my best friend during my time there. He's a writer and a really good guy.

@@ -28,12 +28,14 @@
 <style>
   .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: .5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .photo-item {
-    aspect-ratio: 320 / 213;
+    aspect-ratio: 4/3;
     overflow: hidden;
     position: relative;
   }
@@ -81,7 +83,7 @@
 
   @media (min-width: 992px) {
     .photo-grid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 </style>
