@@ -18,7 +18,8 @@
   {{ range .Pages.ByDate.Reverse }}
     <div class="photo-item" data-categories="{{ delimit .Params.categories " " }}">
       <a href="{{ .Permalink }}">
-        <img src="{{ .Params.image | absURL }}?width=800&format=auto"
+        <img src="{{ .Params.image | absURL }}?width=400&format=auto"
+             loading="lazy"
              alt="{{ .Title }}">
       </a>
     </div>
@@ -89,7 +90,10 @@
 </style>
 
 <script>
-    // Category filter code
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryButtons = document.querySelectorAll('.category-button');
+    const photoItems = document.querySelectorAll('.photo-item');
+
     categoryButtons.forEach(button => {
         button.addEventListener('click', function() {
             const category = this.getAttribute('data-category');
