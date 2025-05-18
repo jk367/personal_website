@@ -88,7 +88,7 @@ In my sophomore summer I worked for Plural Strategy. I did a lot of PowerPoint a
 
 During the Summer of Covid I worked for a small hedge fund, I did research and generally internship tasks like making the website and listening on company calls. It was exciting and fun. The trades were mostly based in Asia so my hours were a bit crazy. 
 
-</details>
+kj</details>
 
 <details>
 <summary><strong>Operations Intern - Impact Jeunes - Summer 2019</strong></summary>

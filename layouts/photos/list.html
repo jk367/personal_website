@@ -19,7 +19,17 @@
   {{ range .Pages.ByDate.Reverse }}
     <div class="photo-item" data-categories="{{ delimit .Params.categories " " }}" data-date="{{ .Date.Format "2006-01-02" }}">
       <a href="{{ .Permalink }}">
-        <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+        <img class="lazy" 
+             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
+             data-src="{{ .Params.image | absURL }}"
+             srcset="
+               {{ .Params.image | absURL }}/cdn-cgi/image/width=400,format=auto,quality=75 400w,
+               {{ .Params.image | absURL }}/cdn-cgi/image/width=800,format=auto,quality=75 800w,
+               {{ .Params.image | absURL }}/cdn-cgi/image/width=1200,format=auto,quality=75 1200w
+             "
+             sizes="(max-width: 768px) 100vw, 50vw"
+             alt="{{ .Title }}"
+             loading="lazy">
       </a>
     </div>
   {{ end }}

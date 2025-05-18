@@ -1,7 +1,15 @@
 {{ define "main" }}
 <article class="single-photo">
     <h1>{{ .Title }}</h1>
-    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+    <img src="{{ .Params.image | absURL }}/cdn-cgi/image/width=800,format=auto,quality=75"
+         srcset="
+           {{ .Params.image | absURL }}/cdn-cgi/image/width=800,format=auto,quality=75 800w,
+           {{ .Params.image | absURL }}/cdn-cgi/image/width=1200,format=auto,quality=75 1200w,
+           {{ .Params.image | absURL }}/cdn-cgi/image/width=1600,format=auto,quality=75 1600w
+         "
+         sizes="(max-width: 768px) 100vw, 800px"
+         alt="{{ .Title }}"
+         loading="lazy">
     <div class="photo-content">
         {{ .Content }}
     </div>
