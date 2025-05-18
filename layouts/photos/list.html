@@ -14,22 +14,12 @@
         {{ end }}
     </div>
 </div>
-
 <div class="photo-grid">
   {{ range .Pages.ByDate.Reverse }}
-    <div class="photo-item" data-categories="{{ delimit .Params.categories " " }}" data-date="{{ .Date.Format "2006-01-02" }}">
+    <div class="photo-item" data-categories="{{ delimit .Params.categories " " }}">
       <a href="{{ .Permalink }}">
-        <img class="lazy" 
-             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
-             data-src="{{ .Params.image | absURL }}"
-             srcset="
-               {{ .Params.image | absURL }}/cdn-cgi/image/width=400,format=auto,quality=75 400w,
-               {{ .Params.image | absURL }}/cdn-cgi/image/width=800,format=auto,quality=75 800w,
-               {{ .Params.image | absURL }}/cdn-cgi/image/width=1200,format=auto,quality=75 1200w
-             "
-             sizes="(max-width: 768px) 100vw, 50vw"
-             alt="{{ .Title }}"
-             loading="lazy">
+        <img src="{{ .Params.image | absURL }}?width=800&format=auto"
+             alt="{{ .Title }}">
       </a>
     </div>
   {{ end }}
@@ -99,25 +89,6 @@
 </style>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const categoryButtons = document.querySelectorAll('.category-button');
-    const photoItems = Array.from(document.querySelectorAll('.photo-item'));
-    
-    // Lazy loading implementation
-    const lazyImages = document.querySelectorAll('img.lazy');
-    const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-                observer.unobserve(img);
-            }
-        });
-    });
-
-    lazyImages.forEach(img => lazyLoadObserver.observe(img));
-
     // Category filter code
     categoryButtons.forEach(button => {
         button.addEventListener('click', function() {
