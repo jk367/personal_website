@@ -1,12 +1,7 @@
-{{ define "main" }}
 <article class="single-photo">
     <h1>{{ .Title }}</h1>
-    <img src="{{ .Params.image | absURL }}?width=800&format=auto"
-    srcset="{{ .Params.image | absURL }}?width=400&format=auto 400w,
-            {{ .Params.image | absURL }}?width=800&format=auto 800w,
-            {{ .Params.image | absURL }}?width=1200&format=auto 1200w"
-    sizes="(max-width: 768px) 100vw, 800px"
-    alt="{{ .Title }}">
+    <img src="{{ .Params.image | absURL }}?width=1200&format=webp&quality=80&cacheTTL=31536000" 
+         alt="{{ .Title }}">
     <div class="photo-content">
         {{ .Content }}
     </div>

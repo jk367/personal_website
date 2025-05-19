@@ -18,7 +18,7 @@
   {{ range .Pages.ByDate.Reverse }}
     <div class="photo-item" data-categories="{{ delimit .Params.categories " " }}">
       <a href="{{ .Permalink }}">
-        <img src="{{ .Params.image | absURL }}?width=400&format=auto"
+        <img src="{{ .Params.image | absURL }}?width=400&format=webp&quality=70&cacheTTL=31536000"
              loading="lazy"
              alt="{{ .Title }}">
       </a>
