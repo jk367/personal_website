@@ -31,9 +31,6 @@
         object-fit: cover;
         border-radius: 4px;
         transition: transform 0.3s ease;
-        position: absolute;
-        top: 0;
-        left: 0;
     }
     .photo-item:hover img {
         transform: scale(1.05);
@@ -98,10 +95,24 @@
     <h2>Photos</h2>
     <div class="photo-grid">
         {{ $photoPages := where .Site.RegularPages "Section" "photos" }}
+        {{ $firstPhoto := true }}
         {{ range first 9 $photoPages }}
             <div class="photo-item">
                 <a href="{{ .Permalink }}">
-                    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+                    {{ if $firstPhoto }}
+                    <img src="{{ .Params.image }}?width=200&format=webp&quality=75" 
+                         width="200"
+                         height="200"
+                         fetchpriority="high"
+                         alt="{{ .Title }}">
+                    {{ $firstPhoto = false }}
+                    {{ else }}
+                    <img src="{{ .Params.image }}?width=200&format=webp&quality=70" 
+                         width="200"
+                         height="200"
+                         loading="lazy"
+                         alt="{{ .Title }}">
+                    {{ end }}
                 </a>
             </div>
         {{ else }}

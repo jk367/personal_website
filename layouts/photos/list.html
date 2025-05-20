@@ -16,15 +16,25 @@
 </div>
 
 <div class="photo-grid">
+  {{ $first := true }}
   {{ range .Pages.ByDate.Reverse }}
     <div class="photo-item" data-categories="{{ delimit .Params.categories " " }}">
       <a href="{{ .Permalink }}">
-        <!-- Make sure the URL is properly formed -->
-        <img src="https://photos.jmkettle.com/{{ path.Base .Params.image }}?width=400&format=webp&quality=70&cacheTTL=31536000" 
+        {{ if $first }}
+        <!-- High priority loading for the first image (LCP element) -->
+        <img src="{{ .Params.image }}?width=400&format=webp&quality=75" 
+             width="400" 
+             height="300"
+             fetchpriority="high"
+             alt="{{ .Title }}">
+        {{ $first = false }}
+        {{ else }}
+        <img src="{{ .Params.image }}?width=400&format=webp&quality=70" 
              width="400" 
              height="300"
              loading="lazy"
              alt="{{ .Title }}">
+        {{ end }}
       </a>
     </div>
   {{ end }}
@@ -33,7 +43,7 @@
 <style>
   .photo-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -86,7 +96,6 @@
 </style>
 
 <script defer>
-  
 document.addEventListener('DOMContentLoaded', function() {
     const categoryButtons = document.querySelectorAll('.category-button');
     const photoItems = document.querySelectorAll('.photo-item');
@@ -108,13 +117,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-function getImageDimensions(aspectRatio) {
-    if (aspectRatio > 1) { // landscape
-      return { width: 400, height: 300 };
-    } else { // portrait
-      return { width: 300, height: 400 };
-    }
-  }
 </script>
 {{ end }}
