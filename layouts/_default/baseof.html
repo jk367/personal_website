@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>J.M. Kettle</title>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Title }}</title>
+    <title>{{ if .Title }}{{ .Title }} - {{ end }}J.M. Kettle</title>
+    
+    <!-- Resource hints -->
+    <link rel="preconnect" href="https://photos.jmkettle.com">
+    <link rel="dns-prefetch" href="https://photos.jmkettle.com">
+    
+    <!-- Critical CSS inline -->
     <style>
         html {
             overflow-y: scroll;
@@ -57,49 +62,8 @@
             padding: 10px 0;
             border-top: 1px solid rgb(0, 0, 0);
         }
-        h1, h2, h3 {
-            color: rgb(0, 0, 0);
-        }
-        article {
-            margin-bottom: 0px;
-            padding-bottom: 5px;
-        }
-        article:last-child {
-            border-bottom: none;
-        }
-        time {
-            font-size: 0.9em;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        h1, .prose h1, .content h1, .markdown h1 {
-            font-size: 2em;
-            margin: 0;
-            padding: 0;
-        }
-        .footer-link {
-            color: inherit;
-            text-decoration: none;
-            border-bottom: 1px dotted #000;
-        }
-        .footer-link:hover {
-            border-bottom: 1px solid #000;
-        }
-        #backToTopBar {
-            margin-bottom: 10px;
-        }
-
-        #backToTopLink {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        #backToTopLink:hover {
-            text-decoration: underline;
-        }
     </style>
+    
     <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
 </head>
 <body>
@@ -136,11 +100,57 @@
         <p>&copy; {{ now.Format "2006" }} <a href="/" class="footer-link">J.M. Kettle</a></p>
     </footer>
 
-    <script>
-        document.getElementById('backToTopLink').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({top: 0, behavior: 'smooth'});
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('backToTopLink').addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
         });
     </script>
+    
+    <!-- Non-critical CSS -->
+    <style>
+        h1, h2, h3 {
+            color: rgb(0, 0, 0);
+        }
+        article {
+            margin-bottom: 0px;
+            padding-bottom: 5px;
+        }
+        article:last-child {
+            border-bottom: none;
+        }
+        time {
+            font-size: 0.9em;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1, .prose h1, .content h1, .markdown h1 {
+            font-size: 2em;
+            margin: 0;
+            padding: 0;
+        }
+        .footer-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted #000;
+        }
+        .footer-link:hover {
+            border-bottom: 1px solid #000;
+        }
+        #backToTopBar {
+            margin-bottom: 10px;
+        }
+        #backToTopLink {
+            color: inherit;
+            text-decoration: none;
+        }
+        #backToTopLink:hover {
+            text-decoration: underline;
+        }
+    </style>
 </body>
 </html>

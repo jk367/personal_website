@@ -1,10 +1,10 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-<p>I'm a photographer, I've been taking photos seriously for since 2022. I use a Cannon R-10, I perfer doing shoots inside, and perfer to use studios when doing portraits. </p>
+<p>I'm a photographer, I've been taking photos seriously for since 2022. I use a Cannon R-10, I perfer doing shoots inside, and perfer to use studios when doing portraits.</p>
 
 <p>You can hire me as a photographer. I only shoot black and white. I do portraits, nightlife, and editorials.</p>
 
-<p>I think photography is really important. </p>
+<p>I think photography is really important.</p>
 
 <div class="category-buttons">
     <div class="filter-buttons">
@@ -14,13 +14,27 @@
         {{ end }}
     </div>
 </div>
+
 <div class="photo-grid">
+  {{ $firstImage := true }}
   {{ range .Pages.ByDate.Reverse }}
     <div class="photo-item" data-categories="{{ delimit .Params.categories " " }}">
       <a href="{{ .Permalink }}">
+        {{ if $firstImage }}
+        <!-- Preload first few images with high priority -->
         <img src="{{ .Params.image | absURL }}?width=400&format=webp&quality=70&cacheTTL=31536000"
+             width="400" 
+             height="300"
+             fetchpriority="high"
+             alt="{{ .Title }}">
+        {{ $firstImage = false }}
+        {{ else }}
+        <img src="{{ .Params.image | absURL }}?width=400&format=webp&quality=70&cacheTTL=31536000"
+             width="400" 
+             height="300"
              loading="lazy"
              alt="{{ .Title }}">
+        {{ end }}
       </a>
     </div>
   {{ end }}
@@ -58,11 +72,7 @@
   .filter-buttons {
     margin-bottom: 0.5rem;
   }
-  .sort-buttons {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .category-button, .sort-button {
+  .category-button {
     background-color: white;
     color: black;
     border: 1px solid black;
@@ -73,13 +83,9 @@
     cursor: pointer;
     margin: 0 5px 5px 0;
   }
-  .category-button:hover, .category-button.active,
-  .sort-button:hover, .sort-button.active {
+  .category-button:hover, .category-button.active {
     background-color: black;
     color: white;
-  }
-  .sort-button {
-    text-transform: lowercase;
   }
 
   @media (min-width: 992px) {
@@ -89,7 +95,8 @@
   }
 </style>
 
-<script>
+<script defer>
+  
 document.addEventListener('DOMContentLoaded', function() {
     const categoryButtons = document.querySelectorAll('.category-button');
     const photoItems = document.querySelectorAll('.photo-item');
@@ -111,5 +118,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function getImageDimensions(aspectRatio) {
+    if (aspectRatio > 1) { // landscape
+      return { width: 400, height: 300 };
+    } else { // portrait
+      return { width: 300, height: 400 };
+    }
+  }
 </script>
 {{ end }}
