@@ -1,7 +1,7 @@
 ---
 title: "father and son"
 date: 2023-07-19
-image: "https://photos.jmkettle.com/father_and_son.jpg"
+image: "https://photos.jmkettle.com/father_and_son.webp"
 alt: ""
 categories: ["portrait","georgia"]
 draft: false

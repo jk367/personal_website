@@ -16,25 +16,15 @@
 </div>
 
 <div class="photo-grid">
-  {{ $firstImage := true }}
   {{ range .Pages.ByDate.Reverse }}
     <div class="photo-item" data-categories="{{ delimit .Params.categories " " }}">
       <a href="{{ .Permalink }}">
-        {{ if $firstImage }}
-        <!-- Preload first few images with high priority -->
-        <img src="{{ .Params.image | absURL }}?width=400&format=webp&quality=70&cacheTTL=31536000"
-             width="400" 
-             height="300"
-             fetchpriority="high"
-             alt="{{ .Title }}">
-        {{ $firstImage = false }}
-        {{ else }}
-        <img src="{{ .Params.image | absURL }}?width=400&format=webp&quality=70&cacheTTL=31536000"
+        <!-- Make sure the URL is properly formed -->
+        <img src="https://photos.jmkettle.com/{{ path.Base .Params.image }}?width=400&format=webp&quality=70&cacheTTL=31536000" 
              width="400" 
              height="300"
              loading="lazy"
              alt="{{ .Title }}">
-        {{ end }}
       </a>
     </div>
   {{ end }}
