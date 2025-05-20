@@ -1,30 +1,19 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 <p>I'm a photographer, I've been taking photos seriously for since 2022. I use a Cannon R-10, I perfer doing shoots inside, and perfer to use studios when doing portraits.</p>
-
 <p>You can hire me as a photographer. I only shoot black and white. I do portraits, nightlife, and editorials.</p>
-
 <p>I think photography is really important.</p>
-
-<div class="category-buttons">
-    <div class="filter-buttons">
-        <button class="category-button active" data-category="all">All</button>
-        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-        <button class="category-button" data-category="{{ $name }}">{{ $name }}</button>
-        {{ end }}
-    </div>
-</div>
 
 <div class="photo-grid">
   {{ $first := true }}
   {{ range .Pages.ByDate.Reverse }}
-    <div class="photo-item" data-categories="{{ delimit .Params.categories " " }}">
+    <div class="photo-item">
       <a href="{{ .Permalink }}">
         {{ if $first }}
-        <!-- High priority loading for the first image (LCP element) -->
         <img src="{{ .Params.image }}?width=400&format=webp&quality=75" 
              width="400" 
              height="300"
+             style="width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover;" 
              fetchpriority="high"
              alt="{{ .Title }}">
         {{ $first = false }}
@@ -32,6 +21,7 @@
         <img src="{{ .Params.image }}?width=400&format=webp&quality=70" 
              width="400" 
              height="300"
+             style="width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover;"
              loading="lazy"
              alt="{{ .Title }}">
         {{ end }}
@@ -54,38 +44,14 @@
     overflow: hidden;
     position: relative;
   }
-
+  
   .photo-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     transition: transform 0.3s ease;
+    display: block;
   }
 
   .photo-item:hover img {
     transform: scale(1.05);
-  }
-
-  .category-buttons {
-    margin: 1rem 0;
-  }
-  .filter-buttons {
-    margin-bottom: 0.5rem;
-  }
-  .category-button {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    padding: 5px 10px;
-    font-family: Garamond, serif;
-    font-size: 16px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    cursor: pointer;
-    margin: 0 5px 5px 0;
-  }
-  .category-button:hover, .category-button.active {
-    background-color: black;
-    color: white;
   }
 
   @media (min-width: 992px) {
@@ -94,28 +60,4 @@
     }
   }
 </style>
-
-<script defer>
-document.addEventListener('DOMContentLoaded', function() {
-    const categoryButtons = document.querySelectorAll('.category-button');
-    const photoItems = document.querySelectorAll('.photo-item');
-
-    categoryButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const category = this.getAttribute('data-category');
-            
-            categoryButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-
-            photoItems.forEach(item => {
-                if (category === 'all' || item.getAttribute('data-categories').includes(category)) {
-                    item.style.display = '';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        });
-    });
-});
-</script>
 {{ end }}

@@ -4,6 +4,7 @@
     <img src="{{ .Params.image }}?width=800&format=webp&quality=80" 
          width="800"
          height="600" 
+         style="width: 100%; max-width: 800px; height: auto; display: block;"
          fetchpriority="high"
          alt="{{ .Title }}">
     <div class="photo-content">
@@ -13,4 +14,22 @@
     <time>{{ .Format "January 2, 2006" }}</time>
     {{ end }}
 </article>
+
+<style>
+  .single-photo h1 {
+    margin-bottom: 0rem;
+    /* Left-aligned */
+  }
+  .single-photo img {
+    margin: 0; /* Remove any auto margins */
+  }
+  .photo-content {
+    margin-top: .5rem;
+  }
+  
+  time {
+    display: block;
+    
+  }
+</style>
 {{ end }}
