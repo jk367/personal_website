@@ -1,11 +1,11 @@
 
 baseURL = "https://jmkettle.com/"
-title = "James Kettle"
+title = "j.m. kettle"
 languageCode = "en-us"
 
 [params]
-  author = "James Kettle"
-  description = "Personal website of James Kettle"
+  author = "j.m. kettle"
+  description = "Personal website of j.m. kettle"
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -33,3 +33,8 @@ languageCode = "en-us"
     name = "About"
     url = "/about/"
     weight = 5
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
