@@ -1,6 +1,6 @@
 ---
 title: "Pedro"
-date: 2023-07-19
+date: 2024-11-23
 image: "https://photos.jmkettle.com/pedro.webp"
 alt: "a black and white portrait of my friend pedro"
 categories: []
