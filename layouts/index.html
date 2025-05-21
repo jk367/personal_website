@@ -24,7 +24,7 @@
     .photo-item {
         position: relative;
         overflow: hidden;
-        
+        aspect-ratio: 3/2;
     }
     .photo-item a {
         display: block;
@@ -33,8 +33,8 @@
     }
     .photo-item img {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: auto;
+        display: block;
     }
     /* New styles for articles */
     .article-list {
@@ -102,25 +102,26 @@
     </div>
 </div>
 
+{{ $firstPhoto := true }}
 <div class="featured-section">
     <h2><a href="/photos/" class="section-title">Photos</a></h2>
     <div class="photo-grid">
         {{ $photoPages := where .Site.RegularPages "Section" "photos" }}
-        {{ $firstPhoto := true }}
         {{ range first 3 $photoPages }}
             <div class="photo-item">
                 <a href="{{ .Permalink }}">
                     {{ if $firstPhoto }}
                     <img src="{{ .Params.image }}?width=300&format=webp&quality=75" 
                          width="300"
-                         height="300"
+                         height="200"
                          fetchpriority="high"
+                         loading="eager"
                          alt="{{ .Title }}">
                     {{ $firstPhoto = false }}
                     {{ else }}
                     <img src="{{ .Params.image }}?width=300&format=webp&quality=70" 
                          width="300"
-                         height="300"
+                         height="200"
                          loading="lazy"
                          alt="{{ .Title }}">
                     {{ end }}

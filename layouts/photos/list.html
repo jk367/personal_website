@@ -4,8 +4,8 @@
 <p>You can hire me as a photographer. I only shoot black and white. I do portraits, nightlife, and editorials.</p>
 <p>I think photography is really important.</p>
 
+{{ $first := true }}
 <div class="photo-grid">
-  {{ $first := true }}
   {{ range .Pages.ByDate.Reverse }}
     <div class="photo-item">
       <a href="{{ .Permalink }}">
@@ -14,13 +14,13 @@
              width="600" 
              height="400"
              alt="{{ .Title }}"
-             fetchpriority="high">
+             fetchpriority="high"
+             loading="eager">
         {{ $first = false }}
         {{ else }}
         <img src="{{ .Params.image }}?width=600&format=webp&quality=70" 
              width="600" 
              height="400"
-             loading="lazy"
              alt="{{ .Title }}">
         {{ end }}
       </a>
@@ -46,7 +46,6 @@
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
   }
 
   @media (min-width: 992px) {
