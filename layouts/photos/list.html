@@ -10,18 +10,16 @@
     <div class="photo-item">
       <a href="{{ .Permalink }}">
         {{ if $first }}
-        <img src="{{ .Params.image }}?width=400&format=webp&quality=75" 
-             width="400" 
-             height="300"
-             style="width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover;" 
-             fetchpriority="high"
-             alt="{{ .Title }}">
+        <img src="{{ .Params.image }}?width=600&format=webp&quality=75" 
+             width="600" 
+             height="400"
+             alt="{{ .Title }}"
+             fetchpriority="high">
         {{ $first = false }}
         {{ else }}
-        <img src="{{ .Params.image }}?width=400&format=webp&quality=70" 
-             width="400" 
-             height="300"
-             style="width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover;"
+        <img src="{{ .Params.image }}?width=600&format=webp&quality=70" 
+             width="600" 
+             height="400"
              loading="lazy"
              alt="{{ .Title }}">
         {{ end }}
@@ -40,18 +38,16 @@
   }
 
   .photo-item {
-    aspect-ratio: 4/3;
     overflow: hidden;
     position: relative;
   }
   
   .photo-item img {
-    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
     display: block;
-  }
-
-  .photo-item:hover img {
-    transform: scale(1.05);
+    aspect-ratio: 3/2;
+    object-fit: cover;
   }
 
   @media (min-width: 992px) {

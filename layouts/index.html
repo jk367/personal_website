@@ -6,19 +6,22 @@
     .featured-section {
         margin-bottom: 2rem;
     }
-    .featured-section h2 {
-        padding-bottom: 0.2em;
+    .section-title {
+        text-decoration: none;
+        color: inherit;
+    }
+    .section-title:hover {
+        text-decoration: underline;
     }
     .photo-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
     }
     .photo-item {
         position: relative;
         overflow: hidden;
-        border-radius: 4px;
-        aspect-ratio: 1;
+        aspect-ratio: 3/2;
     }
     .photo-item a {
         display: block;
@@ -30,10 +33,6 @@
         height: 100%;
         object-fit: cover;
         border-radius: 4px;
-        transition: transform 0.3s ease;
-    }
-    .photo-item:hover img {
-        transform: scale(1.05);
     }
     /* New styles for articles */
     .article-list {
@@ -70,6 +69,16 @@
     .contact-link:hover {
         text-decoration: underline;
     }
+    @media (max-width: 600px) {
+        .photo-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    @media (min-width: 601px) and (max-width: 900px) {
+        .photo-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 </style>
 
 <h1>{{ .Title }}</h1>
@@ -77,7 +86,7 @@
 <p>I am a writer and photographer. Currently based in NYC.</p>
 
 <div class="featured-section">
-    <h2>Writing</h2>
+    <h2><a href="/writing/" class="section-title">Writing</a></h2>
     <div class="article-list">
         {{ $writingPages := where .Site.RegularPages "Section" "writing" }}
         {{ range first 3 $writingPages }}
@@ -92,24 +101,24 @@
 </div>
 
 <div class="featured-section">
-    <h2>Photos</h2>
+    <h2><a href="/photos/" class="section-title">Photos</a></h2>
     <div class="photo-grid">
         {{ $photoPages := where .Site.RegularPages "Section" "photos" }}
         {{ $firstPhoto := true }}
-        {{ range first 9 $photoPages }}
+        {{ range first 3 $photoPages }}
             <div class="photo-item">
                 <a href="{{ .Permalink }}">
                     {{ if $firstPhoto }}
-                    <img src="{{ .Params.image }}?width=200&format=webp&quality=75" 
-                         width="200"
-                         height="200"
+                    <img src="{{ .Params.image }}?width=300&format=webp&quality=75" 
+                         width="300"
+                         height="300"
                          fetchpriority="high"
                          alt="{{ .Title }}">
                     {{ $firstPhoto = false }}
                     {{ else }}
-                    <img src="{{ .Params.image }}?width=200&format=webp&quality=70" 
-                         width="200"
-                         height="200"
+                    <img src="{{ .Params.image }}?width=300&format=webp&quality=70" 
+                         width="300"
+                         height="300"
                          loading="lazy"
                          alt="{{ .Title }}">
                     {{ end }}
