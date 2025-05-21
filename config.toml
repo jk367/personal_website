@@ -2,6 +2,8 @@
 baseURL = "https://jmkettle.com/"
 title = "j.m. kettle"
 languageCode = "en-us"
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [params]
   author = "j.m. kettle"
