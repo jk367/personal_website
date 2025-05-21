@@ -8,5 +8,31 @@
             {{ .Content }}
         </div>
     </article>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "{{ .Title }}",
+          "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+          "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+          "author": {
+            "@type": "Person",
+            "name": "J.M. Kettle",
+            "url": "https://jmkettle.com"
+          },
+          "publisher": {
+            "@type": "Person", 
+            "name": "J.M. Kettle",
+            "url": "https://jmkettle.com"
+          },
+          "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify }}{{ end }}",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ .Permalink }}"
+          },
+          "wordCount": {{ .WordCount }},
+          "keywords": [{{ range $i, $e := .Params.writing_categories }}{{ if $i }}, {{ end }}"{{ $e }}"{{ end }}]
+        }
+        </script>
 {{ end }}
 

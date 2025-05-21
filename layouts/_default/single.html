@@ -7,4 +7,20 @@
             {{ .Content }}
         </div>
     </article>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Photograph",
+          "name": "{{ .Title }}",
+          "creator": {
+            "@type": "Person",
+            "name": "J.M. Kettle"
+          },
+          "dateCreated": "{{ .Date.Format "2006-01-02" }}",
+          "image": "{{ .Params.image }}",
+          "contentUrl": "{{ .Params.image }}",
+          "description": "{{ with .Content }}{{ . | plainify }}{{ else }}{{ .Title }} - Black and white photograph by J.M. Kettle{{ end }}",
+          "about": [{{ range $i, $e := .Params.categories }}{{ if $i }}, {{ end }}"{{ $e }}"{{ end }}]
+        }
+        </script>
 {{ end }}
