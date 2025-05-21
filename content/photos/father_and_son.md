@@ -2,7 +2,7 @@
 title: "father and son"
 date: 2023-07-19
 image: "https://photos.jmkettle.com/father_and_son.webp"
-alt: ""
+alt: "a black and white picture of a father and son in rural georgia"
 categories: ["portrait","georgia"]
 draft: false
 ---
