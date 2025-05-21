@@ -2,8 +2,25 @@
 baseURL = "https://jmkettle.com/"
 title = "j.m. kettle"
 languageCode = "en-us"
+
+[outputFormats]
+[outputFormats.AIIndex]
+mediaType = "application/json"
+baseName = "ai-index"
+isPlainText = true
+
+[outputFormats.AIContent]
+mediaType = "application/json"
+baseName = "ai-content"
+isPlainText = true
+
+[outputFormats.AINav]
+mediaType = "application/json"
+baseName = "ai-nav"
+isPlainText = true
+
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON", "AIIndex", "AIContent", "AINav"]
 
 [params]
   author = "j.m. kettle"
@@ -40,3 +57,5 @@ languageCode = "en-us"
   changefreq = "monthly"
   filename = "sitemap.xml"
   priority = 0.5
+
+  

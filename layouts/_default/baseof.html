@@ -6,7 +6,9 @@
     <meta name="description" content="J.M. Kettle - NYC-based photographer, writer, and musician. Black and white photography capturing authentic moments in portraiture and nightlife. Personal essays and electronic music productions.">
     <title>{{ if .Title }}{{ .Title }} - {{ end }}J.M. Kettle</title>
 
-    
+    <link rel="alternate" type="application/json" title="AI Index" href="{{ "ai-index.json" | relURL }}">
+    <link rel="alternate" type="application/json" title="AI Content" href="{{ "ai-content.json" | relURL }}">
+    <link rel="alternate" type="application/json" title="AI Nav" href="{{ "ai-nav.json" | relURL }}">
     <!-- Resource hints -->
     <link rel="preconnect" href="https://photos.jmkettle.com">
     <link rel="dns-prefetch" href="https://photos.jmkettle.com">

@@ -1,0 +1,11 @@
+{
+  "navigation": [
+    {{- range $index, $menu := .Site.Menus.main -}}
+      {{- if $index -}},{{- end -}}
+      {
+        "name": {{- $menu.Name | jsonify -}},
+        "url": {{- $menu.URL | jsonify -}}
+      }
+    {{- end -}}
+  ]
+}

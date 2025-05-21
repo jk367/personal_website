@@ -1,0 +1,13 @@
+{
+  "pages": [
+    {{- range $index, $page := where .Site.Pages "Kind" "page" -}}
+      {{- if $index -}},{{- end -}}
+      {
+        "title": {{- $page.Title | jsonify -}},
+        "url": {{- $page.Permalink | jsonify -}},
+        "section": {{- $page.Section | jsonify -}},
+        "date": "{{- $page.Date.Format "2006-01-02" -}}"
+      }
+    {{- end -}}
+  ]
+}

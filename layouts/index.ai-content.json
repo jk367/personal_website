@@ -1,0 +1,11 @@
+{
+  "content": [
+    {{- range $index, $page := where .Site.Pages "Kind" "page" -}}
+      {{- if $index -}},{{- end -}}
+      {
+        "title": {{- $page.Title | jsonify -}},
+        "content": {{- $page.Content | plainify | jsonify -}}
+      }
+    {{- end -}}
+  ]
+}
