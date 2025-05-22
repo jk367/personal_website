@@ -1,0 +1,64 @@
+{{ define "main" }}
+<article class="portrait-series">
+    <h1>{{ .Title }}</h1>
+    
+    {{ if not .Date.IsZero }}
+    <time>{{ .Date.Format "January 2, 2006" }}</time>
+    {{ end }}
+    
+    <div class="series-description">
+        {{ .Content }}
+    </div>
+
+    {{ if .Params.series_images }}
+    <div class="series-photos">
+        {{ range $index, $image := .Params.series_images }}
+        <div class="series-photo">
+            <img src="{{ $image }}" 
+                 alt="{{ $.Title }} - Photo {{ add $index 1 }}"
+                 {{ if eq $index 0 }}fetchpriority="high"{{ else }}loading="lazy"{{ end }}>
+        </div>
+        {{ end }}
+    </div>
+    {{ else }}
+    <p>Portrait photos coming soon...</p>
+    {{ end }}
+</article>
+
+<style>
+  .portrait-series h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .portrait-series time {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .series-description {
+    margin-bottom: 2rem;
+  }
+  
+  .series-photos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .series-photo img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .series-photos {
+      gap: 1rem;
+    }
+  }
+</style>
+{{ end }}

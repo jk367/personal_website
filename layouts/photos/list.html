@@ -4,6 +4,26 @@
 <p>You can hire me as a photographer. I only shoot black and white. I do portraits, nightlife, and editorials.</p>
 <p>I think photography is really important.</p>
 
+<!-- Category buttons section -->
+<div class="category-buttons">
+  <a href="/portraits/" class="category-button">
+    <div class="button-content">
+      <h3>Portraits</h3>
+    </div>
+  </a>
+  <a href="/parties/" class="category-button">
+    <div class="button-content">
+      <h3>Parties</h3>
+    </div>
+  </a>
+  <a href="/places/" class="category-button">
+    <div class="button-content">
+      <h3>Places</h3>
+    </div>
+  </a>
+</div>
+
+<!-- Existing photo grid stays the same -->
 {{ $first := true }}
 <div class="photo-grid">
   {{ range .Pages.ByDate.Reverse }}
@@ -29,6 +49,36 @@
 </div>
 
 <style>
+  /* Category button styles */
+  .category-buttons {
+    margin: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .category-button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    display: inline-block;
+  }
+
+  .category-button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .button-content h3 {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+
+  /* Existing photo grid styles */
   .photo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
