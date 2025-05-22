@@ -6,6 +6,17 @@
     <time>{{ .Date.Format "January 2, 2006" }}</time>
     {{ end }}
     
+    <!-- Back navigation -->
+    <div class="back-navigation">
+        {{ if eq .Section "portraits" }}
+            <a href="/portraits/" class="back-button">← Back to Portraits</a>
+        {{ else if eq .Section "parties" }}
+            <a href="/parties/" class="back-button">← Back to Parties</a>
+        {{ else if eq .Section "places" }}
+            <a href="/places/" class="back-button">← Back to Places</a>
+        {{ end }}
+    </div>
+    
     <div class="series-description">
         {{ .Content }}
     </div>
@@ -35,6 +46,23 @@
     margin-bottom: 1rem;
     font-size: 0.9em;
     color: #666;
+  }
+  
+  .back-navigation {
+    margin-bottom: 1.5rem;
+  }
+  
+  .back-button {
+    color: black;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 0.25rem 0;
+    display: inline-block;
+    transition: text-decoration 0.3s ease;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
   }
   
   .series-description {
