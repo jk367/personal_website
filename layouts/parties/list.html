@@ -1,44 +1,56 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+<div class="category-page">
+  <h1>{{ .Title }}</h1>
 
-<!-- Back navigation -->
-<div class="back-navigation">
+  <!-- Back navigation -->
+  <div class="back-navigation">
     <a href="/photos/" class="back-button">← Back to Photos</a>
-</div>
+  </div>
 
-<div class="content">{{ .Content }}</div>
+  <div class="content">{{ .Content }}</div>
 
-<div class="series-grid">
-  {{ range .Pages }}
-    <div class="series-item">
-      <a href="{{ .Permalink }}">
-        {{ if .Params.cover_image }}
-        <img src="{{ .Params.cover_image }}" 
-             alt="{{ .Title }}"
-             loading="lazy">
-        {{ else }}
-        <div class="placeholder-image">
-          <span>{{ .Title }}</span>
-        </div>
-        {{ end }}
-        <h3>{{ .Title }}</h3>
-      </a>
-    </div>
-  {{ else }}
-    <p>Portrait series coming soon...</p>
-  {{ end }}
+  <div class="series-grid">
+    {{ range .Pages }}
+      <div class="series-item">
+        <a href="{{ .Permalink }}">
+          {{ if .Params.cover_image }}
+          <img src="{{ .Params.cover_image }}" 
+               alt="{{ .Title }}"
+               loading="lazy">
+          {{ else }}
+          <div class="placeholder-image">
+            <span>{{ .Title }}</span>
+          </div>
+          {{ end }}
+          <h3>{{ .Title }}</h3>
+          {{ if .Params.date }}
+          <p class="series-date">{{ .Date.Format "January 2, 2006" }}</p>
+          {{ end }}
+        </a>
+      </div>
+    {{ else }}
+      <p>Party series coming soon...</p>
+    {{ end }}
+  </div>
 </div>
 
 <style>
+  .category-page {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .category-page h1 {
+  }
+  
   .back-navigation {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
   
   .back-button {
     color: black;
     text-decoration: none;
     font-size: 0.9em;
-    padding: 0.2rem;
     display: inline-block;
     transition: text-decoration 0.3s ease;
   }
@@ -47,10 +59,14 @@
     text-decoration: underline;
   }
 
+  .content {
+    margin-bottom: 2rem;
+  }
+
   .series-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
     margin: 2rem 0;
   }
 
@@ -85,9 +101,15 @@
   }
 
   .series-item h3 {
-    margin: 0;
+    margin: 0 0 0.25rem 0;
     font-size: 1rem;
     font-weight: normal;
+  }
+
+  .series-date {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #666;
   }
 
   .series-item:hover h3 {

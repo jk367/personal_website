@@ -1,6 +1,10 @@
 {{ define "main" }}
 <article class="single-photo">
     <h1>{{ .Title }}</h1>
+    <div class="back-navigation">
+      <a href="/photos/" class="back-button">← Back to Photos</a>
+    </div>
+  
     <img src="{{ .Params.image }}?width=800&format=webp&quality=80" 
          width="800"
          height="600" 
@@ -32,5 +36,21 @@
   time {
     display: block;
   }
+  .back-navigation {
+    margin-bottom: 2rem;
+  }
+  
+  .back-button {
+    color: black;
+    text-decoration: none;
+    font-size: 0.9em;
+    display: inline-block;
+    transition: text-decoration 0.3s ease;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+
 </style>
 {{ end }}
