@@ -1,0 +1,39 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<div class="content">{{ .Content }}</div>
+
+<div class="writing-list">
+  <div class="writing-item">
+    <h2 class="writing-title"><a href="/projects/music/">Music</a></h2>
+    <span class="writing-date">Electronic music production and DJ sets under j.m. kettle</span>
+  </div>
+  
+  <div class="writing-item">
+    <h2 class="writing-title"><a href="/projects/stop1/">stop1</a></h2>
+    <span class="writing-date">Party series in NYC - between dinner and dancing</span>
+  </div>
+  
+  <div class="writing-item">
+    <h2 class="writing-title"><a href="/projects/everyrecordstore/">everyrecordstore.com</a></h2>
+    <span class="writing-date">Web directory of independent record stores worldwide</span>
+  </div>
+</div>
+
+<style>
+  .writing-list {
+    margin-top: 2rem;
+  }
+  .writing-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  .writing-title {
+    margin-bottom: 0.5rem;
+  }
+  .writing-date {
+    font-size: 0.9em;
+    color: #666;
+  }
+</style>
+{{ end }}

@@ -1,0 +1,32 @@
+{{ define "main" }}
+<article class="project-single">
+    <h1>{{ .Title }}</h1>
+    
+    <!-- Back navigation -->
+    <div class="back-navigation">
+        <a href="/projects/" class="back-button">← Back to Projects</a>
+    </div>
+    
+    <div class="content">
+        {{ .Content }}
+    </div>
+</article>
+
+<style>
+  .back-navigation {
+    margin-bottom: 1rem;
+  }
+  
+  .back-button {
+    color: black;
+    text-decoration: none;
+    font-size: 0.9em;
+    display: inline-block;
+    transition: text-decoration 0.3s ease;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+</style>
+{{ end }}
