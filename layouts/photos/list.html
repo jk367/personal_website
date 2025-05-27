@@ -1,5 +1,10 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
+
+<div class="back-navigation">
+    <a href="/" class="back-button">← Back to Home</a>
+</div>
+
 <p>I'm a photographer, I've been taking photos seriously for since 2022. I use a Cannon R-10, I perfer doing shoots inside, and perfer to use studios when doing portraits.</p>
 <p>You can hire me as a photographer. I only shoot black and white. I do portraits, nightlife, and editorials.</p>
 <p>I think photography is really important.</p>
@@ -49,6 +54,22 @@
 </div>
 
 <style>
+  .back-navigation {
+    margin-bottom: 1rem;
+  }
+  
+  .back-button {
+    color: black;
+    text-decoration: none;
+    font-size: 0.9em;
+    display: inline-block;
+    transition: text-decoration 0.3s ease;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+
   /* Category button styles */
   .category-buttons {
     margin: 2rem 0;
