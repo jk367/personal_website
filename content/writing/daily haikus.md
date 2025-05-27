@@ -5,6 +5,15 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+
+**May 27, 2025** 
+
+A new sun rises
+
+streams of light cover the day 
+
+All things possible 
+
 **May 26, 2025** 
 
 nest in my window
