@@ -8,11 +8,11 @@ draft: false
 
 **May 27, 2025** 
 
-A new sun rises
+blisters on left foot  
 
-streams of light cover the day 
+new coffee stain wont come out  
 
-All things possible 
+smile on sunburnt cheek 
 
 **May 26, 2025** 
 
