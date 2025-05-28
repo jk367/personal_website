@@ -6,6 +6,14 @@ draft: false
 
 ---
 
+**May 28, 2025** 
+
+tangled worn earbuds
+
+old club sneakers tucked away 
+
+wristband in the trash
+
 **May 27, 2025** 
 
 blisters on left foot  
