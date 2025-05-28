@@ -8,7 +8,7 @@ draft: false
 
 **May 28, 2025** 
 
-tangled worn earbuds
+battered foam earplugs
 
 old club sneakers tucked away 
 
