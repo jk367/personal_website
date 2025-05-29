@@ -6,6 +6,14 @@ draft: false
 
 ---
 
+**May 29, 2025** 
+
+old cigarettes butts 
+
+walking around broken glass 
+
+notice a new tree
+
 **May 28, 2025** 
 
 battered foam earplugs
