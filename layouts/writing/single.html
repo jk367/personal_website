@@ -1,9 +1,6 @@
 {{ define "main" }}
 <article class="content-single">
     <h1>{{ .Title }}</h1>
-    {{ if not .Date.IsZero }}
-        <time>{{ .Date.Format "January 2, 2006" }}</time>
-    {{ end }}
     <div class="back-navigation">
         <a href="/writing/" class="back-button">← Back to Writing</a>
     </div>
@@ -11,6 +8,9 @@
     <div class="content">
         {{ .Content }}
     </div>
+    {{ if not .Date.IsZero }}
+    <time>{{ .Date.Format "January 2, 2006" }}</time>
+    {{ end }}
 </article>
 
 <script type="application/ld+json">
