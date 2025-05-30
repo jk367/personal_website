@@ -2,9 +2,6 @@
 <article class="photo-series">
     <h1>{{ .Title }}</h1>
     
-   
-    
-    <!-- Back navigation -->
     <div class="back-navigation">
         {{ if eq .Section "portraits" }}
             <a href="/portraits/" class="back-button">← Back to Portraits</a>
@@ -15,9 +12,11 @@
         {{ end }}
     </div>
     
+    {{ if .Content }}
     <div class="series-description">
         {{ .Content }}
     </div>
+    {{ end }}
 
     {{ if .Params.series_images }}
     <div class="series-photos">
@@ -29,58 +28,33 @@
         </div>
         {{ end }}
     </div>
-
-   
     {{ else }}
     <p>Photos coming soon...</p>
     {{ end }}
-    
 </article>
 
 <style>
-  
-  .photo-series time {
-    display: block;
-    margin-bottom: 1rem;
-    font-size: 0.9em;
-    color: #666;
-  }
-  
-  
-  .back-button {
-    color: black;
-    text-decoration: none;
-    font-size: 0.9em;
-    display: inline-block;
-    transition: text-decoration 0.3s ease;
-  }
-  
-  .back-button:hover {
-    text-decoration: underline;
-  }
-  
-  .series-description {
-    margin-bottom: 2rem;
-  }
-  
-  .series-photos {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .series-photo img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  @media (max-width: 768px) {
-    .series-photos {
-      gap: 1rem;
+    .series-description {
+        margin: 0.5rem 0 1rem 0;
     }
-  }
+    
+    .series-photos {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .series-photo img {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    @media (max-width: 768px) {
+        .series-photos {
+            gap: 0.5rem;
+        }
+    }
 </style>
 {{ end }}

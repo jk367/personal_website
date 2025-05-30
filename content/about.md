@@ -2,8 +2,6 @@
 title: "About"
 ---
 
-# About<button id="globalToggle">Expand All Sections</button>
-
 ## Bio <button class="sectionToggle" data-section="bio">Expand bio</button>
 
 <div class="section" id="bioSection" style="display:none;">
@@ -157,10 +155,6 @@ If you want to get in touch, you can email me at contact@jmkettle.com
         margin-bottom: 15px;
     }
 
-    #globalToggle {
-        margin-left: 20px;
-    }
-
     .section {
         margin-top: 10px;
         margin-bottom: 20px;
@@ -173,7 +167,8 @@ If you want to get in touch, you can email me at contact@jmkettle.com
     summary {
         cursor: pointer;
     }
-        #linksSection ul {
+    
+    #linksSection ul {
         list-style-type: none;
         padding-left: 0;
     }
@@ -195,33 +190,17 @@ If you want to get in touch, you can email me at contact@jmkettle.com
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const globalToggle = document.getElementById('globalToggle');
     const sectionToggles = document.querySelectorAll('.sectionToggle');
     const expandAllJobs = document.getElementById('expandAllJobs');
-    const expandAllLinks = document.getElementById('expandAllLinks');
     
-    globalToggle.addEventListener('click', toggleAllSections);
     sectionToggles.forEach(button => {
         button.addEventListener('click', (event) => toggleSection(event.target.dataset.section));
     });
-    expandAllJobs.addEventListener('click', toggleAllJobs);
-    expandAllLinks.addEventListener('click', toggleAllLinks);
+    
+    if (expandAllJobs) {
+        expandAllJobs.addEventListener('click', toggleAllJobs);
+    }
 });
-
-
-function toggleAllSections() {
-    const allSections = document.querySelectorAll('.section');
-    const isExpanded = document.getElementById('globalToggle').textContent === 'Collapse All Sections';
-    
-    allSections.forEach(section => {
-        section.style.display = isExpanded ? 'none' : 'block';
-    });
-    
-    document.getElementById('globalToggle').textContent = isExpanded ? 'Expand All Sections' : 'Collapse All Sections';
-    document.querySelectorAll('.sectionToggle').forEach(button => {
-        button.textContent = isExpanded ? `Expand ${button.dataset.section}` : `Collapse ${button.dataset.section}`;
-    });
-}
 
 function toggleSection(sectionId) {
     const section = document.getElementById(`${sectionId}Section`);
@@ -242,5 +221,4 @@ function toggleAllJobs() {
     
     document.getElementById('expandAllJobs').textContent = isExpanded ? 'Expand All Jobs' : 'Collapse All Jobs';
 }
-
 </script>

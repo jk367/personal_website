@@ -1,26 +1,25 @@
 {{ define "main" }}
-    <article class="content-single">
-        {{ if not .Date.IsZero }}
-            <time>{{ .Date.Format "January 2, 2006" }}</time>
-        {{ end }}
-        <div class="content">
-            {{ .Content }}
-        </div>
-    </article>
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Photograph",
-          "name": "{{ .Title }}",
-          "creator": {
-            "@type": "Person",
-            "name": "J.M. Kettle"
-          },
-          "dateCreated": "{{ .Date.Format "2006-01-02" }}",
-          "image": "{{ .Params.image }}",
-          "contentUrl": "{{ .Params.image }}",
-          "description": "{{ with .Content }}{{ . | plainify }}{{ else }}{{ .Title }} - Black and white photograph by J.M. Kettle{{ end }}",
-          "about": [{{ range $i, $e := .Params.categories }}{{ if $i }}, {{ end }}"{{ $e }}"{{ end }}]
-        }
-        </script>
+<article class="content-single">
+    <h1>{{ .Title }}</h1>
+    {{ if not .Date.IsZero }}
+        <time>{{ .Date.Format "January 2, 2006" }}</time>
+    {{ end }}
+    <div class="content">
+        {{ .Content }}
+    </div>
+</article>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "name": "{{ .Title }}",
+      "author": {
+        "@type": "Person",
+        "name": "J.M. Kettle"
+      },
+      "datePublished": "{{ .Date.Format "2006-01-02" }}",
+      "description": "{{ with .Content }}{{ . | plainify | truncate 160 }}{{ else }}{{ .Title }}{{ end }}"
+    }
+</script>
 {{ end }}

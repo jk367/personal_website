@@ -1,60 +1,62 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+<h1>Projects</h1>
 
 <div class="back-navigation">
     <a href="/" class="back-button">← Back to Home</a>
 </div>
 
-<div class="content">{{ .Content }}</div>
-
-<div class="writing-list">
-  <div class="writing-item">
-    <h2 class="writing-title"><a href="/projects/music/">Music</a></h2>
-    <span class="writing-date">Electronic music production and DJ sets under j.m. kettle</span>
-  </div>
-  
-  <div class="writing-item">
-    <h2 class="writing-title"><a href="/projects/stop1/">stop1</a></h2>
-    <span class="writing-date">Party series in NYC - between dinner and dancing</span>
-  </div>
-  
-  <div class="writing-item">
-    <h2 class="writing-title"><a href="/projects/everyrecordstore/">everyrecordstore.com</a></h2>
-    <span class="writing-date">Web directory of independent record stores worldwide</span>
-  </div>
+<div class="project-list">
+    <div class="project-item">
+        <h2 class="project-title"><a href="/projects/music/">Music</a></h2>
+        <p class="project-description">Electronic music production and DJ sets under j.m. kettle</p>
+    </div>
+    
+    <div class="project-item">
+        <h2 class="project-title"><a href="/projects/stop1/">stop1</a></h2>
+        <p class="project-description">Party series in NYC - between dinner and dancing</p>
+    </div>
+    
+    <div class="project-item">
+        <h2 class="project-title"><a href="/projects/everyrecordstore/">everyrecordstore.com</a></h2>
+        <p class="project-description">Web directory of independent record stores worldwide</p>
+    </div>
 </div>
 
 <style>
-  .back-navigation {
-    margin-bottom: 1rem;
-  }
-  
-  .back-button {
-    color: black;
-    text-decoration: none;
-    font-size: 0.9em;
-    display: inline-block;
-    transition: text-decoration 0.3s ease;
-  }
-  
-  .back-button:hover {
-    text-decoration: underline;
-  }
-
-  .writing-list {
-    margin-top: 2rem;
-  }
-  .writing-item {
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eee;
-  }
-  .writing-title {
-    margin-bottom: 0.5rem;
-  }
-  .writing-date {
-    font-size: 0.9em;
-    color: #666;
-  }
+    .project-list {
+        margin-top: 0.75rem;
+    }
+    
+    .project-item {
+        padding-bottom: 0.75rem;
+        margin-bottom: 0.75rem;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .project-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .project-title {
+        margin: 0 0 0.1rem 0;
+        font-size: 1.3em;
+    }
+    
+    .project-title a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .project-title a:hover {
+        text-decoration: underline;
+    }
+    
+    .project-description {
+        font-size: 0.9em;
+        color: #666;
+        margin: 0;
+    }
 </style>
 {{ end }}

@@ -1,106 +1,90 @@
 {{ define "main" }}
 <div class="category-page">
-  <h1>{{ .Title }}</h1>
+    <h1>{{ .Title }}</h1>
 
-  <!-- Back navigation -->
-  <div class="back-navigation">
-    <a href="/photos/" class="back-button">← Back to Photos</a>
-  </div>
+    <div class="back-navigation">
+        <a href="/photos/" class="back-button">← Back to Photos</a>
+    </div>
 
-  <div class="content">{{ .Content }}</div>
+    <div class="content">{{ .Content }}</div>
 
-  <div class="series-grid">
-    {{ range .Pages }}
-      <div class="series-item">
-        <a href="{{ .Permalink }}">
-          {{ if .Params.cover_image }}
-          <img src="{{ .Params.cover_image }}" 
-               alt="{{ .Title }}"
-               loading="lazy">
-          {{ else }}
-          <div class="placeholder-image">
-            <span>{{ .Title }}</span>
-          </div>
-          {{ end }}
-          <h3>{{ .Title }}</h3>
-        </a>
-      </div>
-    {{ else }}
-      <p>Portrait series coming soon...</p>
-    {{ end }}
-  </div>
+    <div class="series-grid">
+        {{ range .Pages }}
+        <div class="series-item">
+            <a href="{{ .Permalink }}">
+                {{ if .Params.cover_image }}
+                <img src="{{ .Params.cover_image }}" 
+                     alt="{{ .Title }}"
+                     loading="lazy">
+                {{ else }}
+                <div class="placeholder-image">
+                    <span>{{ .Title }}</span>
+                </div>
+                {{ end }}
+                <h3>{{ .Title }}</h3>
+            </a>
+        </div>
+        {{ else }}
+        <p>Portrait series coming soon...</p>
+        {{ end }}
+    </div>
 </div>
 
 <style>
-  .category-page {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .category-page h1 {
-  }
-  
-  .back-button {
-    color: black;
-    text-decoration: none;
-    font-size: 0.9em;
-    display: inline-block;
-    transition: text-decoration 0.3s ease;
-  }
-  
-  .back-button:hover {
-    text-decoration: underline;
-  }
+    .category-page {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
-  .content {
-    margin-bottom: 2rem;
-  }
+    .content {
+        margin-bottom: 2rem;
+    }
 
-  .series-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-  }
+    .series-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+    }
 
-  .series-item {
-    text-align: center;
-  }
+    .series-item {
+        text-align: center;
+    }
 
-  .series-item a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-  }
+    .series-item a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
 
-  .series-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    margin-bottom: 0.5rem;
-  }
+    .series-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
 
-  .placeholder-image {
-    width: 100%;
-    height: 200px;
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0.5rem;
-    color: #666;
-    font-style: italic;
-  }
+    .placeholder-image {
+        width: 100%;
+        height: 200px;
+        background-color: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+        color: #666;
+        font-style: italic;
+    }
 
-  .series-item h3 {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: normal;
-  }
+    .series-item h3 {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: normal;
+    }
 
-  .series-item:hover h3 {
-    text-decoration: underline;
-  }
+    .series-item:hover h3 {
+        text-decoration: underline;
+    }
 </style>
 {{ end }}

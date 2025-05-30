@@ -9,62 +9,233 @@
     <link rel="alternate" type="application/json" title="AI Index" href="{{ "ai-index.json" | relURL }}">
     <link rel="alternate" type="application/json" title="AI Content" href="{{ "ai-content.json" | relURL }}">
     <link rel="alternate" type="application/json" title="AI Nav" href="{{ "ai-nav.json" | relURL }}">
+    
     <!-- Resource hints -->
     <link rel="preconnect" href="https://photos.jmkettle.com">
     <link rel="dns-prefetch" href="https://photos.jmkettle.com">
     
-    <!-- Critical CSS inline -->
+    <!-- Global CSS - COMPACT VERSION -->
     <style>
+        /* Reset and base styles */
+        * {
+            box-sizing: border-box;
+        }
+        
         html {
             overflow-y: scroll;
+            scroll-behavior: smooth;
         }
+        
         body {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
             margin: 0;
             padding: 0;
-            font-family: 'Garamond',serif;
+            font-family: 'Garamond', serif;
             font-size: 1em;
+            line-height: 1.4;
+            color: #000;
+            background-color: #fff;
         }
+        
+        /* Header styles - TIGHTER */
         header {
-            padding: 20px 0;
+            padding: 10px 0;
             text-align: center;
-            border-bottom: 1px solid rgb(0, 0, 0);
-            font-size: 1em;
+            border-bottom: 1px solid #000;
+            background-color: #fff;
+            position: relative;
+            z-index: 100;
         }
+        
         nav ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
+        
         nav li {
             display: inline;
-            margin: 10px;
+            margin: 0 8px;
         }
+        
         nav a {
             text-decoration: none;
-            color: rgb(0, 0, 0);
+            color: #000;
+            transition: font-weight 0.2s ease;
         }
+        
         nav a:hover {
-            color: #000000;
+            text-decoration: underline;
         }
+        
+        /* Container styles - MUCH LESS PADDING */
         .container {
             flex: 1;
-            max-width: 800px;
             width: 100%;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 20px 20px 30px 20px;
             box-sizing: border-box;
         }
+        
+        /* Main content area */
         main {
-            background-color: rgb(255, 255, 255);
-            border-radius: 5px;
+            width: 100%;
         }
+        
+        /* Typography - TIGHTER SPACING */
+        h1 {
+            font-size: 2em;
+            font-weight: normal;
+            margin: 0 0 0.5rem 0;
+            line-height: 1.1;
+        }
+        
+        h2 {
+            font-size: 1.5em;
+            font-weight: normal;
+            margin: 0.75rem 0 0.5rem 0;
+            line-height: 1.2;
+        }
+        
+        h3 {
+            font-size: 1.2em;
+            font-weight: normal;
+            margin: 0.5rem 0 0.25rem 0;
+            line-height: 1.3;
+        }
+        
+        p {
+            margin: 0 0 0.5rem 0;
+        }
+        
+        /* Standardized time/date display */
+        time {
+            display: block;
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Back navigation - COMPACT */
+        .back-navigation {
+            margin-bottom: 0.75rem;
+        }
+        
+        .back-button {
+            color: #000;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-block;
+            transition: text-decoration 0.2s ease;
+        }
+        
+        .back-button:hover {
+            text-decoration: underline;
+        }
+        
+        /* Global button styles */
+        button, .button {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            padding: 3px 8px;
+            font-family: Garamond, serif;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin: 0 3px 3px 0;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        button:hover, .button:hover,
+        button.active, .button.active {
+            background-color: black;
+            color: white;
+        }
+        
+        /* Images */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Footer - COMPACT */
         footer {
             text-align: center;
             padding: 10px 0;
-            border-top: 1px solid rgb(0, 0, 0);
+            border-top: 1px solid #000;
+            background-color: #fff;
+            margin-top: auto;
+        }
+        
+        footer p {
+            margin: 0.25rem 0;
+        }
+        
+        .footer-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted #000;
+        }
+        
+        .footer-link:hover {
+            border-bottom: 1px solid #000;
+        }
+        
+        #backToTopLink {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        #backToTopLink:hover {
+            text-decoration: underline;
+        }
+        
+        /* Utility classes */
+        .content {
+            margin-bottom: 1rem;
+        }
+        
+        /* Ensure consistent article spacing - TIGHTER */
+        article {
+            margin-bottom: 1rem;
+        }
+        
+        article:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* Lists and sections - COMPACT */
+        .featured-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .featured-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .homepage-header {
+            margin-bottom: 1rem;
+        }
+        
+        .homepage-header h1 {
+            margin-bottom: 0.25rem;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px 15px 20px 15px;
+            }
+            
+            nav li {
+                margin: 0 5px;
+            }
         }
     </style>
     
@@ -86,7 +257,7 @@
           ],
           "knowsAbout": ["Black and white photography", "Electronic music", "Creative writing", "Techno", "Georgia (country)"]
         }
-        </script>
+    </script>
 </head>
 <body>
     <header>
@@ -116,13 +287,13 @@
     </div>
 
     <footer>
-        <p id="backToTopBar">
+        <p>
             <a href="#" id="backToTopLink">back to top</a>
         </p>
         <p>&copy; {{ now.Format "2006" }} <a href="/" class="footer-link">J.M. Kettle</a></p>
     </footer>
 
-    <script defer>
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('backToTopLink').addEventListener('click', function(e) {
                 e.preventDefault();
@@ -131,57 +302,12 @@
         });
     </script>
     
-    <!-- Non-critical CSS -->
-    <style>
-        h1, h2, h3 {
-            color: rgb(0, 0, 0);
-        }
-        article {
-            margin-bottom: 0px;
-            padding-bottom: 5px;
-        }
-        article:last-child {
-            border-bottom: none;
-        }
-        time {
-            font-size: 0.9em;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        h1, .prose h1, .content h1, .markdown h1 {
-            font-size: 2em;
-            margin: 0;
-            padding: 0;
-        }
-        .footer-link {
-            color: inherit;
-            text-decoration: none;
-            border-bottom: 1px dotted #000;
-        }
-        .footer-link:hover {
-            border-bottom: 1px solid #000;
-        }
-        #backToTopBar {
-            margin-bottom: 10px;
-        }
-        #backToTopLink {
-            color: inherit;
-            text-decoration: none;
-        }
-        #backToTopLink:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <script>
+        window.addEventListener('error', function(e) {
+            if (e.target.tagName === 'IMG' || e.target.tagName === 'SCRIPT') {
+                e.preventDefault();
+            }
+        }, true);
+    </script>
 </body>
-
-<script>
-window.addEventListener('error', function(e) {
-  // Prevents errors for missing images or resources from showing in console
-  if (e.target.tagName === 'IMG' || e.target.tagName === 'SCRIPT') {
-    e.preventDefault();
-  }
-}, true);
-</script>
 </html>

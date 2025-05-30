@@ -1,59 +1,42 @@
 {{ define "main" }}
+<article class="content-single">
     <h1>{{ .Title }}</h1>
-     
-    <article class="content-single">
-        {{ if not .Date.IsZero }}
-            <time>{{ .Date.Format "January 2, 2006" }}</time>
-        {{ end }}
-        <div class="back-navigation">
-          <a href="/writing/" class="back-button">← Back to Writing</a>
-      </div>
-        <div class="content">
-            {{ .Content }}
-        </div>
-    </article>
+    {{ if not .Date.IsZero }}
+        <time>{{ .Date.Format "January 2, 2006" }}</time>
+    {{ end }}
+    <div class="back-navigation">
+        <a href="/writing/" class="back-button">← Back to Writing</a>
+    </div>
     
-    <style>
-        .back-navigation {
-          margin-top: .25rem;
-        }
-        .back-button {
-            color: black;
-            text-decoration: none;
-            font-size: 0.9em;
-            display: inline-block;
-            transition: text-decoration 0.3s ease;
-        }
-        
-        .back-button:hover {
-            text-decoration: underline;
-        }
-    </style>
-    
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          "headline": "{{ .Title }}",
-          "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
-          "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
-          "author": {
-            "@type": "Person",
-            "name": "J.M. Kettle",
-            "url": "https://jmkettle.com"
-          },
-          "publisher": {
-            "@type": "Person", 
-            "name": "J.M. Kettle",
-            "url": "https://jmkettle.com"
-          },
-          "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify }}{{ end }}",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "{{ .Permalink }}"
-          },
-          "wordCount": {{ .WordCount }},
-          "keywords": [{{ range $i, $e := .Params.writing_categories }}{{ if $i }}, {{ end }}"{{ $e }}"{{ end }}]
-        }
-    </script>
+    <div class="content">
+        {{ .Content }}
+    </div>
+</article>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{ .Title }}",
+      "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+      "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+      "author": {
+        "@type": "Person",
+        "name": "J.M. Kettle",
+        "url": "https://jmkettle.com"
+      },
+      "publisher": {
+        "@type": "Person", 
+        "name": "J.M. Kettle",
+        "url": "https://jmkettle.com"
+      },
+      "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify }}{{ end }}",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+      },
+      "wordCount": {{ .WordCount }},
+      "keywords": [{{ range $i, $e := .Params.writing_categories }}{{ if $i }}, {{ end }}"{{ $e }}"{{ end }}]
+    }
+</script>
 {{ end }}

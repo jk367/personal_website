@@ -1,137 +1,120 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+<h1>Photos</h1>
 
 <div class="back-navigation">
     <a href="/" class="back-button">← Back to Home</a>
 </div>
 
-<p>I'm a photographer, I've been taking photos seriously for since 2022. I use a Canon R-10, I prefer doing shoots inside, and perfer to use studios when doing portraits.</p>
-<p>You can hire me as a photographer. I only shoot black and white. I do portraits, nightlife, and editorials.</p>
-
-<!-- Category buttons section -->
-<div class="category-buttons">
-  <a href="/portraits/" class="category-button">
-    <div class="button-content">
-      <h3>Portraits</h3>
-    </div>
-  </a>
-  <a href="/parties/" class="category-button">
-    <div class="button-content">
-      <h3>Parties</h3>
-    </div>
-  </a>
-  <a href="/places/" class="category-button">
-    <div class="button-content">
-      <h3>Places</h3>
-    </div>
-  </a>
+<div class="page-intro">
+    <p>I'm a photographer, I've been taking photos seriously since 2022. I use a Canon R-10, I prefer doing shoots inside, and prefer to use studios when doing portraits.</p>
+    <p>You can hire me as a photographer. I only shoot black and white. I do portraits, nightlife, and editorials.</p>
 </div>
 
-<!-- Existing photo grid stays the same -->
+<div class="category-buttons">
+    <a href="/portraits/" class="category-button">
+        <span>Portraits</span>
+    </a>
+    <a href="/parties/" class="category-button">
+        <span>Parties</span>
+    </a>
+    <a href="/places/" class="category-button">
+        <span>Places</span>
+    </a>
+</div>
+
 {{ $first := true }}
 <div class="photo-grid">
-  {{ range .Pages.ByDate.Reverse }}
+    {{ range .Pages.ByDate.Reverse }}
     <div class="photo-item">
-      <a href="{{ .Permalink }}">
-        {{ if $first }}
-        <img src="{{ .Params.image }}?width=600&format=webp&quality=75" 
-             width="600" 
-             height="400"
-             alt="{{ .Title }}"
-             fetchpriority="high"
-             loading="eager">
-        {{ $first = false }}
-        {{ else }}
-        <img src="{{ .Params.image }}?width=600&format=webp&quality=70" 
-             width="600" 
-             height="400"
-             alt="{{ .Title }}">
-        {{ end }}
-      </a>
+        <a href="{{ .Permalink }}">
+            {{ if $first }}
+            <img src="{{ .Params.image }}?width=600&format=webp&quality=75" 
+                 width="600" 
+                 height="400"
+                 alt="{{ .Title }}"
+                 fetchpriority="high"
+                 loading="eager">
+            {{ $first = false }}
+            {{ else }}
+            <img src="{{ .Params.image }}?width=600&format=webp&quality=70" 
+                 width="600" 
+                 height="400"
+                 alt="{{ .Title }}"
+                 loading="lazy">
+            {{ end }}
+        </a>
     </div>
-  {{ end }}
+    {{ end }}
 </div>
 
 <style>
-  .back-navigation {
-    margin-bottom: 1rem;
-  }
-  
-  .back-button {
-    color: black;
-    text-decoration: none;
-    font-size: 0.9em;
-    display: inline-block;
-    transition: text-decoration 0.3s ease;
-  }
-  
-  .back-button:hover {
-    text-decoration: underline;
-  }
-
-  /* Category button styles */
-  .category-buttons {
-    margin: 2rem 0;
-    display: flex;
-    gap: 0;
-    width: 100%;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .category-button {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    padding: 1rem;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 1rem;
-    text-align: center;
-    flex: 1;
-    border-right: none;
-  }
-
-  .category-button:last-child {
-    border-right: 1px solid black;
-  }
-
-  .category-button:hover {
-    background-color: black;
-    color: white;
-  }
-
-  .button-content h3 {
-    margin: 0;
-    font-size: 0.9rem;
-    font-weight: normal;
-  }
-
-  /* Existing photo grid styles */
-  .photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .photo-item {
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .photo-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  @media (min-width: 992px) {
-    .photo-grid {
-      grid-template-columns: repeat(2, 1fr);
+    .page-intro {
+        margin: 0.5rem 0;
     }
-  }
+    
+    .page-intro p {
+        margin-bottom: 0.25rem;
+    }
+    
+    .page-intro p:last-child {
+        margin-bottom: 0;
+    }
+    
+    .category-buttons {
+        margin: 0.75rem 0;
+        display: flex;
+        gap: 0;
+        width: 100%;
+    }
+
+    .category-button {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        padding: 0.4rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        text-align: center;
+        flex: 1;
+        border-right: none;
+    }
+
+    .category-button:last-child {
+        border-right: 1px solid black;
+    }
+
+    .category-button:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .category-button span {
+        font-size: 1rem;
+    }
+
+    .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        margin-top: 0.75rem;
+    }
+
+    .photo-item {
+        overflow: hidden;
+        position: relative;
+        aspect-ratio: 3/2;
+    }
+    
+    .photo-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+        .photo-grid {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
 {{ end }}

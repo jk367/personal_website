@@ -1,16 +1,44 @@
 {{ define "main" }}
-    <div class="content-list">
-        
-        {{ range .Pages }}
-            <article>
-                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                {{ if not .Date.IsZero }}
-                    <time>{{ .Date.Format "January 2, 2006" }}</time>
-                {{ end }}
-                <p>{{ .Summary }}</p>
-            </article>
-        {{ else }}
-            <p>No content found.</p>
-        {{ end }}
-    </div>
+<div class="content-list">
+    <h1>{{ .Title }}</h1>
+    
+    {{ range .Pages }}
+        <article class="list-item">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            {{ if not .Date.IsZero }}
+                <time>{{ .Date.Format "January 2, 2006" }}</time>
+            {{ end }}
+            <p>{{ .Summary }}</p>
+        </article>
+    {{ else }}
+        <p>No content found.</p>
+    {{ end }}
+</div>
+
+<style>
+    .list-item {
+        padding-bottom: 0.75rem;
+        margin-bottom: 0.75rem;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .list-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .list-item h2 {
+        margin-bottom: 0.1rem;
+    }
+    
+    .list-item h2 a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .list-item h2 a:hover {
+        text-decoration: underline;
+    }
+</style>
 {{ end }}
