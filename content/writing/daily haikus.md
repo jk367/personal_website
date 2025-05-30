@@ -5,6 +5,13 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**May 30, 2025** 
+
+Stream from shower head
+
+White paint chips from ceiling fall 
+
+Now out of toothpaste
 
 **May 29, 2025** 
 
