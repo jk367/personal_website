@@ -5,6 +5,14 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**May 31, 2025** 
+
+Burnt bagels on stove 
+
+Old milk, no paper towels
+
+Text sorry, last night  
+
 **May 30, 2025** 
 
 steam from shower head
