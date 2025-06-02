@@ -5,13 +5,21 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**June 1, 2025** 
+
+everything bagel 
+
+grandma made us a late lunch 
+
+coffee, going home 
+
 **May 31, 2025** 
 
-Burnt bagels on stove 
+burnt bagels on stove 
 
-Old milk, no paper towels
+old milk, no paper towels
 
-Text sorry, last night  
+text sorry, last night  
 
 **May 30, 2025** 
 
