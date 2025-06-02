@@ -13,6 +13,7 @@ networking meeting
 who are you, what do you do?
 
 coffee with a friend 
+
 **June 1, 2025** 
 
 everything bagel 
