@@ -138,21 +138,18 @@
         {{ range first 3 $photoPages }}
             <div class="photo-item">
                 <a href="{{ .Permalink }}">
-                    {{ if $firstPhoto }}
-                    <img src="{{ .Params.image }}?width=300&format=webp&quality=75" 
-                         width="300"
-                         height="200"
-                         fetchpriority="high"
-                         loading="eager"
-                         alt="{{ .Title }}">
-                    {{ $firstPhoto = false }}
-                    {{ else }}
-                    <img src="{{ .Params.image }}?width=300&format=webp&quality=70" 
-                         width="300"
-                         height="200"
-                         loading="lazy"
-                         alt="{{ .Title }}">
-                    {{ end }}
+                    <picture>
+                        <source media="(max-width: 600px)" 
+                                srcset="{{ .Params.image }}?width=400&format=webp&quality=75">
+                        <source media="(max-width: 900px)" 
+                                srcset="{{ .Params.image }}?width=500&format=webp&quality=75">
+                        <img src="{{ .Params.image }}?width=600&format=webp&quality=75" 
+                             width="600"
+                             height="400"
+                             alt="{{ .Title }}"
+                             {{ if $firstPhoto }}fetchpriority="high" loading="eager"{{ else }}loading="lazy"{{ end }}>
+                             {{ $firstPhoto = false }}
+                    </picture>
                 </a>
             </div>
         {{ else }}

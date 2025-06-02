@@ -158,10 +158,38 @@
         }
         
         /* Images */
+        /* Images */
         img {
             max-width: 100%;
             height: auto;
             display: block;
+        }
+
+        /* Prevent layout shift for photos */
+        picture {
+            display: block;
+        }
+
+        picture img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Photo grid optimizations */
+        .photo-grid .photo-item {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-grid a:hover img {
+            transform: scale(1.02);
         }
         
         /* Footer - COMPACT */

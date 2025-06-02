@@ -1,18 +1,23 @@
 {{ define "main" }}
 <article class="single-photo">
-    <h1>{{ .Title }}</h1>
-    <div class="back-navigation">
-      <a href="/photos/" class="back-button">← Back to Photos</a>
-    </div>
+  <h1>{{ .Title }}</h1>
+  <div class="back-navigation">
+    <a href="/photos/" class="back-button">← Back to Photos</a>
+  </div>
   
-    <img src="{{ .Params.image }}?width=800&format=webp&quality=80" 
-         width="800"
-         height="600" 
-         alt="{{ .Title }}"
-         fetchpriority="high">
-    <div class="photo-content">
-        {{ .Content }}
-    </div>
+  
+    <picture>
+      <source media="(max-width: 768px)" 
+              srcset="{{ .Params.image }}?width=700&format=webp&quality=85">
+      <source media="(max-width: 1200px)" 
+              srcset="{{ .Params.image }}?width=1000&format=webp&quality=85">
+      <img src="{{ .Params.image }}?width=1200&format=webp&quality=85" 
+           width="1200"
+           height="800" 
+           alt="{{ .Title }}"
+           fetchpriority="high"
+           loading="eager">
+  </picture>
     {{ with .Date }}
     <time>{{ .Format "January 2, 2006" }}</time>
     {{ end }}
@@ -20,7 +25,7 @@
 
 <style>
   .single-photo h1 {
-    margin-bottom: 0.25rem;
+
   }
   .single-photo img {
     width: 100%;

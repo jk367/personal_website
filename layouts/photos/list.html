@@ -27,21 +27,17 @@
     {{ range .Pages.ByDate.Reverse }}
     <div class="photo-item">
         <a href="{{ .Permalink }}">
-            {{ if $first }}
-            <img src="{{ .Params.image }}?width=600&format=webp&quality=75" 
-                 width="600" 
-                 height="400"
-                 alt="{{ .Title }}"
-                 fetchpriority="high"
-                 loading="eager">
-            {{ $first = false }}
-            {{ else }}
-            <img src="{{ .Params.image }}?width=600&format=webp&quality=70" 
-                 width="600" 
-                 height="400"
-                 alt="{{ .Title }}"
-                 loading="lazy">
-            {{ end }}
+            <picture>
+                <source media="(max-width: 768px)" 
+                        srcset="{{ .Params.image }}?width=500&format=webp&quality=75">
+                <source media="(max-width: 1200px)" 
+                        srcset="{{ .Params.image }}?width=700&format=webp&quality=75">
+                <img src="{{ .Params.image }}?width=800&format=webp&quality=75" 
+                     width="800" 
+                     height="533"
+                     alt="{{ .Title }}"
+                     {{ if $first }}fetchpriority="high" loading="eager"{{ $first = false }}{{ else }}loading="lazy"{{ end }}>
+            </picture>
         </a>
     </div>
     {{ end }}
