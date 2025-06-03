@@ -6,6 +6,14 @@ draft: false
 
 ---
 
+**June 3, 2025** 
+
+open LinkedIn again 
+
+did not know he got a job 
+
+close my computer
+
 **June 2, 2025** 
 
 networking meeting
