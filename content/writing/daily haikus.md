@@ -5,6 +5,13 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**June 4, 2025** 
+
+need to do laundry 
+
+groceries and vacuuming
+
+cigarette outside  
 
 **June 3, 2025** 
 
