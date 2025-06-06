@@ -5,6 +5,22 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**June 6, 2025** 
+
+applied, rejected 
+
+bird flying by the window 
+
+plans to go to club
+
+**June 5, 2025** 
+
+i sent a message
+
+now at a new gallery 
+
+maybe I'm not cool
+
 **June 4, 2025** 
 
 need to do laundry 
