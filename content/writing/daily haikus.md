@@ -5,6 +5,14 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**June 12, 2025** 
+
+a new habit lost 
+
+broken pieces on the floor 
+
+slowly picking up
+
 **June 6, 2025** 
 
 applied, rejected 
