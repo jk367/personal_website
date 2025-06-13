@@ -5,6 +5,14 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**June 13, 2025**
+
+again, sun rises 
+
+once more, I walk and I see 
+
+as promised, sun sets
+
 **June 12, 2025** 
 
 a new habit lost 
