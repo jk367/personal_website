@@ -5,6 +5,14 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**June 14, 2024** 
+
+its already 3 
+
+The day has not started yet 
+
+maybe tomorrow
+
 **June 13, 2025**
 
 again, sun rises 
