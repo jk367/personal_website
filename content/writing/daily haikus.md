@@ -5,11 +5,27 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
-**June 14, 2024** 
+**June 16, 2025** 
+
+pressure under eye 
+
+woke up, numb and fuzzy headache 
+
+it is fine, i guess
+
+**June 15, 2025**
+
+citibike jammed 
+
+light rain, fine mist, cold again 
+
+it is fathers day
+
+**June 14, 2025** 
 
 its already 3 
 
-The day has not started yet 
+the day has not started yet 
 
 maybe tomorrow
 
