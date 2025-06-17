@@ -5,6 +5,14 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**June 17, 2025**
+
+sun rises, bright light 
+
+gust of wind blows behind me 
+
+new day brings new night 
+
 **June 16, 2025** 
 
 pressure under eye 
