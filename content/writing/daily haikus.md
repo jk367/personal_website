@@ -5,6 +5,14 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**June 19, 2025**
+
+hot again today 
+
+tomorrow is the question 
+
+i am here right now 
+
 **June 18, 2025** 
 
 today, busy day
