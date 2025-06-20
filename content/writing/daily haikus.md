@@ -5,6 +5,14 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**June 20, 2025**
+
+all the bricks were set  
+
+years ago, one at a time
+
+I will set my bricks
+
 **June 19, 2025**
 
 hot again today 
