@@ -5,6 +5,22 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**June 22, 2025** 
+
+now, the heat came in
+
+heard it will stay for a while
+
+i am leaving soon. 
+
+**June 21, 2025** 
+
+made new friend today
+
+had a fantastic bagel
+
+life is very good
+
 **June 20, 2025**
 
 all the bricks were set  
