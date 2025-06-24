@@ -5,6 +5,14 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**June 23, 2025** 
+
+drove to the airport 
+
+I said goodbye to my friend 
+
+one hundred degrees 
+
 **June 22, 2025** 
 
 now, the heat came in
