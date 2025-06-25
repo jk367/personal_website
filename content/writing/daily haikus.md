@@ -5,6 +5,15 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+
+**June 24, 2025**
+
+the heat was intense  
+
+didn't think and didn't do 
+
+i  just sat around
+
 **June 23, 2025** 
 
 drove to the airport 
