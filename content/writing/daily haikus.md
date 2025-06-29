@@ -5,6 +5,37 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**June 28, 2025**
+
+more wine and cured meat 
+
+sun rides off the river bank 
+
+on my back, I float  
+
+**June 27, 2025** 
+
+croatian wedding 
+
+was very hot here as well 
+
+love wins in the end
+
+**June 26, 2025**
+
+there was Endless sun 
+
+cancelled flights and lots of calls
+
+I ate three hot dogs
+
+**June 25, 2025** 
+
+travel day today 
+
+booked the wrong flight to Paris 
+
+now to Budapest
 
 **June 24, 2025**
 
