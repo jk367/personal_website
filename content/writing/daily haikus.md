@@ -5,6 +5,30 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**July 1, 2025**
+
+four bed hostel room 
+
+croatian sun, strong today
+
+next round is on me 
+
+**June 30, 2025**
+
+trout by the river 
+
+my head submerged in water 
+
+finally, at peace 
+
+**June 29, 2025** 
+
+grandma made chicken 
+
+a fast car ride to Zagreb 
+
+drinks are nice, not cheap 
+
 **June 28, 2025**
 
 more wine and cured meat 
