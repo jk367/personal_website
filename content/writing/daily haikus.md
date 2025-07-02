@@ -5,6 +5,14 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**July 2, 2025** 
+
+had an awesome day 
+
+there was sun, beach, beers, and fun 
+
+wish you were here too 
+
 **July 1, 2025**
 
 four bed hostel room 
