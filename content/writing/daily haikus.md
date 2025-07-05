@@ -5,6 +5,22 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**July 4, 2025**
+
+concrete fills the sky
+
+belgrade, a different world 
+
+wait, where are my keys
+
+**July 3, 2025** 
+
+asleep on the bus 
+
+the mist from the waterfall 
+
+cleans my face of salt 
+
 **July 2, 2025** 
 
 had an awesome day 
