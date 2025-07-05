@@ -5,6 +5,13 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**July 5, 2025**
+morning air was soft 
+
+lunch again at the same place 
+
+fifth glass of gemist 
+
 **July 4, 2025**
 
 concrete fills the sky
