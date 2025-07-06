@@ -5,7 +5,16 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**July 6, 2025** 
+
+three five euro beers 
+
+walking until the sun sets 
+
+hug an old friend 
+
 **July 5, 2025**
+
 morning air was soft 
 
 lunch again at the same place 
