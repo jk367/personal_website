@@ -5,6 +5,30 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**July 9, 2025** 
+
+trian delayed again 
+
+a thirteen euro sandwhich
+
+now, on my way home 
+
+**July 8, 2025**
+
+thirty thousand steps
+
+the stracciatella drips down 
+
+sunsets in paris 
+
+**July 7, 2025**
+
+blisters on my feet 
+
+Say no to a third croissant 
+
+Dinner with a friend 
+
 **July 6, 2025** 
 
 three five euro beers 
