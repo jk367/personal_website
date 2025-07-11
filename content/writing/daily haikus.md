@@ -5,6 +5,14 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**July 10, 2025** 
+
+the same restaurant 
+
+the same streets, the same people 
+
+a  warm welcome back
+
 **July 9, 2025** 
 
 trian delayed again 
