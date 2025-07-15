@@ -5,6 +5,46 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**July 15, 2025**
+
+mist on the window 
+
+stream of sweat runs down my face 
+
+sun touches my neck 
+
+**July 14, 2025**
+
+rain and floods today 
+
+tuna pasta 10 dollars
+
+the J train was fast 
+
+**July 13, 2025**
+
+all of manhattan 
+
+both my feet hurt a lot now 
+
+closer to people 
+
+**July 12, 2025** 
+
+woke up eyes crusted 
+
+sesame stuck in my teeth 
+
+I would like to sleep 
+
+**July 11, 2025** 
+
+eyes are so heavy 
+
+now time is ahead of me 
+
+I just need to sleep 
+
 **July 10, 2025** 
 
 the same restaurant 
