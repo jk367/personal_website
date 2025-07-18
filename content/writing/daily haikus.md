@@ -5,6 +5,30 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**July 18, 2025** 
+
+now the heat lifted 
+
+wave of calm over the streets
+
+the week has ended 
+
+**July 17, 2025** 
+
+sweat drips down my neck 
+
+blurry vision and fast nights 
+
+a window open 
+
+**July 16, 2025**
+
+today a glass drops 
+
+shattering in front of me 
+
+try to pick it up 
+
 **July 15, 2025**
 
 mist on the window 
