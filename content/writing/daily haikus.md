@@ -5,6 +5,30 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**July 21, 2025** 
+
+a fly trapped inside 
+
+open a window, be free 
+
+my life needs to start 
+
+**July 20, 2025** 
+
+In the sun all day 
+
+drink white wine and eat pizza 
+
+the night comes with friends 
+
+**July 19, 2025** 
+
+the lights beaming down 
+
+The music beats our chest
+
+wonderful night 
+
 **July 18, 2025** 
 
 now the heat lifted 
