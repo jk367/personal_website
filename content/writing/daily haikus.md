@@ -5,6 +5,22 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**July 23, 2025** 
+
+in all beginnings
+
+there is a bold magic force 
+
+or something like that 
+
+**July 22, 2025**
+
+hot inside today 
+
+almost turn on the AC 
+
+open a window 
+
 **July 21, 2025** 
 
 a fly trapped inside 
