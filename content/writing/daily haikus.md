@@ -5,6 +5,22 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**July 25, 2025** 
+
+buzz of the AC 
+
+white walls and sending emails 
+
+throw away my phone 
+
+**July 24, 2025** 
+
+open new email 
+
+we regret to inform you 
+
+to be expected 
+
 **July 23, 2025** 
 
 in all beginnings
@@ -41,7 +57,7 @@ the night comes with friends
 
 the lights beaming down 
 
-The music beats our chest
+The music beats on our chests
 
 wonderful night 
 
