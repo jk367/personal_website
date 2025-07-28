@@ -5,6 +5,30 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**July 28, 2025**
+
+summer is moving on. 
+
+is it august already?
+
+year is moving too
+
+**July 27, 2025**
+
+a slow day today 
+
+the air was thick on my skin 
+
+and I drank four beers
+
+**July 26, 2025**
+
+danced a morning rave
+
+walked Central Park With a friend
+
+my feet hurt a lot
+
 **July 25, 2025** 
 
 buzz of the AC 
