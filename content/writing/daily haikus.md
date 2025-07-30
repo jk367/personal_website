@@ -5,6 +5,22 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**july 30, 2025**
+
+another hot day 
+
+need to laundry again 
+
+really need a job
+
+**July 29, 2025**
+
+my brothers birthday
+
+all of his friends at a bar 
+
+lots of love around 
+
 **July 28, 2025**
 
 summer is moving on. 
