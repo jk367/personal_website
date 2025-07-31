@@ -15,14 +15,6 @@ bird in my window
 
 **july 30, 2025**
 
-another hot day 
-
-need to laundry again 
-
-really need a job
-
--- 
-
 safia leaving 
 
 terrace wind breaths with big tree 
@@ -62,14 +54,6 @@ walked Central Park With a friend
 my feet hurt a lot
 
 **July 25, 2025** 
-
-buzz of the AC 
-
-white walls and sending emails 
-
-throw away my phone 
-
---
 
 noels brings me a beer 
 
