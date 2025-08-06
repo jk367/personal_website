@@ -5,13 +5,61 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
-**july 29, 2025** 
+**August 6, 2025**
 
-goodbye safia
+days like sand in hand 
 
-the summer rains came again 
+i ask is it all worth it? 
 
-bird in my window 
+we will never know 
+
+**August 5, 2025**
+
+slow mornings end fast 
+
+saw my brother saw my friend
+
+a good day today
+
+**August 4, 2025**
+
+my house is a mess
+
+my back also hurts a lot 
+
+it was still worth it
+
+**August 3, 2025** 
+
+walked six flights of stairs
+
+played music for eight hours 
+
+a long dream come true 
+
+**August 2, 2025**
+
+it was a long day 
+
+i walked out of a movie 
+
+be happy not sad 
+
+**August 1, 2025**
+
+delightful party 
+
+a lot of dancing, new friends
+
+my heart is open 
+
+**July 31, 2025**
+
+goodbye safia 
+
+some drinks at a shitty bar 
+
+in le bain hottub 
 
 **july 30, 2025**
 
