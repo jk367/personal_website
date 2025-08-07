@@ -5,6 +5,14 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**August 7, 2025**
+
+walking in circles 
+
+I start in one corner
+
+end in the other 
+
 **August 6, 2025**
 
 days like sand in hand 
