@@ -5,6 +5,142 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**August 24, 2025**
+
+No sleep and no rest 
+
+Early days at the airport 
+
+In my bed again
+
+**August 23, 2025**
+
+A new different rave 
+
+A nice kebab man helps us
+
+End of a great trip 
+
+**August 22, 2025**
+
+A beautiful rave 
+
+Seeing my old friends again 
+
+A warm sweet goodbye 
+
+**August 21, 2025**
+
+A slow day today 
+
+Hot and sunny sweats runs down 
+
+In the park again 
+
+**August 20, 2025**
+
+Subway bus nowhere
+
+Rain in the park falls gently 
+
+I can’t go to sleep 
+
+**August 19, 2025**
+
+A train to Paris
+
+Walking a rainy city 
+
+Go to bed early 
+
+**August 18, 2025**
+
+New friends on the beach 
+
+Hand on waist and kiss on check 
+
+No to drinks in Nice 
+
+**August 17, 2025**
+
+Seafood at bistro 
+
+Heaven, a beach in Antibes 
+
+A goodbye dinner 
+
+**August 16, 2025**
+
+Laying in the sun 
+
+Ten different types of cheeses 
+
+Life is not so bad
+
+**August 15, 2025**
+
+Dinner at the beach 
+
+Lots of wine and lots of fish 
+
+No night club tonight 
+
+**August 14, 2025**
+
+Nice day at the beach 
+
+With much music in the streets 
+
+Hard for me to sleep 
+
+**August 13, 2025**
+
+Rejected again 
+
+A lovely dinner with friends 
+
+Drinks in the small town 
+
+**August 12, 2025**
+
+a day at the beach
+
+i spent too many euros 
+
+thank god for AC 
+
+**August 11, 2025**
+
+i took more photos
+
+lovely dinner together
+
+a wave of hot air 
+
+**August 10, 2025**
+
+days blend together
+
+friends reunited once more 
+
+back again, here now 
+
+**August 9, 2025**
+
+I’m back on the plane 
+
+France again, i need a job 
+
+Really need a job 
+
+**August 8, 2025**
+
+I shuck some oysters 
+
+friends on Williamsburg bridge 
+
+a Greek bbq 
+
 **August 7, 2025**
 
 walking in circles 
