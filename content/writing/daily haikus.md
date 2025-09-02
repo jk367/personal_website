@@ -5,6 +5,70 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**August 1, 2025**
+
+Working with my hands 
+
+Preparing for the party 
+
+I think its worth it 
+
+**August 31, 2025**
+
+Early morning club 
+
+Said goodbye to my mother 
+
+friends birthday party 
+
+**August 30, 2025** 
+
+Woke up late again 
+
+Outdoor party with more friends
+
+Manhattan don’t dance 
+
+**August 29, 2025**
+
+Reunited friends 
+
+A extremely good party
+
+A very late night 
+
+**August 28, 2025**
+
+Sandals were too small 
+
+Air was dry the wind was soft 
+
+Went to bed early 
+
+**August 27, 2025**
+
+Brain fog and slow days 
+
+Two birds on my window sill
+
+Dinner with parents
+
+**August 26, 2025** 
+
+In New York City 
+
+The day was long and sunny 
+
+Said goodbye to her 
+
+**August 25, 2025**
+
+Friends forever max? 
+
+even longer I anwsered 
+
+am back home again? 
+
 **August 24, 2025**
 
 No sleep and no rest 
