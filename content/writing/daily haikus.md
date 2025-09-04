@@ -5,6 +5,22 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**September 3, 2025**
+
+Back online again 
+
+Outside a beautiful day 
+
+Inside cold and dark 
+
+**September 2, 2025** 
+ 
+Feel fresh autumn air 
+
+New leather shoes cut my feet 
+
+Sunset of summer
+
 **September 1, 2025**
 
 Working with my hands 
