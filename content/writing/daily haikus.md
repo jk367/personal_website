@@ -5,6 +5,54 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**September 9, 2025**
+
+The days between days 
+
+Where nothing happens at all 
+
+Sun shines the brightest 
+
+**September 8, 2025**
+
+Another slow day 
+
+Why didn’t they email me 
+
+Dinner with family 
+
+**September 7, 2025**
+
+Big nights are over
+
+A weekend full of dancing 
+
+Life is very full 
+
+**September 6, 2025**
+
+Woke up late again 
+
+Got to work, all day building 
+
+party was awesome 
+
+**September 5, 2025**
+
+night with my brother 
+
+Played music for all his friends
+
+Up late but was sweet 
+
+**September 4, 2025**
+
+the number goes down 
+
+Some days, it may go up high 
+
+is the sun out now?
+
 **September 3, 2025**
 
 Back online again 
