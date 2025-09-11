@@ -4,7 +4,7 @@ date: 2024-07-30T11:23:36+02:00
 draft: false
 ---
 
-I make electronic music under the name j.m. kettle. I've been making music since 2016, mostly electronic but sometimes venture into other genres. I try not to box myself into one genre but play music with a constant emotional throughline, which is the inspiration of my party, stop1, which I throw every 6ish weeks in brooklyn.   
+I make electronic music under the name Kettle. I've been making music since 2016, mostly electronic but sometimes venture into other genres. I try not to box myself into one genre but play music with a constant emotional throughline, which is the inspiration of my party, stop1, which I throw every 6ish weeks in brooklyn.   
 
 I've played at Hellphone, Trans Pecos, The Stranger, Wiggle Room, Leftbank (Tbilisi), and Pluto's Records (Tbilisi). 
 
