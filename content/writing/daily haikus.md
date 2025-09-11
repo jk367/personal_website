@@ -5,6 +5,22 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**September 11, 2025** 
+
+Twenty four years pass 
+
+I cannot remember it 
+
+clear day and no clouds 
+
+**September 10, 2025** 
+
+The subletter leaves 
+
+He became a new friend 
+
+We made some pizza 
+
 **September 9, 2025**
 
 The days between days 
