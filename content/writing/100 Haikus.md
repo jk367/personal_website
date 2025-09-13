@@ -1,5 +1,5 @@
 ---
-title: "100 Haikuss"
+title: "100 Haikus"
 date: 2025-09-13T11:23:36+02:00
 writing_categories: ["poetry"]
 draft: false
