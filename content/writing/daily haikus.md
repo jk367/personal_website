@@ -5,6 +5,14 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**September 12, 2025** 
+
+brother and friend 
+
+a tired feeling so deep 
+
+can’t even sleep 
+
 **September 11, 2025** 
 
 Twenty four years pass 
