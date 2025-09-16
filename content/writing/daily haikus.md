@@ -5,6 +5,30 @@ writing_categories: ["poetry"]
 draft: false
 
 ---
+**September 15, 2025**
+
+nine hour screen time 
+
+a pleasant september day 
+
+I need to walk more 
+
+**September 14, 2025**
+
+I woke up tired 
+
+Saw friend and drank coffee 
+
+family dinner 
+
+**September 13, 2025**
+
+ran into some friends
+
+long night of music outside 
+
+know I need to sleep 
+
 **September 12, 2025** 
 
 brother and friend 
