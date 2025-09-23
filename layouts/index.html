@@ -207,15 +207,16 @@
     {{ end }}
 {{ end }}
 
-<!-- If today's haiku not found, get the most recent one -->
 {{ if not $haikuFound }}
     {{ $currentDate = "" }}
     {{ $haikuLines = slice }}
+    {{ $foundFirstDate := false }}
     {{ range $lines }}
-        {{ if and (hasPrefix . "**") (hasSuffix . "**") (not $haikuFound) }}
+        {{ if and (hasPrefix . "**") (hasSuffix . "**") (not $foundFirstDate) }}
             {{ $currentDate = trim (trim . "**") " " }}
             {{ $haikuLines = slice }}
-        {{ else if and (ne . "") (ne $currentDate "") (not $haikuFound) (not (hasPrefix . "---")) (not (hasPrefix . "title:")) (not (hasPrefix . "date:")) (not (hasPrefix . "writing_categories:")) (not (hasPrefix . "draft:")) (not (hasPrefix . "**")) }}
+            {{ $foundFirstDate = true }}
+        {{ else if and (ne . "") (ne $currentDate "") $foundFirstDate (not $haikuFound) (not (hasPrefix . "---")) (not (hasPrefix . "title:")) (not (hasPrefix . "date:")) (not (hasPrefix . "writing_categories:")) (not (hasPrefix . "draft:")) (not (hasPrefix . "**")) }}
             {{ $haikuLines = $haikuLines | append . }}
             {{ if eq (len $haikuLines) 3 }}
                 {{ $haikuFound = true }}
