@@ -9,7 +9,7 @@ draft: false
 
 a very slow day 
 
-q stqrt of q happy new year 
+start of a happy new year 
 
 my feet hurt a lot
 
