@@ -14,6 +14,14 @@
     <!-- Resource hints -->
     <link rel="preconnect" href="https://photos.jmkettle.com">
     <link rel="dns-prefetch" href="https://photos.jmkettle.com">
+    <link rel="preconnect" href="https://stop1.jmkettle.com">
+    <link rel="dns-prefetch" href="https://stop1.jmkettle.com">
+
+    <!-- Preload critical homepage images (only on homepage) -->
+    {{ if .IsHome }}
+    <link rel="preload" as="image" href="https://photos.jmkettle.com/couple.webp?width=600&format=webp&quality=70" media="(min-width: 601px)">
+    <link rel="preload" as="image" href="https://photos.jmkettle.com/couple.webp?width=400&format=webp&quality=70" media="(max-width: 600px)">
+    {{ end }}
     
     <!-- Global CSS - COMPACT VERSION -->
     <style>
