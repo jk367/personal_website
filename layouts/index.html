@@ -3,28 +3,45 @@
     .homepage-header {
         margin-bottom: 1rem;
     }
-    
+
     .homepage-header h1 {
         margin-bottom: 0.5rem;
     }
-    
+
     .featured-section {
         margin-bottom: 1rem;
     }
-    
+
     .featured-section:last-child {
         margin-bottom: 0;
     }
-    
+
     .section-title {
         text-decoration: none;
         color: inherit;
     }
-    
+
     .section-title:hover {
         text-decoration: underline;
     }
-    
+
+    /* Daily Haiku Styles */
+    .haiku-content {
+        line-height: 1.6;
+        margin-top: 0.5rem;
+    }
+
+    .haiku-content .haiku-line {
+        display: block;
+        margin-bottom: 0.2rem;
+    }
+
+    .haiku-date {
+        font-size: 0.9em;
+        color: #000;
+        margin-top: 0.5rem;
+    }
+
     .photo-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -38,72 +55,72 @@
         aspect-ratio: 3/2;
         max-width: 450px;
     }
-    
+
     .photo-item a {
         display: block;
         width: 100%;
         height: 100%;
     }
-    
+
     .photo-item img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    
+
     .article-list {
         margin-top: 0.5rem;
     }
-    
+
     .article-item {
         margin-bottom: 0.5rem;
     }
-    
+
     .article-item:last-child {
         margin-bottom: 0;
     }
-    
+
     .article-title {
         display: inline;
         margin-right: 0.5rem;
         font-size: 1.2em;
     }
-    
+
     .article-title a {
         text-decoration: none;
         color: inherit;
     }
-    
+
     .article-title a:hover {
         text-decoration: underline;
     }
-    
+
     .article-date {
         display: inline;
         font-size: 0.9em;
         color: #666;
     }
-    
+
     .contact-content {
         margin-top: 0.5rem;
     }
-    
+
     .contact-link {
         color: black;
         text-decoration: none;
         font-size: 1em;
     }
-    
+
     .contact-link:hover {
         text-decoration: underline;
     }
-    
+
     @media (max-width: 600px) {
         .photo-grid {
             grid-template-columns: 1fr;
         }
     }
-    
+
     @media (min-width: 601px) and (max-width: 900px) {
         .photo-grid {
             grid-template-columns: repeat(2, 1fr);
@@ -158,6 +175,67 @@
         {{ end }}
     </div>
 </div>
+
+<!-- Daily Haiku Section -->
+{{ $haikuPage := .Site.GetPage "/writing/daily haikus.md" }}
+{{ if $haikuPage }}
+{{ $content := $haikuPage.RawContent }}
+{{ $lines := split $content "\n" }}
+
+{{ $today := now.Format "January 2, 2006" }}
+{{ $todayFormatted := printf "**%s**" $today }}
+
+{{ $haikuFound := false }}
+{{ $currentDate := "" }}
+{{ $haikuLines := slice }}
+{{ $searchingForToday := true }}
+
+<!-- First pass: Look for today's haiku -->
+{{ range $lines }}
+    {{ if and (hasPrefix . "**") (hasSuffix . "**") $searchingForToday }}
+        {{ $lineDate := trim (trim . "**") " " }}
+        {{ if eq $lineDate $today }}
+            {{ $currentDate = $lineDate }}
+            {{ $haikuLines = slice }}
+        {{ end }}
+    {{ else if and (ne . "") (eq $currentDate $today) (not $haikuFound) (not (hasPrefix . "---")) (not (hasPrefix . "title:")) (not (hasPrefix . "date:")) (not (hasPrefix . "writing_categories:")) (not (hasPrefix . "draft:")) (not (hasPrefix . "**")) }}
+        {{ $haikuLines = $haikuLines | append . }}
+        {{ if eq (len $haikuLines) 3 }}
+            {{ $haikuFound = true }}
+            {{ $searchingForToday = false }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+<!-- If today's haiku not found, get the most recent one -->
+{{ if not $haikuFound }}
+    {{ $currentDate = "" }}
+    {{ $haikuLines = slice }}
+    {{ range $lines }}
+        {{ if and (hasPrefix . "**") (hasSuffix . "**") (not $haikuFound) }}
+            {{ $currentDate = trim (trim . "**") " " }}
+            {{ $haikuLines = slice }}
+        {{ else if and (ne . "") (ne $currentDate "") (not $haikuFound) (not (hasPrefix . "---")) (not (hasPrefix . "title:")) (not (hasPrefix . "date:")) (not (hasPrefix . "writing_categories:")) (not (hasPrefix . "draft:")) (not (hasPrefix . "**")) }}
+            {{ $haikuLines = $haikuLines | append . }}
+            {{ if eq (len $haikuLines) 3 }}
+                {{ $haikuFound = true }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{ if $haikuFound }}
+<div class="featured-section">
+    <h2><a href="/writing/daily-haikus/" class="section-title">Daily Haiku</a></h2>
+    <div class="haiku-date">{{ $currentDate }}</div>
+    <div class="haiku-content">
+        {{ range $haikuLines }}
+        <span class="haiku-line">{{ . }}</span>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+{{ end }}
 
 <div class="featured-section">
     <h2>Contact</h2>

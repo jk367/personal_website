@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Essay on j.m. kettle</title><link>https://jmkettle.com/writing_categories/essay/</link><description>Recent content in Essay on j.m. kettle</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 16 Sep 2025 11:23:36 +0200</lastBuildDate><atom:link href="https://jmkettle.com/writing_categories/essay/index.xml" rel="self" type="application/rss+xml"/><item><title>Contra AirPods</title><link>https://jmkettle.com/writing/airpods/</link><pubDate>Tue, 16 Sep 2025 11:23:36 +0200</pubDate><guid>https://jmkettle.com/writing/airpods/</guid><description>&lt;p&gt;It&amp;rsquo;s September 2025, and reviews are in for the new AirPods 3. They are receiving nearly universal acclaim. There is no doubt that technologically, the AirPods are a marvel. It&amp;rsquo;s been 11 years since the first bluetooth wireless earphones came out, the Bragi Dash, and 10 years since the first AirPods arrived to consumers. Over the decade, they have made significant improvements, most notably with the AirPod Pros&amp;rsquo; noise cancelling feature. Now, in 2025, we have reached near perfection. The question remains, have AirPods made our world better? Are we more connected and happier, or more isolated and locked in our digital worlds?&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Essay on j.m. kettle</title>
+    <link>http://localhost:1313/writing_categories/essay/</link>
+    <description>Recent content in Essay on j.m. kettle</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Sep 2025 11:23:36 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/writing_categories/essay/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contra AirPods</title>
+      <link>http://localhost:1313/writing/airpods/</link>
+      <pubDate>Tue, 16 Sep 2025 11:23:36 +0200</pubDate>
+      <guid>http://localhost:1313/writing/airpods/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s September 2025, and reviews are in for the new AirPods 3. They are receiving nearly universal acclaim. There is no doubt that technologically, the AirPods are a marvel. It&amp;rsquo;s been 11 years since the first bluetooth wireless earphones came out, the Bragi Dash, and 10 years since the first AirPods arrived to consumers. Over the decade, they have made significant improvements, most notably with the AirPod Pros&amp;rsquo; noise cancelling feature. Now, in 2025, we have reached near perfection. The question remains, have AirPods made our world better? Are we more connected and happier, or more isolated and locked in our digital worlds?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

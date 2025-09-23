@@ -1,1 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Parties on j.m. kettle</title><link>https://jmkettle.com/parties/</link><description>Recent content in Parties on j.m. kettle</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 03 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jmkettle.com/parties/index.xml" rel="self" type="application/rss+xml"/><item><title>Dojo Pomodoro November 3</title><link>https://jmkettle.com/parties/dojo_pomodoro_november_3/</link><pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate><guid>https://jmkettle.com/parties/dojo_pomodoro_november_3/</guid><description/></item><item><title>Albert's Party October 12</title><link>https://jmkettle.com/parties/alberts_party_oct_12/</link><pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate><guid>https://jmkettle.com/parties/alberts_party_oct_12/</guid><description/></item><item><title>Crazy Girl March 9</title><link>https://jmkettle.com/parties/crazy_girl_march_9/</link><pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate><guid>https://jmkettle.com/parties/crazy_girl_march_9/</guid><description/></item><item><title>Kai and Vivi Birthday January 25</title><link>https://jmkettle.com/parties/kai_and_vivi_birthday_jan_25/</link><pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate><guid>https://jmkettle.com/parties/kai_and_vivi_birthday_jan_25/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Parties on j.m. kettle</title>
+    <link>http://localhost:1313/parties/</link>
+    <description>Recent content in Parties on j.m. kettle</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/parties/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dojo Pomodoro November 3</title>
+      <link>http://localhost:1313/parties/dojo_pomodoro_november_3/</link>
+      <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/parties/dojo_pomodoro_november_3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Albert&#39;s Party October 12</title>
+      <link>http://localhost:1313/parties/alberts_party_oct_12/</link>
+      <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/parties/alberts_party_oct_12/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crazy Girl March 9</title>
+      <link>http://localhost:1313/parties/crazy_girl_march_9/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/parties/crazy_girl_march_9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kai and Vivi Birthday January 25</title>
+      <link>http://localhost:1313/parties/kai_and_vivi_birthday_jan_25/</link>
+      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/parties/kai_and_vivi_birthday_jan_25/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

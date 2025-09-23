@@ -1,2 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Georgia on j.m. kettle</title><link>https://jmkettle.com/writing_categories/georgia/</link><description>Recent content in Georgia on j.m. kettle</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 04 Jan 2024 11:23:36 +0200</lastBuildDate><atom:link href="https://jmkettle.com/writing_categories/georgia/index.xml" rel="self" type="application/rss+xml"/><item><title>Goodbye Georgia</title><link>https://jmkettle.com/writing/reflections-on-georgia/</link><pubDate>Thu, 04 Jan 2024 11:23:36 +0200</pubDate><guid>https://jmkettle.com/writing/reflections-on-georgia/</guid><description>&lt;p&gt;I am back in NYC, in my childhood room, writing this essay. It feels as if the past 6 months were a dream or a hallucination. It all went by so quickly and so slowly, but now it is over. I have such overwhelming love for Tbilisi and the people of Georgia, it almost feels like I have left home to go somewhere new. The air and atmosphere are different in NYC; it&amp;rsquo;s hard to explain, but it feels a bit less serious, a bit more new world-y, as if we are all just making it up as we walk the streets of Brooklyn. New York is also much busier and louder, making the transition a bit more jarring.&lt;/p&gt;</description></item><item><title>Bassiani</title><link>https://jmkettle.com/writing/bassiani/</link><pubDate>Tue, 18 Jul 2023 11:23:36 +0200</pubDate><guid>https://jmkettle.com/writing/bassiani/</guid><description>&lt;p&gt;Bassiani is a club in Tbilisi. Some say it’s the best techno club in the world. It was founded 9 year ago in the empty swimming pool of the city&amp;rsquo;s soccer stadium. The stadium is a relic of Tbilisi&amp;rsquo;s Soviet past, a gigantic concrete monument to the once-command economy.&lt;/p&gt;
-&lt;p&gt;Today is the season closing of Bassiani. It&amp;rsquo;s the biggest party in Georgia. All week, every Georgian I&amp;rsquo;ve met has encouraged me to go to this party. Bassiani closes over the summer because most Georgians leave during August and return in September. Therefore, for seven weeks, the Bassiani main room will be closed, only leaving the smaller room open once a week. The party starts on Friday at midnight and continues for 24 hours. I have been advised to arrive in the morning, to beat the rush and see the three Georgian DJs all playing together at midday on Saturday. On Friday, I go to sleep early to prepare my body for the day ahead.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Georgia on j.m. kettle</title>
+    <link>http://localhost:1313/writing_categories/georgia/</link>
+    <description>Recent content in Georgia on j.m. kettle</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Jan 2024 11:23:36 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/writing_categories/georgia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Goodbye Georgia</title>
+      <link>http://localhost:1313/writing/reflections-on-georgia/</link>
+      <pubDate>Thu, 04 Jan 2024 11:23:36 +0200</pubDate>
+      <guid>http://localhost:1313/writing/reflections-on-georgia/</guid>
+      <description>&lt;p&gt;I am back in NYC, in my childhood room, writing this essay. It feels as if the past 6 months were a dream or a hallucination. It all went by so quickly and so slowly, but now it is over. I have such overwhelming love for Tbilisi and the people of Georgia, it almost feels like I have left home to go somewhere new. The air and atmosphere are different in NYC; it&amp;rsquo;s hard to explain, but it feels a bit less serious, a bit more new world-y, as if we are all just making it up as we walk the streets of Brooklyn. New York is also much busier and louder, making the transition a bit more jarring.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bassiani</title>
+      <link>http://localhost:1313/writing/bassiani/</link>
+      <pubDate>Tue, 18 Jul 2023 11:23:36 +0200</pubDate>
+      <guid>http://localhost:1313/writing/bassiani/</guid>
+      <description>&lt;p&gt;Bassiani is a club in Tbilisi. Some say it’s the best techno club in the world. It was founded 9 year ago in the empty swimming pool of the city&amp;rsquo;s soccer stadium. The stadium is a relic of Tbilisi&amp;rsquo;s Soviet past, a gigantic concrete monument to the once-command economy.&lt;/p&gt;&#xA;&lt;p&gt;Today is the season closing of Bassiani. It&amp;rsquo;s the biggest party in Georgia. All week, every Georgian I&amp;rsquo;ve met has encouraged me to go to this party. Bassiani closes over the summer because most Georgians leave during August and return in September. Therefore, for seven weeks, the Bassiani main room will be closed, only leaving the smaller room open once a week. The party starts on Friday at midnight and continues for 24 hours. I have been advised to arrive in the morning, to beat the rush and see the three Georgian DJs all playing together at midday on Saturday. On Friday, I go to sleep early to prepare my body for the day ahead.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
