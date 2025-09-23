@@ -3,8 +3,64 @@ title: "daily haiku "
 date: 2025-05-25T11:23:36+02:00
 writing_categories: ["poetry"]
 draft: false
-
 ---
+
+**September 22, 2025** 
+
+a very slow day 
+
+q stqrt of q happy new year 
+
+my feet hurt a lot
+
+**September 21, 2025**
+
+Sixty thousands steps 
+
+Nowadays morning till night 
+
+It was beautiful 
+
+**September 20, 2025** 
+
+Bagels with parents 
+
+A day sunbathing in park 
+
+Wine with a new friend 
+
+**September 19, 2025**
+
+Woke up with no phone 
+
+Los Angeles apparel 
+
+Beautiful party 
+
+**September 18, 2025** 
+
+Bahn mi in the park 
+
+A slow day again, no jobs 
+
+Smart glasses are bad
+
+**September 17, 2025**
+
+The day in bushwich 
+
+Rejected and applied 
+
+Four tet in mansions 
+
+**September 16, 2025**
+
+Where did the day go 
+
+Five Train transfers and a nap 
+
+I started to write 
+
 **September 15, 2025**
 
 nine hour screen time 
