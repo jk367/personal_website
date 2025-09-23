@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="J.M. Kettle - NYC-based photographer, writer, and musician.">
     <meta name="theme-color" content="#ffffff">
-    <title>{{ if .Title }}{{ .Title }} - {{ end }}J.M. Kettle</title>
+    <title>Nightlife - J.M. Kettle</title>
 
-    <link rel="alternate" type="application/json" title="AI Index" href="{{ "ai-index.json" | relURL }}">
-    <link rel="alternate" type="application/json" title="AI Content" href="{{ "ai-content.json" | relURL }}">
-    <link rel="alternate" type="application/json" title="AI Nav" href="{{ "ai-nav.json" | relURL }}">
+    <link rel="alternate" type="application/json" title="AI Index" href="/ai-index.json">
+    <link rel="alternate" type="application/json" title="AI Content" href="/ai-content.json">
+    <link rel="alternate" type="application/json" title="AI Nav" href="/ai-nav.json">
     
-    <!-- Resource hints -->
+    
     <link rel="preconnect" href="https://photos.jmkettle.com">
     <link rel="dns-prefetch" href="https://photos.jmkettle.com">
     
-    <!-- Global CSS - COMPACT VERSION -->
+    
     <style>
-        /* Reset and base styles */
+         
         * {
             box-sizing: border-box;
         }
@@ -41,7 +41,7 @@
             background-color: #fff;
         }
         
-        /* Header styles - TIGHTER */
+         
         header {
             padding: 10px 0;
             text-align: center;
@@ -72,7 +72,7 @@
             text-decoration: underline;
         }
         
-        /* Container styles - MUCH LESS PADDING */
+         
         .container {
             flex: 1;
             width: 100%;
@@ -82,12 +82,12 @@
             box-sizing: border-box;
         }
         
-        /* Main content area */
+         
         main {
             width: 100%;
         }
         
-        /* Typography - TIGHTER SPACING */
+         
         h1 {
             font-size: 2em;
             font-weight: normal;
@@ -113,7 +113,7 @@
             margin: 0 0 0.5rem 0;
         }
         
-        /* Standardized time/date display */
+         
         time {
             display: block;
             font-size: 0.9em;
@@ -121,7 +121,7 @@
             margin-bottom: 0.5rem;
         }
         
-        /* Back navigation - COMPACT */
+         
         .back-navigation {
             margin-bottom: 0.75rem;
         }
@@ -138,7 +138,7 @@
             text-decoration: underline;
         }
         
-        /* Global button styles */
+         
         button, .button {
             background-color: white;
             color: black;
@@ -159,15 +159,15 @@
             color: white;
         }
         
-        /* Images */
-        /* Images */
+         
+         
         img {
             max-width: 100%;
             height: auto;
             display: block;
         }
 
-        /* Prevent layout shift for photos */
+         
         picture {
             display: block;
         }
@@ -177,7 +177,7 @@
             height: auto;
         }
 
-        /* Photo grid optimizations */
+         
         .photo-grid .photo-item {
             overflow: hidden;
             position: relative;
@@ -194,7 +194,7 @@
             transform: scale(1.02);
         }
         
-        /* Footer - COMPACT */
+         
         footer {
             text-align: center;
             padding: 10px 0;
@@ -241,12 +241,12 @@
             text-decoration: underline;
         }
         
-        /* Utility classes */
+         
         .content {
             margin-bottom: 1rem;
         }
         
-        /* Ensure consistent article spacing - TIGHTER */
+         
         article {
             margin-bottom: 1rem;
         }
@@ -255,7 +255,7 @@
             margin-bottom: 0;
         }
         
-        /* Lists and sections - COMPACT */
+         
         .featured-section {
             margin-bottom: 1.5rem;
         }
@@ -272,7 +272,7 @@
             margin-bottom: 0.25rem;
         }
         
-        /* Responsive adjustments */
+         
         @media (max-width: 600px) {
             .container {
                 padding: 15px 15px 20px 15px;
@@ -284,7 +284,7 @@
         }
     </style>
     
-    <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+    <link rel="icon" type="image/png" href="/favicon.png">
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -308,26 +308,99 @@
     <header>
         <nav>
             <ul>
-                {{ $currentPage := . }}
-                {{ range site.Menus.main }}
+                
+                
                     <li>
-                        <a href="{{ .URL }}" {{ if $currentPage.IsMenuCurrent "main" . }}style="font-weight: bold;"{{ end }}>
-                            {{ .Name }}
+                        <a href="/" >
+                            Home
                         </a>
                     </li>
-                {{ else }}
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/writing">Writing</a></li>
-                    <li><a href="/photos">Photos</a></li>
-                    <li><a href="/about">About</a></li>
-                {{ end }}
+                
+                    <li>
+                        <a href="/writing/" >
+                            Writing
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/photos/" >
+                            Photos
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/projects/" >
+                            Projects
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/" >
+                            About
+                        </a>
+                    </li>
+                
             </ul>
         </nav>
     </header>
     
     <div class="container">
         <main>
-            {{ block "main" . }}{{ end }}
+            
+<div class="content-list">
+    <h1>Nightlife</h1>
+    
+    
+        <article class="list-item">
+            <h2><a href="http://localhost:1313/writing/bassiani/">Bassiani</a></h2>
+            
+                <time>July 18, 2023</time>
+            
+            <p><p>Bassiani is a club in Tbilisi. Some say it’s the best techno club in the world. It was founded 9 year ago in the empty swimming pool of the city&rsquo;s soccer stadium. The stadium is a relic of Tbilisi&rsquo;s Soviet past, a gigantic concrete monument to the once-command economy.</p>
+<p>Today is the season closing of Bassiani. It&rsquo;s the biggest party in Georgia. All week, every Georgian I&rsquo;ve met has encouraged me to go to this party. Bassiani closes over the summer because most Georgians leave during August and return in September. Therefore, for seven weeks, the Bassiani main room will be closed, only leaving the smaller room open once a week. The party starts on Friday at midnight and continues for 24 hours. I have been advised to arrive in the morning, to beat the rush and see the three Georgian DJs all playing together at midday on Saturday. On Friday, I go to sleep early to prepare my body for the day ahead.</p></p>
+        </article>
+    
+        <article class="list-item">
+            <h2><a href="http://localhost:1313/writing/kick-drums-and-vsco-girls/">Kick Drums and Vsco Girls</a></h2>
+            
+                <time>May 25, 2023</time>
+            
+            <p><h3 id="an-examination-of-the-social-scene-economics-of-a-hyper-pop-brooklyn-rave-may-2023">An examination of the social-scene economics of a Hyper-pop Brooklyn Rave, May 2023</h3>
+<p><em>Preamble</em></p>
+<p>I wrote this for a final paper for SOCI UN3675 Organizing Innovation, a course at Columbia in May of 2023</p>
+<p><em>Abstract</em></p>
+<p>It is hard to throw a party. It is even harder in New York City. It’s even harder when the party is catering to a niche market. In this paper I examine how one party in Brooklyn, Sksksks, organises its labor force around a system of scene economics to ensure its existence. A complex system of creative networks, friendships, and professional nightlife institutions allow for the party to go on. To start and successfully run a party in New York City, a mixture of madness, charisma, and creativity is required, all of which is present at Sksksks. In this paper, I explore how networks aid in new entrepreneurial endeavours and how this case study can be mapped to more general economic cases. </p></p>
+        </article>
+    
+</div>
+
+<style>
+    .list-item {
+        padding-bottom: 0.75rem;
+        margin-bottom: 0.75rem;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .list-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .list-item h2 {
+        margin-bottom: 0.1rem;
+    }
+    
+    .list-item h2 a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .list-item h2 a:hover {
+        text-decoration: underline;
+    }
+</style>
+
         </main>
     </div>
 

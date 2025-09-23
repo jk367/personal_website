@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="J.M. Kettle - NYC-based photographer, writer, and musician.">
+    <meta name="theme-color" content="#ffffff">
+    <title>100 Haikus - J.M. Kettle</title>
+
+    <link rel="alternate" type="application/json" title="AI Index" href="/ai-index.json">
+    <link rel="alternate" type="application/json" title="AI Content" href="/ai-content.json">
+    <link rel="alternate" type="application/json" title="AI Nav" href="/ai-nav.json">
+    
+    
+    <link rel="preconnect" href="https://photos.jmkettle.com">
+    <link rel="dns-prefetch" href="https://photos.jmkettle.com">
+    
+    
+    <style>
+         
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Garamond', serif;
+            font-display: swap;
+            font-size: 1em;
+            line-height: 1.4;
+            color: #000;
+            background-color: #fff;
+        }
+        
+         
+        header {
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid #000;
+            background-color: #fff;
+            position: relative;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav li {
+            display: inline;
+            margin: 0 8px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #000;
+            transition: font-weight 0.2s ease;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+         
+        .container {
+            flex: 1;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 20px 30px 20px;
+            box-sizing: border-box;
+        }
+        
+         
+        main {
+            width: 100%;
+        }
+        
+         
+        h1 {
+            font-size: 2em;
+            font-weight: normal;
+            margin: 0 0 0.5rem 0;
+            line-height: 1.1;
+        }
+        
+        h2 {
+            font-size: 1.5em;
+            font-weight: normal;
+            margin: 0.75rem 0 0.5rem 0;
+            line-height: 1.2;
+        }
+        
+        h3 {
+            font-size: 1.2em;
+            font-weight: normal;
+            margin: 0.5rem 0 0.25rem 0;
+            line-height: 1.3;
+        }
+        
+        p {
+            margin: 0 0 0.5rem 0;
+        }
+        
+         
+        time {
+            display: block;
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        
+         
+        .back-navigation {
+            margin-bottom: 0.75rem;
+        }
+        
+        .back-button {
+            color: #000;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-block;
+            transition: text-decoration 0.2s ease;
+        }
+        
+        .back-button:hover {
+            text-decoration: underline;
+        }
+        
+         
+        button, .button {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            padding: 3px 8px;
+            font-family: Garamond, serif;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin: 0 3px 3px 0;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        button:hover, .button:hover,
+        button.active, .button.active {
+            background-color: black;
+            color: white;
+        }
+        
+         
+         
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+         
+        picture {
+            display: block;
+        }
+
+        picture img {
+            width: 100%;
+            height: auto;
+        }
+
+         
+        .photo-grid .photo-item {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-grid a:hover img {
+            transform: scale(1.02);
+        }
+        
+         
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #000;
+            background-color: #fff;
+            margin-top: auto;
+        }
+        
+        footer p {
+            margin: 0.25rem 0;
+        }
+        
+        .footer-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted #000;
+        }
+        
+        .footer-link:hover {
+            border-bottom: 1px solid #000;
+        }
+        
+        .social-icon {
+            display: inline-block;
+            vertical-align: middle;
+            border-bottom: none !important;
+        }
+        
+        .social-icon:hover {
+            border-bottom: none !important;
+            opacity: 0.7;
+        }
+        
+        .social-icon svg {
+            display: block;
+        }
+        
+        #backToTopLink {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        #backToTopLink:hover {
+            text-decoration: underline;
+        }
+        
+         
+        .content {
+            margin-bottom: 1rem;
+        }
+        
+         
+        article {
+            margin-bottom: 1rem;
+        }
+        
+        article:last-child {
+            margin-bottom: 0;
+        }
+        
+         
+        .featured-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .featured-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .homepage-header {
+            margin-bottom: 1rem;
+        }
+        
+        .homepage-header h1 {
+            margin-bottom: 0.25rem;
+        }
+        
+         
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px 15px 20px 15px;
+            }
+            
+            nav li {
+                margin: 0 5px;
+            }
+        }
+    </style>
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "J.M. Kettle",
+          "url": "https://jmkettle.com",
+          "description": "NYC-based photographer, writer, and musician specializing in black and white photography and electronic music",
+          "jobTitle": ["Photographer", "Writer", "Musician"],
+          "sameAs": [
+            "https://soundcloud.com/kettle9999",
+            "https://www.goodreads.com/user/show/176910457-j-m-kettle", 
+            "https://www.discogs.com/user/jkettle/collection",
+            "https://jmkettle.substack.com/",
+            "https://bandcamp.com/jmkettle"
+          ],
+          "knowsAbout": ["Black and white photography", "Electronic music", "Creative writing", "Techno", "Georgia (country)"]
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                
+                
+                    <li>
+                        <a href="/" >
+                            Home
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/writing/" >
+                            Writing
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/photos/" >
+                            Photos
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/projects/" >
+                            Projects
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/" >
+                            About
+                        </a>
+                    </li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <main>
+            
+<article class="content-single">
+    <h1>100 Haikus</h1>
+    <div class="back-navigation">
+        <a href="/writing/" class="back-button">← Back to Writing</a>
+    </div>
+    
+    <div class="content">
+        <p>This summer I wrote a haiku every day and put it on my personal website. The rules were simple: each poem had to have the classic 5-7-5 structure, and I had to write only one per day. There were no other rules. Haikus have a long and beautiful tradition in Japanese literary history, I decided to ignore it, because the goal was simply to write one a day about my life. I didn&rsquo;t announce this goal publicly; it just happened naturally. The project took on a life of its own and has become one of my favorite works. Here are a few of my favorites:</p>
+<p><strong>August 1, 2025</strong></p>
+<p>delightful party</p>
+<p>a lot of dancing, new friends</p>
+<p>my heart is open</p>
+<p><strong>May 31, 2025</strong></p>
+<p>burnt bagels on stove</p>
+<p>old milk, no paper towels</p>
+<p>text sorry, last night</p>
+<p><strong>June 27, 2025</strong></p>
+<p>croatian wedding</p>
+<p>was very hot here as well</p>
+<p>love wins in the end</p>
+<p>The undercurrent of this project was the fact that I was let go from my job in late April, and I fell into a manageable but significant depression. Funnily enough, I was also miserable at the job, especially toward the end. It was a situation where there was no singular bad actor, but everyone had dutifully set up a situation for maximum misery, myself included. It was as if we all sat in a circle and put Chinese finger traps around our hands, then were surprised when we couldn&rsquo;t get out. Of course, smashing the finger traps is the only way out, but that left me without work. The theme of joblessness comes up often in my poems:</p>
+<p><strong>June 3, 2025</strong></p>
+<p>I open LinkedIn</p>
+<p>did not know he got a job</p>
+<p>close my computer</p>
+<p><strong>August 9, 2025</strong></p>
+<p>I’m back on the plane</p>
+<p>France again, i need a job</p>
+<p>Really need a job</p>
+<p>Joblessness in 2025 is an interesting topic, one that has been written about extensively this year. As a 25-year-old, highly educated, entry-level knowledge worker in technology, it feels like I&rsquo;m in the bull&rsquo;s-eye of a nuclear testing ground, with the weapons being AI, tariffs, and interest rates. I feel like this is what bankers felt in 2008, but it feels so localized today, less relatable to most people. Rather than the entire economy collapsing, it seems that one specific subset has collapsed while the rest of the economy chugs along. Unfortunately, I&rsquo;m in that subset. Trying to find a job has felt completely Sisyphean: pushing a 100-ton boulder up a mountain while covered in Crisco. Luckily, most of my poems have a sense of joy rather than despair, and the poems get more cheerful as time progresses.</p>
+<p>The beautiful nature of this project is that it allows me to unlock far more memory than I had anticipated. The poems act as small keys to each day, days that I might have forgotten, but because of those 17 syllables, the entire day comes back to me. Take for example:</p>
+<p><strong>July 25, 2025</strong></p>
+<p>noels brings me a beer</p>
+<p>we all go to animal</p>
+<p>we watch the sunset</p>
+<p>A lot of what happened that day is missing, but what I remember is that in the first half of July 25th, I was incredibly upset. I had just been rejected or ghosted from another late-stage interview or there was some sort of very bad news that I had received but have since forgotten. Just in a moment of peak despair, my best friend Noel texted me asking if I was home. He let himself into my apartment and threw me a beer. We then listened to music and chatted. I went to the wonderful gay bar Animal with my other good friends Sotiris and Safia, then Sotiris, Noel, and I had Vietnamese food in Williamsburg. Lastly, Noel and I spent the afternoon on his roof listening to music and watching the sunset, where we met a new friend, Noel&rsquo;s neighbor, who is now our very good friend.</p>
+<p>Each poem is a key, and only I have the full lock. My friends have partial locks, and readers who don&rsquo;t know me only have the 17 syllables. I&rsquo;m surprised by how much I remember of the summer and how the time before the haikus is much blurrier. Some days, though, have very little description, are more philosophical, or were written in haste:</p>
+<p><strong>September 9, 2025</strong></p>
+<p>The days between days</p>
+<p>Where nothing happens at all</p>
+<p>Sun shines the brightest</p>
+<p><strong>June 18, 2025</strong></p>
+<p>today, busy day</p>
+<p>doing what? i’m not so sure</p>
+<p>busy day, today.</p>
+<p><strong>July 23, 2025</strong></p>
+<p>in all beginnings</p>
+<p>there is a bold magic force</p>
+<p>or something like that</p>
+<p>To be completely honest, I can&rsquo;t tell you what I did on September 9th, June 18th, or July 23rd. Those days are lost. The 24 hours were seemingly uneventful or unimportant. But each of these days says something about life. Much of life is boring: walking or driving somewhere, eating an unexceptional meal, doing chores, or engaging in some fundamentally mundane activity. The peak experiences of life come, by definition, infrequently. This means that most of the beauty we can access in life exists within the mundane, the sensations, the boring moments. The beauty lies in the boring.</p>
+<p>Unfortunately, new technology strips us from sensation, from the mundane, from the boring. We are constantly plugged in, entertained at a moment&rsquo;s notice, and those moments of stillness, boring stillness, never come. As you can read from the poems, I&rsquo;m generally an optimist with a happy demeanor. However, I&rsquo;m not optimistic about the future in this regard. I fear that one of the most important things that makes us human, finding beauty in boring stillness, will be lost as AI, virtual reality, and robotics grow. The poems I write seek to be a personal antidote to that. Every day I am forced to think of something that made this one day special. Sometimes it&rsquo;s the boring, sometimes it&rsquo;s the infuriating sense of not knowing what to do (as in June 18th), sometimes it&rsquo;s a reference to a book (like July 23rd), and sometimes it&rsquo;s the realization that the most beautiful days have nothing in them (like September 9th).</p>
+<p>The summer of haikus is kind of like a graph, with each poem acting as a singular data point. There is beauty in each poem, but taken together, patterns emerge. You can see the structures and meta-structures of my life. It&rsquo;s clear that nightlife and music play a huge part in my existence, as seen in these poems:</p>
+<p><strong>September 5, 2025</strong></p>
+<p>night with my brother</p>
+<p>Played music for all his friends</p>
+<p>Up late but was sweet</p>
+<p><strong>July 26, 2025</strong></p>
+<p>danced a morning rave</p>
+<p>walked Central Park with a friend</p>
+<p>my feet hurt a lot</p>
+<p><strong>August 3, 2025</strong></p>
+<p>walked six flights of stairs</p>
+<p>played music for eight hours</p>
+<p>a long dream come true</p>
+<p>Music acts as the most important part of each of these days. August 3rd was when I played for eight straight hours on my roof, September 5th was when I DJed with my brother, and July 26th was when I went to a morning party and made a new friend. The power of music and events comes through clearly in the collection. I can imagine that if others did this, what matters to them would also emerge more clearly. However, you can also see the negative aspects. It&rsquo;s clear that my sleep schedule is terrible and I&rsquo;m constantly tired:</p>
+<p><strong>August 4, 2025</strong></p>
+<p>my house is a mess</p>
+<p>my back also hurts a lot</p>
+<p>it was still worth it</p>
+<p><strong>August 27, 2025</strong></p>
+<p>Brain fog and slow days</p>
+<p>Two birds on my window sill</p>
+<p>Dinner with parents</p>
+<p>So while the poems have shown me that music is a large part of what makes my life meaningful, the fact that I have to be up such long hours is causing many days to be wasted in a fog. Humans have a recency bias, we remember the extremes and what has just happened. Being faced with true evidence of how I&rsquo;ve seen each day makes me think: &ldquo;Have I been looking for jobs hard enough?&rdquo; &ldquo;Do I spend too much time on music?&rdquo; &ldquo;What should I do with my life?&rdquo; Before the poems, I had thought about these questions, but the picture they paint points to things I have to reconcile. It&rsquo;s not exact or completely clear, but it&rsquo;s hinting that I have to work harder. Maybe my art needs to take a back seat, or maybe I need to stop looking for a corporate job and start leaning into what brings me joy. I&rsquo;m not sure of the answer, but at least I have the poems that ask the questions.</p>
+<p>This project has become very important to me, especially because of its raw and public nature. I consider it to be an anti-LinkedIn. Unfortunately, I am on LinkedIn a lot, and it&rsquo;s a brutal website. You are constantly seeing the professional achievements of your peers, their successes, and a constant stream that only fuels personal inadequacy. The daily haikus seek to be the opposite. There are no comments, no sharing, no monetization. Each day is real and raw. Some days I am happy, some days I am sad, and some days it seems like all hope is lost. But luckily, most days are filled with the beauty of the life I&rsquo;m fortunate to have: sharing my time on earth with my friends and family, listening to music, drinking coffee and beer, and dancing. No view counts or products, just a window into my life that anyone can see. The past 100 days have not always been easy; being unemployed sucks. But I have found something that gives my life a surprising amount of meaning for what it is, and I&rsquo;m not planning on stopping.</p>
+<p>You can read all of them here: <del><a href="https://jmkettle.com/writing/daily-haikus/">https://jmkettle.com/writing/daily-haikus/</a></del></p>
+
+    </div>
+    
+    <time>September 13, 2025</time>
+    
+</article>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "100 Haikus",
+      "datePublished": "2025-09-13T11:23:36\u002b02:00",
+      "dateModified": "2025-09-13T11:23:36\u002b02:00",
+      "author": {
+        "@type": "Person",
+        "name": "J.M. Kettle",
+        "url": "https://jmkettle.com"
+      },
+      "publisher": {
+        "@type": "Person", 
+        "name": "J.M. Kettle",
+        "url": "https://jmkettle.com"
+      },
+      "description": "This summer I wrote a haiku every day and put it on my personal website. The rules were simple: each poem had to have the classic 5-7-5 structure, and I had to write only one per day. There were no other rules. Haikus have a long and beautiful tradition in Japanese literary history, I decided to ignore it, because the goal was simply to write one a day about my life. I didn\u0026rsquo;t announce this goal publicly; it just happened naturally. The project took on a life of its own and has become one of my favorite works. Here are a few of my favorites:\n",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http:\/\/localhost:1313\/writing\/100-haikus\/"
+      },
+      "wordCount":  1634 ,
+      "keywords": ["poetry"]
+    }
+</script>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>
+            <a href="#" id="backToTopLink">back to top</a>
+        </p>
+        <p>&copy; 2025 <a href="/" class="footer-link">J.M. Kettle</a> 
+            <a href="https://jmkettle.substack.com/" class="footer-link social-icon" target="_blank" rel="noopener" style="margin-left: 8px;" title="Substack">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+                </svg>
+            </a>
+            <a href="https://twitter.com/jmkettle" class="footer-link social-icon" target="_blank" rel="noopener" style="margin-left: 4px;" title="Twitter/X">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+            <a href="https://instagram.com/jmwkettle" class="footer-link social-icon" target="_blank" rel="noopener" style="margin-left: 4px;" title="Instagram">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('backToTopLink').addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
+        });
+    </script>
+    
+    <script>
+        window.addEventListener('error', function(e) {
+            if (e.target.tagName === 'IMG' || e.target.tagName === 'SCRIPT') {
+                e.preventDefault();
+            }
+        }, true);
+    </script>
+</body>
+</html>

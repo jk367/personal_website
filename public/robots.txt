@@ -1,0 +1,26 @@
+# robots.txt for jmkettle.com
+User-agent: *
+Allow: /
+
+# Optional: Block admin areas if you have any
+# Disallow: /admin/
+# Disallow: /drafts/
+
+# Sitemap location - add this if you generate a sitemap
+Sitemap: https://jmkettle.com/sitemap.xml
+
+# Optimize crawl rate for important sections
+User-agent: Googlebot
+Allow: /photos/
+Allow: /writing/
+
+# Add crawl delays for less important bots to reduce server load
+User-agent: Slurp
+Crawl-delay: 1
+
+User-agent: Bingbot
+Crawl-delay: 1
+
+# Block any unwanted bots (optional)
+User-agent: AdsBot-Google
+Disallow: /

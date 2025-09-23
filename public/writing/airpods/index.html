@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="J.M. Kettle - NYC-based photographer, writer, and musician.">
     <meta name="theme-color" content="#ffffff">
-    <title>{{ if .Title }}{{ .Title }} - {{ end }}J.M. Kettle</title>
+    <title>Contra AirPods - J.M. Kettle</title>
 
-    <link rel="alternate" type="application/json" title="AI Index" href="{{ "ai-index.json" | relURL }}">
-    <link rel="alternate" type="application/json" title="AI Content" href="{{ "ai-content.json" | relURL }}">
-    <link rel="alternate" type="application/json" title="AI Nav" href="{{ "ai-nav.json" | relURL }}">
+    <link rel="alternate" type="application/json" title="AI Index" href="/ai-index.json">
+    <link rel="alternate" type="application/json" title="AI Content" href="/ai-content.json">
+    <link rel="alternate" type="application/json" title="AI Nav" href="/ai-nav.json">
     
-    <!-- Resource hints -->
+    
     <link rel="preconnect" href="https://photos.jmkettle.com">
     <link rel="dns-prefetch" href="https://photos.jmkettle.com">
     
-    <!-- Global CSS - COMPACT VERSION -->
+    
     <style>
-        /* Reset and base styles */
+         
         * {
             box-sizing: border-box;
         }
@@ -41,7 +41,7 @@
             background-color: #fff;
         }
         
-        /* Header styles - TIGHTER */
+         
         header {
             padding: 10px 0;
             text-align: center;
@@ -72,7 +72,7 @@
             text-decoration: underline;
         }
         
-        /* Container styles - MUCH LESS PADDING */
+         
         .container {
             flex: 1;
             width: 100%;
@@ -82,12 +82,12 @@
             box-sizing: border-box;
         }
         
-        /* Main content area */
+         
         main {
             width: 100%;
         }
         
-        /* Typography - TIGHTER SPACING */
+         
         h1 {
             font-size: 2em;
             font-weight: normal;
@@ -113,7 +113,7 @@
             margin: 0 0 0.5rem 0;
         }
         
-        /* Standardized time/date display */
+         
         time {
             display: block;
             font-size: 0.9em;
@@ -121,7 +121,7 @@
             margin-bottom: 0.5rem;
         }
         
-        /* Back navigation - COMPACT */
+         
         .back-navigation {
             margin-bottom: 0.75rem;
         }
@@ -138,7 +138,7 @@
             text-decoration: underline;
         }
         
-        /* Global button styles */
+         
         button, .button {
             background-color: white;
             color: black;
@@ -159,15 +159,15 @@
             color: white;
         }
         
-        /* Images */
-        /* Images */
+         
+         
         img {
             max-width: 100%;
             height: auto;
             display: block;
         }
 
-        /* Prevent layout shift for photos */
+         
         picture {
             display: block;
         }
@@ -177,7 +177,7 @@
             height: auto;
         }
 
-        /* Photo grid optimizations */
+         
         .photo-grid .photo-item {
             overflow: hidden;
             position: relative;
@@ -194,7 +194,7 @@
             transform: scale(1.02);
         }
         
-        /* Footer - COMPACT */
+         
         footer {
             text-align: center;
             padding: 10px 0;
@@ -241,12 +241,12 @@
             text-decoration: underline;
         }
         
-        /* Utility classes */
+         
         .content {
             margin-bottom: 1rem;
         }
         
-        /* Ensure consistent article spacing - TIGHTER */
+         
         article {
             margin-bottom: 1rem;
         }
@@ -255,7 +255,7 @@
             margin-bottom: 0;
         }
         
-        /* Lists and sections - COMPACT */
+         
         .featured-section {
             margin-bottom: 1.5rem;
         }
@@ -272,7 +272,7 @@
             margin-bottom: 0.25rem;
         }
         
-        /* Responsive adjustments */
+         
         @media (max-width: 600px) {
             .container {
                 padding: 15px 15px 20px 15px;
@@ -284,7 +284,7 @@
         }
     </style>
     
-    <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+    <link rel="icon" type="image/png" href="/favicon.png">
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -308,26 +308,93 @@
     <header>
         <nav>
             <ul>
-                {{ $currentPage := . }}
-                {{ range site.Menus.main }}
+                
+                
                     <li>
-                        <a href="{{ .URL }}" {{ if $currentPage.IsMenuCurrent "main" . }}style="font-weight: bold;"{{ end }}>
-                            {{ .Name }}
+                        <a href="/" >
+                            Home
                         </a>
                     </li>
-                {{ else }}
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/writing">Writing</a></li>
-                    <li><a href="/photos">Photos</a></li>
-                    <li><a href="/about">About</a></li>
-                {{ end }}
+                
+                    <li>
+                        <a href="/writing/" >
+                            Writing
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/photos/" >
+                            Photos
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/projects/" >
+                            Projects
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/" >
+                            About
+                        </a>
+                    </li>
+                
             </ul>
         </nav>
     </header>
     
     <div class="container">
         <main>
-            {{ block "main" . }}{{ end }}
+            
+<article class="content-single">
+    <h1>Contra AirPods</h1>
+    <div class="back-navigation">
+        <a href="/writing/" class="back-button">← Back to Writing</a>
+    </div>
+    
+    <div class="content">
+        <p>It&rsquo;s September 2025, and reviews are in for the new AirPods 3. They are receiving nearly universal acclaim. There is no doubt that technologically, the AirPods are a marvel. It&rsquo;s been 11 years since the first bluetooth wireless earphones came out, the Bragi Dash, and 10 years since the first AirPods arrived to consumers. Over the decade, they have made significant improvements, most notably with the AirPod Pros&rsquo; noise cancelling feature. Now, in 2025, we have reached near perfection. The question remains, have AirPods made our world better? Are we more connected and happier, or more isolated and locked in our digital worlds?</p>
+<p>It&rsquo;s clear that for individual consumers, AirPods are an amazing product. AirPods give you the ability to quickly plug into the digital world with no tangled wires or bulky headphones, and since the Pros, you can also block out the physical world. At a moment&rsquo;s notice, you can cancel any noise and focus solely on your audio content. The issue is not with the individual consumer, but the second order effects of everyone having AirPods.</p>
+<p>One might say that there are no real differences between wired earbuds and AirPods. However, the key difference is that the AirPods have to stay in your ear. With wired earbuds, there is a non-risky transition state from in ear to in pocket. A person can safely have their earbuds hanging on their neck or have one dangling, without fear of losing them and still interact with the world around them. AirPods, on the other hand, have no transition state, only three distinct states: one in the case, two in one&rsquo;s hand, and three in one&rsquo;s ear. The second state always has a risk of losing a singular bud, which makes people wary of taking them out. It&rsquo;s possible, but stressful. It makes approaching someone with AirPods more risky because what if you make the person take out their AirPods and they drop on the floor to a subway grate, or into the sewer? So it&rsquo;s best not to disturb the person at the risk they lose an expensive piece of hardware.</p>
+<p>Fundamentally, AirPods tell the world: &ldquo;DO NOT TALK TO ME&rdquo;. On an individual level, this is sometimes useful. Sometimes you don&rsquo;t want to be talked to or bothered. In a city like New York, there are many times when one might want to disappear, but on a communal level it makes our society more closed off, more isolated, less friendly. I remember growing up in NYC before AirPods and when there was no cellular internet in subway stations. People would read books and generally ignore each other, but there was a feeling of sharing a space. For a brief subway ride, New Yorkers of all backgrounds shared a communal experience. Conversations wouldn&rsquo;t always happen, but they could. People exchanged looks, read over shoulders, and connected with each other in non-verbal ways. The early 2010s were not all drum circles and kumbaya, but the city felt less divided. One might argue that AirPods are no different than how we ignored each other in the past, but the fact remains that AirPods are the best technological way to leave the world around you. In the quest to isolate ourselves, we have won.</p>
+<p>Since AirPods and other bluetooth headsets have become near universal, the feeling of shared communal existence no longer exists. Even if you decide not to use AirPods, there is a critical mass of people that do, making the subway cars, cafes, and streets sterile, quiet, and isolating. People can now go into their own worlds, consume information perfectly tailored to them, never have to listen to others. On an individual level, we are happier as consumers, but on a societal level, we are no longer challenged by media, by reality, by each other. We have all escaped into our own virtual worlds.</p>
+<p>When you travel to Europe, especially Berlin and Paris, you notice that far fewer people have AirPods or bluetooth earbuds. Generally iPhone and AirPod ownership is far less in the EU than in the US. In addition, there is a social norm where you do not wear wireless earbuds in public. When you travel to Paris, you feel the streets are more alive, that you are sharing your reality with others. There is a powerful effect where if you are walking down the street and you put in your AirPods, you realize you are one of the only ones wearing them. There is social pressure to take them off, and then you return to a shared reality, the real world.</p>
+<p>The AirPods 3 are a technical masterpiece. They last longer, block more noise out, and basically never need to be removed. The technology is getting better, but this is not good for us. We are past the tipping point of shared spaces. We now live in fictional personalized virtual worlds. The perfection of the AirPods will no doubt make Apple billions of dollars, but they will also make us lonelier and more closed off. Better is not always good.</p>
+
+    </div>
+    
+    <time>September 16, 2025</time>
+    
+</article>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Contra AirPods",
+      "datePublished": "2025-09-16T11:23:36\u002b02:00",
+      "dateModified": "2025-09-16T11:23:36\u002b02:00",
+      "author": {
+        "@type": "Person",
+        "name": "J.M. Kettle",
+        "url": "https://jmkettle.com"
+      },
+      "publisher": {
+        "@type": "Person", 
+        "name": "J.M. Kettle",
+        "url": "https://jmkettle.com"
+      },
+      "description": "It\u0026rsquo;s September 2025, and reviews are in for the new AirPods 3. They are receiving nearly universal acclaim. There is no doubt that technologically, the AirPods are a marvel. It\u0026rsquo;s been 11 years since the first bluetooth wireless earphones came out, the Bragi Dash, and 10 years since the first AirPods arrived to consumers. Over the decade, they have made significant improvements, most notably with the AirPod Pros\u0026rsquo; noise cancelling feature. Now, in 2025, we have reached near perfection. The question remains, have AirPods made our world better? Are we more connected and happier, or more isolated and locked in our digital worlds?\n",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http:\/\/localhost:1313\/writing\/airpods\/"
+      },
+      "wordCount":  841 ,
+      "keywords": ["essay"]
+    }
+</script>
+
         </main>
     </div>
 

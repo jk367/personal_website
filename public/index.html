@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="generator" content="Hugo 0.150.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="J.M. Kettle - NYC-based photographer, writer, and musician.">
     <meta name="theme-color" content="#ffffff">
-    <title>{{ if .Title }}{{ .Title }} - {{ end }}J.M. Kettle</title>
+    <title>J.M. Kettle</title>
 
-    <link rel="alternate" type="application/json" title="AI Index" href="{{ "ai-index.json" | relURL }}">
-    <link rel="alternate" type="application/json" title="AI Content" href="{{ "ai-content.json" | relURL }}">
-    <link rel="alternate" type="application/json" title="AI Nav" href="{{ "ai-nav.json" | relURL }}">
+    <link rel="alternate" type="application/json" title="AI Index" href="/ai-index.json">
+    <link rel="alternate" type="application/json" title="AI Content" href="/ai-content.json">
+    <link rel="alternate" type="application/json" title="AI Nav" href="/ai-nav.json">
     
-    <!-- Resource hints -->
+    
     <link rel="preconnect" href="https://photos.jmkettle.com">
     <link rel="dns-prefetch" href="https://photos.jmkettle.com">
     
-    <!-- Global CSS - COMPACT VERSION -->
+    
     <style>
-        /* Reset and base styles */
+         
         * {
             box-sizing: border-box;
         }
@@ -41,7 +42,7 @@
             background-color: #fff;
         }
         
-        /* Header styles - TIGHTER */
+         
         header {
             padding: 10px 0;
             text-align: center;
@@ -72,7 +73,7 @@
             text-decoration: underline;
         }
         
-        /* Container styles - MUCH LESS PADDING */
+         
         .container {
             flex: 1;
             width: 100%;
@@ -82,12 +83,12 @@
             box-sizing: border-box;
         }
         
-        /* Main content area */
+         
         main {
             width: 100%;
         }
         
-        /* Typography - TIGHTER SPACING */
+         
         h1 {
             font-size: 2em;
             font-weight: normal;
@@ -113,7 +114,7 @@
             margin: 0 0 0.5rem 0;
         }
         
-        /* Standardized time/date display */
+         
         time {
             display: block;
             font-size: 0.9em;
@@ -121,7 +122,7 @@
             margin-bottom: 0.5rem;
         }
         
-        /* Back navigation - COMPACT */
+         
         .back-navigation {
             margin-bottom: 0.75rem;
         }
@@ -138,7 +139,7 @@
             text-decoration: underline;
         }
         
-        /* Global button styles */
+         
         button, .button {
             background-color: white;
             color: black;
@@ -159,15 +160,15 @@
             color: white;
         }
         
-        /* Images */
-        /* Images */
+         
+         
         img {
             max-width: 100%;
             height: auto;
             display: block;
         }
 
-        /* Prevent layout shift for photos */
+         
         picture {
             display: block;
         }
@@ -177,7 +178,7 @@
             height: auto;
         }
 
-        /* Photo grid optimizations */
+         
         .photo-grid .photo-item {
             overflow: hidden;
             position: relative;
@@ -194,7 +195,7 @@
             transform: scale(1.02);
         }
         
-        /* Footer - COMPACT */
+         
         footer {
             text-align: center;
             padding: 10px 0;
@@ -241,12 +242,12 @@
             text-decoration: underline;
         }
         
-        /* Utility classes */
+         
         .content {
             margin-bottom: 1rem;
         }
         
-        /* Ensure consistent article spacing - TIGHTER */
+         
         article {
             margin-bottom: 1rem;
         }
@@ -255,7 +256,7 @@
             margin-bottom: 0;
         }
         
-        /* Lists and sections - COMPACT */
+         
         .featured-section {
             margin-bottom: 1.5rem;
         }
@@ -272,7 +273,7 @@
             margin-bottom: 0.25rem;
         }
         
-        /* Responsive adjustments */
+         
         @media (max-width: 600px) {
             .container {
                 padding: 15px 15px 20px 15px;
@@ -284,7 +285,7 @@
         }
     </style>
     
-    <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+    <link rel="icon" type="image/png" href="/favicon.png">
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -308,26 +309,251 @@
     <header>
         <nav>
             <ul>
-                {{ $currentPage := . }}
-                {{ range site.Menus.main }}
+                
+                
                     <li>
-                        <a href="{{ .URL }}" {{ if $currentPage.IsMenuCurrent "main" . }}style="font-weight: bold;"{{ end }}>
-                            {{ .Name }}
+                        <a href="/" >
+                            Home
                         </a>
                     </li>
-                {{ else }}
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/writing">Writing</a></li>
-                    <li><a href="/photos">Photos</a></li>
-                    <li><a href="/about">About</a></li>
-                {{ end }}
+                
+                    <li>
+                        <a href="/writing/" >
+                            Writing
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/photos/" >
+                            Photos
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/projects/" >
+                            Projects
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/" >
+                            About
+                        </a>
+                    </li>
+                
             </ul>
         </nav>
     </header>
     
     <div class="container">
         <main>
-            {{ block "main" . }}{{ end }}
+            
+<style>
+    .homepage-header {
+        margin-bottom: 1rem;
+    }
+    
+    .homepage-header h1 {
+        margin-bottom: 0.5rem;
+    }
+    
+    .featured-section {
+        margin-bottom: 1rem;
+    }
+    
+    .featured-section:last-child {
+        margin-bottom: 0;
+    }
+    
+    .section-title {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .section-title:hover {
+        text-decoration: underline;
+    }
+    
+    .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+        margin-top: 0.5rem;
+    }
+    
+    .photo-item {
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 3/2;
+    }
+    
+    .photo-item a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .photo-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .article-list {
+        margin-top: 0.5rem;
+    }
+    
+    .article-item {
+        margin-bottom: 0.5rem;
+    }
+    
+    .article-item:last-child {
+        margin-bottom: 0;
+    }
+    
+    .article-title {
+        display: inline;
+        margin-right: 0.5rem;
+        font-size: 1.2em;
+    }
+    
+    .article-title a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .article-title a:hover {
+        text-decoration: underline;
+    }
+    
+    .article-date {
+        display: inline;
+        font-size: 0.9em;
+        color: #666;
+    }
+    
+    .contact-content {
+        margin-top: 0.5rem;
+    }
+    
+    .contact-link {
+        color: black;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    
+    .contact-link:hover {
+        text-decoration: underline;
+    }
+    
+    @media (max-width: 600px) {
+        .photo-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    @media (min-width: 601px) and (max-width: 900px) {
+        .photo-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+</style>
+
+<div class="homepage-header">
+    <h1>J.M. Kettle</h1>
+    <p>I am a writer and photographer. Currently based in NYC.</p>
+</div>
+
+<div class="featured-section">
+    <h2><a href="/writing/" class="section-title">Writing</a></h2>
+    <div class="article-list">
+        
+        
+            <article class="article-item">
+                <h3 class="article-title"><a href="http://localhost:1313/writing/airpods/">Contra AirPods</a></h3>
+                <span class="article-date">Sep 16, 2025</span>
+            </article>
+        
+            <article class="article-item">
+                <h3 class="article-title"><a href="http://localhost:1313/writing/100-haikus/">100 Haikus</a></h3>
+                <span class="article-date">Sep 13, 2025</span>
+            </article>
+        
+            <article class="article-item">
+                <h3 class="article-title"><a href="http://localhost:1313/writing/daily-haikus/">daily haiku </a></h3>
+                <span class="article-date">May 25, 2025</span>
+            </article>
+        
+    </div>
+</div>
+
+
+<div class="featured-section">
+    <h2><a href="/photos/" class="section-title">Photos</a></h2>
+    <div class="photo-grid">
+        
+        
+            <div class="photo-item">
+                <a href="http://localhost:1313/photos/couple/">
+                    <picture>
+                        <source media="(max-width: 600px)" 
+                                srcset="https://photos.jmkettle.com/couple.webp?width=400&format=webp&quality=75">
+                        <source media="(max-width: 900px)" 
+                                srcset="https://photos.jmkettle.com/couple.webp?width=500&format=webp&quality=75">
+                        <img src="https://photos.jmkettle.com/couple.webp?width=600&format=webp&quality=75" 
+                             width="600"
+                             height="400"
+                             alt="Couple"
+                             fetchpriority="high" loading="eager">
+                             
+                    </picture>
+                </a>
+            </div>
+        
+            <div class="photo-item">
+                <a href="http://localhost:1313/photos/jest/">
+                    <picture>
+                        <source media="(max-width: 600px)" 
+                                srcset="https://photos.jmkettle.com/jest.webp?width=400&format=webp&quality=75">
+                        <source media="(max-width: 900px)" 
+                                srcset="https://photos.jmkettle.com/jest.webp?width=500&format=webp&quality=75">
+                        <img src="https://photos.jmkettle.com/jest.webp?width=600&format=webp&quality=75" 
+                             width="600"
+                             height="400"
+                             alt="Jest"
+                             loading="lazy">
+                             
+                    </picture>
+                </a>
+            </div>
+        
+            <div class="photo-item">
+                <a href="http://localhost:1313/photos/magdalene/">
+                    <picture>
+                        <source media="(max-width: 600px)" 
+                                srcset="https://photos.jmkettle.com/magdalene.webp?width=400&format=webp&quality=75">
+                        <source media="(max-width: 900px)" 
+                                srcset="https://photos.jmkettle.com/magdalene.webp?width=500&format=webp&quality=75">
+                        <img src="https://photos.jmkettle.com/magdalene.webp?width=600&format=webp&quality=75" 
+                             width="600"
+                             height="400"
+                             alt="Magdalene"
+                             loading="lazy">
+                             
+                    </picture>
+                </a>
+            </div>
+        
+    </div>
+</div>
+
+<div class="featured-section">
+    <h2>Contact</h2>
+    <div class="contact-content">
+        <a href="mailto:contact@jmkettle.com" class="contact-link">Email at contact@jmkettle.com</a>
+    </div>
+</div>
+
         </main>
     </div>
 

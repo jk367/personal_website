@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="J.M. Kettle - NYC-based photographer, writer, and musician.">
+    <meta name="theme-color" content="#ffffff">
+    <title>Goodbye Georgia - J.M. Kettle</title>
+
+    <link rel="alternate" type="application/json" title="AI Index" href="/ai-index.json">
+    <link rel="alternate" type="application/json" title="AI Content" href="/ai-content.json">
+    <link rel="alternate" type="application/json" title="AI Nav" href="/ai-nav.json">
+    
+    
+    <link rel="preconnect" href="https://photos.jmkettle.com">
+    <link rel="dns-prefetch" href="https://photos.jmkettle.com">
+    
+    
+    <style>
+         
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Garamond', serif;
+            font-display: swap;
+            font-size: 1em;
+            line-height: 1.4;
+            color: #000;
+            background-color: #fff;
+        }
+        
+         
+        header {
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid #000;
+            background-color: #fff;
+            position: relative;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav li {
+            display: inline;
+            margin: 0 8px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #000;
+            transition: font-weight 0.2s ease;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+         
+        .container {
+            flex: 1;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 20px 30px 20px;
+            box-sizing: border-box;
+        }
+        
+         
+        main {
+            width: 100%;
+        }
+        
+         
+        h1 {
+            font-size: 2em;
+            font-weight: normal;
+            margin: 0 0 0.5rem 0;
+            line-height: 1.1;
+        }
+        
+        h2 {
+            font-size: 1.5em;
+            font-weight: normal;
+            margin: 0.75rem 0 0.5rem 0;
+            line-height: 1.2;
+        }
+        
+        h3 {
+            font-size: 1.2em;
+            font-weight: normal;
+            margin: 0.5rem 0 0.25rem 0;
+            line-height: 1.3;
+        }
+        
+        p {
+            margin: 0 0 0.5rem 0;
+        }
+        
+         
+        time {
+            display: block;
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        
+         
+        .back-navigation {
+            margin-bottom: 0.75rem;
+        }
+        
+        .back-button {
+            color: #000;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-block;
+            transition: text-decoration 0.2s ease;
+        }
+        
+        .back-button:hover {
+            text-decoration: underline;
+        }
+        
+         
+        button, .button {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            padding: 3px 8px;
+            font-family: Garamond, serif;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin: 0 3px 3px 0;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        button:hover, .button:hover,
+        button.active, .button.active {
+            background-color: black;
+            color: white;
+        }
+        
+         
+         
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+         
+        picture {
+            display: block;
+        }
+
+        picture img {
+            width: 100%;
+            height: auto;
+        }
+
+         
+        .photo-grid .photo-item {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-grid a:hover img {
+            transform: scale(1.02);
+        }
+        
+         
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #000;
+            background-color: #fff;
+            margin-top: auto;
+        }
+        
+        footer p {
+            margin: 0.25rem 0;
+        }
+        
+        .footer-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted #000;
+        }
+        
+        .footer-link:hover {
+            border-bottom: 1px solid #000;
+        }
+        
+        .social-icon {
+            display: inline-block;
+            vertical-align: middle;
+            border-bottom: none !important;
+        }
+        
+        .social-icon:hover {
+            border-bottom: none !important;
+            opacity: 0.7;
+        }
+        
+        .social-icon svg {
+            display: block;
+        }
+        
+        #backToTopLink {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        #backToTopLink:hover {
+            text-decoration: underline;
+        }
+        
+         
+        .content {
+            margin-bottom: 1rem;
+        }
+        
+         
+        article {
+            margin-bottom: 1rem;
+        }
+        
+        article:last-child {
+            margin-bottom: 0;
+        }
+        
+         
+        .featured-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .featured-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .homepage-header {
+            margin-bottom: 1rem;
+        }
+        
+        .homepage-header h1 {
+            margin-bottom: 0.25rem;
+        }
+        
+         
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px 15px 20px 15px;
+            }
+            
+            nav li {
+                margin: 0 5px;
+            }
+        }
+    </style>
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "J.M. Kettle",
+          "url": "https://jmkettle.com",
+          "description": "NYC-based photographer, writer, and musician specializing in black and white photography and electronic music",
+          "jobTitle": ["Photographer", "Writer", "Musician"],
+          "sameAs": [
+            "https://soundcloud.com/kettle9999",
+            "https://www.goodreads.com/user/show/176910457-j-m-kettle", 
+            "https://www.discogs.com/user/jkettle/collection",
+            "https://jmkettle.substack.com/",
+            "https://bandcamp.com/jmkettle"
+          ],
+          "knowsAbout": ["Black and white photography", "Electronic music", "Creative writing", "Techno", "Georgia (country)"]
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                
+                
+                    <li>
+                        <a href="/" >
+                            Home
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/writing/" >
+                            Writing
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/photos/" >
+                            Photos
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/projects/" >
+                            Projects
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/" >
+                            About
+                        </a>
+                    </li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <main>
+            
+<article class="content-single">
+    <h1>Goodbye Georgia</h1>
+    <div class="back-navigation">
+        <a href="/writing/" class="back-button">← Back to Writing</a>
+    </div>
+    
+    <div class="content">
+        <p>I am back in NYC, in my childhood room, writing this essay. It feels as if the past 6 months were a dream or a hallucination. It all went by so quickly and so slowly, but now it is over. I have such overwhelming love for Tbilisi and the people of Georgia, it almost feels like I have left home to go somewhere new. The air and atmosphere are different in NYC; it&rsquo;s hard to explain, but it feels a bit less serious, a bit more new world-y, as if we are all just making it up as we walk the streets of Brooklyn. New York is also much busier and louder, making the transition a bit more jarring.</p>
+<p>A new chapter of my life is starting, which is exciting but overwhelming. The journey in Georgia was almost like a life in miniature. I was born in July and moved on in December. Beyond the beauties of Georgia and the kindness of the Georgian people, I think the feelings/regrets/thoughts that I felt just after returning home were the most valuable part of the whole trip. Here are a few below.</p>
+<p><strong>I wish I had taken more pictures and I wish I had written more.</strong></p>
+<p>As readers of the blog know, I started to dabble in photography and writing. I can say that my only regret was not taking more pictures and not writing better blogs. Taking photos and writing are both odd things because in the moment, I don&rsquo;t really like doing them, but they turn out to be extremely rewarding. To even get started on this essay took a Herculean effort. But after the work is done, and the creative output is in the record, it serves as an anchor of my memory. It is evidence that my life really did happen. All the pictures will be there to convince me that I really did go to Tbilisi, that I really had a wonderful time, that I made some wonderful friends.</p>
+<p>The blog wasn&rsquo;t a success or a failure, per se, but it was nice to write and improve on it. So the only thing to do now is to write more.</p>
+<p><strong>I wish I hadn&rsquo;t stressed so much.</strong></p>
+<p>During the trip, there were periods in which I had several really bad days and was really stressed out. One of the main reasons of my stress was looking for a job. I didn&rsquo;t find one, and I think it&rsquo;s probably better that way. I felt that I spent the right amount of effort looking for one, but the amount of stress that I allowed myself to feel had very little effect on the outcome. Worrying about finding a job while looking and not worrying about finding a job while looking has the same effect on the outcome but completely changes how one experiences life. There is no reason to sweat the small stuff.</p>
+<p><strong>I&rsquo;m happy that I was out all of the time.</strong></p>
+<p>My apartment in Tbilisi was small and very Soviet, and the cabs were cheap, so I was out almost every night. Mutant Radio, the Jam Session, Bassiani, Left Bank. Every night I went somewhere to see friends. It was a bit exhausting, but it was how I made all of my memories. I really had no choice about getting out because I was new to the city. Saying yes to trips, yes to club nights, yes to coffees made me meet new people and feel more involved in the community. If you are young, you should be out as much as you possibly can; it&rsquo;s the easiest way to make your life better.</p>
+<p><strong>The (old) world is really a crazy place.</strong></p>
+<p>There really is a stark difference between the old and new world. In America, no one really cares which village you are from, or which ethnic group you belong to (beyond the major racial categories), but in the old world, these things really do matter. Things felt more serious, the histories are longer, the grievances are more intense, and every group is a victim and perpetrator of some historical crime.</p>
+<p>For example, I had heard of the Yazidis and the Circassians, but I had never met anyone from those ethnic groups. I had read about their respective genocides (which happened surprisingly recently) but had no connection to the people. But, in Tbilisi, I met Circassians, I met Yazidis, Russians, Ukrainians, Jews, Iranians, Arabs. It was as if I was living in present history. Instead of commenting on it from Brooklyn and reading about it in the WSJ or NYT, I was living it. I was seeing it unfold.</p>
+<p>The problems in Georgia felt more serious. It felt that there were no adults in charge. It felt that things could have blown up at any moment but also that nothing would happen for days on end. Knowing you have an invading force 60 minutes from your apartment that probably won&rsquo;t invade is exciting, unnerving, and just scary. It sure is different than living in Brooklyn.</p>
+<p>The way I describe it to people is that in NYC, or America, it feels like someone is in charge and that things will be okay, but in the old world, it doesn&rsquo;t feel like that. Things were fluid; I wouldn&rsquo;t know if my favorite store would be around the next day, or if the laws around my apartment would change, or if we would get invaded. The whole experience felt far freer than anything I experienced in the west.</p>
+<p><strong>History is complex.</strong></p>
+<p>&ldquo;History is complex&rdquo; is something someone says to usually shut down a conversation, but it&rsquo;s actually true. I probably know more Georgian history than 98-99% of Americans, but I would say that I really don&rsquo;t know the whole story. Georgia is a tiny tiny tiny country of 3.5 million people, but there are 3.5 million perspectives, points of view, and VERY strong opinions.</p>
+<p>I would make a joke about Georgian coffee being the shitty instant Jacobs, one that is everywhere in the city; one person would find it funny that I knew the reference, but another would yell at me, explaining that this was because of poverty, colonialism, etc. (I don&rsquo;t think it&rsquo;s like that, I think it&rsquo;s just that Jacobs is cheap and perfectly fine).</p>
+<p>I had my views on Georgian politics, but they were shaped, twisted, and poked by my realities living in the country. For example, I originally thought that Georgia should 100% join the EU. But after being in the country for quite a long time, I don&rsquo;t think Georgia is ready, or it would actually be very positive for anyone. There is an EU section of Georgia, where the clubs are, the tourists go, and the photographs are taken. But, there is a larger, poor, ultra-conservative part of Georgia that I feel Brussels would overlook and steamroll. That being said, Georgia is no longer post-Soviet. There is such a deep hatred of Russia and Russians that it honestly made me feel uncomfortable at times. While I understood it, I felt that many of my friends were caught in the political crossfire. Georgia is a paradoxical place; it&rsquo;s eastern, western, Christian, secular, gay, ultra-straight, conservative, and liberal. There is not one Georgia; there are hundreds, and I was able to explore many of them.</p>
+<p><strong>Clubbing is best in Tbilisi.</strong></p>
+<p>My clubbing days are numbered. I&rsquo;m getting older, and my priorities are changing. I will no longer be the club rat in the front left at 8 am in the morning. I just don&rsquo;t really have it in me anymore. That being said, clubbing in Tbilisi is a euphoric experience. I love techno, and I&rsquo;ve been to clubs all over the world, and Tbilisi is my favorite place to go out, without question. I wrote a long essay about Bassiani when I just arrived in Georgia. Looking back on it, most of what I said was true, but some of it needs to be revised.</p>
+<p>Clubbing is not nearly as political as it once was; it is far more artistic now. The problem isn&rsquo;t getting shut down by the government; it&rsquo;s bringing in more customers, it&rsquo;s not about defending techno, but more about getting the new generation into the clubs (who really prefer rap, just see the insanity of a Trap Night at TES).</p>
+<p>But regardless of the changing landscape of the club scene, one thing is for certain: Georgians love to dance. Clubbing here is really about music; it&rsquo;s really about dancing and it&rsquo;s really fun. I went to Bassiani around ~25 times (a regular, to say the least) and every time was different, every time had new faces, every time had a new story.</p>
+<p>Only people who have been to Bassiani will understand, but the parties really started when you would have 3-5 people jump on and start dancing on the huge set of speakers in Horoom at around 3 am. People would be hanging off the rafters, sleeping on the couches, smoking several packs of cigarettes while the sun came out. This kind of partying is just not possible in NYC because it&rsquo;s too expensive and you need a job to live in the city. Also, the atmosphere is not as free; NYC is more socially climby and there generally are more &ldquo;rules&rdquo; to go out. This is not to say there aren&rsquo;t amazing clubs in NYC (much love to Basement, Nowadays, H0l0, Goodroom, Public Records, etc.) but Georgia is a wild and special place. I don&rsquo;t know how Berlin felt in the early 2010s, but I think Georgia is probably the closest thing you can get to it now.</p>
+<p>I like going out in NYC, but it&rsquo;s too expensive. Berlin probably has the best music, but there are so many drugs that it&rsquo;s become less about the music and more about the party. Tbilisi for me is a perfect middle ground where things are wild but not too wild, people love dancing but have limits, and going out won&rsquo;t cause you to go bankrupt. I only played a few sets, but I have made lifelong friends that will force me to go back, in a different way, but returning nonetheless.</p>
+<p>Tbilisi is very chill. Like, sooooooooooooo chill. Like nothing is open before 10 am chill. Like all of the ambition is sucked out of the air chill. Which means that I never felt bad about going out, just about leaving at a responsible time (even 4 am on a Thursday was early). This, of course, has advantages and disadvantages. It&rsquo;s hard to start a career in Tbilisi, even online; the environment is not conducive to that, but it is a place to get unburnt out and have a wonderful time. We all go to our last rave at one point, mine won&rsquo;t fully be for a while (at least I hope) but having done the bulk of my raving in Tbilisi, I can say I heard the best music, danced the hardest, and made the best friends.</p>
+<p>Also, the young talent in Tbilisi is unbelievable. There was a Sunday party called SOD (Sunday Open Decks) where young kids would play their first shows at TES (local club) and it was some of the best music that I have ever heard. For such a small city, around the size of Dallas, it was brimming with artists, creatives, and incredible DJs. The cultural output per capita was honestly unparalleled.</p>
+<p><strong>Georgians, Russians, Leftover Westerners.</strong></p>
+<p>I love Georgia and I love Tbilisi, but I actually had to defend my living there many times. Every time I told a Georgian that I decided to move to Tbilisi, they would always ask me &ldquo;Why?! You&rsquo;re from New York?? Why are you here?&rdquo; I never really got my final answer down, and even to this day, I&rsquo;m not really sure. I only know that Tbilisi is not the first destination people think of going to, especially to live in. You can group the people living in Tbilisi into a few categories, but of course, there are lots of subcategories and exceptions.</p>
+<p>The main one is Georgians, who come in all shapes and sizes: Liberal, conservative, old, young, &ldquo;weird,&rdquo; &ldquo;normal&rdquo;. A vast majority of Georgians live in Georgia, so it&rsquo;s a diverse population. One thing that can be said is that people are leaving. Tbilisi is hard to live in with a Georgian salary and while there is a deep entrepreneurial spirit that runs through the country, it&rsquo;s hard to make a career. So, most people with a strong work ethic leave for Europe or America (mostly Brooklyn), either illegally through Mexico or through the much-coveted visa. The Georgians who decide to stay, stay because they want to, because it&rsquo;s comfortable being in your own country, which I understand.</p>
+<p>There is an international reputation of Georgians being generous and kind. This is absolutely true, but with some exceptions. When I went to Tbilisi in 2020, I felt the Georgian generosity to its fullest extent. It was almost unbelievable, extremely foreign to me coming from NYC. But in 2023, I feel that the world has brought the intensity of the generosity down to a more normal level. Don&rsquo;t get me wrong, I still think Georgians are probably the most kind Europeans (maybe Italians are up there), but with the Russian invasion of Ukraine, many more tourists, and a lot more digital nomads, I feel that the next generation is generous but more normal.</p>
+<p>The next group of people is the Russians. Georgia has a complicated relationship with Russia. Having been in the USSR for almost 80 years, then being invaded by Russia in the 1990s and in 2008, Georgia does not have the warmest relations with Moscow. However, because of the Russian invasion of Ukraine, millions of Russians left the country to avoid the draft, persecution, and arrest. Many of them went to Georgia. This group is also hard to describe. Many of the people hate Putin, some like him. Some try to learn Georgian, most don&rsquo;t (I didn&rsquo;t learn any Georgian either, it&rsquo;s too hard); some people want to stay in Tbilisi forever, others are just waiting the war out. Regardless of the exact composition, Russians are really everywhere and compose a large part of the city. Many of them left in the winter, going to Serbia, Sri Lanka, or Mexico. But during the summer, the city was tense. Georgians were not happy with the Russians in the streets and there were a lot of verbal confrontations on both sides.</p>
+<p>However, I lived above a Russian Café so many of my friends were Russian. They were mustache-bearing hipsters that looked right out of a Williamsburg walk-up. They were all liberal, funny, and cool. Almost all the ones I met had tattoos, rode bikes, and were just really kind people. They occupy a strange place in Tbilisi because they created dozens of new bars, restaurants, and cafés, but operated in a parallel economy that wasn&rsquo;t really connected to Tbilisi. I understood my immense privilege with the fact that I could leave at any time, but they couldn&rsquo;t return home without the threat of being arrested or drafted. It was a difficult situation for everyone, hard to untangle, and hard to maintain empathy for the people involved.</p>
+<p>The last group was the Western leftovers, or the Americans/Canadians/Europeans who decided to move to Georgia. Georgia actually doesn&rsquo;t want people to move to the country forever. While it is very easy to get a 1-year visa, it&rsquo;s actually very hard to become a citizen (not impossible, but hard). So, the people that come to Tbilisi are generally very transient; people come and go, 6 months is a pretty long stay, but some people have been in Georgia for over 10 years (very few people are longer than that because Tbilisi was not a nice place pre-2013). The Western Leftovers are all weird, different, and interesting. Like me, the people who move here all don&rsquo;t really fit in the West. Berlin is too played out, London and NYC are too expensive, and no other city is as cool as Tbilisi. For a young Western expat, Tbilisi is cool. You can live off 1,000 dollars a month pretty easily; the parties are great, the people are nice, and no one asks what you do.</p>
+<p>So, if you write UX copy, are a teacher, or just sell cars online, you have the same social value. It&rsquo;s like anti-NYC, in the sense that in NYC, your social status and job are the two most important things. I met a lot of people in this group. Most of my friends were Western Leftovers. This term is also not meant to be derogatory; life in the West is challenging. Rents are high and good jobs are in stiff competition. Fun cities with a thriving art scene are usually unbearably expensive, thus pushing artists and creatives further and further from the center. Whereas in Tbilisi, you can live right in the center, work a remote job that pays 30,000 USD a year, be an artist, and live very comfortably, which would be impossible in any other city. So, because of these realities, Tbilisi turns out to be a really cool place to stay. Also, because it&rsquo;s not very close to anything, not many people can go, which means it&rsquo;s not becoming like Lisbon, which is way too expensive, crowded, and just not cute.</p>
+<p><strong>Life is weird.</strong></p>
+<p>People live very different lives from you or I. I think most people know this, but few actually see it. Unless you seek it out, it&rsquo;s very easy to stay in your social/cultural/ethnic circle. I know Georgians who have never left the country, Jews who only know other Jewish people, Americans who have never traveled out of their town. While it is easier now to see other people on social media, it is different to see other people in real life. In the six months post-college traveling to Spain, Paris, Portugal, Georgia, Berlin, back to Georgia, then back to Berlin, then back to NYC, I made an effort to seek out the fringe, to see the other, and it was scary, overwhelming, and fun. I could tell you the stories of the Ukrainian tattoo artists in Berghain, the Georgian farms in Bolnisi, the tech worker in Portugal, but as the old saying goes, you just had to be there.</p>
+<p>Seeing all these people live such different lives, believe such different things, and act in such different ways put my little life into perspective. I am not the center of the universe, I have no clout, I am not famous, but I have the power to live the life I want to. At any given hour I have friends sleeping on club couches, working on spreadsheets, or just hiking the mountains, which takes the pressure off of me; I can just do what feels right. The fact that there are so many different lives that people are living means that there is not one “correct life,” only the life that you live. Before college, it seemed that life played out in a certain rhythm: 4 years of college, 2 years of a job, then a new job, then an MBA, then getting married, then a new job, then kids, and so on. While this timeline does exist, it is not platonic and applies to a very small percentage of people. Almost everyone else has a path that is different, and it&rsquo;s important to see the lives of others to make sure the one you are living is actually something you want to be doing.</p>
+<p><strong>No more giving advice.</strong></p>
+<p>I used to give a lot of advice (often on this blog), “you should write more, you should travel, you should work hard.” Now that I have left Georgia, I realize that my advice is meaningless. Georgia worked for me, it made sense, and I had the personality to make the most of it; however, it probably wouldn’t have worked for others. Most of my life choices have been responses to chance events that I just made the best call at the time. I have no master plan; I’m just going ahead and doing my best. What purpose does giving advice serve? It makes everyone feel better without actually accomplishing much. If I told a sophomore in college that he should go travel, I would feel good about traveling, he would feel good that he might travel, but the words are cheap and don’t change anything. From now on, I can describe my thoughts, my story, and why I did the things that I did and do currently. I can’t give advice; I can only describe.</p>
+<p>It will be. For me, going to Georgia was a mental monolith. It was all that I thought or talked about for months. Towards the end of college, I wasn’t really at Columbia or in NYC; I was on a plane to Georgia, not actually in Georgia, but just traveling there. I was on that plane for weeks. Then it actually happened. I landed in Tbilisi, then the days passed, then weeks, then months, then I left. It was over. Something that I waited so long for, thought about so much, just happened and was finished. It made me realize that life just happens, regardless of if you hope it does or pray that it doesn’t, it just will be. I had so many aspirations about going to Georgia, most didn’t come true, some did, but it was just a few months of my life that are now over. Though it was wonderful, and I’m really grateful that I did it, all it was just 6 months in another country.</p>
+<p>The fact that things just are or it will be means that every second has the same value, which can be seen as depressing or, if you look at it in a different way, liberating. My time in Georgia was amazing, but also my time now in NYC is amazing and my future can be amazing. I just have to recognize it before it passes.</p>
+<p>I like to chase the weird and exotic, and in moments of novelty, I feel really alive, but now that my Georgian odyssey is over, I realized that it’s not novelty that I’m searching for, but life. Luckily for me, I’m living right now.</p>
+<p><strong>Teaching is awesome, teaching is terrible.</strong></p>
+<p>I will not be a teacher in the US, but I am very happy I did it for 5 months when I was in Georgia. After you graduate college and become a yuppie, there is a distinct lack of children in one’s life, which is sad because kids are awesome. I taught 4th-12th grade and it was amazing seeing my kids grow up before me. I was not the best teacher (I was the coolest, though), but I tried to be the teacher that I would have wanted. I saw my childhood in front of me, the different stages of life unfolding every day. Kids are also just funny, smart, and see the world in such a beautiful way.</p>
+<p>Kids are also annoying sometimes, 6th graders are the worst, by far. Being a teacher is not easy, and the biggest problem was different skill levels. Some of the kids, especially in high school, should have just not been there. They would have been better off doing an internship or just working. Several of my 10th graders were going through essentially academic slavery for no reason. It was clear to all of us that they wouldn’t be doctors or engineers, but they could be successful businessmen or salespeople, so it didn’t make much sense to teach them Python whenew they won everyone kuldn&rsquo;t use it. And some of my high schoolers were truly gifted in the sense they should have just been doing math all day. So, the fact that these two groups were mixed up just caused a lot of stress for everyone. Teaching really did shake up my basic assumptions about education and children. I’ll explore them in future posts.</p>
+<p>Teaching actually did give me a lot of skills that will be transferable (not just saying that for future jobs). I think everyone should try teaching something they like at least once. It makes you get up on stage, speak for 40 minutes, build relationships, and make plans. Being a teacher made me a better person. It made me more understanding, explain things better, and see the beauty in the mundane. I don’t see myself being a teacher forever, but education will always be a part of my life, and it was an excellent choice after college.</p>
+<p><strong>Final thoughts</strong></p>
+<p>I am really happy I went to Georgia. It was a trip with a lot of ups and downs. I was lonely a lot but I made a lot of friends. It was kind of on personal brand, but was not in the Columbia play-by-play. Georgia itself is a beautiful country with amazing people and spectacular music and wine. Some of the best times of the trip were when I had no plan and just went and did stupid stuff with my camera. The other good times required work and planning, so life is a balance between being spontaneous and being thoughtful. Before Georgia, I was really worried about what other people thought of me, especially how I looked. Now, I don’t really care so much. Life is good, life is bad, you’re only on God’s green earth for the amount of time He decides is right, so don’t stress out, get the work done and (cliché incoming) enjoy the moment.</p>
+
+    </div>
+    
+    <time>January 4, 2024</time>
+    
+</article>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Goodbye Georgia",
+      "datePublished": "2024-01-04T11:23:36\u002b02:00",
+      "dateModified": "2024-01-04T11:23:36\u002b02:00",
+      "author": {
+        "@type": "Person",
+        "name": "J.M. Kettle",
+        "url": "https://jmkettle.com"
+      },
+      "publisher": {
+        "@type": "Person", 
+        "name": "J.M. Kettle",
+        "url": "https://jmkettle.com"
+      },
+      "description": "I am back in NYC, in my childhood room, writing this essay. It feels as if the past 6 months were a dream or a hallucination. It all went by so quickly and so slowly, but now it is over. I have such overwhelming love for Tbilisi and the people of Georgia, it almost feels like I have left home to go somewhere new. The air and atmosphere are different in NYC; it\u0026rsquo;s hard to explain, but it feels a bit less serious, a bit more new world-y, as if we are all just making it up as we walk the streets of Brooklyn. New York is also much busier and louder, making the transition a bit more jarring.\n",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http:\/\/localhost:1313\/writing\/reflections-on-georgia\/"
+      },
+      "wordCount":  4275 ,
+      "keywords": ["georgia"]
+    }
+</script>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>
+            <a href="#" id="backToTopLink">back to top</a>
+        </p>
+        <p>&copy; 2025 <a href="/" class="footer-link">J.M. Kettle</a> 
+            <a href="https://jmkettle.substack.com/" class="footer-link social-icon" target="_blank" rel="noopener" style="margin-left: 8px;" title="Substack">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+                </svg>
+            </a>
+            <a href="https://twitter.com/jmkettle" class="footer-link social-icon" target="_blank" rel="noopener" style="margin-left: 4px;" title="Twitter/X">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+            <a href="https://instagram.com/jmwkettle" class="footer-link social-icon" target="_blank" rel="noopener" style="margin-left: 4px;" title="Instagram">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('backToTopLink').addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
+        });
+    </script>
+    
+    <script>
+        window.addEventListener('error', function(e) {
+            if (e.target.tagName === 'IMG' || e.target.tagName === 'SCRIPT') {
+                e.preventDefault();
+            }
+        }, true);
+    </script>
+</body>
+</html>

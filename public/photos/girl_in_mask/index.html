@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="J.M. Kettle - NYC-based photographer, writer, and musician.">
     <meta name="theme-color" content="#ffffff">
-    <title>{{ if .Title }}{{ .Title }} - {{ end }}J.M. Kettle</title>
+    <title>Girl In Mask - J.M. Kettle</title>
 
-    <link rel="alternate" type="application/json" title="AI Index" href="{{ "ai-index.json" | relURL }}">
-    <link rel="alternate" type="application/json" title="AI Content" href="{{ "ai-content.json" | relURL }}">
-    <link rel="alternate" type="application/json" title="AI Nav" href="{{ "ai-nav.json" | relURL }}">
+    <link rel="alternate" type="application/json" title="AI Index" href="/ai-index.json">
+    <link rel="alternate" type="application/json" title="AI Content" href="/ai-content.json">
+    <link rel="alternate" type="application/json" title="AI Nav" href="/ai-nav.json">
     
-    <!-- Resource hints -->
+    
     <link rel="preconnect" href="https://photos.jmkettle.com">
     <link rel="dns-prefetch" href="https://photos.jmkettle.com">
     
-    <!-- Global CSS - COMPACT VERSION -->
+    
     <style>
-        /* Reset and base styles */
+         
         * {
             box-sizing: border-box;
         }
@@ -41,7 +41,7 @@
             background-color: #fff;
         }
         
-        /* Header styles - TIGHTER */
+         
         header {
             padding: 10px 0;
             text-align: center;
@@ -72,7 +72,7 @@
             text-decoration: underline;
         }
         
-        /* Container styles - MUCH LESS PADDING */
+         
         .container {
             flex: 1;
             width: 100%;
@@ -82,12 +82,12 @@
             box-sizing: border-box;
         }
         
-        /* Main content area */
+         
         main {
             width: 100%;
         }
         
-        /* Typography - TIGHTER SPACING */
+         
         h1 {
             font-size: 2em;
             font-weight: normal;
@@ -113,7 +113,7 @@
             margin: 0 0 0.5rem 0;
         }
         
-        /* Standardized time/date display */
+         
         time {
             display: block;
             font-size: 0.9em;
@@ -121,7 +121,7 @@
             margin-bottom: 0.5rem;
         }
         
-        /* Back navigation - COMPACT */
+         
         .back-navigation {
             margin-bottom: 0.75rem;
         }
@@ -138,7 +138,7 @@
             text-decoration: underline;
         }
         
-        /* Global button styles */
+         
         button, .button {
             background-color: white;
             color: black;
@@ -159,15 +159,15 @@
             color: white;
         }
         
-        /* Images */
-        /* Images */
+         
+         
         img {
             max-width: 100%;
             height: auto;
             display: block;
         }
 
-        /* Prevent layout shift for photos */
+         
         picture {
             display: block;
         }
@@ -177,7 +177,7 @@
             height: auto;
         }
 
-        /* Photo grid optimizations */
+         
         .photo-grid .photo-item {
             overflow: hidden;
             position: relative;
@@ -194,7 +194,7 @@
             transform: scale(1.02);
         }
         
-        /* Footer - COMPACT */
+         
         footer {
             text-align: center;
             padding: 10px 0;
@@ -241,12 +241,12 @@
             text-decoration: underline;
         }
         
-        /* Utility classes */
+         
         .content {
             margin-bottom: 1rem;
         }
         
-        /* Ensure consistent article spacing - TIGHTER */
+         
         article {
             margin-bottom: 1rem;
         }
@@ -255,7 +255,7 @@
             margin-bottom: 0;
         }
         
-        /* Lists and sections - COMPACT */
+         
         .featured-section {
             margin-bottom: 1.5rem;
         }
@@ -272,7 +272,7 @@
             margin-bottom: 0.25rem;
         }
         
-        /* Responsive adjustments */
+         
         @media (max-width: 600px) {
             .container {
                 padding: 15px 15px 20px 15px;
@@ -284,7 +284,7 @@
         }
     </style>
     
-    <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+    <link rel="icon" type="image/png" href="/favicon.png">
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -308,26 +308,104 @@
     <header>
         <nav>
             <ul>
-                {{ $currentPage := . }}
-                {{ range site.Menus.main }}
+                
+                
                     <li>
-                        <a href="{{ .URL }}" {{ if $currentPage.IsMenuCurrent "main" . }}style="font-weight: bold;"{{ end }}>
-                            {{ .Name }}
+                        <a href="/" >
+                            Home
                         </a>
                     </li>
-                {{ else }}
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/writing">Writing</a></li>
-                    <li><a href="/photos">Photos</a></li>
-                    <li><a href="/about">About</a></li>
-                {{ end }}
+                
+                    <li>
+                        <a href="/writing/" >
+                            Writing
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/photos/" >
+                            Photos
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/projects/" >
+                            Projects
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/" >
+                            About
+                        </a>
+                    </li>
+                
             </ul>
         </nav>
     </header>
     
     <div class="container">
         <main>
-            {{ block "main" . }}{{ end }}
+            
+<article class="single-photo">
+  <h1>Girl In Mask</h1>
+  <div class="back-navigation">
+    <a href="/photos/" class="back-button">← Back to Photos</a>
+  </div>
+  
+  
+    <picture>
+      <source media="(max-width: 768px)" 
+              srcset="https://photos.jmkettle.com/girl_in_mask.webp?width=700&format=webp&quality=85">
+      <source media="(max-width: 1200px)" 
+              srcset="https://photos.jmkettle.com/girl_in_mask.webp?width=1000&format=webp&quality=85">
+      <img src="https://photos.jmkettle.com/girl_in_mask.webp?width=1200&format=webp&quality=85" 
+           width="1200"
+           height="800" 
+           alt="Girl In Mask"
+           fetchpriority="high"
+           loading="eager">
+  </picture>
+    
+    <time>November 3, 2024</time>
+    
+</article>
+
+<style>
+  .single-photo h1 {
+
+  }
+  .single-photo img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+  .photo-content {
+    margin-top: .25rem;
+  }
+  
+  time {
+    display: block;
+  }
+  .back-navigation {
+    margin-bottom: 0.5rem;
+  }
+  
+  .back-button {
+    color: black;
+    text-decoration: none;
+    font-size: 0.9em;
+    display: inline-block;
+    transition: text-decoration 0.3s ease;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+</style>
+
         </main>
     </div>
 

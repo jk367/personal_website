@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="J.M. Kettle - NYC-based photographer, writer, and musician.">
     <meta name="theme-color" content="#ffffff">
-    <title>{{ if .Title }}{{ .Title }} - {{ end }}J.M. Kettle</title>
+    <title>Just do it - J.M. Kettle</title>
 
-    <link rel="alternate" type="application/json" title="AI Index" href="{{ "ai-index.json" | relURL }}">
-    <link rel="alternate" type="application/json" title="AI Content" href="{{ "ai-content.json" | relURL }}">
-    <link rel="alternate" type="application/json" title="AI Nav" href="{{ "ai-nav.json" | relURL }}">
+    <link rel="alternate" type="application/json" title="AI Index" href="/ai-index.json">
+    <link rel="alternate" type="application/json" title="AI Content" href="/ai-content.json">
+    <link rel="alternate" type="application/json" title="AI Nav" href="/ai-nav.json">
     
-    <!-- Resource hints -->
+    
     <link rel="preconnect" href="https://photos.jmkettle.com">
     <link rel="dns-prefetch" href="https://photos.jmkettle.com">
     
-    <!-- Global CSS - COMPACT VERSION -->
+    
     <style>
-        /* Reset and base styles */
+         
         * {
             box-sizing: border-box;
         }
@@ -41,7 +41,7 @@
             background-color: #fff;
         }
         
-        /* Header styles - TIGHTER */
+         
         header {
             padding: 10px 0;
             text-align: center;
@@ -72,7 +72,7 @@
             text-decoration: underline;
         }
         
-        /* Container styles - MUCH LESS PADDING */
+         
         .container {
             flex: 1;
             width: 100%;
@@ -82,12 +82,12 @@
             box-sizing: border-box;
         }
         
-        /* Main content area */
+         
         main {
             width: 100%;
         }
         
-        /* Typography - TIGHTER SPACING */
+         
         h1 {
             font-size: 2em;
             font-weight: normal;
@@ -113,7 +113,7 @@
             margin: 0 0 0.5rem 0;
         }
         
-        /* Standardized time/date display */
+         
         time {
             display: block;
             font-size: 0.9em;
@@ -121,7 +121,7 @@
             margin-bottom: 0.5rem;
         }
         
-        /* Back navigation - COMPACT */
+         
         .back-navigation {
             margin-bottom: 0.75rem;
         }
@@ -138,7 +138,7 @@
             text-decoration: underline;
         }
         
-        /* Global button styles */
+         
         button, .button {
             background-color: white;
             color: black;
@@ -159,15 +159,15 @@
             color: white;
         }
         
-        /* Images */
-        /* Images */
+         
+         
         img {
             max-width: 100%;
             height: auto;
             display: block;
         }
 
-        /* Prevent layout shift for photos */
+         
         picture {
             display: block;
         }
@@ -177,7 +177,7 @@
             height: auto;
         }
 
-        /* Photo grid optimizations */
+         
         .photo-grid .photo-item {
             overflow: hidden;
             position: relative;
@@ -194,7 +194,7 @@
             transform: scale(1.02);
         }
         
-        /* Footer - COMPACT */
+         
         footer {
             text-align: center;
             padding: 10px 0;
@@ -241,12 +241,12 @@
             text-decoration: underline;
         }
         
-        /* Utility classes */
+         
         .content {
             margin-bottom: 1rem;
         }
         
-        /* Ensure consistent article spacing - TIGHTER */
+         
         article {
             margin-bottom: 1rem;
         }
@@ -255,7 +255,7 @@
             margin-bottom: 0;
         }
         
-        /* Lists and sections - COMPACT */
+         
         .featured-section {
             margin-bottom: 1.5rem;
         }
@@ -272,7 +272,7 @@
             margin-bottom: 0.25rem;
         }
         
-        /* Responsive adjustments */
+         
         @media (max-width: 600px) {
             .container {
                 padding: 15px 15px 20px 15px;
@@ -284,7 +284,7 @@
         }
     </style>
     
-    <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+    <link rel="icon" type="image/png" href="/favicon.png">
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -308,26 +308,96 @@
     <header>
         <nav>
             <ul>
-                {{ $currentPage := . }}
-                {{ range site.Menus.main }}
+                
+                
                     <li>
-                        <a href="{{ .URL }}" {{ if $currentPage.IsMenuCurrent "main" . }}style="font-weight: bold;"{{ end }}>
-                            {{ .Name }}
+                        <a href="/" >
+                            Home
                         </a>
                     </li>
-                {{ else }}
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/writing">Writing</a></li>
-                    <li><a href="/photos">Photos</a></li>
-                    <li><a href="/about">About</a></li>
-                {{ end }}
+                
+                    <li>
+                        <a href="/writing/" >
+                            Writing
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/photos/" >
+                            Photos
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/projects/" >
+                            Projects
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/" >
+                            About
+                        </a>
+                    </li>
+                
             </ul>
         </nav>
     </header>
     
     <div class="container">
         <main>
-            {{ block "main" . }}{{ end }}
+            
+<article class="content-single">
+    <h1>Just do it</h1>
+    <div class="back-navigation">
+        <a href="/writing/" class="back-button">← Back to Writing</a>
+    </div>
+    
+    <div class="content">
+        <p>If there&rsquo;s one piece of advice I would give to anyone, it would be this: just do it.</p>
+<p>Modern life has turned most of us into pure consumers. We&rsquo;re on an IV drip of content, constantly scrolling and waiting for the next thing to show up on our screens. It wasn&rsquo;t always like this, but years of optimization have made our phones possibly the most addictive things in the world. Fortunately, there&rsquo;s a cure for this phenomenon: you just have to do it.</p>
+<p>Whatever &ldquo;it&rdquo; means to you. Everyone has a different &ldquo;it.&rdquo; For me, it&rsquo;s my work, my writing, my music—things I know I should be doing, things I&rsquo;m proud of creating. It&rsquo;s hard to do it; there are many mental barriers. Sometimes, for weeks on end, I suffer from intense writer&rsquo;s block, or for months at a time, I don&rsquo;t make a single song. But then I feel inspired and start creating again.</p>
+<p>The reality is that we&rsquo;re all running out of time. There&rsquo;s simply not enough time to do all the things we want to do. This realization can be scary, but it also means that everyone else is in the same boat. Everything that has ever been made was created by people who had the same amount of time as you or I have.</p>
+<p>Once you realize that everything has been made by “just some guy”, you start to wonder how anything works at all. But it also makes you realize that you have the power to change, make, and influence things.</p>
+<p>I suspect that the increasing trend of videos, particularly short-form videos (SFVs), has made a large majority of people incredibly passive. Many now watch their lives away, convinced they have no real power to change things. While one could argue that TV and movies didn&rsquo;t have the same effect, SFVs are fundamentally different because they&rsquo;re always with you and are designed to be addictive.</p>
+<p>We often underestimate how technology changes us. It&rsquo;s not just that we&rsquo;re affected by technology; we&rsquo;re shaped by it as a collective. Beyond SFVs, it&rsquo;s clear that dating apps are also having a drastic effect on how we all behave. While it&rsquo;s not possible to change the broader structure, you can, as an individual, change how you use it.</p>
+<p>Most consumer apps are not benevolent. If a consumer app is very successful, it usually means it&rsquo;s actively hostile. You have to be aware of this. These app designers are not your friends; they don&rsquo;t want what&rsquo;s best for you—they want your attention.</p>
+<p>Creation is the opposite of attention consumption. Getting sucked into Instagram Reels, TikTok, or Twitter threads means forgoing all your attention. It&rsquo;s a complete hijacking of your creative energy. The only way to combat this is to actively create things. Reading is hard, but writing is much harder. Listening to one full song is hard, but making one is harder. Watching a full movie is hard, making one is harder. It&rsquo;s good to do hard things; it&rsquo;s good to stretch your brain and retain your mental autonomy.</p>
+<p>A week is 2% of a year. We all live for about 4,000 weeks, give or take. Don&rsquo;t be fooled—make something.</p>
+
+    </div>
+    
+    <time>July 30, 2024</time>
+    
+</article>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Just do it",
+      "datePublished": "2024-07-30T11:23:36\u002b02:00",
+      "dateModified": "2024-07-30T11:23:36\u002b02:00",
+      "author": {
+        "@type": "Person",
+        "name": "J.M. Kettle",
+        "url": "https://jmkettle.com"
+      },
+      "publisher": {
+        "@type": "Person", 
+        "name": "J.M. Kettle",
+        "url": "https://jmkettle.com"
+      },
+      "description": "If there\u0026rsquo;s one piece of advice I would give to anyone, it would be this: just do it.\nModern life has turned most of us into pure consumers. We\u0026rsquo;re on an IV drip of content, constantly scrolling and waiting for the next thing to show up on our screens. It wasn\u0026rsquo;t always like this, but years of optimization have made our phones possibly the most addictive things in the world. Fortunately, there\u0026rsquo;s a cure for this phenomenon: you just have to do it.\n",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http:\/\/localhost:1313\/writing\/do-things\/"
+      },
+      "wordCount":  530 ,
+      "keywords": ["philosophy"]
+    }
+</script>
+
         </main>
     </div>
 

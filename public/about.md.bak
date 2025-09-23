@@ -2,6 +2,8 @@
 title: "About"
 ---
 
+# About<button id="globalToggle">Expand All Sections</button>
+
 ## Bio <button class="sectionToggle" data-section="bio">Expand bio</button>
 
 <div class="section" id="bioSection" style="display:none;">
@@ -27,7 +29,7 @@ I am based in NYC.
 <details>
 
 <summary><strong>Manager of Strategic Partnerships - Upfront - 2024 to 2025 </strong></summary>
-I worked for my friend start up for around 8 months between 2024 and 2025. My title was "Manager of Strategic Initiatives". I worked on everything non-technical, sales, operations, and design. The founders and I had different visions on where the company was going, so I left. 
+I worked for my friend start up for around 8 months between 2024 and 2025. My title was "Manager of Strategic Initiatives". I worked on everything non-technical, sales, operations, and design. Me and the founders had different visions on where the company was going, so I left. 
 </details>
 
 <details>
@@ -84,9 +86,9 @@ In my sophomore summer I worked for Plural Strategy. I did a lot of PowerPoint a
 <details>
 <summary><strong>Hedge Fund Intern - Precision Global - Summer 2021</strong></summary>
 
-During the Summer of Covid I worked for a small hedge fund, I did research and generally internship tasks like making the website and listening on company calls. It was exciting and fun. The trades were mostly based in Asia so my hours were a bit crazy.
+During the Summer of Covid I worked for a small hedge fund, I did research and generally internship tasks like making the website and listening on company calls. It was exciting and fun. The trades were mostly based in Asia so my hours were a bit crazy. 
 
-</details>
+kj</details>
 
 <details>
 <summary><strong>Operations Intern - Impact Jeunes - Summer 2019</strong></summary>
@@ -155,6 +157,10 @@ If you want to get in touch, you can email me at contact@jmkettle.com
         margin-bottom: 15px;
     }
 
+    #globalToggle {
+        margin-left: 20px;
+    }
+
     .section {
         margin-top: 10px;
         margin-bottom: 20px;
@@ -167,8 +173,7 @@ If you want to get in touch, you can email me at contact@jmkettle.com
     summary {
         cursor: pointer;
     }
-    
-    #linksSection ul {
+        #linksSection ul {
         list-style-type: none;
         padding-left: 0;
     }
@@ -190,17 +195,33 @@ If you want to get in touch, you can email me at contact@jmkettle.com
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+    const globalToggle = document.getElementById('globalToggle');
     const sectionToggles = document.querySelectorAll('.sectionToggle');
     const expandAllJobs = document.getElementById('expandAllJobs');
+    const expandAllLinks = document.getElementById('expandAllLinks');
     
+    globalToggle.addEventListener('click', toggleAllSections);
     sectionToggles.forEach(button => {
         button.addEventListener('click', (event) => toggleSection(event.target.dataset.section));
     });
-    
-    if (expandAllJobs) {
-        expandAllJobs.addEventListener('click', toggleAllJobs);
-    }
+    expandAllJobs.addEventListener('click', toggleAllJobs);
+    expandAllLinks.addEventListener('click', toggleAllLinks);
 });
+
+
+function toggleAllSections() {
+    const allSections = document.querySelectorAll('.section');
+    const isExpanded = document.getElementById('globalToggle').textContent === 'Collapse All Sections';
+    
+    allSections.forEach(section => {
+        section.style.display = isExpanded ? 'none' : 'block';
+    });
+    
+    document.getElementById('globalToggle').textContent = isExpanded ? 'Expand All Sections' : 'Collapse All Sections';
+    document.querySelectorAll('.sectionToggle').forEach(button => {
+        button.textContent = isExpanded ? `Expand ${button.dataset.section}` : `Collapse ${button.dataset.section}`;
+    });
+}
 
 function toggleSection(sectionId) {
     const section = document.getElementById(`${sectionId}Section`);
@@ -221,4 +242,5 @@ function toggleAllJobs() {
     
     document.getElementById('expandAllJobs').textContent = isExpanded ? 'Expand All Jobs' : 'Collapse All Jobs';
 }
+
 </script>
