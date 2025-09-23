@@ -31,11 +31,12 @@
         gap: 0.75rem;
         margin-top: 0.5rem;
     }
-    
+
     .photo-item {
         position: relative;
         overflow: hidden;
         aspect-ratio: 3/2;
+        max-width: 450px;
     }
     
     .photo-item a {
@@ -140,12 +141,12 @@
                 <a href="{{ .Permalink }}">
                     <picture>
                         <source media="(max-width: 600px)"
-                                srcset="{{ .Params.image }}?width=400&format=webp&quality=70">
+                                srcset="{{ .Params.image }}?width=382&format=webp&quality=60">
                         <source media="(max-width: 900px)"
-                                srcset="{{ .Params.image }}?width=500&format=webp&quality=70">
-                        <img src="{{ .Params.image }}?width=600&format=webp&quality=70"
-                             width="600"
-                             height="400"
+                                srcset="{{ .Params.image }}?width=450&format=webp&quality=60">
+                        <img src="{{ .Params.image }}?width=450&format=webp&quality=60"
+                             width="450"
+                             height="300"
                              alt="{{ .Title }}"
                              {{ if $firstPhoto }}fetchpriority="high" loading="eager"{{ else }}loading="lazy"{{ end }}>
                              {{ $firstPhoto = false }}
