@@ -1,9 +1,16 @@
 ---
-title: "daily haiku "
+title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
 writing_categories: ["poetry"]
 draft: false
 ---
+**September 23, 2025**
+
+breakfast with grandma 
+
+surprised my legs feel so good
+
+nice family dinner
 
 **September 22, 2025** 
 
