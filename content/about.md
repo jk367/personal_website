@@ -129,7 +129,7 @@ When I was 16, I wanted more money to buy books, so I worked as a waiter for 2 w
 ## Contact 
 If you want to get in touch, you can email me at contact@jmkettle.com
 
-<div style="text-align: center; margin-top: 20px;">
+<div style="text-align: center;">
     <img src="https://photos.jmkettle.com/business_card.jpeg" alt="Business Card" style="max-width: 50%; height: auto;">
 </div>
 
