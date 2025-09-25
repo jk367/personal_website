@@ -10,7 +10,7 @@ stop1 is my party series in NYC. The concept is simple: a warm, accessible, musi
 
 **Instagram:** [@stop1nyc](https://instagram.com/stop1nyc)
 
-<!-- **Next event**: July 19th at Hellphone -->
+<!-- **Next event**: October 18th at Hellphone -->
 ## Past Events
 
 {{< poster-grid >}}
