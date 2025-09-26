@@ -2,7 +2,7 @@
 <link rel="preconnect" href="https://imagedelivery.net">
 <style>
     .homepage-header {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     .homepage-header h1 {
@@ -10,7 +10,8 @@
     }
 
     .featured-section {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        min-height: 100px; /* Prevent layout shift for all sections */
     }
 
     .featured-section:last-child {
@@ -26,10 +27,18 @@
         text-decoration: underline;
     }
 
-    /* Daily Haiku Styles */
+    /* Daily Haiku Styles - PREVENT LAYOUT SHIFT */
+    .featured-section:has(.haiku-content) {
+        min-height: 120px; /* Prevents layout shift - increased */
+    }
+
     .haiku-content {
         line-height: 1.6;
         margin-top: 0.5rem;
+        min-height: 80px; /* Reserve space for 3 lines + spacing */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .haiku-content .haiku-line {
@@ -119,17 +128,48 @@
     @media (max-width: 600px) {
         .photo-grid {
             grid-template-columns: 1fr;
+            gap: 0.5rem;
+        }
+
+        .photo-item {
+            aspect-ratio: 4/3; /* Better mobile aspect ratio - only on mobile */
+        }
+
+        .article-title {
+            font-size: 1.1em;
+        }
+
+        .haiku-content {
+            min-height: 70px; /* Smaller on mobile */
+        }
+
+        .featured-section:has(.haiku-content) {
+            min-height: 100px; /* Smaller on mobile */
         }
     }
 
     @media (min-width: 601px) and (max-width: 900px) {
         .photo-grid {
             grid-template-columns: repeat(2, 1fr);
+            gap: 0.6rem;
         }
     }
 
-    @media (min-width: 768px) {
+    @media (max-width: 480px) {
         .photo-grid {
+            gap: 0.4rem;
+        }
+
+        .featured-section {
+            margin-bottom: 0.75rem;
+        }
+
+        .haiku-content {
+            min-height: 60px;
+        }
+
+        .featured-section:has(.haiku-content) {
+            min-height: 90px;
         }
     }
 </style>
