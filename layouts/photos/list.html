@@ -28,11 +28,14 @@
     {{ if .Params.cloudflare_id }}
     <div class="photo-item">
         <a href="{{ .Permalink }}">
-            <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/griddisplay"
-                 width="600"
-                 height="400"
-                 alt="{{ .Params.alt | default .Title }}"
-                 {{ if $first }}fetchpriority="high" loading="eager"{{ $first = false }}{{ else }}loading="lazy"{{ end }}>
+            <picture>
+                <source media="(max-width: 768px)" srcset="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/gridthumb">
+                <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/griddisplay"
+                     width="600"
+                     height="400"
+                     alt="{{ .Params.alt | default .Title }}"
+                     {{ if $first }}fetchpriority="high" loading="eager"{{ $first = false }}{{ else }}loading="lazy"{{ end }}>
+            </picture>
         </a>
     </div>
     {{ end }}

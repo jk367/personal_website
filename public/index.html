@@ -530,11 +530,14 @@
                 
                 <div class="photo-item">
                     <a href="http://localhost:1313/photos/couple/">
-                        <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/cb38a771-2c2a-4a06-9e5d-34070681ff00/griddisplay"
-                             width="600"
-                             height="400"
-                             alt="Couple in a club embracing "
-                             fetchpriority="high" loading="eager">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/cb38a771-2c2a-4a06-9e5d-34070681ff00/gridthumb">
+                            <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/cb38a771-2c2a-4a06-9e5d-34070681ff00/griddisplay"
+                                 width="600"
+                                 height="400"
+                                 alt="Couple in a club embracing "
+                                 fetchpriority="high" loading="eager">
+                        </picture>
                              
                     </a>
                 </div>
@@ -543,11 +546,14 @@
                 
                 <div class="photo-item">
                     <a href="http://localhost:1313/photos/jest/">
-                        <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/f3bef26e-1a52-4da6-e1ce-81453b99ec00/griddisplay"
-                             width="600"
-                             height="400"
-                             alt="Girl poking her tounge out "
-                             loading="lazy">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/f3bef26e-1a52-4da6-e1ce-81453b99ec00/gridthumb">
+                            <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/f3bef26e-1a52-4da6-e1ce-81453b99ec00/griddisplay"
+                                 width="600"
+                                 height="400"
+                                 alt="Girl poking her tounge out "
+                                 loading="lazy">
+                        </picture>
                              
                     </a>
                 </div>
@@ -556,11 +562,14 @@
                 
                 <div class="photo-item">
                     <a href="http://localhost:1313/photos/magdalene/">
-                        <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/0d6044d6-ca76-421b-ede8-9cda96678700/griddisplay"
-                             width="600"
-                             height="400"
-                             alt="protrait of Magdalene "
-                             loading="lazy">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/0d6044d6-ca76-421b-ede8-9cda96678700/gridthumb">
+                            <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/0d6044d6-ca76-421b-ede8-9cda96678700/griddisplay"
+                                 width="600"
+                                 height="400"
+                                 alt="protrait of Magdalene "
+                                 loading="lazy">
+                        </picture>
                              
                     </a>
                 </div>
@@ -729,6 +738,12 @@
 
         const baseUrl = 'https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/';
 
+        const picture = document.createElement('picture');
+
+        const source = document.createElement('source');
+        source.media = '(max-width: 768px)';
+        source.srcset = `${baseUrl}${photo.cloudflare_id}/gridthumb`;
+
         const img = document.createElement('img');
         img.src = `${baseUrl}${photo.cloudflare_id}/griddisplay`;
         img.width = 600;
@@ -743,7 +758,9 @@
             img.loading = 'lazy';
         }
 
-        link.appendChild(img);
+        picture.appendChild(source);
+        picture.appendChild(img);
+        link.appendChild(picture);
         photoItem.appendChild(link);
         photoGrid.appendChild(photoItem);
     });

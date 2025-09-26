@@ -165,11 +165,14 @@
                 {{ if .Params.cloudflare_id }}
                 <div class="photo-item">
                     <a href="{{ .Permalink }}">
-                        <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/griddisplay"
-                             width="600"
-                             height="400"
-                             alt="{{ .Params.alt | default .Title }}"
-                             {{ if $firstPhoto }}fetchpriority="high" loading="eager"{{ else }}loading="lazy"{{ end }}>
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/gridthumb">
+                            <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/griddisplay"
+                                 width="600"
+                                 height="400"
+                                 alt="{{ .Params.alt | default .Title }}"
+                                 {{ if $firstPhoto }}fetchpriority="high" loading="eager"{{ else }}loading="lazy"{{ end }}>
+                        </picture>
                              {{ $firstPhoto = false }}
                     </a>
                 </div>
@@ -240,6 +243,12 @@
 
         const baseUrl = 'https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/';
 
+        const picture = document.createElement('picture');
+
+        const source = document.createElement('source');
+        source.media = '(max-width: 768px)';
+        source.srcset = `${baseUrl}${photo.cloudflare_id}/gridthumb`;
+
         const img = document.createElement('img');
         img.src = `${baseUrl}${photo.cloudflare_id}/griddisplay`;
         img.width = 600;
@@ -254,7 +263,9 @@
             img.loading = 'lazy';
         }
 
-        link.appendChild(img);
+        picture.appendChild(source);
+        picture.appendChild(img);
+        link.appendChild(picture);
         photoItem.appendChild(link);
         photoGrid.appendChild(photoItem);
     });
