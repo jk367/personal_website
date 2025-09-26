@@ -25,21 +25,17 @@
 {{ $first := true }}
 <div class="photo-grid">
     {{ range .Pages.ByDate.Reverse }}
+    {{ if .Params.cloudflare_id }}
     <div class="photo-item">
         <a href="{{ .Permalink }}">
-            <picture>
-                <source media="(max-width: 768px)" 
-                        srcset="{{ .Params.image }}?width=500&format=webp&quality=75">
-                <source media="(max-width: 1200px)" 
-                        srcset="{{ .Params.image }}?width=700&format=webp&quality=75">
-                <img src="{{ .Params.image }}?width=800&format=webp&quality=75" 
-                     width="800" 
-                     height="533"
-                     alt="{{ .Title }}"
-                     {{ if $first }}fetchpriority="high" loading="eager"{{ $first = false }}{{ else }}loading="lazy"{{ end }}>
-            </picture>
+            <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/griddisplay"
+                 width="600"
+                 height="400"
+                 alt="{{ .Params.alt | default .Title }}"
+                 {{ if $first }}fetchpriority="high" loading="eager"{{ $first = false }}{{ else }}loading="lazy"{{ end }}>
         </a>
     </div>
+    {{ end }}
     {{ end }}
 </div>
 
@@ -89,6 +85,7 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
         margin-top: 0.75rem;
+        min-height: 400px;
     }
 
     .photo-item {
@@ -106,6 +103,7 @@
     @media (max-width: 768px) {
         .photo-grid {
             grid-template-columns: 1fr;
+            min-height: 255px;
         }
     }
 </style>

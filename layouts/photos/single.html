@@ -4,20 +4,13 @@
   <div class="back-navigation">
     <a href="/photos/" class="back-button">← Back to Photos</a>
   </div>
-  
-  
-    <picture>
-      <source media="(max-width: 768px)" 
-              srcset="{{ .Params.image }}?width=700&format=webp&quality=85">
-      <source media="(max-width: 1200px)" 
-              srcset="{{ .Params.image }}?width=1000&format=webp&quality=85">
-      <img src="{{ .Params.image }}?width=1200&format=webp&quality=85" 
-           width="1200"
-           height="800" 
-           alt="{{ .Title }}"
-           fetchpriority="high"
-           loading="eager">
-  </picture>
+
+  {{ if .Params.cloudflare_id }}
+    <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/full"
+         alt="{{ .Params.alt | default .Title }}"
+         fetchpriority="high"
+         loading="eager">
+  {{ end }}
     {{ with .Date }}
     <time>{{ .Format "January 2, 2006" }}</time>
     {{ end }}

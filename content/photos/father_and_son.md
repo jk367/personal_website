@@ -1,8 +1,9 @@
 ---
 title: "father and son"
+cloudflare_id: "b4d0e7ed-b535-4026-f993-ed7a8a25c000"
 date: 2023-07-19
 image: "https://photos.jmkettle.com/father_and_son.webp"
-alt: "a black and white picture of a father and son in rural georgia"
+alt: "Father embracing his son in Georgia"
 categories: ["portrait","georgia"]
 draft: false
 ---

@@ -1,8 +1,9 @@
 ---
 title: "Shower"
+cloudflare_id: "ceda91ca-7326-499c-49e8-c9bf4edb1500"
 date: 2024-09-17
 image: "https://photos.jmkettle.com/shower.webp"
-alt: "a black and white photo of a person in a bathtub wearing a wet shirt that says 'TÜRKİYE'"
+alt: "Women in shower with clothes "
 categories: []
 draft: false
 --- 

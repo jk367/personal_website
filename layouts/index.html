@@ -1,4 +1,5 @@
 {{ define "main" }}
+<link rel="preconnect" href="https://imagedelivery.net">
 <style>
     .homepage-header {
         margin-bottom: 1rem;
@@ -126,6 +127,11 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
+
+    @media (min-width: 768px) {
+        .photo-grid {
+        }
+    }
 </style>
 
 <div class="homepage-header">
@@ -156,22 +162,18 @@
         <noscript>
             {{ $photoPages := where .Site.RegularPages "Section" "photos" }}
             {{ range first 3 $photoPages }}
+                {{ if .Params.cloudflare_id }}
                 <div class="photo-item">
                     <a href="{{ .Permalink }}">
-                        <picture>
-                            <source media="(max-width: 600px)"
-                                    srcset="{{ .Params.image }}?width=382&format=webp&quality=60">
-                            <source media="(max-width: 900px)"
-                                    srcset="{{ .Params.image }}?width=450&format=webp&quality=60">
-                            <img src="{{ .Params.image }}?width=450&format=webp&quality=60"
-                                 width="450"
-                                 height="300"
-                                 alt="{{ .Title }}"
-                                 {{ if $firstPhoto }}fetchpriority="high" loading="eager"{{ else }}loading="lazy"{{ end }}>
-                                 {{ $firstPhoto = false }}
-                        </picture>
+                        <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/griddisplay"
+                             width="600"
+                             height="400"
+                             alt="{{ .Params.alt | default .Title }}"
+                             {{ if $firstPhoto }}fetchpriority="high" loading="eager"{{ else }}loading="lazy"{{ end }}>
+                             {{ $firstPhoto = false }}
                     </a>
                 </div>
+                {{ end }}
             {{ else }}
                 <p>No featured photos available.</p>
             {{ end }}
@@ -184,8 +186,8 @@
 {{ $photoPages := where .Site.RegularPages "Section" "photos" }}
 {{ $photos := slice }}
 {{ range $photoPages }}
-    {{ if and .Params.image (not .Params.draft) }}
-        {{ $photos = $photos | append (dict "permalink" .Permalink "image" .Params.image "title" .Title "alt" (default .Title .Params.alt)) }}
+    {{ if and .Params.cloudflare_id (not .Params.draft) }}
+        {{ $photos = $photos | append (dict "permalink" .Permalink "cloudflare_id" .Params.cloudflare_id "title" .Title "alt" (default .Title .Params.alt)) }}
     {{ end }}
 {{ end }}
 {{ $photos | jsonify | safeJS }}
@@ -236,25 +238,12 @@
         const link = document.createElement('a');
         link.href = photo.permalink;
 
-        const picture = document.createElement('picture');
+        const baseUrl = 'https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/';
 
-        // Mobile source
-        const sourceMobile = document.createElement('source');
-        sourceMobile.media = '(max-width: 600px)';
-        sourceMobile.srcset = `${photo.image}?width=382&format=webp&quality=60`;
-        picture.appendChild(sourceMobile);
-
-        // Tablet source
-        const sourceTablet = document.createElement('source');
-        sourceTablet.media = '(max-width: 900px)';
-        sourceTablet.srcset = `${photo.image}?width=450&format=webp&quality=60`;
-        picture.appendChild(sourceTablet);
-
-        // Default image
         const img = document.createElement('img');
-        img.src = `${photo.image}?width=450&format=webp&quality=60`;
-        img.width = 450;
-        img.height = 300;
+        img.src = `${baseUrl}${photo.cloudflare_id}/griddisplay`;
+        img.width = 600;
+        img.height = 400;
         img.alt = photo.alt || photo.title;
 
         // First image loads eagerly, others lazy
@@ -265,8 +254,7 @@
             img.loading = 'lazy';
         }
 
-        picture.appendChild(img);
-        link.appendChild(picture);
+        link.appendChild(img);
         photoItem.appendChild(link);
         photoGrid.appendChild(photoItem);
     });
