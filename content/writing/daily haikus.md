@@ -4,6 +4,22 @@ date: 2025-05-25T11:23:36+02:00
 writing_categories: ["poetry"]
 draft: false
 ---
+**September 25, 2025** 
+
+rainy day today 
+
+the air was thick and heavy
+
+music with brother
+
+**September 24, 2025**
+
+Where did all the time go 
+
+Upstairs in my brothers room 
+
+Low at the party 
+
 **September 23, 2025**
 
 breakfast with grandma 
