@@ -151,30 +151,127 @@
 {{ $firstPhoto := true }}
 <div class="featured-section">
     <h2><a href="/photos/" class="section-title">Photos</a></h2>
-    <div class="photo-grid">
-        {{ $photoPages := where .Site.RegularPages "Section" "photos" }}
-        {{ range first 3 $photoPages }}
-            <div class="photo-item">
-                <a href="{{ .Permalink }}">
-                    <picture>
-                        <source media="(max-width: 600px)"
-                                srcset="{{ .Params.image }}?width=382&format=webp&quality=60">
-                        <source media="(max-width: 900px)"
-                                srcset="{{ .Params.image }}?width=450&format=webp&quality=60">
-                        <img src="{{ .Params.image }}?width=450&format=webp&quality=60"
-                             width="450"
-                             height="300"
-                             alt="{{ .Title }}"
-                             {{ if $firstPhoto }}fetchpriority="high" loading="eager"{{ else }}loading="lazy"{{ end }}>
-                             {{ $firstPhoto = false }}
-                    </picture>
-                </a>
-            </div>
-        {{ else }}
-            <p>No featured photos available.</p>
-        {{ end }}
+    <div class="photo-grid" id="photo-grid">
+        <!-- Photos will be loaded by JavaScript -->
+        <noscript>
+            {{ $photoPages := where .Site.RegularPages "Section" "photos" }}
+            {{ range first 3 $photoPages }}
+                <div class="photo-item">
+                    <a href="{{ .Permalink }}">
+                        <picture>
+                            <source media="(max-width: 600px)"
+                                    srcset="{{ .Params.image }}?width=382&format=webp&quality=60">
+                            <source media="(max-width: 900px)"
+                                    srcset="{{ .Params.image }}?width=450&format=webp&quality=60">
+                            <img src="{{ .Params.image }}?width=450&format=webp&quality=60"
+                                 width="450"
+                                 height="300"
+                                 alt="{{ .Title }}"
+                                 {{ if $firstPhoto }}fetchpriority="high" loading="eager"{{ else }}loading="lazy"{{ end }}>
+                                 {{ $firstPhoto = false }}
+                        </picture>
+                    </a>
+                </div>
+            {{ else }}
+                <p>No featured photos available.</p>
+            {{ end }}
+        </noscript>
     </div>
 </div>
+
+<!-- Embed photo data for JavaScript -->
+<script type="application/json" id="photo-data">
+{{ $photoPages := where .Site.RegularPages "Section" "photos" }}
+{{ $photos := slice }}
+{{ range $photoPages }}
+    {{ if and .Params.image (not .Params.draft) }}
+        {{ $photos = $photos | append (dict "permalink" .Permalink "image" .Params.image "title" .Title "alt" (default .Title .Params.alt)) }}
+    {{ end }}
+{{ end }}
+{{ $photos | jsonify | safeJS }}
+</script>
+
+<!-- Random photo selection script -->
+<script>
+(function() {
+    // Get photo data
+    const photoDataEl = document.getElementById('photo-data');
+    if (!photoDataEl) return;
+
+    let photos;
+    try {
+        photos = JSON.parse(photoDataEl.textContent);
+    } catch (e) {
+        console.error('Failed to parse photo data:', e);
+        return;
+    }
+
+    if (!photos || photos.length === 0) return;
+
+    // Fisher-Yates shuffle
+    function shuffleArray(array) {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }
+
+    // Select 3 random photos
+    const selectedPhotos = shuffleArray(photos).slice(0, 3);
+
+    // Create photo grid
+    const photoGrid = document.getElementById('photo-grid');
+    if (!photoGrid) return;
+
+    // Clear any existing content
+    photoGrid.innerHTML = '';
+
+    // Add each photo
+    selectedPhotos.forEach((photo, index) => {
+        const photoItem = document.createElement('div');
+        photoItem.className = 'photo-item';
+
+        const link = document.createElement('a');
+        link.href = photo.permalink;
+
+        const picture = document.createElement('picture');
+
+        // Mobile source
+        const sourceMobile = document.createElement('source');
+        sourceMobile.media = '(max-width: 600px)';
+        sourceMobile.srcset = `${photo.image}?width=382&format=webp&quality=60`;
+        picture.appendChild(sourceMobile);
+
+        // Tablet source
+        const sourceTablet = document.createElement('source');
+        sourceTablet.media = '(max-width: 900px)';
+        sourceTablet.srcset = `${photo.image}?width=450&format=webp&quality=60`;
+        picture.appendChild(sourceTablet);
+
+        // Default image
+        const img = document.createElement('img');
+        img.src = `${photo.image}?width=450&format=webp&quality=60`;
+        img.width = 450;
+        img.height = 300;
+        img.alt = photo.alt || photo.title;
+
+        // First image loads eagerly, others lazy
+        if (index === 0) {
+            img.setAttribute('fetchpriority', 'high');
+            img.loading = 'eager';
+        } else {
+            img.loading = 'lazy';
+        }
+
+        picture.appendChild(img);
+        link.appendChild(picture);
+        photoItem.appendChild(link);
+        photoGrid.appendChild(photoItem);
+    });
+})();
+</script>
 
 <!-- Daily Haiku Section -->
 {{ $haikuPage := .Site.GetPage "/writing/daily haikus.md" }}
