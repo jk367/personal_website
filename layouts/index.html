@@ -1,5 +1,4 @@
 {{ define "main" }}
-<link rel="preconnect" href="https://imagedelivery.net">
 <style>
     .homepage-header {
         margin-bottom: 0.5rem;
@@ -28,30 +27,26 @@
     }
 
     /* Daily Haiku Styles - PREVENT LAYOUT SHIFT */
-    .featured-section:has(.haiku-content) {
-        min-height: 140px; /* Increased to prevent layout shift */
+    #haiku-section {
+        min-height: 160px; /* Fixed height to prevent any shift */
+        position: relative;
     }
 
     .haiku-content {
         line-height: 1.6;
         margin-top: 0.5rem;
-        min-height: 90px; /* Reserve more space for 3 lines + spacing */
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
     }
 
     .haiku-content .haiku-line {
         display: block;
         margin-bottom: 0.2rem;
-        min-height: 1.6em; /* Ensure consistent line height */
+        line-height: 1.6;
     }
 
     .haiku-date {
         font-size: 0.9em;
         color: #000;
         margin-top: 0.5rem;
-        min-height: 1.4em; /* Ensure consistent date height */
     }
 
     .photo-grid {
@@ -141,12 +136,8 @@
             font-size: 1.1em;
         }
 
-        .haiku-content {
-            min-height: 80px; /* Adequate space on mobile */
-        }
-
-        .featured-section:has(.haiku-content) {
-            min-height: 120px; /* Adequate space on mobile */
+        #haiku-section {
+            min-height: 140px;
         }
     }
 
@@ -166,13 +157,6 @@
             margin-bottom: 0.75rem;
         }
 
-        .haiku-content {
-            min-height: 75px; /* Adequate space on small mobile */
-        }
-
-        .featured-section:has(.haiku-content) {
-            min-height: 110px; /* Adequate space on small mobile */
-        }
     }
 </style>
 
@@ -364,7 +348,7 @@
 {{ end }}
 
 {{ if $haikuFound }}
-<div class="featured-section">
+<div class="featured-section" id="haiku-section">
     <h2><a href="/writing/daily-haikus/" class="section-title">Daily Haiku</a></h2>
     <div class="haiku-date">{{ $currentDate }}</div>
     <div class="haiku-content">

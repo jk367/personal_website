@@ -12,14 +12,10 @@
     <link rel="alternate" type="application/json" title="AI Nav" href="{{ "ai-nav.json" | relURL }}">
     
     <!-- Resource hints -->
-    <link rel="preconnect" href="https://photos.jmkettle.com" crossorigin>
-    <link rel="dns-prefetch" href="https://photos.jmkettle.com">
-
-    <!-- Preload critical homepage images (only on homepage) -->
-    {{ if .IsHome }}
     <link rel="preconnect" href="https://imagedelivery.net" crossorigin>
     <link rel="dns-prefetch" href="https://imagedelivery.net">
-    {{ end }}
+    <link rel="preconnect" href="https://photos.jmkettle.com" crossorigin>
+    <link rel="dns-prefetch" href="https://photos.jmkettle.com">
     
     <!-- Global CSS - COMPACT VERSION -->
     <style>

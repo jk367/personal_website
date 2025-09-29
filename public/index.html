@@ -13,14 +13,10 @@
     <link rel="alternate" type="application/json" title="AI Nav" href="/ai-nav.json">
     
     
-    <link rel="preconnect" href="https://photos.jmkettle.com" crossorigin>
-    <link rel="dns-prefetch" href="https://photos.jmkettle.com">
-
-    
-    
     <link rel="preconnect" href="https://imagedelivery.net" crossorigin>
     <link rel="dns-prefetch" href="https://imagedelivery.net">
-    
+    <link rel="preconnect" href="https://photos.jmkettle.com" crossorigin>
+    <link rel="dns-prefetch" href="https://photos.jmkettle.com">
     
     
     <style>
@@ -395,7 +391,6 @@
     <div class="container">
         <main>
             
-<link rel="preconnect" href="https://imagedelivery.net">
 <style>
     .homepage-header {
         margin-bottom: 0.5rem;
@@ -424,30 +419,26 @@
     }
 
      
-    .featured-section:has(.haiku-content) {
-        min-height: 140px;  
+    #haiku-section {
+        min-height: 160px;  
+        position: relative;
     }
 
     .haiku-content {
         line-height: 1.6;
         margin-top: 0.5rem;
-        min-height: 90px;  
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
     }
 
     .haiku-content .haiku-line {
         display: block;
         margin-bottom: 0.2rem;
-        min-height: 1.6em;  
+        line-height: 1.6;
     }
 
     .haiku-date {
         font-size: 0.9em;
         color: #000;
         margin-top: 0.5rem;
-        min-height: 1.4em;  
     }
 
     .photo-grid {
@@ -537,12 +528,8 @@
             font-size: 1.1em;
         }
 
-        .haiku-content {
-            min-height: 80px;  
-        }
-
-        .featured-section:has(.haiku-content) {
-            min-height: 120px;  
+        #haiku-section {
+            min-height: 140px;
         }
     }
 
@@ -562,13 +549,6 @@
             margin-bottom: 0.75rem;
         }
 
-        .haiku-content {
-            min-height: 75px;  
-        }
-
-        .featured-section:has(.haiku-content) {
-            min-height: 110px;  
-        }
     }
 </style>
 
@@ -5011,7 +4991,7 @@
 
 
 
-<div class="featured-section">
+<div class="featured-section" id="haiku-section">
     <h2><a href="/writing/daily-haikus/" class="section-title">Daily Haiku</a></h2>
     <div class="haiku-date">September 28, 2025</div>
     <div class="haiku-content">
