@@ -27,6 +27,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/parties/croatian_wedding_june_27/</loc>
+    <lastmod>2025-06-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/writing/daily-haikus/</loc>
     <lastmod>2025-05-25T11:23:36+02:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -52,8 +57,23 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/parties/bushwick_party_april_5/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/photos/hands/</loc>
     <lastmod>2025-03-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/parties/crazy_girl_march_9/</loc>
+    <lastmod>2025-03-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/parties/kai_and_vivi_birthday_jan_25/</loc>
+    <lastmod>2025-01-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -274,16 +294,6 @@
   </url><url>
     <loc>http://localhost:1313/photos/memorial/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/parties/crazy_girl_march_9/</loc>
-    <lastmod>2024-03-09T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/parties/kai_and_vivi_birthday_jan_25/</loc>
-    <lastmod>2024-01-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

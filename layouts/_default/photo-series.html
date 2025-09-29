@@ -22,9 +22,13 @@
     <div class="series-photos">
         {{ range $index, $image := .Params.series_images }}
         <div class="series-photo">
-            <img src="{{ $image }}" 
-                 alt="{{ $.Title }} - Photo {{ add $index 1 }}"
-                 {{ if eq $index 0 }}fetchpriority="high"{{ else }}loading="lazy"{{ end }}>
+            {{ $cloudflareId := index $.Params.series_cloudflare_ids $index }}
+            {{ $altText := index $.Params.series_alt_texts $index }}
+            {{ $fallbackAlt := printf "%s - Photo %d" $.Title (add $index 1) }}
+            <img src="{{ if $cloudflareId }}https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ $cloudflareId }}/gallery{{ else }}{{ $image }}{{ end }}"
+                 alt="{{ if $altText }}{{ $altText }}{{ else }}{{ $fallbackAlt }}{{ end }}"
+                 {{ if eq $index 0 }}fetchpriority="high"{{ else }}loading="lazy"{{ end }}
+                 {{ if $cloudflareId }}onerror="this.src='{{ $image }}'"{{ end }}>
         </div>
         {{ end }}
     </div>
