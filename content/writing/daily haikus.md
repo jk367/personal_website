@@ -4,6 +4,30 @@ date: 2025-05-25T11:23:36+02:00
 writing_categories: ["poetry"]
 draft: false
 ---
+**September 28, 2025**
+
+Can’t get out of bed 
+
+Long walk by the pier with friend
+
+Goodbye Safia 
+
+**September 27, 2025**
+
+Late nights and long rides 
+
+sweat on the back of my neck 
+
+music on the bridge 
+
+**September 26, 2025**
+
+five hours of sleep 
+
+friendships like egg shells 
+
+I left early 
+
 **September 25, 2025** 
 
 rainy day today 
