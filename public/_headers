@@ -4,7 +4,10 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), browsing-topics=()
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
 
 /*.css
   Cache-Control: public, max-age=31536000, immutable
@@ -25,6 +28,10 @@
   Cache-Control: public, max-age=31536000, immutable
 
 /favicon.png
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache images directory for 1 year
+/images/*
   Cache-Control: public, max-age=31536000, immutable
 
 # Special cache control for large photos
