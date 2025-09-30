@@ -1,5 +1,5 @@
 ---
-title: "Kai and Vivi Birthday January 25"
+title: "Kai and Vivi Birthday"
 date: 2025-01-25
 draft: false
 layout: "photo-series"

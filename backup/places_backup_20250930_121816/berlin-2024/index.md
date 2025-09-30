@@ -4,23 +4,10 @@ date: 2024-07-22
 draft: false
 layout: "photo-series"
 cover_image: "https://photos.jmkettle.com/places/berlin_2024/01.webp"
-cover_image_cloudflare_id: "de4e818f-44e4-4ce3-8a75-0bdfa0fb8400"
 series_images:
   - "https://photos.jmkettle.com/places/berlin_2024/01.webp"
   - "https://photos.jmkettle.com/places/berlin_2024/02.webp"
   - "https://photos.jmkettle.com/places/berlin_2024/03.webp"
   - "https://photos.jmkettle.com/places/berlin_2024/04.webp"
   - "https://photos.jmkettle.com/places/berlin_2024/05.webp"
-series_cloudflare_ids:
-  - "de4e818f-44e4-4ce3-8a75-0bdfa0fb8400"
-  - "5d8d9687-f11c-4aa9-e67a-4f1f521c2700"
-  - "bcd9730c-d17c-4a2f-1eb7-b72d27bb8300"
-  - "020d3cdb-3957-4df1-9b76-69f68e018000"
-  - "f5cab21b-938b-4043-2d39-330f13b72c00"
-series_alt_texts:
-  - "Fireworks on the street"
-  - "eyes on building"
-  - "broken glass"
-  - "street with lights"
-  - "berghain wristbands in flowerpot"
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Dojo Pomodoro November 3"
+title: "Dojo Pomodoro"
 date: 2024-11-03
 draft: false
 layout: "photo-series"

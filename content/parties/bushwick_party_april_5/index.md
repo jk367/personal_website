@@ -1,5 +1,5 @@
 ---
-title: "Bushwick Party April 5"
+title: "Bushwick Party"
 date: 2025-04-05
 draft: false
 layout: "photo-series"

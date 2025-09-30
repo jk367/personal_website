@@ -25,7 +25,7 @@
             {{ $cloudflareId := index $.Params.series_cloudflare_ids $index }}
             {{ $altText := index $.Params.series_alt_texts $index }}
             {{ $fallbackAlt := printf "%s - Photo %d" $.Title (add $index 1) }}
-            <img src="{{ if $cloudflareId }}https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ $cloudflareId }}/gallery{{ else }}{{ $image }}{{ end }}"
+            <img src="{{ if $cloudflareId }}https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ $cloudflareId }}/full{{ else }}{{ $image }}{{ end }}"
                  alt="{{ if $altText }}{{ $altText }}{{ else }}{{ $fallbackAlt }}{{ end }}"
                  {{ if eq $index 0 }}fetchpriority="high"{{ else }}loading="lazy"{{ end }}
                  {{ if $cloudflareId }}onerror="this.src='{{ $image }}'"{{ end }}>

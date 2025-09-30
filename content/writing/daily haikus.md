@@ -4,6 +4,14 @@ date: 2025-05-25T11:23:36+02:00
 writing_categories: ["poetry"]
 draft: false
 ---
+**September 29, 2025**
+
+Lonely day inside 
+
+Magical beers with my friends 
+
+life is that simple 
+
 **September 28, 2025**
 
 Can’t get out of bed 

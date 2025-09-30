@@ -1,5 +1,5 @@
 ---
-title: "Crazy Girl March 9"
+title: "Crazy Girl"
 date: 2025-03-09
 draft: false
 layout: "photo-series"

@@ -1,5 +1,5 @@
 ---
-title: "Albert's Party October 12"
+title: "Albert's Party"
 date: 2024-10-12
 draft: false
 layout: "photo-series"

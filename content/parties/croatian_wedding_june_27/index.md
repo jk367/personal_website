@@ -1,5 +1,5 @@
 ---
-title: "Croatian Wedding June 27"
+title: "Croatian Wedding"
 date: 2025-06-27
 draft: false
 layout: "photo-series"

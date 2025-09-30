@@ -39,9 +39,6 @@
                 </div>
                 {{ end }}
                 <h3>{{ .Title }}</h3>
-                {{ if .Date }}
-                <p class="series-date">{{ .Date.Format "January 2, 2006" }}</p>
-                {{ end }}
             </a>
         </div>
         {{ else }}
@@ -57,14 +54,14 @@
     }
 
     .content {
-        margin-bottom: 2rem;
+        margin-bottom: 0.5rem;
     }
 
     .series-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 2rem;
-        margin: 2rem 0;
+        gap: 1rem;
+        margin: 1rem 0;
     }
 
     .series-item {
@@ -98,15 +95,9 @@
     }
 
     .series-item h3 {
-        margin: 0 0 0.25rem 0;
+        margin: 0;
         font-size: 1rem;
         font-weight: normal;
-    }
-
-    .series-date {
-        margin: 0;
-        font-size: 0.8rem;
-        color: #666;
     }
 
     .series-item:hover h3 {

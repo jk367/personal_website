@@ -12,11 +12,22 @@
         {{ range .Pages }}
         <div class="series-item">
             <a href="{{ .Permalink }}">
-                {{ if .Params.cover_image }}
+                {{ if .Params.cover_image_cloudflare_id }}
                 <picture>
-                    <source media="(max-width: 768px)" 
+                    <source media="(max-width: 768px)"
+                            srcset="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cover_image_cloudflare_id }}/gridthumb">
+                    <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cover_image_cloudflare_id }}/griddisplay"
+                         width="600"
+                         height="400"
+                         alt="{{ .Title }}"
+                         loading="lazy"
+                         style="object-fit: cover;">
+                </picture>
+                {{ else if .Params.cover_image }}
+                <picture>
+                    <source media="(max-width: 768px)"
                             srcset="{{ .Params.cover_image }}?width=400&format=webp&quality=75">
-                    <img src="{{ .Params.cover_image }}?width=600&format=webp&quality=75" 
+                    <img src="{{ .Params.cover_image }}?width=600&format=webp&quality=75"
                          width="600"
                          height="400"
                          alt="{{ .Title }}"
@@ -43,14 +54,14 @@
     }
 
     .content {
-        margin-bottom: 2rem;
+        margin-bottom: 0.5rem;
     }
 
     .series-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 2rem;
-        margin: 2rem 0;
+        gap: 1rem;
+        margin: 1rem 0;
     }
 
     .series-item {
