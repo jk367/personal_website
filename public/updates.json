@@ -1,0 +1,125 @@
+{
+  "site": "jmkettle.com",
+  "changelog_version": "1.0",
+  "last_updated": "2025-09-30T17:30:00-04:00",
+  "updates": [
+    {
+      "date": "2025-09-30",
+      "type": "enhancement",
+      "category": "ai",
+      "title": "Major AI discoverability improvements",
+      "changes": [
+        "Added comprehensive AI-readable endpoints (ai-readme.json, ai-sitemap.txt)",
+        "Enhanced Schema.org markup with BreadcrumbList",
+        "Added OpenGraph and Twitter Card meta tags",
+        "Created /ai/ documentation page",
+        "Added crawl hints for AI assistants",
+        "Implemented X-Robots-Tag headers"
+      ]
+    },
+    {
+      "date": "2025-09-30",
+      "type": "content",
+      "category": "writing",
+      "title": "New essay: Contra AirPods",
+      "url": "/writing/airpods/",
+      "description": "Reflection on AirPods and their impact on connection and isolation"
+    },
+    {
+      "date": "2025-09-13",
+      "type": "content",
+      "category": "writing",
+      "title": "100 Haikus collection published",
+      "url": "/writing/100-haikus/",
+      "description": "Collection of 100 haikus written over summer 2025"
+    },
+    {
+      "date": "2025-08-18",
+      "type": "content",
+      "category": "photos",
+      "title": "Nice 2025 travel photos",
+      "url": "/places/nice_2025/",
+      "description": "Photography from trip to Nice, France"
+    },
+    {
+      "date": "2025-06-27",
+      "type": "content",
+      "category": "photos",
+      "title": "Croatian Wedding party photos",
+      "url": "/parties/croatian_wedding_june_27/",
+      "description": "Party photography from Croatian wedding"
+    },
+    {
+      "date": "2025-05-25",
+      "type": "content",
+      "category": "writing",
+      "title": "Daily Haiku project ongoing",
+      "url": "/writing/daily-haikus/",
+      "description": "Started daily haiku practice - updated regularly"
+    },
+    {
+      "date": "2024-11-23",
+      "type": "content",
+      "category": "photos",
+      "title": "New portrait series",
+      "description": "Added multiple new portraits (Pedro, Alyssa, Charlie, Gotho, James, Magdalene, Marcel, Marco, Tristan, Vanessa, Max)"
+    },
+    {
+      "date": "2024-07-30",
+      "type": "content",
+      "category": "projects",
+      "title": "Project pages launched",
+      "description": "Added pages for stop1 party series, music production, and everyrecordstore.com"
+    },
+    {
+      "date": "2024-01-04",
+      "type": "content",
+      "category": "writing",
+      "title": "Goodbye Georgia essay",
+      "url": "/writing/reflections-on-georgia/",
+      "description": "Reflections on 6 months living in Tbilisi, Georgia"
+    },
+    {
+      "date": "2023-11-20",
+      "type": "content",
+      "category": "writing",
+      "title": "24 Years reflections",
+      "url": "/writing/24-years/",
+      "description": "Birthday reflections and life update"
+    },
+    {
+      "date": "2023-07-18",
+      "type": "content",
+      "category": "writing",
+      "title": "Bassiani essay",
+      "url": "/writing/bassiani/",
+      "description": "Long-form essay about the legendary techno club in Tbilisi"
+    }
+  ],
+  "upcoming": [
+    {
+      "type": "content",
+      "category": "projects",
+      "title": "everyrecordstore.com launch",
+      "status": "in_development",
+      "description": "Comprehensive directory of independent record shops worldwide"
+    }
+  ],
+  "statistics": {
+    "total_photos": 50,
+    "total_writing_pieces": 10,
+    "total_portraits": 12,
+    "total_party_galleries": 6,
+    "total_place_galleries": 5,
+    "total_projects": 3,
+    "last_photo_added": "2025-05-05",
+    "last_writing_added": "2025-09-16",
+    "most_active_category": "photography"
+  },
+  "content_schedule": {
+    "daily_haikus": "Updated daily",
+    "photography": "Irregular, based on shoots and events",
+    "writing": "Irregular, 1-2 essays per month",
+    "projects": "Major updates quarterly"
+  }
+}

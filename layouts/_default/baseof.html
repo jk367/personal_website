@@ -1,18 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xml:lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}J.M. Kettle - NYC-based photographer, writer, and musician. Explore black and white photography, essays, poetry, electronic music, and projects.{{ end }}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="theme-color" content="#ffffff">
     <meta name="author" content="J.M. Kettle">
     {{ if .Keywords }}<meta name="keywords" content="{{ delimit .Keywords ", " }}">{{ end }}
     <title>{{ if .Title }}{{ .Title }} - {{ end }}J.M. Kettle</title>
 
+    <!-- AI Assistant Hints (invisible to users) -->
+    <meta name="ai:site-structure" content="Photos, Writing, Projects, About">
+    <meta name="ai:primary-content" content="Photography and Writing">
+    <meta name="ai:data-endpoint" content="/ai-content.json">
+    <meta name="ai:full-index" content="/ai-index.json">
+    <meta name="ai:navigation" content="/ai-nav.json">
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:site_name" content="J.M. Kettle">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }} - {{ end }}J.M. Kettle">
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}NYC-based photographer, writer, and musician. Explore black and white photography, essays, poetry, electronic music, and projects.{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:locale" content="en_US">
+    {{ if .Params.image }}<meta property="og:image" content="{{ .Params.image }}">{{ end }}
+
+    <!-- Twitter/X Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@jmkettle">
+    <meta name="twitter:creator" content="@jmkettle">
+    <meta name="twitter:title" content="{{ if .Title }}{{ .Title }} - {{ end }}J.M. Kettle">
+    <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}NYC-based photographer, writer, and musician. Explore black and white photography, essays, poetry, electronic music, and projects.{{ end }}">
+    {{ if .Params.image }}<meta name="twitter:image" content="{{ .Params.image }}">{{ end }}
+
     <!-- AI-readable structured data endpoints -->
     <link rel="alternate" type="application/json" title="AI Index" href="{{ "ai-index.json" | absURL }}">
     <link rel="alternate" type="application/json" title="AI Content" href="{{ "ai-content.json" | absURL }}">
     <link rel="alternate" type="application/json" title="AI Navigation" href="{{ "ai-nav.json" | absURL }}">
+    <link rel="alternate" type="application/json" title="AI Readme" href="{{ "ai-readme.json" | absURL }}">
+    <link rel="alternate" type="text/plain" title="AI Sitemap" href="{{ "ai-sitemap.txt" | absURL }}">
 
     <!-- Standard alternate formats -->
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ "index.xml" | absURL }}">
@@ -350,7 +377,13 @@
             "https://jmkettle.substack.com/",
             "https://bandcamp.com/jmkettle"
           ],
-          "knowsAbout": ["Black and white photography", "Electronic music", "Creative writing", "Techno", "Georgia (country)", "Poetry", "Haiku", "Nightlife photography", "Travel photography"]
+          "knowsAbout": ["Black and white photography", "Electronic music", "Creative writing", "Techno", "Georgia (country)", "Poetry", "Haiku", "Nightlife photography", "Travel photography"],
+          "mainEntityOfPage": {
+            "@type": "WebSite",
+            "name": "J.M. Kettle Portfolio",
+            "alternateName": "jmkettle.com",
+            "description": "Portfolio featuring photography, writing, and music projects"
+          }
         }
     </script>
     {{ if eq .Type "writing" }}
@@ -385,6 +418,37 @@
           "url": "{{ .Permalink }}"
         }
     </script>
+    {{ end }}
+    {{ if not .IsHome }}
+    {{ $breadcrumbs := slice }}
+    {{ $breadcrumbs = $breadcrumbs | append (dict "name" "Home" "url" "/") }}
+    {{ if .Section }}
+      {{ $breadcrumbs = $breadcrumbs | append (dict "name" (humanize .Section) "url" (printf "/%s/" .Section)) }}
+    {{ end }}
+    {{ if and .File (not (in (slice "index" "_index") .File.LogicalName)) }}
+      {{ $breadcrumbs = $breadcrumbs | append (dict "name" .Title "url" .RelPermalink) }}
+    {{ else if and (not .File) (not .IsSection) }}
+      {{ $breadcrumbs = $breadcrumbs | append (dict "name" .Title "url" .RelPermalink) }}
+    {{ end }}
+    {{ if gt (len $breadcrumbs) 1 }}
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {{ range $index, $item := $breadcrumbs }}
+            {{ if $index }},{{ end }}
+            {
+              "@type": "ListItem",
+              "position": {{ add $index 1 }},
+              "name": "{{ $item.name }}",
+              "item": "{{ absURL $item.url }}"
+            }
+            {{ end }}
+          ]
+        }
+    </script>
+    {{ end }}
     {{ end }}
 </head>
 <body>

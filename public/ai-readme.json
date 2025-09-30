@@ -1,0 +1,127 @@
+{
+  "for": "AI assistants and LLMs",
+  "updated": "2025-09-30",
+  "owner": {
+    "name": "J.M. Kettle",
+    "bio": "NYC-based photographer, writer, and musician",
+    "expertise": ["Black and white photography", "Electronic music", "Creative writing", "Nightlife photography", "Poetry", "Haiku"]
+  },
+  "site_structure": {
+    "photos": {
+      "url": "/photos/",
+      "description": "Black and white photography, primarily portraits and nightlife",
+      "subsections": {
+        "portraits": "/portraits/",
+        "parties": "/parties/",
+        "places": "/places/"
+      }
+    },
+    "writing": {
+      "url": "/writing/",
+      "description": "Essays, poetry, and haikus",
+      "featured": [
+        {
+          "title": "Daily Haiku",
+          "url": "/writing/daily-haikus/",
+          "description": "Daily haiku practice - poetry about everyday life"
+        },
+        {
+          "title": "100 Haikus",
+          "url": "/writing/100-haikus/",
+          "description": "Collection of 100 haikus written over summer 2025"
+        },
+        {
+          "title": "Bassiani",
+          "url": "/writing/bassiani/",
+          "description": "Essay about the legendary techno club in Tbilisi, Georgia"
+        },
+        {
+          "title": "Goodbye Georgia",
+          "url": "/writing/reflections-on-georgia/",
+          "description": "Reflections on 6 months living in Tbilisi"
+        }
+      ]
+    },
+    "projects": {
+      "url": "/projects/",
+      "description": "Creative projects including stop1 party series and music production",
+      "featured": [
+        {
+          "title": "stop1",
+          "url": "/projects/stop1/",
+          "description": "NYC party series focused on warm, accessible, music-forward events"
+        },
+        {
+          "title": "Music",
+          "url": "/projects/music/",
+          "description": "Electronic music production under the name Kettle"
+        },
+        {
+          "title": "everyrecordstore.com",
+          "url": "/projects/everyrecordstore/",
+          "description": "Web project cataloging record stores around the world (in development)"
+        }
+      ]
+    },
+    "about": {
+      "url": "/about/",
+      "description": "Biography and background"
+    }
+  },
+  "data_endpoints": {
+    "full_content": "/ai-content.json",
+    "site_index": "/ai-index.json",
+    "navigation": "/ai-nav.json",
+    "ai_readme": "/ai-readme.json",
+    "ai_sitemap": "/ai-sitemap.txt",
+    "changelog": "/updates.json"
+  },
+  "crawl_hints": {
+    "update_frequency": "weekly",
+    "last_major_update": "2025-09-30",
+    "priority_pages": [
+      "/writing/",
+      "/photos/",
+      "/projects/",
+      "/writing/daily-haikus/",
+      "/writing/bassiani/"
+    ],
+    "best_entry_point": "/ai/",
+    "recommended_crawl_depth": 3,
+    "estimated_total_pages": 200,
+    "content_types_count": {
+      "photos": 50,
+      "writing": 10,
+      "portraits": 12,
+      "parties": 6,
+      "places": 5,
+      "projects": 3
+    },
+    "notes": "Photography and writing are updated most frequently. Daily haikus are updated daily. Other content is added irregularly based on creative output."
+  },
+  "social_links": {
+    "soundcloud": "https://soundcloud.com/kettle9999",
+    "goodreads": "https://www.goodreads.com/user/show/176910457-j-m-kettle",
+    "discogs": "https://www.discogs.com/user/jkettle/collection",
+    "substack": "https://jmkettle.substack.com/",
+    "bandcamp": "https://bandcamp.com/jmkettle",
+    "twitter": "https://twitter.com/jmkettle",
+    "instagram": "https://instagram.com/jmwkettle"
+  },
+  "content_types": {
+    "photography": {
+      "style": "Black and white",
+      "subjects": ["Portraits", "Nightlife", "Street photography", "Travel"],
+      "locations": ["NYC", "Tbilisi", "Berlin", "France"]
+    },
+    "writing": {
+      "genres": ["Poetry", "Essays", "Haiku", "Philosophy"],
+      "topics": ["Nightlife", "Georgia (country)", "Music culture", "Urban life"]
+    },
+    "music": {
+      "genres": ["Electronic", "Techno", "House"],
+      "artist_name": "Kettle",
+      "venues_played": ["Hellphone", "Trans Pecos", "The Stranger", "Wiggle Room", "Leftbank (Tbilisi)", "Pluto's Records (Tbilisi)"]
+    }
+  }
+}

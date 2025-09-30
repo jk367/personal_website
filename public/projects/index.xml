@@ -1,33 +1,105 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Projects on j.m. kettle</title>
-    <link>http://localhost:1313/projects/</link>
-    <description>Recent content in Projects on j.m. kettle</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 30 Jul 2024 11:23:36 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>everyrecordstore.com</title>
-      <link>http://localhost:1313/projects/everyrecordstore/</link>
-      <pubDate>Tue, 30 Jul 2024 11:23:36 +0200</pubDate>
-      <guid>http://localhost:1313/projects/everyrecordstore/</guid>
-      <description>&lt;p&gt;A web project cataloging record stores around the world.&lt;/p&gt;&#xA;&lt;p&gt;Still in development - the goal is to create a comprehensive directory of independent record shops, with photos, reviews, and what makes each one special.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; In development&lt;br&gt;&#xA;&lt;strong&gt;Launch:&lt;/strong&gt; TBA&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Because good record stores are getting harder to find, and they deserve to be documented.&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Music</title>
-      <link>http://localhost:1313/projects/music/</link>
-      <pubDate>Tue, 30 Jul 2024 11:23:36 +0200</pubDate>
-      <guid>http://localhost:1313/projects/music/</guid>
-      <description>&lt;p&gt;I make electronic music under the name Kettle. I&amp;rsquo;ve been making music since 2016, mostly electronic but sometimes venture into other genres. I try not to box myself into one genre but play music with a constant emotional throughline, which is the inspiration of my party, stop1, which I throw every 6ish weeks in brooklyn.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve played at Hellphone, Trans Pecos, The Stranger, Wiggle Room, Leftbank (Tbilisi), and Pluto&amp;rsquo;s Records (Tbilisi).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>stop1</title>
-      <link>http://localhost:1313/projects/stop1/</link>
-      <pubDate>Tue, 30 Jul 2024 11:23:36 +0200</pubDate>
-      <guid>http://localhost:1313/projects/stop1/</guid>
-      <description>&lt;p&gt;stop1 is my party series in NYC. The concept is simple: a warm, accessible, music forward party for everyone.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Philosophy:&lt;/strong&gt; Good music, good people, no pretense.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instagram:&lt;/strong&gt; &lt;a href=&#34;https://instagram.com/stop1nyc&#34;&gt;@stop1nyc&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!-- **Next event**: October 18th at Hellphone --&gt;&#xA;&lt;h2 id=&#34;past-events&#34;&gt;Past Events&lt;/h2&gt;&#xA;&lt;div class=&#34;posters-grid&#34;&gt;&#xA;    &lt;div class=&#34;poster-item&#34;&gt;&#xA;        &lt;div class=&#34;poster-container&#34;&gt;&#xA;            &lt;img src=&#34;https://stop1.jmkettle.com/stop1_posters/stop1_may_24.jpeg&#34;&#xA;                 alt=&#34;stop1 May 24 poster&#34;&#xA;                 loading=&#34;lazy&#34;&#xA;                 width=&#34;300&#34;&#xA;                 height=&#34;400&#34;&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;div class=&#34;poster-item&#34;&gt;&#xA;        &lt;div class=&#34;poster-container&#34;&gt;&#xA;            &lt;img src=&#34;https://stop1.jmkettle.com/stop1_posters/stop1_april_5.jpeg&#34;&#xA;                 alt=&#34;stop1 April 5 poster&#34;&#xA;                 loading=&#34;lazy&#34;&#xA;                 width=&#34;300&#34;&#xA;                 height=&#34;400&#34;&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;div class=&#34;poster-item&#34;&gt;&#xA;        &lt;div class=&#34;poster-container&#34;&gt;&#xA;            &lt;img src=&#34;https://stop1.jmkettle.com/stop1_posters/stop1_feb_15.jpeg&#34;&#xA;                 alt=&#34;stop1 February 15 poster&#34;&#xA;                 loading=&#34;lazy&#34;&#xA;                 width=&#34;300&#34;&#xA;                 height=&#34;400&#34;&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;div class=&#34;poster-item&#34;&gt;&#xA;        &lt;div class=&#34;poster-container&#34;&gt;&#xA;            &lt;img src=&#34;https://stop1.jmkettle.com/stop1_posters/stop1_july_19.jpeg&#34;&#xA;                 alt=&#34;stop1 July 19 poster&#34;&#xA;                 loading=&#34;lazy&#34;&#xA;                 width=&#34;300&#34;&#xA;                 height=&#34;400&#34;&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;div class=&#34;poster-item&#34;&gt;&#xA;        &lt;div class=&#34;poster-container&#34;&gt;&#xA;            &lt;img src=&#34;https://stop1.jmkettle.com/stop1_posters/stop1_sept_6.jpeg&#34;&#xA;                 alt=&#34;stop1 September 6 poster&#34;&#xA;                 loading=&#34;lazy&#34;&#xA;                 width=&#34;300&#34;&#xA;                 height=&#34;400&#34;&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA; &#xA;&lt;div class=&#34;poster-item&#34;&gt;&#xA;        &lt;div class=&#34;poster-container&#34;&gt;&#xA;            &lt;img src=&#34;https://stop1.jmkettle.com/stop1_posters/stop1_oct_18.jpeg&#34;&#xA;                 alt=&#34;stop1 October 18 poster&#34;&#xA;                 loading=&#34;lazy&#34;&#xA;                 width=&#34;300&#34;&#xA;                 height=&#34;400&#34;&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;style&gt;&#xA;.posters-grid {&#xA;    display: grid;&#xA;    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));&#xA;    gap: 2rem;&#xA;    margin: 2rem 0;&#xA;}&#xA;&#xA;.poster-item {&#xA;    text-align: center;&#xA;}&#xA;&#xA;.poster-container {&#xA;    width: 100%;&#xA;    aspect-ratio: 3/4;&#xA;    overflow: hidden;&#xA;}&#xA;&#xA;.poster-container img {&#xA;    width: 100%;&#xA;    height: 100%;&#xA;    object-fit: cover;&#xA;}&#xA;&#xA;@media (max-width: 768px) {&#xA;    .posters-grid {&#xA;        grid-template-columns: 1fr;&#xA;        gap: 1.5rem;&#xA;    }&#xA;}&#xA;&lt;/style&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on j.m. kettle</title><link>http://localhost:1313/projects/</link><description>Recent content in Projects on j.m. kettle</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 30 Jul 2024 11:23:36 +0200</lastBuildDate><atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>everyrecordstore.com</title><link>http://localhost:1313/projects/everyrecordstore/</link><pubDate>Tue, 30 Jul 2024 11:23:36 +0200</pubDate><guid>http://localhost:1313/projects/everyrecordstore/</guid><description>&lt;p&gt;A web project cataloging record stores around the world.&lt;/p&gt;
+&lt;p&gt;Still in development - the goal is to create a comprehensive directory of independent record shops, with photos, reviews, and what makes each one special.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; In development&lt;br&gt;
+&lt;strong&gt;Launch:&lt;/strong&gt; TBA&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Because good record stores are getting harder to find, and they deserve to be documented.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Music</title><link>http://localhost:1313/projects/music/</link><pubDate>Tue, 30 Jul 2024 11:23:36 +0200</pubDate><guid>http://localhost:1313/projects/music/</guid><description>&lt;p&gt;I make electronic music under the name Kettle. I&amp;rsquo;ve been making music since 2016, mostly electronic but sometimes venture into other genres. I try not to box myself into one genre but play music with a constant emotional throughline, which is the inspiration of my party, stop1, which I throw every 6ish weeks in brooklyn.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve played at Hellphone, Trans Pecos, The Stranger, Wiggle Room, Leftbank (Tbilisi), and Pluto&amp;rsquo;s Records (Tbilisi).&lt;/p&gt;</description></item><item><title>stop1</title><link>http://localhost:1313/projects/stop1/</link><pubDate>Tue, 30 Jul 2024 11:23:36 +0200</pubDate><guid>http://localhost:1313/projects/stop1/</guid><description>&lt;p&gt;stop1 is my party series in NYC. The concept is simple: a warm, accessible, music forward party for everyone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Philosophy:&lt;/strong&gt; Good music, good people, no pretense.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Instagram:&lt;/strong&gt; &lt;a href="https://instagram.com/stop1nyc"&gt;@stop1nyc&lt;/a&gt;&lt;/p&gt;
+&lt;!-- **Next event**: October 18th at Hellphone --&gt;
+&lt;h2 id="past-events"&gt;Past Events&lt;/h2&gt;
+&lt;div class="posters-grid"&gt;
+ &lt;div class="poster-item"&gt;
+ &lt;div class="poster-container"&gt;
+ &lt;img src="https://stop1.jmkettle.com/stop1_posters/stop1_may_24.jpeg"
+ alt="stop1 May 24 poster"
+ loading="lazy"
+ width="300"
+ height="400"&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;div class="poster-item"&gt;
+ &lt;div class="poster-container"&gt;
+ &lt;img src="https://stop1.jmkettle.com/stop1_posters/stop1_april_5.jpeg"
+ alt="stop1 April 5 poster"
+ loading="lazy"
+ width="300"
+ height="400"&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;div class="poster-item"&gt;
+ &lt;div class="poster-container"&gt;
+ &lt;img src="https://stop1.jmkettle.com/stop1_posters/stop1_feb_15.jpeg"
+ alt="stop1 February 15 poster"
+ loading="lazy"
+ width="300"
+ height="400"&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;div class="poster-item"&gt;
+ &lt;div class="poster-container"&gt;
+ &lt;img src="https://stop1.jmkettle.com/stop1_posters/stop1_july_19.jpeg"
+ alt="stop1 July 19 poster"
+ loading="lazy"
+ width="300"
+ height="400"&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;div class="poster-item"&gt;
+ &lt;div class="poster-container"&gt;
+ &lt;img src="https://stop1.jmkettle.com/stop1_posters/stop1_sept_6.jpeg"
+ alt="stop1 September 6 poster"
+ loading="lazy"
+ width="300"
+ height="400"&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+ 
+&lt;div class="poster-item"&gt;
+ &lt;div class="poster-container"&gt;
+ &lt;img src="https://stop1.jmkettle.com/stop1_posters/stop1_oct_18.jpeg"
+ alt="stop1 October 18 poster"
+ loading="lazy"
+ width="300"
+ height="400"&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;style&gt;
+.posters-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 2rem;
+ margin: 2rem 0;
+}
+
+.poster-item {
+ text-align: center;
+}
+
+.poster-container {
+ width: 100%;
+ aspect-ratio: 3/4;
+ overflow: hidden;
+}
+
+.poster-container img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+@media (max-width: 768px) {
+ .posters-grid {
+ grid-template-columns: 1fr;
+ gap: 1.5rem;
+ }
+}
+&lt;/style&gt;</description></item></channel></rss>

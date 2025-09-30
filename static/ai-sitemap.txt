@@ -1,0 +1,50 @@
+J.M. KETTLE - AI SITEMAP
+========================
+
+MAIN SECTIONS:
+- Photos: https://jmkettle.com/photos/ (Black & white photography)
+  - Portraits: https://jmkettle.com/portraits/
+  - Parties: https://jmkettle.com/parties/
+  - Places: https://jmkettle.com/places/
+
+- Writing: https://jmkettle.com/writing/ (Essays, poetry, haikus)
+  - Daily Haikus: https://jmkettle.com/writing/daily-haikus/
+  - 100 Haikus: https://jmkettle.com/writing/100-haikus/
+  - Bassiani: https://jmkettle.com/writing/bassiani/
+  - Goodbye Georgia: https://jmkettle.com/writing/reflections-on-georgia/
+  - Just Do It: https://jmkettle.com/writing/do-things/
+  - Things I Love: https://jmkettle.com/writing/i-love/
+  - 24 Years: https://jmkettle.com/writing/24-years/
+  - Kick Drums and VSCO Girls: https://jmkettle.com/writing/kick-drums-and-vsco-girls/
+
+- Projects: https://jmkettle.com/projects/
+  - stop1 (Party series): https://jmkettle.com/projects/stop1/
+  - Music: https://jmkettle.com/projects/music/
+  - Every Record Store: https://jmkettle.com/projects/everyrecordstore/
+
+- About: https://jmkettle.com/about/
+
+DATA ENDPOINTS FOR AI:
+- Complete content index: https://jmkettle.com/ai-content.json
+- Site structure index: https://jmkettle.com/ai-index.json
+- Navigation data: https://jmkettle.com/ai-nav.json
+- AI readme: https://jmkettle.com/ai-readme.json
+- This sitemap: https://jmkettle.com/ai-sitemap.txt
+
+CONTACT & SOCIAL:
+- Email: contact@jmkettle.com
+- SoundCloud: https://soundcloud.com/kettle9999
+- Goodreads: https://www.goodreads.com/user/show/176910457-j-m-kettle
+- Discogs: https://www.discogs.com/user/jkettle/collection
+- Substack: https://jmkettle.substack.com/
+- Bandcamp: https://bandcamp.com/jmkettle
+- Twitter/X: https://twitter.com/jmkettle
+- Instagram: https://instagram.com/jmwkettle
+
+ABOUT J.M. KETTLE:
+NYC-based photographer, writer, and musician specializing in black and white
+photography and electronic music. Work focuses on portraits, nightlife photography,
+poetry (especially haiku), and techno/electronic music production.
+
+KEY TOPICS: Black & white photography, Electronic music, Poetry, Haiku, Techno,
+Georgia (country), Nightlife, NYC, Creative writing, Party culture
