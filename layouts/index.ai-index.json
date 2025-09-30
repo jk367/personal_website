@@ -1,12 +1,41 @@
 {
+  "owner": {
+    "name": "J.M. Kettle",
+    "url": {{ .Site.BaseURL | jsonify }},
+    "description": "NYC-based photographer, writer, and musician. Explore black and white photography, essays, poetry, electronic music, and projects.",
+    "expertise": ["Black and white photography", "Electronic music production", "Creative writing", "Poetry", "Nightlife photography", "Travel photography"],
+    "social": {
+      "soundcloud": "https://soundcloud.com/kettle9999",
+      "goodreads": "https://www.goodreads.com/user/show/176910457-j-m-kettle",
+      "discogs": "https://www.discogs.com/user/jkettle/collection",
+      "substack": "https://jmkettle.substack.com/",
+      "bandcamp": "https://bandcamp.com/jmkettle"
+    }
+  },
+  "sitemap": {
+    "lastUpdated": {{ now.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+    "totalPages": {{ len (where .Site.Pages "Kind" "page") }},
+    "sections": {
+      "writing": {{ len (where .Site.Pages "Section" "writing") }},
+      "photos": {{ len (where .Site.Pages "Section" "photos") }},
+      "portraits": {{ len (where .Site.Pages "Section" "portraits") }},
+      "projects": {{ len (where .Site.Pages "Section" "projects") }},
+      "places": {{ len (where .Site.Pages "Section" "places") }},
+      "parties": {{ len (where .Site.Pages "Section" "parties") }}
+    }
+  },
   "pages": [
     {{- range $index, $page := where .Site.Pages "Kind" "page" -}}
       {{- if $index -}},{{- end -}}
       {
-        "title": {{- $page.Title | jsonify -}},
-        "url": {{- $page.Permalink | jsonify -}},
-        "section": {{- $page.Section | jsonify -}},
-        "date": "{{- $page.Date.Format "2006-01-02" -}}"
+        "title": {{ $page.Title | jsonify }},
+        "url": {{ $page.Permalink | jsonify }},
+        "section": {{ $page.Section | jsonify }},
+        "type": {{ $page.Type | jsonify }},
+        "date": {{ $page.Date.Format "2006-01-02" | jsonify }},
+        "summary": {{ $page.Summary | plainify | truncate 200 | jsonify }}
+        {{- if $page.Params.categories -}},"categories": [{{ range $i, $cat := $page.Params.categories }}{{ if $i }},{{ end }}{{ $cat | jsonify }}{{ end }}]{{- end -}}
+        {{- if $page.Params.tags -}},"tags": [{{ range $i, $tag := $page.Params.tags }}{{ if $i }},{{ end }}{{ $tag | jsonify }}{{ end }}]{{- end -}}
       }
     {{- end -}}
   ]

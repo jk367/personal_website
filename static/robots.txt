@@ -2,25 +2,45 @@
 User-agent: *
 Allow: /
 
-# Optional: Block admin areas if you have any
-# Disallow: /admin/
-# Disallow: /drafts/
-
-# Sitemap location - add this if you generate a sitemap
+# Sitemap location
 Sitemap: https://jmkettle.com/sitemap.xml
+
+# AI-specific crawlers - Claude, ChatGPT, Perplexity, etc.
+User-agent: ClaudeBot
+Allow: /
+Allow: /ai-content.json
+Allow: /ai-index.json
+Allow: /ai-nav.json
+
+User-agent: GPTBot
+Allow: /
+Allow: /ai-content.json
+Allow: /ai-index.json
+Allow: /ai-nav.json
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+Allow: /ai-content.json
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
 
 # Optimize crawl rate for important sections
 User-agent: Googlebot
 Allow: /photos/
 Allow: /writing/
-
-# Add crawl delays for less important bots to reduce server load
-User-agent: Slurp
-Crawl-delay: 1
+Allow: /portraits/
+Allow: /projects/
 
 User-agent: Bingbot
 Crawl-delay: 1
 
-# Block any unwanted bots (optional)
+# Block advertising bots only
 User-agent: AdsBot-Google
 Disallow: /

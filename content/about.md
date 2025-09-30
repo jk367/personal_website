@@ -2,9 +2,9 @@
 title: "About"
 ---
 
-## Bio <button class="sectionToggle" data-section="bio">Expand bio</button>
+## Bio <button class="sectionToggle" data-section="bio">Collapse bio</button>
 
-<div class="section" id="bioSection" style="display:none;">
+<div class="section" id="bioSection" style="display:block;">
 I grew up in NYC, went to Brooklyn Tech, then went to Columbia and Sciences Po. In college I studied a lot of different things, mostly a combination of economics, computer science, and sociology.
 
 Outside of the classroom I played rugby for 3 years, but after my 3rd concussion had to quit. When I was at Sciences Po I was a part of the poetry club, Sciences Poesie, and wrote for the student newspaper. I also threw a lot of events and parties and was a DJ.
@@ -114,9 +114,9 @@ When I was 16, I wanted more money to buy books, so I worked as a waiter for 2 w
 
 </div>
 
-## Links <button class="sectionToggle" data-section="links">Expand links</button>
+## Links <button class="sectionToggle" data-section="links">Collapse links</button>
 
-<div class="section" id="linksSection" style="display:none;">
+<div class="section" id="linksSection" style="display:block;">
 
 - **[Goodreads](https://www.goodreads.com/user/show/176910457-j-m-kettle)** - Books 
 - **[Discogs](https://www.discogs.com/user/jkettle/collection)** - Records 
@@ -130,7 +130,10 @@ When I was 16, I wanted more money to buy books, so I worked as a waiter for 2 w
 If you want to get in touch, you can email me at contact@jmkettle.com
 
 <div style="text-align: center;">
-    <img src="https://photos.jmkettle.com/business_card.jpeg" alt="Business Card" style="max-width: 50%; height: auto;">
+    <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/8a0c2ad5-745a-49fb-0f7c-629e51ce6300/full"
+         alt="Business Card"
+         style="max-width: 50%; height: auto;"
+         onerror="this.src='https://photos.jmkettle.com/business_card.jpeg'">
 </div>
 
 <style>

@@ -78,5 +78,12 @@
       <guid>http://localhost:1313/portraits/vanessa/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Max</title>
+      <link>http://localhost:1313/portraits/max/</link>
+      <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portraits/max/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

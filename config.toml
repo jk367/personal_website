@@ -62,4 +62,20 @@ home = ["HTML", "RSS", "JSON", "AIIndex", "AIContent", "AINav"]
   filename = "sitemap.xml"
   priority = 0.5
 
-  
+[minify]
+  disableHTML = false
+  disableCSS = true
+  disableJS = true
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = false
+      keepConditionalComments = false
+      keepDefaultAttrVals = false
+      keepDocumentTags = false
+      keepEndTags = false
+      keepQuotes = false
+

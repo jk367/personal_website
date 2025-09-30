@@ -310,6 +310,13 @@
       <description></description>
     </item>
     <item>
+      <title>Max</title>
+      <link>http://localhost:1313/portraits/max/</link>
+      <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portraits/max/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>everyrecordstore.com</title>
       <link>http://localhost:1313/projects/everyrecordstore/</link>
       <pubDate>Tue, 30 Jul 2024 11:23:36 +0200</pubDate>
@@ -426,7 +433,7 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;h2 id=&#34;bio-expand-bio&#34;&gt;Bio &lt;button class=&#34;sectionToggle&#34; data-section=&#34;bio&#34;&gt;Expand bio&lt;/button&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;section&#34; id=&#34;bioSection&#34; style=&#34;display:none;&#34;&gt;&#xA;I grew up in NYC, went to Brooklyn Tech, then went to Columbia and Sciences Po. In college I studied a lot of different things, mostly a combination of economics, computer science, and sociology.&#xA;&lt;p&gt;Outside of the classroom I played rugby for 3 years, but after my 3rd concussion had to quit. When I was at Sciences Po I was a part of the poetry club, Sciences Poesie, and wrote for the student newspaper. I also threw a lot of events and parties and was a DJ.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;bio-collapse-bio&#34;&gt;Bio &lt;button class=&#34;sectionToggle&#34; data-section=&#34;bio&#34;&gt;Collapse bio&lt;/button&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;section&#34; id=&#34;bioSection&#34; style=&#34;display:block;&#34;&gt;&#xA;I grew up in NYC, went to Brooklyn Tech, then went to Columbia and Sciences Po. In college I studied a lot of different things, mostly a combination of economics, computer science, and sociology.&#xA;&lt;p&gt;Outside of the classroom I played rugby for 3 years, but after my 3rd concussion had to quit. When I was at Sciences Po I was a part of the poetry club, Sciences Poesie, and wrote for the student newspaper. I also threw a lot of events and parties and was a DJ.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

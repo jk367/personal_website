@@ -224,67 +224,57 @@
 {{ $photos | jsonify | safeJS }}
 </script>
 
-<!-- Random photo selection script -->
+<!-- Random photo selection script - optimized -->
 <script>
 (function() {
-    // Get photo data
-    const photoDataEl = document.getElementById('photo-data');
+    var photoDataEl = document.getElementById('photo-data');
     if (!photoDataEl) return;
 
-    let photos;
+    var photos;
     try {
         photos = JSON.parse(photoDataEl.textContent);
     } catch (e) {
-        console.error('Failed to parse photo data:', e);
         return;
     }
 
     if (!photos || photos.length === 0) return;
 
-    // Fisher-Yates shuffle
-    function shuffleArray(array) {
-        const shuffled = [...array];
-        for (let i = shuffled.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-        }
-        return shuffled;
+    // Fisher-Yates shuffle - optimized
+    for (var i = photos.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = photos[i];
+        photos[i] = photos[j];
+        photos[j] = temp;
     }
 
-    // Select 3 random photos
-    const selectedPhotos = shuffleArray(photos).slice(0, 3);
-
-    // Create photo grid
-    const photoGrid = document.getElementById('photo-grid');
+    var selectedPhotos = photos.slice(0, 3);
+    var photoGrid = document.getElementById('photo-grid');
     if (!photoGrid) return;
 
-    // Clear any existing content
     photoGrid.innerHTML = '';
+    var baseUrl = 'https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/';
+    var fragment = document.createDocumentFragment();
 
-    // Add each photo
-    selectedPhotos.forEach((photo, index) => {
-        const photoItem = document.createElement('div');
+    for (var idx = 0; idx < selectedPhotos.length; idx++) {
+        var photo = selectedPhotos[idx];
+        var photoItem = document.createElement('div');
         photoItem.className = 'photo-item';
 
-        const link = document.createElement('a');
+        var link = document.createElement('a');
         link.href = photo.permalink;
 
-        const baseUrl = 'https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/';
-
-        const picture = document.createElement('picture');
-
-        const source = document.createElement('source');
+        var picture = document.createElement('picture');
+        var source = document.createElement('source');
         source.media = '(max-width: 768px)';
-        source.srcset = `${baseUrl}${photo.cloudflare_id}/gridthumb`;
+        source.srcset = baseUrl + photo.cloudflare_id + '/gridthumb';
 
-        const img = document.createElement('img');
-        img.src = `${baseUrl}${photo.cloudflare_id}/griddisplay`;
+        var img = document.createElement('img');
+        img.src = baseUrl + photo.cloudflare_id + '/griddisplay';
         img.width = 600;
         img.height = 400;
         img.alt = photo.alt || photo.title;
 
-        // First image loads eagerly, others lazy
-        if (index === 0) {
+        if (idx === 0) {
             img.setAttribute('fetchpriority', 'high');
             img.loading = 'eager';
         } else {
@@ -295,8 +285,10 @@
         picture.appendChild(img);
         link.appendChild(picture);
         photoItem.appendChild(link);
-        photoGrid.appendChild(photoItem);
-    });
+        fragment.appendChild(photoItem);
+    }
+
+    photoGrid.appendChild(fragment);
 })();
 </script>
 

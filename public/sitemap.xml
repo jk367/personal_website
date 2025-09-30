@@ -237,6 +237,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/portraits/max/</loc>
+    <lastmod>2024-08-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2024-07-30T11:23:36+02:00</lastmod>
     <changefreq>monthly</changefreq>
