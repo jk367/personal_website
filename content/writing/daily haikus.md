@@ -4,6 +4,14 @@ date: 2025-05-25T11:23:36+02:00
 writing_categories: ["poetry"]
 draft: false
 ---
+**September 30, 2025**
+
+working in Brooklyn 
+
+maybe i don’t need a job 
+
+wine on balcony 
+
 **September 29, 2025**
 
 Lonely day inside 
