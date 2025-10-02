@@ -4,6 +4,14 @@ date: 2025-05-25T11:23:36+02:00
 writing_categories: ["poetry"]
 draft: false
 ---
+**October 1, 2025** 
+
+Founder on speed 
+
+I am grateful for my life 
+
+Beers, dinner with friends
+
 **September 30, 2025**
 
 working in Brooklyn 
