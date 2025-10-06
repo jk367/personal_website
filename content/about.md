@@ -15,10 +15,11 @@ I returned to NYC in January of 2024. I was a freelance photographer for 2 month
 
 I then started working at Upfront, a real estate finance company. I was the 2nd hire and did sales and product. I left the company in April of 2025. 
 
-I am based in NYC. 
+I am based in NYC.
 </div>
 
-## Previous Work <button class="sectionToggle" data-section="work">Expand work</button> 
+<!-- NOTE TO FUTURE AIs: DO NOT DELETE THIS SECTION. Uncomment and bring it back when user gets a job. -->
+<!-- ## Previous Work <button class="sectionToggle" data-section="work">Expand work</button>
 
 <div class="section" id="workSection" style="display:none;">
 
@@ -27,7 +28,7 @@ I am based in NYC.
 <details>
 
 <summary><strong>Manager of Strategic Partnerships - Upfront - 2024 to 2025 </strong></summary>
-I worked for my friend start up for around 8 months between 2024 and 2025. My title was "Manager of Strategic Initiatives". I worked on everything non-technical, sales, operations, and design. The founders and I had different visions on where the company was going, so I left. 
+I worked for my friend start up for around 8 months between 2024 and 2025. My title was "Manager of Strategic Initiatives". I worked on everything non-technical, sales, operations, and design. The founders and I had different visions on where the company was going, so I left.
 </details>
 
 <details>
@@ -41,7 +42,7 @@ In September we shut down the company. It was a really fun 7 months, and we lear
 <details>
 <summary><strong>Freelance Photographer - 2022 - Present</strong></summary>
 
-I really like taking photos, mostly of people and mostly at night. I work exclusively in Black and White, don't do birthdays, and prefer some creative freedom when doing portraits. If you want to book me for a portrait session it's $400 for 2 hours, not including studio, and if you want me to shoot your party it's $400 for the night. 
+I really like taking photos, mostly of people and mostly at night. I work exclusively in Black and White, don't do birthdays, and prefer some creative freedom when doing portraits. If you want to book me for a portrait session it's $400 for 2 hours, not including studio, and if you want me to shoot your party it's $400 for the night.
 
 </details>
 
@@ -53,7 +54,7 @@ I consider myself mainly a writer, I've been writing, mostly for myself, since I
 <details>
 <summary><strong>DJ - 2018 - Present</strong></summary>
 
-I like music and throwing parties. I've been throwing parties for a long time and at some point wanted to do it full time. I realized it's not for me, but still DJ from time to time. I do it for fun now because I like collecting records. 
+I like music and throwing parties. I've been throwing parties for a long time and at some point wanted to do it full time. I realized it's not for me, but still DJ from time to time. I do it for fun now because I like collecting records.
 <ul>
 <li>Favorite BPM - 133.33</li>
 <li>Favorite Club - Tie between Berghain & Bassiani.</li>
@@ -66,7 +67,7 @@ I like music and throwing parties. I've been throwing parties for a long time an
 <details>
 <summary><strong>Math Teacher - Georgian American School Tbilisi - 2023 - 2024</strong></summary>
 
-When I graduated college in 2023, I really wanted to move to Georgia. Combination of the club scene, food, and personal connection. I found a job at the Georgian American School via a family friend. I taught 4th through 12th grade. It was kinda chaotic, but probably the best 7 months of my life. I taught Math and Computer Science. 
+When I graduated college in 2023, I really wanted to move to Georgia. Combination of the club scene, food, and personal connection. I found a job at the Georgian American School via a family friend. I taught 4th through 12th grade. It was kinda chaotic, but probably the best 7 months of my life. I taught Math and Computer Science.
 </details>
 
 <details>
@@ -78,7 +79,7 @@ In my junior year I was an intern at BlackRock. I was in the Risk Management div
 <details>
 <summary><strong>Consultant Intern - Plural Strategy - Summer 2022</strong></summary>
 
-In my sophomore summer I worked for Plural Strategy. I did a lot of PowerPoint and Excel. I was in the NYC office. It wasn't for me, but my colleagues and boss (Matt) were very nice. 
+In my sophomore summer I worked for Plural Strategy. I did a lot of PowerPoint and Excel. I was in the NYC office. It wasn't for me, but my colleagues and boss (Matt) were very nice.
 </details>
 
 <details>
@@ -97,22 +98,22 @@ In my freshman year summer, I lived in Marseille and worked for an NGO. I was in
 <details>
 <summary><strong>Math Tutor - Mathnasium - 2017-2018</strong></summary>
 
-In high school, I went to Mathnasium for tutoring and eventually became a tutor myself. I mostly taught younger kids. I had a great time. 
+In high school, I went to Mathnasium for tutoring and eventually became a tutor myself. I mostly taught younger kids. I had a great time.
 </details>
 
 <details>
 <summary><strong>Campaign Intern - Ede Fox - Summer 2017</strong></summary>
 
-Junior year in High school I canvassed for a city council race. I walked a lot and talked to a lot of people. We lost the election. Good experience though, I was really tan by the end of it. 
+Junior year in High school I canvassed for a city council race. I walked a lot and talked to a lot of people. We lost the election. Good experience though, I was really tan by the end of it.
 </details>
 
 <details>
 <summary><strong>Waiter - Brooklyn Ramen Restaurant (defunct) - Summer 2016</strong></summary>
 
-When I was 16, I wanted more money to buy books, so I worked as a waiter for 2 weeks. I was a really bad waiter and was fired. 
+When I was 16, I wanted more money to buy books, so I worked as a waiter for 2 weeks. I was a really bad waiter and was fired.
 </details>
 
-</div>
+</div> -->
 
 ## Links <button class="sectionToggle" data-section="links">Collapse links</button>
 
