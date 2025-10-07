@@ -4,6 +4,47 @@ date: 2025-05-25T11:23:36+02:00
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**October 6, 2025**
+
+One more interview 
+
+How many more interviews 
+
+Dinner with friend 
+
+**October 5, 2025**
+
+Day in the Hamptons 
+
+Film and ice cream with brother 
+
+Happy train ride home 
+
+**October 4, 2025**
+
+Spent all day working
+
+Feels like eternal summer 
+
+Wine with a good friend 
+
+**October 3, 2025**
+
+Days like sand in wind 
+
+What even happened today 
+
+Family dinner 
+
+**October 2, 2025**
+
+At the synagogue 
+
+Fallen leaves blow with the wind 
+
+Just the same last year
+
 **October 1, 2025** 
 
 Founder on speed 

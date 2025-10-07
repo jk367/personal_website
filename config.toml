@@ -49,8 +49,8 @@ home = ["HTML", "RSS", "JSON", "AIIndex", "AIContent", "AINav"]
     url = "/photos/"
     weight = 3
   [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
+    name = "Music"
+    url = "/music/"
     weight = 4
   [[menu.main]]
     name = "About"
