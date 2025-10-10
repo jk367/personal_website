@@ -5,6 +5,30 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**October 9, 2025**
+
+This morning felt light 
+
+Fall breeze and sun hits my cheek 
+
+Im fixing my life 
+
+**October 8, 2025**
+
+Eyes resting today 
+
+My mind with the blowing leafs 
+
+The harvest moon sets 
+ 
+**October 7, 2025**
+
+Clock ticks I’m waiting 
+
+My inbox is still empty 
+
+Clock ticks I’m waiting 
+
 **October 6, 2025**
 
 One more interview 
