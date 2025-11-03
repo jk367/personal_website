@@ -5,6 +5,198 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**November 2, 2025**
+
+It was the last day 
+
+Safia ran the marathon
+
+A new day begins
+
+**November 1, 2025**
+
+I wake up and dance 
+
+Thought of you pops in my mind
+
+A new chapter soon 
+
+**October 31, 2025**
+
+Ringing in my ears
+
+I see night turns to morning 
+
+It is Halloween 
+
+**October 30, 2025**
+
+A slow rainy day 
+
+Hours pass and nothing happens 
+
+I walk in circles 
+
+**October 29, 2025**
+
+back in New Jersey
+
+Some bad sushi with grandma 
+
+Parents are happy 
+
+**October 28, 2025**
+
+Got new work accounts 
+
+I am turning a new page
+
+Safia stayed over
+
+**October 27, 2025**
+
+Spent the day in bed 
+
+Said hello to the parents 
+
+Movie with brother 
+
+**October 26, 2025**
+
+Walking and walking 
+
+And the same conversation 
+
+At a different time 
+
+**October 25, 2025**
+
+Walked around greenpoint 
+
+Tacos and beer with a friend 
+
+Some time in Brooklyn 
+
+**October 24, 2025**
+
+Dinner with brother
+
+Played some music for some friends 
+
+Went to bed quite late 
+
+**October 23, 2025**
+
+Shuffling around 
+
+One party then two party 
+
+I need to sleep
+
+**October 22, 2025**
+
+Spent the day driving 
+
+Grandma and family dinner
+
+Floating towards something 
+
+**October 21, 2025**
+
+Spent the day walking
+
+Warmth of the sun on my neck 
+
+Going in circles 
+
+**October 20, 2025**
+
+Still i am tired 
+
+Dinner with my family 
+
+My mom was happy 
+
+**October 19, 2025**
+
+the days like marbles 
+
+rolling and then through a crack
+
+hit the floor now lost
+
+**October 18, 2025**
+
+Set up the party 
+
+People come to the party 
+
+Then the party ends 
+
+**October 17, 2025**
+
+Errands and driving 
+
+Tomorrow we go party 
+
+Its been a long day 
+
+**October 16, 2025**
+
+Finally at last 
+
+A job, a beautiful job 
+
+A long time coming 
+
+**October 15, 2025**
+
+One more day passes
+
+The weather sunny and dry 
+
+Need to start my life 
+
+**October 14, 2025**
+
+Restless and thinking 
+
+My life is moving so fast
+
+Today biked uptown 
+
+**October 13, 2025**
+
+Days go by again 
+
+A movie with my brother 
+
+Cigarettes and beer 
+
+**October 12, 2025**
+
+Brother flooded home
+
+Waited for the rain to start 
+
+White wine at dinner
+
+**October 11, 2025**
+
+Raining in redhook 
+
+Coffee and a cheeseburger 
+
+I love my parents 
+
+**October 10, 2025**
+
+A cold morning walk 
+
+In the sauna with a friend 
+
+Back at a party
+
 **October 9, 2025**
 
 This morning felt light 
