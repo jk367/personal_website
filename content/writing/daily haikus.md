@@ -5,6 +5,206 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**November 27, 2025**
+
+It's Thanksgiving day 
+
+A light in my neighbors room 
+
+On and off again
+
+**November 26, 2025**
+
+The past calls on me
+
+Leaves of the tree fall at once 
+
+I didn't sleep much 
+
+**November 25, 2025**
+
+Wet from icy rain 
+
+Today was still like a stone
+
+I will rest my eyes 
+
+**November 24, 2025**
+
+Eyes crusted over 
+
+I had sushi with my dad 
+
+Cleaned up the party 
+
+**November 23, 2025**
+
+The sun hits my eyes
+
+I did not do much today
+
+Went to bed early 
+
+**November 22, 2025**
+
+We built everything 
+
+Had the best party ever 
+
+In bed very late
+
+**November 21, 2025**
+
+Long days in office 
+
+The party is coming up 
+
+The sun sets quickly
+
+**November 20, 2025**
+
+Im in the office 
+
+The light shining on the desk
+
+I get more coffee 
+
+**November 19, 2025**
+
+Everyone said hi 
+
+Lovely feeling to be loved
+
+Years are adding up 
+
+**November 18, 2025**
+
+Almost twenty six 
+
+A long time on planet earth 
+
+Noodles at lunch 
+
+**November 17, 2025**
+
+Tough to think today 
+
+The wind was strong and cold 
+
+Movie with brother 
+
+**November 16, 2025**
+
+No sleep and no rest 
+
+Coffee with an old friend 
+
+Let me rest my head 
+
+**November 15, 2025**
+
+The best Saturday 
+
+The best Saturday ever 
+
+The best Saturday 
+
+**November 14, 2025**
+
+Time runs around me
+
+Tried my best to work today
+
+Family dinner 
+
+**November 13, 2025**
+
+Desert winds call me 
+
+Dust in eye and heart in hand 
+
+I'm going home now 
+
+**November 12, 2025**
+
+Desert wind blows east 
+
+A petal falls from the rose 
+
+Only so many 
+
+**November 11, 2025**
+
+I wake up and work
+
+Wondering through the desert 
+
+It is a new day 
+
+**November 10, 2025**
+
+It's my first work trip
+
+A train a tram an airplane 
+
+I'm in the desert
+
+**November 9, 2025**
+
+Another party 
+
+My socks made wet from the rain 
+
+I went to bed late 
+
+**November 8, 2025**
+
+Woke up and no work 
+
+Long day with lots of parties
+
+I'm traveling soon
+
+**November 7, 2025**
+
+Was a good first week 
+
+I think the future is bright 
+
+Had friends for dinner 
+
+**November 6, 2025**
+
+Day in the office
+
+Got home,what do i do now
+
+Smoked three cigarettes 
+
+**November 5, 2025**
+
+Was a hard days work 
+
+Long days looking at my screen 
+
+Now i am happy 
+
+**November 4, 2025**
+
+There is a silence 
+
+Just before a long journey 
+
+I made the right choice? 
+
+**November 3, 2025**
+
+A beautiful day 
+
+A door has opened for me 
+
+A light shining through
+
 **November 2, 2025**
 
 It was the last day 
