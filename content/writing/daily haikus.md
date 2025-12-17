@@ -5,6 +5,158 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**December 16, 2025**
+
+Long day in office 
+
+Going up town then downtown 
+
+Met someone in bar
+
+**December 15, 2025**
+
+Woke up wrong side 
+
+My mind and heart tight today 
+
+Good to see old friend 
+
+**December 14, 2025**
+
+Sold a song today 
+
+Played music for all my friends 
+
+Tomorrow airport 
+
+**December 13, 2025**
+
+Joe had a pot luck 
+
+Then Aaron had a party 
+
+Whirling dust settles 
+
+**December 12, 2025**
+
+A flash in the pan 
+
+It was a very long day 
+
+It is over now 
+
+**December 11, 2025**
+
+Night was the answer
+
+Cold morning was the question
+
+I am confused 
+
+**December 10, 2025**
+
+Long drives and long days 
+
+Many hours on the plane
+
+I need sleep 
+
+**December 9, 2025**
+
+Down in Birmingham 
+
+Fluorescent Light flickering 
+
+BBQ and beer
+
+**December 8, 2025**
+
+Traveling for work 
+
+Spent hours in the airport
+
+Today was today 
+
+**December 7, 2025**
+
+Woke and legs hurt
+
+Convinced to go to the club 
+
+Sensational day
+
+**December 6, 2025**
+
+My legs hurt today 
+
+Tibetan food with friends 
+
+Tired, can't sleep  
+
+**December 5, 2025**
+
+An empty office 
+
+The minutes go by so fast 
+
+I'm in an uber 
+
+**December 4, 2025**
+
+Strand of hair in sink 
+
+It goes round and round and round 
+
+Look up, see my face 
+
+**December 3, 2025**
+
+Brick by brick by brick
+
+I set my wall in the cold
+
+Waiting for the sun 
+
+**December 2, 2025**
+
+Five summers and fall
+
+It all went by so quickly 
+
+Many days ahead 
+
+**December 1, 2025**
+
+Crisp winter breeze
+
+Phone calls I don't want to make 
+
+I will wait outside
+
+**November 30, 2025**
+
+Rain seeps in my shoes 
+
+Conversation with friend 
+
+My time flows one way
+
+**November 29, 2025**
+
+Warm moss on my hands 
+
+A thick mist behind my eyes 
+
+Now the sun sets early 
+
+**November 28, 2025**
+
+Decisions were made
+
+Let's not remember some nights 
+
+Warm sun arises
+
 **November 27, 2025**
 
 It's Thanksgiving day 
