@@ -5,6 +5,166 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**January 5, 2026**
+
+Back to real life 
+
+Safia is back in town 
+
+Everything is good
+
+**January 4, 2026**
+
+Bagel place was closed
+
+The day with my family 
+
+Sunday night alone 
+
+**January 3, 2026**
+
+The day started late 
+
+I spent most of it inside 
+
+Then i had two beers
+
+**January 2, 2026**
+
+Drinks are expensive 
+
+The year decides to march on
+
+It is cold as hell
+
+**January 1, 2026**
+
+Movie with brother 
+
+The wind outside cold and strong
+
+Day gone already 
+
+**December 31, 2025**
+
+Party then party
+
+It's been how long since then?
+
+It is the new year 
+
+**December 30, 2025**
+
+Waiting in white room
+
+Nothing on the wall to see
+
+The year is over 
+
+**December 29, 2025**
+
+An empty office 
+
+My chair rolling back and forth 
+
+2 drinks at a bar 
+
+**December 28, 2025**
+
+sun sines on the snow
+
+I wake up in a river 
+
+Day passes slowly 
+
+**December 27, 2025**
+
+Old snow fills the streets 
+
+The day and the night were cold 
+
+Woke up in Brooklyn 
+
+**December 26, 2025**
+
+On the plane back home 
+
+Saw old friend at the show 
+
+I made some choices 
+
+**December 25, 2025**
+
+Today is Christmas 
+
+14 years grandfather died 
+
+I am in Florida 
+
+**December 24, 2025**
+
+Early morning flight 
+
+I look at my phone again 
+
+The day is over 
+
+**December 23, 2025**
+
+Snow hits the sidewalk 
+
+Sitting in an empty room 
+
+Dinner with brother 
+
+**December 22, 2025**
+
+Stumbled through today 
+
+I'm trying to fix my teeth 
+
+Movie and then drinks 
+
+**December 21, 2025**
+
+Afternoon wake up 
+
+Had dinner with an old friend 
+
+The year is ending 
+
+**December 20, 2025**
+
+Out too late again 
+
+Must have done something today 
+
+What? I do not know 
+
+**December 19, 2025**
+
+Still sick less so 
+
+Italian with my parents 
+
+I had a late night 
+
+**December 18, 2025**
+
+I was sick today 
+
+Tossing and turning at night 
+
+I saw her briefly 
+
+**December 17, 2025**
+
+My mind is hazy 
+
+I can't think i am now sick 
+
+Air outside is cold
+
 **December 16, 2025**
 
 Long day in office 
