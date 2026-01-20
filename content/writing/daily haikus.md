@@ -5,6 +5,118 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**January 19, 2026**
+
+I saw Joe for lunch
+
+I wanted to do a lot
+
+Then didn't do much
+
+**January 18, 2026**
+
+The morning in bed
+
+Chips and tacos with a friend
+
+Finally, i sleep
+
+**January 17, 2026**
+
+Woke up late again
+
+Had an expensive dinner
+
+Not much else to do
+
+**January 16, 2026**
+
+I felt too tired
+
+I did not get much done
+
+To bed very late
+
+**January 15, 2026**
+
+The nights become days
+
+And days begin to pass by
+
+Then days become years
+
+**January 14, 2026**
+
+The same day again
+
+This time with different people
+
+I went to sleep late
+
+**January 13, 2026**
+
+Day in the office
+
+Saw family in Brooklyn
+
+More bars and more drinks
+
+**January 12, 2026**
+
+I worked hard today
+
+How many days we will work
+
+A Grateful Dead show
+
+**January 11, 2026**
+
+Saw some friends outside
+
+Went inside and saw some more
+
+I am so lucky
+
+**January 10, 2026**
+
+Feels like I'm spinning
+
+The cold rain kept us inside
+
+A simple party
+
+**January 9, 2026**
+
+On computer
+
+Hard to tell what is true
+
+A warm day today
+
+**January 8, 2026**
+
+The air is now warm
+
+Just repeating the same thing
+
+A hole in my shoe
+
+**January 7, 2026**
+
+I sit in my chair
+
+The sun raises then falls
+
+Alone in my bed
+
+**January 6, 2026**
+
+My roommates birthday
+
+The days are getting longer
+
+Sun begins to shine
+
 **January 5, 2026**
 
 Back to real life 
