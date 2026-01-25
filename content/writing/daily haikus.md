@@ -5,6 +5,46 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**January 24, 2026**
+
+Set up the party
+
+Everyone comes to party
+
+Then the party ends
+
+**January 23, 2026**
+
+Icy morning air
+
+Days are long then years are short
+
+Went to bed alone
+
+**January 22, 2026**
+
+Morning air was warm
+
+I had to leave work early
+
+Wine and no dinner
+
+**January 21, 2026**
+
+Party is coming
+
+Made cookies for the building
+
+Seems like life is good
+
+**January 20, 2026**
+
+Mattress up the stairs
+
+Then had dinner my friends
+
+Next door are twenty
+
 **January 19, 2026**
 
 I saw Joe for lunch
