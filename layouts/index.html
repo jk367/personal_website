@@ -9,12 +9,7 @@
     }
 
     .featured-section {
-        margin-bottom: 0.5rem;
-        min-height: 100px; /* Prevent layout shift for all sections */
-    }
-
-    .featured-section:last-child {
-        margin-bottom: 0;
+        margin-bottom: 1rem;
     }
 
     .section-title {
@@ -26,10 +21,8 @@
         text-decoration: underline;
     }
 
-    /* Daily Haiku Styles - PREVENT LAYOUT SHIFT */
+    /* Daily Haiku Styles */
     #haiku-section {
-        min-height: 160px;
-        position: relative;
     }
 
     .haiku-content {
@@ -136,13 +129,6 @@
             font-size: 1.1em;
         }
 
-        #haiku-section {
-            min-height: 180px;
-        }
-
-        .featured-section:last-child {
-            margin-bottom: 0;
-        }
     }
 
     @media (min-width: 601px) and (max-width: 900px) {
@@ -151,24 +137,12 @@
             gap: 0.6rem;
         }
 
-        .featured-section:last-child {
-            margin-bottom: 0;
-        }
     }
 
     @media (max-width: 480px) {
         .photo-grid {
             gap: 0.2rem;
         }
-
-        .featured-section {
-            margin-bottom: 0.75rem;
-        }
-
-        .featured-section:last-child {
-            margin-bottom: 0;
-        }
-
     }
 </style>
 
