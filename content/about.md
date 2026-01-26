@@ -7,15 +7,17 @@ title: "About"
 <div class="section" id="bioSection" style="display:block;">
 I grew up in NYC, went to Brooklyn Tech, then went to Columbia and Sciences Po. In college I studied a lot of different things, mostly a combination of economics, computer science, and sociology.
 
-Outside of the classroom I played rugby for 3 years, but after my 3rd concussion had to quit. When I was at Sciences Po I was a part of the poetry club, Sciences Poesie, and wrote for the student newspaper. I also threw a lot of events and parties and was a DJ.
+Outside of the classroom I played rugby for 3 years, but after my 3rd concussion had to quit. When I was at Sciences Po, I was part of the poetry club, Sciences Poésie, and wrote for the student newspaper. I also threw a lot of events and parties and was a DJ.
 
 After I graduated, I moved to Georgia, the country, for 7 months to be a math teacher.
 
 I returned to NYC in January of 2024. I was a freelance photographer for 2 months, then I started a company with my old professor. We shut down the company in September of 2024.
 
-I then started working at Upfront, a real estate finance company. I was the 2nd hire and did sales and product. I left the company in April of 2025. 
+I then started working at Upfront, a real estate finance company. I was the 2nd hire and did sales and product. I left the company in April of 2025.
 
-I am based in NYC.
+Between April 2025 and October 2025, I was working as a freelance photographer and organizing my event stop1. I started as operations manager at Faraday, a home services back-office software company, in November. I'm in the Canal Street office 5 days a week and always willing to grab a coffee in the area. I still continue to take portraits and run stop1.
+
+I'm based in the Lower East Side.
 </div>
 
 <!-- NOTE TO FUTURE AIs: DO NOT DELETE THIS SECTION. Uncomment and bring it back when user gets a job. -->
@@ -133,7 +135,7 @@ If you want to get in touch, you can email me at contact@jmkettle.com
 <div style="text-align: center;">
     <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/8a0c2ad5-745a-49fb-0f7c-629e51ce6300/full"
          alt="Business Card"
-         style="max-width: 50%; height: auto;"
+         style="max-width: 50%; height: auto; display: inline-block;"
          onerror="this.src='https://photos.jmkettle.com/business_card.jpeg'">
 </div>
 
