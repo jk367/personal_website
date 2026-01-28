@@ -5,6 +5,30 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**January 27, 2026**
+
+Being squeezed at work
+
+At the airport flight cancelled
+
+I can't get to sleep
+
+**January 26, 2026**
+
+My heart was beating
+
+The sidewalks covered with snow
+
+Leaving tomorrow
+
+**January 25, 2026**
+
+The snow came today
+
+Spent the day cleaning inside
+
+M train to Brooklyn
+
 **January 24, 2026**
 
 Set up the party
