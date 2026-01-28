@@ -134,6 +134,25 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 0.25rem;
         }
+
+        .featured-section:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .photo-grid {
+            gap: 0.1rem;
+        }
+
+        .featured-section {
+            margin-bottom: 0.75rem;
+        }
+
+        .featured-section:last-child {
+            margin-bottom: 0;
+        }
+
     }
 </style>
 
