@@ -5,6 +5,46 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**February 1, 2026**
+
+A long trip back home
+
+Together with my family
+
+The streets filled with ice
+
+**January 31, 2026**
+
+A mountain of ice
+
+The best family dinner
+
+Bright yellow full moon
+
+**January 30, 2026**
+
+Morning heart is tense
+
+Down the slopes to the theatre
+
+A final dinner
+
+**January 29, 2026**
+
+Go down the mountain
+
+Fast icy air burns my face
+
+We see a movie
+
+**January 28, 2026**
+
+Up early today
+
+Spent all the hours on screens
+
+Finally arrived
+
 **January 27, 2026**
 
 Being squeezed at work
