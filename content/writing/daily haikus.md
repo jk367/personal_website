@@ -5,6 +5,62 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**February 8, 2026**
+
+Woke up in Brooklyn
+
+Slept on Noel's couch in the sun
+
+Lonely afternoon
+
+**February 7, 2026**
+
+The perfect morning
+
+Burgers and movie with Will
+
+The coldest ever
+
+**February 6, 2026**
+
+Were out of oysters
+
+We brought four bottles of wine
+
+Another late night
+
+**February 5, 2026**
+
+I'm trapped in a box
+
+The day long the oysters bad
+
+It will be ok
+
+**February 4, 2026**
+
+Walking in circles
+
+Same things again and again
+
+I am just older
+
+**February 3, 2026**
+
+Work, a bit better
+
+Driving around the city
+
+A very late night
+
+**February 2, 2026**
+
+Sun briefly warms air
+
+Eyes locked on the computer
+
+Shrimp scampi dinner
+
 **January 27, 2026**
 
 Being squeezed at work
