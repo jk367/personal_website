@@ -5,6 +5,182 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**February 23, 2026**
+
+Wet snow fills the street
+
+Dinner as a family again
+
+Went to bed alone
+
+**February 22, 2026**
+
+Morning together
+
+A scary essay came out
+
+A family dinner
+
+**February 21, 2026**
+
+Spent the day with her
+
+Warm and dry before the storm
+
+I bought eight oysters
+
+**February 20, 2026**
+
+They found my twitter
+
+The rain was gentle and cold
+
+I went to Greenpoint
+
+**February 19, 2026**
+
+I drink five coffees
+
+Later i drink five cold beers
+
+I will not sleep well
+
+**February 18, 2026**
+
+Rain taps the window
+
+Tripped and fell throughout the day
+
+We are committed
+
+**February 17, 2026**
+
+Air brushes my face
+
+The Sun begins to set late
+
+Just not enough time
+
+**February 16, 2026**
+
+It's moms birthday
+
+A coffee with a new friend
+
+snow began to melt
+
+**February 15, 2026**
+
+Club at 8 am
+
+14 hours with no phone
+
+Talked with my grandma
+
+**February 14, 2026**
+
+I made a new friend
+
+Then saw an old one resting
+
+It is Valentine
+
+**February 13, 2026**
+
+A break in the cold
+
+Changed the sheets then no more room
+
+Now I'm in Brooklyn
+
+**February 12, 2026**
+
+Floating on water
+
+Time passing down the river
+
+Lost trivia night
+
+**February 11, 2026**
+
+Morning with no phone
+
+Air today was warm and light
+
+A lovely dinner
+
+**February 10, 2026**
+
+Mouse over my foot
+
+Where is my phone where is it?
+
+Im finally free
+
+**February 9, 2026**
+
+Same place different day
+
+The cold wind blows behind me
+
+A surprise visit
+
+**February 8, 2026**
+
+Woke up in Brooklyn
+
+Slept on Noel's couch in the sun
+
+Lonely afternoon
+
+**February 7, 2026**
+
+The perfect morning
+
+Burgers and movie with Will
+
+The coldest ever
+
+**February 6, 2026**
+
+Were out of oysters
+
+We brought four bottles of wine
+
+Another late night
+
+**February 5, 2026**
+
+I'm trapped in a box
+
+The day long the oysters bad
+
+It will be ok
+
+**February 4, 2026**
+
+Walking in circles
+
+Same things again and again
+
+I am just older
+
+**February 3, 2026**
+
+Work, a bit better
+
+Driving around the city
+
+A very late night
+
+**February 2, 2026**
+
+Sun briefly warms air
+
+Eyes locked on the computer
+
+Shrimp scampi dinner
+
 **February 1, 2026**
 
 A long trip back home
