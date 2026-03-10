@@ -9,7 +9,7 @@ draft: false
 
 Sun warms all of us
 
-Fine with a new friend
+Wine with a new friend
 
 Dinner with parents
 
