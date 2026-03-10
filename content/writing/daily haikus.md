@@ -5,6 +5,118 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**March 9, 2026**
+
+Sun warms all of us
+
+Fine with a new friend
+
+Dinner with parents
+
+**March 8, 2026**
+
+Woke up feeling fresh
+
+Lots of oysters in the park
+
+Week begins again
+
+**March 7, 2026**
+
+Chill party then lunch
+
+We become sound for a while
+
+I love you (very much)
+
+**March 6, 2026**
+
+The office was full
+
+Drinks then a birthday
+
+To an early bed
+
+**March 5, 2026**
+
+Woke up in Brooklyn
+
+I hung a tv today
+
+Torrential downpour
+
+**March 4, 2026**
+
+Cold woke up the day
+
+Walking walking in circles again
+
+Then a kiss goodnight
+
+**March 3, 2026**
+
+I woke up sprinting
+
+During the day the sky feel
+
+Picked up the pieces
+
+**March 2, 2026**
+
+Back to real life
+
+Sun shining during the day
+
+The cold creeps again
+
+**March 1, 2026**
+
+Woke up in a daze
+
+Shower Apple out the door
+
+Back at nowadays
+
+**February 28, 2026**
+
+A stressful bagel
+
+We spent the day setting up
+
+Best party ever
+
+**February 27, 2026**
+
+Disaster at work
+
+Then we go to a party
+
+Another party
+
+**February 26, 2026**
+
+The sun reared its head
+
+Everyone came to dinner
+
+A beautiful night
+
+**February 25, 2026**
+
+At work sweat drips down
+
+Started to build our party
+
+Dinner sweet and kind
+
+**February 24, 2026**
+
+Snow began to melt
+
+Tapping fingers on my desk
+
+Saw her for a bit
+
 **February 23, 2026**
 
 Wet snow fills the street
