@@ -1,5 +1,5 @@
 ---
-title: "The sweetest Words"
+title: "The Sweetest Words"
 date: 2026-03-10
 writing_categories: ["poetry"]
 draft: false
