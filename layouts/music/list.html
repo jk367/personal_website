@@ -1,6 +1,11 @@
 {{ define "main" }}
 <div class="music-content">
     <h1>{{ .Title }}</h1>
+
+    <div class="back-navigation">
+        <a href="/" class="back-button">← Back to Home</a>
+    </div>
+
     {{ .Content }}
 </div>
 {{ end }}
