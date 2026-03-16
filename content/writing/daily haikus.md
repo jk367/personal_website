@@ -5,6 +5,54 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**March 15, 2026**
+
+Woke up nowadays
+
+I drank several tecatés
+
+Saw her in the end
+
+**March 14, 2026**
+
+Bagels with my parents
+
+Pizza and coffee
+
+Saw lots of new friends old friends
+
+**March 13, 2026**
+
+Waiting at my booth
+
+Then waiting at the airport
+
+Waiting for a cab
+
+**March 12, 2026**
+
+At the work conference
+
+On my feet for ten hours
+
+I made some new friends
+
+**March 11, 2026**
+
+I'm in Florida
+
+Seems like the world is ending
+
+The weather is nice
+
+**March 10, 2026**
+
+A false spring has sprung
+
+Drinking orange wine with friends
+
+Everyone liked her
+
 **March 9, 2026**
 
 Sun warms all of us
