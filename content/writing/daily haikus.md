@@ -5,31 +5,15 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
-**March 10, 2026**
+**March 15, 2026**
 
-A false spring has sprung
+Woke up nowadays
 
-Drinking orange wine with friends
+I drank several tecatés
 
-Everyone liked her
+Saw her in the end
 
-I'm in Florida
-
-Seems like the world is ending
-
-The weather is nice
-
-At the work conference
-
-On my feet for ten hours
-
-I made some new friends
-
-Waiting at my booth
-
-Then waiting at the airport
-
-Waiting for a cab
+**March 14, 2026**
 
 Bagels with my parents
 
@@ -37,11 +21,37 @@ Pizza and coffee
 
 Saw lots of new friends old friends
 
-Woke up nowadays
+**March 13, 2026**
 
-I drank several tecatés
+Waiting at my booth
 
-Saw her in the end
+Then waiting at the airport
+
+Waiting for a cab
+
+**March 12, 2026**
+
+At the work conference
+
+On my feet for ten hours
+
+I made some new friends
+
+**March 11, 2026**
+
+I'm in Florida
+
+Seems like the world is ending
+
+The weather is nice
+
+**March 10, 2026**
+
+A false spring has sprung
+
+Drinking orange wine with friends
+
+Everyone liked her
 
 **March 9, 2026**
 
