@@ -5,6 +5,86 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**March 25, 2026**
+
+Most important thing
+
+And the least important thing
+
+Turns out the same
+
+**March 24, 2026**
+
+A thought in my mind
+
+It tries to ruin my day
+
+I let it pass through
+
+**March 23, 2026**
+
+Stress in the office
+
+Fancy dinner with yuan
+
+Start meditating
+
+**March 22, 2026**
+
+Breakfast on concrete
+
+Listened to Georgian folk songs
+
+Dinner with brother
+
+**March 21, 2026**
+
+Rise bagel and sun
+
+Hot coffee with an old friend
+
+A long night with her
+
+**March 20, 2026**
+
+Begin the day lost
+
+Find myself at a party
+
+I go to sleep found
+
+**March 19, 2026**
+
+Sitting then standing
+
+Getting up then going down
+
+Still in the same place
+
+**March 18, 2026**
+
+Air was cold today
+
+I am walking in circles
+
+Then made a new friend
+
+**March 17, 2026**
+
+Standing one foot
+
+Lost balance and scraped my knee
+
+Dinner with yuan
+
+**March 16, 2026**
+
+A coffee update
+
+Truly wonderful dinner
+
+Then saw her again
+
 **March 15, 2026**
 
 Woke up nowadays
