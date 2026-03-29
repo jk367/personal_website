@@ -5,6 +5,30 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**March 28, 2026**
+
+So many people
+
+Then so many things to do
+
+Just be here right now
+
+**March 27, 2026**
+
+I left work early
+
+The air was cold the day late
+
+Then walked home with her
+
+**March 26, 2026**
+
+The doctors office
+
+Made a new friend in the park
+
+Ate at home with her
+
 **March 25, 2026**
 
 Most important thing
