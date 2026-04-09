@@ -5,6 +5,94 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**April 8, 2026**
+
+Uneventful day
+
+Then a beautiful dinner
+
+Then many new friends
+
+**April 7, 2026**
+
+Walking in circles
+
+Margaritas and tacos
+
+Love her even more
+
+**April 6, 2026**
+
+Sun heats the still air
+
+Day was short hours were long
+
+My mind like water
+
+**April 5, 2026**
+
+A cool morning rain
+
+Spent the day at nowadays
+
+How many more left
+
+**April 4, 2026**
+
+Saw small family
+
+We went around the table
+
+We are few but good
+
+**April 3, 2026**
+
+Slow in face of change
+
+I will sit still for awhile
+
+Waiting for the days
+
+**April 2, 2026**
+
+First time sitting still
+
+The air was cold with slight rain
+
+To bed very late
+
+**April 1, 2026**
+
+Eyes on the ceiling
+
+Many drinks with a new friend
+
+It began to rain
+
+**March 31, 2026**
+
+Broke a glass today
+
+I brought her to my parents
+
+I love her a lot
+
+**March 30, 2026**
+
+Head in my pillow
+
+Sun peers into the window
+
+I go back to bed
+
+**March 29, 2026**
+
+First thing banana
+
+Then nightclub for five hours
+
+Lastly a long walk
+
 **March 28, 2026**
 
 So many people
