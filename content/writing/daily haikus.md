@@ -5,19 +5,15 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
-**April 9, 2026**
+**April 12, 2026**
 
-Already April
+Mind thinks and wind blows
 
-Another family dinner
+I wonder where thoughts come from
 
-And the air was cold
+But work tomorrow
 
-Worked at home today
-
-Didn't really do much work
-
-Went to three parties
+**April 11, 2026**
 
 Walked home on the bridge
 
@@ -25,11 +21,21 @@ Same two parties different year
 
 She stayed at my place
 
-Mind thinks and wind blows
+**April 10, 2026**
 
-I wonder where thoughts come from
+Worked at home today
 
-But work tomorrow
+Didn't really do much work
+
+Went to three parties
+
+**April 9, 2026**
+
+Already April
+
+Another family dinner
+
+And the air was cold
 
 **April 8, 2026**
 
