@@ -5,6 +5,38 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**April 12, 2026**
+
+Mind thinks and wind blows
+
+I wonder where thoughts come from
+
+But work tomorrow
+
+**April 11, 2026**
+
+Walked home on the bridge
+
+Same two parties different year
+
+She stayed at my place
+
+**April 10, 2026**
+
+Worked at home today
+
+Didn't really do much work
+
+Went to three parties
+
+**April 9, 2026**
+
+Already April
+
+Another family dinner
+
+And the air was cold
+
 **April 8, 2026**
 
 Uneventful day
