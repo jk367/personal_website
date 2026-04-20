@@ -5,6 +5,62 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**April 19, 2026**
+
+Woke up in a haze
+
+Not enough sleep did not eat
+
+Movie with brother
+
+**April 18, 2026**
+
+We plan the party
+
+Everyone comes to party
+
+Then the party ends
+
+**April 17, 2026**
+
+Got caught in the rain
+
+My shirt was covered in dirt
+
+Soon it will be washed
+
+**April 16, 2026**
+
+Ate some soft-shell crab
+
+Turns out they molted early
+
+Everything arrives
+
+**April 15, 2026**
+
+Winter is over
+
+The sun finally arrives
+
+Need to buy sunscreen
+
+**April 14, 2026**
+
+Began at the gym
+
+Then i learned to be honest
+
+Fat glasses of wine
+
+**April 13, 2026**
+
+No plans for the day
+
+Then ran into many friends
+
+Life is unfolding
+
 **April 12, 2026**
 
 Mind thinks and wind blows
