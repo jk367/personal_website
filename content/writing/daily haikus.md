@@ -5,30 +5,6 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
-**April 24, 2026**
-
-this is a big test
-
-temporary like the wind
-
-and just like all things
-
-**April 24, 2026**
-
-this is a big test
-
-temporary like the wind
-
-and just like all things
-
-**April 24, 2026**
-
-this is a big test
-
-temporary like the wind
-
-and just like all things
-
 **April 23, 2026**
 
 The sun hits my face
@@ -60,6 +36,7 @@ Eyes won't stay open
 Pain in my lower back
 
 Ears are still ringing
+
 **April 19, 2026**
 
 Woke up in a haze
