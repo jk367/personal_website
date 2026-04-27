@@ -2,7 +2,7 @@
 title: "A collection of notes from my phone"
 date: 2026-03-13
 writing_categories: ["poetry"]
-draft: false
+draft: true
 ---
 
 So tired with so much to do.
