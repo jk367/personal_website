@@ -25,12 +25,6 @@ I still take portraits and run stop1. I'm based in the Lower East Side.
 
 <details>
 
-<summary><strong>Manager of Strategic Partnerships - Upfront - 2024 to 2025 </strong></summary>
-I worked for my friend start up for around 8 months between 2024 and 2025. My title was "Manager of Strategic Initiatives". I worked on everything non-technical, sales, operations, and design. The founders and I had different visions on where the company was going, so I left.
-</details>
-
-<details>
-
 <summary><strong>Co-Founder/CEO - CloudCap - 2024 to 2024 </strong></summary>
 In March of 2024, I had a chance encounter with my old computer science professor and we started a company. I was in charge of sales, fundraising, product development. Running a company is hard, but also mentally rewarding. I think people should start companies or join early stage companies when they're young, it's a lot more fun than bigger shops.
 
