@@ -237,33 +237,33 @@ article:last-child {
 }
 
 /* Shared list item pattern */
-.list-item, .writing-item, .project-item {
+.list-item, .writing-item {
     padding-bottom: 0.75rem;
     margin-bottom: 0.75rem;
     border-bottom: 1px solid #eee;
 }
 
-.list-item:last-child, .writing-item:last-child, .project-item:last-child {
+.list-item:last-child, .writing-item:last-child {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-.list-item h2, .writing-title, .project-title {
+.list-item h2, .writing-title {
     margin: 0 0 0.1rem 0;
     font-size: 1.2em;
 }
 
-.list-item h2 a, .writing-title a, .project-title a {
+.list-item h2 a, .writing-title a {
     text-decoration: none;
     color: inherit;
 }
 
-.list-item h2 a:hover, .writing-title a:hover, .project-title a:hover {
+.list-item h2 a:hover, .writing-title a:hover {
     text-decoration: underline;
 }
 
-.writing-date, .project-description {
+.writing-date {
     font-size: 0.9em;
     color: #666;
     margin: 0;
@@ -273,7 +273,7 @@ article:last-child {
     margin: 0.75rem 0;
 }
 
-.writing-list, .project-list {
+.writing-list {
     margin-top: 0.75rem;
 }
 
