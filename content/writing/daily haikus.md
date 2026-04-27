@@ -29,6 +29,38 @@ Pancake mix and maple syrup
 
 She learns about me
 
+**April 23, 2026**
+
+The sun hits my face
+
+Remember to wear sunscreen
+
+Ice cream with a friend
+
+**April 22, 2026**
+
+Sun rises too soon
+
+Spinning my chair in circles
+
+Mom made Mexican
+
+**April 21, 2026**
+
+Worked from home today
+
+The air was cold the sun bright
+
+Chinese food with her
+
+**April 20, 2026**
+
+Eyes won't stay open
+
+Pain in my lower back
+
+Ears are still ringing
+
 **April 19, 2026**
 
 Woke up in a haze
