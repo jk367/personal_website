@@ -32,8 +32,6 @@ home = ["HTML", "RSS", "JSON", "AIIndex", "AIContent", "AINav"]
 [taxonomies]
   category = "categories"
   writing_category = "writing_categories"
-  music_category = "music_categories"
-  genre = "genres"
 
 [menu]
   [[menu.main]]
