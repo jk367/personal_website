@@ -5,6 +5,30 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**April 26, 2026**
+
+Race begins and ends
+
+The party begins and ends
+
+Day begins and ends
+
+**April 25, 2026**
+
+Rain taps the window
+
+We ask thirty six questions
+
+The rain does not stop
+
+**April 24, 2026**
+
+Cool air and hot sun
+
+Pancake mix and maple syrup
+
+She learns about me
+
 **April 23, 2026**
 
 The sun hits my face
