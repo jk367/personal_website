@@ -1,0 +1,343 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Garamond', serif;
+    font-display: swap;
+    font-size: 1em;
+    line-height: 1.4;
+    color: #000;
+    background-color: #fff;
+}
+
+/* Header */
+header {
+    padding: 0.625rem 0;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+    position: relative;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    transition: font-weight 0.2s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    flex: 1;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.25rem 1.25rem 1.875rem 1.25rem;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+}
+
+/* Typography */
+h1 {
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0.75rem 0 0.5rem 0;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0.5rem 0 0.25rem 0;
+    line-height: 1.3;
+}
+
+p {
+    margin: 0 0 0.5rem 0;
+}
+
+time {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+/* Back navigation */
+.back-navigation {
+    margin-bottom: 0.75rem;
+}
+
+.back-button {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.9em;
+    display: inline-block;
+    transition: text-decoration 0.2s ease;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button, .button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 0.2rem 0.5rem;
+    font-family: Garamond, serif;
+    font-size: 1em;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin: 0 0.2rem 0.2rem 0;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .button:hover,
+button.active, .button.active {
+    background-color: black;
+    color: white;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+picture {
+    display: block;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
+
+/* Photo grid */
+.photo-grid .photo-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.photo-grid a:hover img {
+    transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 0.625rem 0;
+    border-top: 1px solid #000;
+    background-color: #fff;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+.footer-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted #000;
+}
+
+.footer-link:hover {
+    border-bottom: 1px solid #000;
+}
+
+.social-icon {
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: none !important;
+    margin-left: 0.5rem;
+}
+
+.social-icon:first-of-type {
+    margin-left: 0.75rem;
+}
+
+.social-icon:hover {
+    border-bottom: none !important;
+    opacity: 0.7;
+}
+
+.social-icon svg {
+    display: block;
+}
+
+#backToTopLink {
+    color: inherit;
+    text-decoration: none;
+}
+
+#backToTopLink:hover {
+    text-decoration: underline;
+}
+
+/* Utility */
+.content {
+    margin-bottom: 1rem;
+}
+
+article {
+    margin-bottom: 1rem;
+}
+
+article:last-child {
+    margin-bottom: 0;
+}
+
+/* Shared list item pattern */
+.list-item, .writing-item, .project-item {
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid #eee;
+}
+
+.list-item:last-child, .writing-item:last-child, .project-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.list-item h2, .writing-title, .project-title {
+    margin: 0 0 0.1rem 0;
+    font-size: 1.2em;
+}
+
+.list-item h2 a, .writing-title a, .project-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list-item h2 a:hover, .writing-title a:hover, .project-title a:hover {
+    text-decoration: underline;
+}
+
+.writing-date, .project-description {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+}
+
+.category-buttons {
+    margin: 0.75rem 0;
+}
+
+.writing-list, .project-list {
+    margin-top: 0.75rem;
+}
+
+.featured-section {
+    margin-bottom: 1.5rem;
+}
+
+.featured-section:last-child {
+    margin-bottom: 0;
+}
+
+.homepage-header {
+    margin-bottom: 1rem;
+}
+
+.homepage-header h1 {
+    margin-bottom: 0.25rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 0.75rem 0.75rem 1rem 0.75rem;
+    }
+
+    nav li {
+        margin: 0 9px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .featured-section {
+        margin-bottom: 1rem;
+        min-height: 80px;
+    }
+
+    button, .button {
+        padding: 0.25rem 0.625rem;
+        font-size: 1em;
+        margin: 0 0.125rem 0.25rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0.625rem 0.625rem 0.875rem 0.625rem;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    nav li {
+        margin: 0 7px;
+    }
+
+    .featured-section {
+        margin-bottom: 0.75rem;
+        min-height: 70px;
+    }
+}
