@@ -4,13 +4,9 @@ date: 2024-07-30T11:23:36+02:00
 draft: false
 ---
 
-<div class="back-navigation">
-    <a href="/" class="back-button">← Back to Home</a>
-</div>
+I make electronic music under the name Kettle. I've been making music since 2016, mostly electronic but sometimes venture into other genres. I try not to box myself into one genre but play music with a constant emotional throughline, which is the inspiration of my party, stop1, which I throw every 6ish weeks in brooklyn.
 
-I make electronic music under the name Kettle. I've been making music since 2016, mostly electronic but sometimes venture into other genres. I try not to box myself into one genre but play music with a constant emotional throughline, which is the inspiration of my party, stop1, which I throw every 6ish weeks in brooklyn.   
-
-I've played at Hellphone, Trans Pecos, The Stranger, Wiggle Room, Leftbank (Tbilisi), and Pluto's Records (Tbilisi). 
+I've played at Hellphone, Trans Pecos, The Stranger, Wiggle Room, Leftbank (Tbilisi), and Pluto's Records (Tbilisi).
 
 ## Mixes
 <div class="soundcloud-lazy" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1959695677&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
@@ -46,7 +42,7 @@ I've played at Hellphone, Trans Pecos, The Stranger, Wiggle Room, Leftbank (Tbil
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const lazyEmbeds = document.querySelectorAll('.soundcloud-lazy');
-    
+
     const loadSoundCloud = (embed) => {
         const iframe = document.createElement('iframe');
         iframe.src = embed.dataset.src;
@@ -55,12 +51,11 @@ document.addEventListener('DOMContentLoaded', function() {
         iframe.frameBorder = 'no';
         iframe.scrolling = 'no';
         iframe.allow = 'autoplay';
-        
+
         embed.innerHTML = '';
         embed.appendChild(iframe);
     };
-    
-    // Use Intersection Observer to detect when elements come into view
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting && !entry.target.classList.contains('loaded')) {
@@ -70,9 +65,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, {
-        rootMargin: '100px' // Start loading 100px before it comes into view
+        rootMargin: '100px'
     });
-    
+
     lazyEmbeds.forEach(embed => {
         observer.observe(embed);
     });
