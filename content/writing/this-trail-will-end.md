@@ -1,5 +1,5 @@
 ---
-title: "This trail will end."
+title: "This trail will end"
 date: 2026-04-27T00:00:00+00:00
 writing_categories: ["essay"]
 draft: false
