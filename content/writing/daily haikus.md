@@ -5,7 +5,7 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
-**April 28, 2026**
+**April 27, 2026**
 
 Perfect day outside
 
