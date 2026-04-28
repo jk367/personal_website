@@ -5,6 +5,14 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**April 28, 2026**
+
+Perfect day outside
+
+I am on my computer
+
+Then inside my room
+
 **April 26, 2026**
 
 Race begins and ends
