@@ -36,7 +36,7 @@ User-agent: Googlebot
 Allow: /photos/
 Allow: /writing/
 Allow: /portraits/
-Allow: /projects/
+Allow: /music/
 
 User-agent: Bingbot
 Crawl-delay: 1

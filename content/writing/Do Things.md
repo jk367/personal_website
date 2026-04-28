@@ -2,7 +2,7 @@
 title: "Just do it"
 date: 2024-07-30T11:23:36+02:00
 writing_categories: ["philosophy"]
-draft: false
+draft: true
 ---
 If there's one piece of advice I would give to anyone, it would be this: just do it.
 

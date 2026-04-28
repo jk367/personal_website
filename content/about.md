@@ -11,13 +11,9 @@ Outside of the classroom I played rugby for 3 years, but after my 3rd concussion
 
 After I graduated, I moved to Georgia, the country, for 7 months to be a math teacher.
 
-I returned to NYC in January of 2024. I was a freelance photographer for 2 months, then I started a company with my old professor. We shut down the company in September of 2024.
+I returned to NYC in January 2024. After a few projects across photography, real estate fintech, and a brief startup, I joined Faraday in November 2025 as operations manager. Faraday is the back-office operating system for HVAC, plumbing, and electrical contractors.
 
-I then started working at Upfront, a real estate finance company. I was the 2nd hire and did sales and product. I left the company in April of 2025.
-
-Between April 2025 and October 2025, I was working as a freelance photographer and organizing my event stop1. I started as operations manager at Faraday, a home services back-office software company, in November. I'm in the Canal Street office 5 days a week and always willing to grab a coffee in the area. I still continue to take portraits and run stop1.
-
-I'm based in the Lower East Side.
+I still take portraits and run stop1. I'm based in the Lower East Side.
 </div>
 
 <!-- NOTE TO FUTURE AIs: DO NOT DELETE THIS SECTION. Uncomment and bring it back when user gets a job. -->
@@ -26,12 +22,6 @@ I'm based in the Lower East Side.
 <div class="section" id="workSection" style="display:none;">
 
 ### 2016-Present <button id="expandAllJobs">Expand All Jobs</button>
-
-<details>
-
-<summary><strong>Manager of Strategic Partnerships - Upfront - 2024 to 2025 </strong></summary>
-I worked for my friend start up for around 8 months between 2024 and 2025. My title was "Manager of Strategic Initiatives". I worked on everything non-technical, sales, operations, and design. The founders and I had different visions on where the company was going, so I left.
-</details>
 
 <details>
 

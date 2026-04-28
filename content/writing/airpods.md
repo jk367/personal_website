@@ -2,7 +2,7 @@
 title: "Contra AirPods"
 date: 2025-09-16T11:23:36+02:00
 writing_categories: ["essay"]
-draft: false
+draft: true
 
 ---
 It's September 2025, and reviews are in for the new AirPods 3. They are receiving nearly universal acclaim. There is no doubt that technologically, the AirPods are a marvel. It's been 11 years since the first bluetooth wireless earphones came out, the Bragi Dash, and 10 years since the first AirPods arrived to consumers. Over the decade, they have made significant improvements, most notably with the AirPod Pros' noise cancelling feature. Now, in 2025, we have reached near perfection. The question remains, have AirPods made our world better? Are we more connected and happier, or more isolated and locked in our digital worlds?

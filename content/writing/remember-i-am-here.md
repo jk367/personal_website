@@ -1,5 +1,5 @@
 ---
-title: "Remember I am here"
+title: "Remember I Am Here"
 date: 2026-04-09T00:00:00+00:00
 writing_categories: ["essay"]
 draft: false
