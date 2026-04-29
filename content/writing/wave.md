@@ -13,7 +13,7 @@ Before the water breaks, as it churns below, is that a wave? Yes, a wave is when
 
 Before a wave starts, as it recedes from the shore, is that a wave? Yes, that's a wave too.
 
-So a wave is what starts and breaks. Yes, if the wave starts, then it must break.
+So a wave is what starts and breaks? Yes, if the wave starts, then it must break.
 
 Can a wave never break? Can a wave just start? No, a wave doesn't just start or just break. A wave is just a wave.
 
