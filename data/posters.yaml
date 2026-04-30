@@ -1,0 +1,31 @@
+# stop1 posters. Newest goes on top, but `sort ... "desc"` in the
+# shortcode handles ordering, so position in this file doesn't matter.
+#
+# To add a new poster:
+#   1. Upload to Cloudflare Images, copy the UUID
+#   2. Append 3 lines below
+#   3. Commit + push
+
+- date: 2024-10-18
+  cloudflare_id: 103ecd23-4e63-4f5b-f35c-a8a748bdc200
+  alt: stop1 October 18 poster
+
+- date: 2024-09-06
+  cloudflare_id: ab83b072-4625-45b6-eb1b-4f22eebf7500
+  alt: stop1 September 6 poster
+
+- date: 2024-07-19
+  cloudflare_id: 9b564127-a560-4843-d9d1-f67c942a5500
+  alt: stop1 July 19 poster
+
+- date: 2024-05-24
+  cloudflare_id: b4b5c23d-4a78-4785-d65c-3d663665ca00
+  alt: stop1 May 24 poster
+
+- date: 2024-04-05
+  cloudflare_id: 8916af0d-c4a4-4288-38e2-13b44bd9a400
+  alt: stop1 April 5 poster
+
+- date: 2024-02-15
+  cloudflare_id: ecf582ad-a60c-4b43-e36c-65e8d1c08600
+  alt: stop1 February 15 poster
