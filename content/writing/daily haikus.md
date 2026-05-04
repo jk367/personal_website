@@ -5,6 +5,54 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**May 3, 2026**
+
+Very late morning
+
+Another party with friends
+
+Sleep whispers hello
+
+**May 2, 2026**
+
+Love flows like rivers
+
+Need to find my drinking cup
+
+Had it all along
+
+**May 1, 2026**
+
+Crossed the bridge by bike
+
+Then went over it once more
+
+Then again back home
+
+**April 30, 2026**
+
+Go sleep well April
+
+Time of rain has come and gone
+
+Welcome the flowers
+
+**April 29, 2026**
+
+Her name is Hannah
+
+Been a wonderful three months
+
+Let's hope for three more
+
+**April 28, 2026**
+
+The same day at work
+
+Then some music underground
+
+Drink at funny bar
+
 **April 27, 2026**
 
 Perfect day outside
