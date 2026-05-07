@@ -5,6 +5,30 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**May 6, 2026**
+
+Hours pass at home
+
+Family dinner in Brooklyn
+
+Cold beer with old friend
+
+**May 5, 2026**
+
+Leaving work early
+
+Empty a bottle of wine
+
+Alone on the train
+
+**May 4, 2026**
+
+First train is on time
+
+I'm trying to find a seat
+
+I decide to stand
+
 **May 3, 2026**
 
 Very late morning
