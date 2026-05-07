@@ -6,8 +6,8 @@ draft: false
 ---
 
 walking down the street<br>
-dodging people dodging<br>
-trash the sun in my eyes<br>
+dodging people dodging trash<br>
+the sun in my eyes<br>
 can't hear anything but noise<br>
 but if this was my last step<br>
 i would take it slowly<br>
