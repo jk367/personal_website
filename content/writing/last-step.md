@@ -5,14 +5,14 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
-walking down the street
-dodging people dodging trash
-the sun in my eyes
-can't hear anything but noise
-but if this was my last step
-i would take it slowly
-feeling each part of the ground
-letting the sun touch my face
-seeing the eyes of everyone going past
-if this was my last step
+walking down the street<br>
+dodging people dodging<br>
+trash the sun in my eyes<br>
+can't hear anything but noise<br>
+but if this was my last step<br>
+i would take it slowly<br>
+feeling each part of the ground<br>
+letting the sun touch my face<br>
+seeing the eyes of everyone going past<br>
+if this was my last step<br>
 i would take it slowly
