@@ -5,6 +5,54 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**May 12, 2026**
+
+Eyes begin to close
+
+Begin to sink in my bed
+
+The day has gone by
+
+**May 11, 2026**
+
+Five years passes by
+
+In many ways i have changed
+
+But stayed just the same
+
+**May 10, 2026**
+
+Barely enough sleep
+
+Lovely lunch with everyone
+
+The change of one year
+
+**May 9, 2026**
+
+Had quite the long sit
+
+Unfortunately vomit
+
+Same place different me
+
+**May 8, 2026**
+
+Air was hot and thick
+
+At home checking slack all day
+
+Drank wine at mansions
+
+**May 7, 2026**
+
+Lunch with max and will
+
+Lovely dinner with her mom
+
+Worries fall away
+
 **May 6, 2026**
 
 Hours pass at home
