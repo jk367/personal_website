@@ -5,6 +5,38 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**May 16, 2026**
+
+Sun creeps in my room
+
+Chinatown roof bushwick club
+
+Hear the birds chirping
+
+**May 15, 2026**
+
+Party and party
+
+Cool air on the bike ride home
+
+Alone in my bed
+
+**May 14, 2026**
+
+Spent the day in bed
+
+Some thoughts come and some thoughts go
+
+Lay in the bathtub
+
+**May 13, 2026**
+
+My mind is tied up
+
+All day grasping and craving
+
+There is no release
+
 **May 12, 2026**
 
 Eyes begin to close
