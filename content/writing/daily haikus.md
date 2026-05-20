@@ -5,6 +5,30 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**May 19, 2026**
+
+Dry heat covers all
+
+Again walking in circles
+
+Cold wine on my roof
+
+**May 18, 2026**
+
+Summer heat arrives
+
+Garden dinner with old friends
+
+Back across the bridge
+
+**May 17, 2026**
+
+A day at grandmas
+
+Long way home in the tunnel
+
+Ice cream in the park
+
 **May 16, 2026**
 
 Sun creeps in my room
