@@ -5,6 +5,70 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**May 27, 2026**
+
+A dinner inside
+
+Laughter then proceed to cry
+
+In time all tears dry
+
+**May 26, 2026**
+
+Kosher Chinese food
+
+Preparing for a party
+
+Cold and quiet night
+
+**May 25, 2026**
+
+Empty apartment
+
+Fresh sun briefly drys the sky
+
+My heart is open
+
+**May 24, 2026**
+
+Eyes crusted over
+
+Bike riding in soft cold rain
+
+Dinner with old friend
+
+**May 23, 2026**
+
+It rains in Brooklyn
+
+Socks get wet ears ringing
+
+Go to bed too late
+
+**May 22, 2026**
+
+Short morning goodbye
+
+Today spent the day inside
+
+Then lots of new friends
+
+**May 21, 2026**
+
+At desk looking up
+
+She comes just before she goes
+
+Share a glass of wine
+
+**May 20, 2026**
+
+No AC in time
+
+Bead of sweat rolls down my neck
+
+The rain breaks the heat
+
 **May 19, 2026**
 
 Dry heat covers all
