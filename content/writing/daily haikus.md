@@ -5,6 +5,62 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**June 3, 2026**
+
+Looking at work screen
+
+Dinner surrounded with friends
+
+Goodbye for a bit
+
+**June 2, 2026**
+
+I missed morning gym
+
+A very big party soon
+
+Went to bed too late
+
+**June 1, 2026**
+
+Pre heated side walk
+
+Just another day at work
+
+Dinner with her dad
+
+**May 31, 2026**
+
+Coffee with new friend
+
+Eager sun covers my neck
+
+Wake up from long nap
+
+**May 30, 2026**
+
+Very slow morning
+
+In windy park with new friends
+
+Another late night
+
+**May 29, 2026**
+
+Cold beer in warm park
+
+A long walk over the bridge
+
+One more sleep over
+
+**May 28, 2026**
+
+Vietnamese lunch
+
+Family dinner in Brooklyn
+
+Moon was nearly full
+
 **May 27, 2026**
 
 A dinner inside
