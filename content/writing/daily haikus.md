@@ -5,6 +5,118 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**June 17, 2026**
+
+Uptown then downtown
+
+Welcome a guest into my home
+
+Where did the day go
+
+**June 16, 2026**
+
+Party coming soon
+
+Invitations have been sent
+
+Call with an old friend
+
+**June 15, 2026**
+
+The same thing today
+
+But i am a day older
+
+Another leaf falls
+
+**June 14, 2026**
+
+I turn the car key
+
+Six hours to take us home
+
+A heavy rain falls
+
+**June 13, 2026**
+
+Directions in phone
+
+We drive and drive then arrive
+
+At the end we leave
+
+**June 12, 2026**
+
+Try to catch the wind
+
+Close my hand and feel it blow
+
+Open it then gone
+
+**June 11, 2026**
+
+Clear sky and open road
+
+Asphalt heated by the sun
+
+Lightly press the gas
+
+**June 10, 2026**
+
+A rude bartender
+
+Watching the game in the street
+
+Drink with a close friend
+
+**June 9, 2026**
+
+Missed the gym again
+
+a quick hello then goodbye
+
+Close my eyes in bed
+
+**June 8, 2026**
+
+Soft sun and cool breeze
+
+The morning ended quickly
+
+The night went on long
+
+**June 7, 2026**
+
+Drove to new jersey
+
+Helped grandma prune her roses
+
+Looking up in bed
+
+**June 6, 2026**
+
+Black coffee alone
+
+Forgot my sunscreen outside
+
+Big rain cleans the streets
+
+**June 5, 2026**
+
+Quick trip on water
+
+Shared oysters with some new friends
+
+The knicks in the street
+
+**June 4, 2026**
+
+A ball in my chair
+
+Sun is out and air is hot
+
+Walk with lots of friends
+
 **June 3, 2026**
 
 Looking at work screen
