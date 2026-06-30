@@ -5,6 +5,102 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**June 29, 2026**
+
+It's the end of June
+
+Sun heats the back of my neck
+
+Then saw some old friends
+
+**June 28, 2026**
+
+Walked around outside
+
+Lock eyes with someone i know
+
+Decide no hello
+
+**June 27, 2026**
+
+Grandma turned ninety
+
+Everyone came to dinner
+
+A warm summer night
+
+**June 26, 2026**
+
+A very long day
+
+Saw some friends then saw some more
+
+A tough uber ride
+
+**June 25, 2026**
+
+Morning in Brooklyn
+
+A day starring at my screen
+
+So tired can't sleep
+
+**June 24, 2026**
+
+Sunny day today
+
+Walk then tacos then ice cream
+
+Goodbye for a little
+
+**June 23, 2026**
+
+Soft rain did not stop
+
+Paid for dinner with brother
+
+Eyes on my ceiling
+
+**June 22, 2026**
+
+Quiet dark office
+
+Rain washes it all away
+
+Then dinner alone
+
+**June 21, 2026**
+
+Cleaned up the party
+
+Briefly saw an old friend
+
+Dinner in the park
+
+**June 20, 2026**
+
+So much leading up
+
+Working all day in the sun
+
+It was all worth it
+
+**June 19, 2026**
+
+Sunny day inside
+
+Then uptown for the ballet
+
+Ice cream by mistake
+
+**June 18, 2026**
+
+Big parade today
+
+Share a meal with old friends
+
+We get a few drinks
+
 **June 17, 2026**
 
 Uptown then downtown
