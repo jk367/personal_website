@@ -5,6 +5,70 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**July 7, 2026**
+
+New ones in office
+
+Steak dinner with someone lost
+
+Cold mist hits my face
+
+**July 6, 2026**
+
+Time like spilt marbles
+
+Behind the refrigerator
+
+Can't seem to reach it
+
+**July 5, 2026**
+
+A warm reunion
+
+The heat broke today now rain
+
+Dinner in Brooklyn
+
+**July 4, 2026**
+
+Day resting in bed
+
+My mind shattered like a vase
+
+Will see what happens
+
+**July 3, 2026**
+
+torrential downpour
+
+See a friend at mansions
+
+More at nowadays
+
+**July 2, 2026**
+
+Hot air through my hair
+
+Gripping shaky handle bars
+
+I'm now in my bed
+
+**July 1, 2026**
+
+Hotter than before
+
+Eating steamed dumplings alone
+
+Sweat drips down my back
+
+**June 30, 2026**
+
+My mind is scattered
+
+The sun was even hotter
+
+Life is unfolding
+
 **June 29, 2026**
 
 It's the end of June
