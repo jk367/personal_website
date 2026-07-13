@@ -5,6 +5,46 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**July 12, 2026**
+
+Ice coffee with friend
+
+Heat melts ice before i drink
+
+Go home sun burnt cheeks
+
+**July 11, 2026**
+
+Small mist hits my face
+
+Close my eyes for a second
+
+The day is over
+
+**July 10, 2026**
+
+Got new retainers
+
+They squeeze my two bottom teeth
+
+Now 26 years
+
+**July 9, 2026**
+
+Warm rain comes falling
+
+Martinis at funny bar
+
+In bed head spinning
+
+**July 8, 2026**
+
+Walked around today
+
+Sun hit the back of my neck
+
+A hole in my shoe
+
 **July 7, 2026**
 
 New ones in office
