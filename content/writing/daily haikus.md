@@ -5,6 +5,70 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**July 20, 2026**
+
+Thoughts come in my head
+
+Then they leave just as quickly
+
+It's really over
+
+**July 19, 2026**
+
+The flower breaks down
+
+Watch its petals hit the floor
+
+To make new soil
+
+**July 18, 2026**
+
+Love letters and notes
+
+They sit on the shelf unread
+
+All good things must end
+
+**July 17, 2026**
+
+Bike rolls on the bridge
+
+The hot air dark filled with smoke
+
+In my bed alone
+
+**July 16, 2026**
+
+Starburst on table
+
+Have one then one too many
+
+Now my stomach hurts
+
+**July 15, 2026**
+
+The air hot and thick
+
+Thunder claps and rains pours down
+
+Grey smoke fills the sky
+
+**July 14, 2026**
+
+Walk around the block
+
+Talk to my mom for awhile
+
+The sun burns my neck
+
+**July 13, 2026**
+
+Sweet green in the park
+
+Napkins and fork hit the ground
+
+Walk to work alone
+
 **July 12, 2026**
 
 Ice coffee with friend
