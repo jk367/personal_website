@@ -5,6 +5,110 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**July 20, 2026**
+
+Thoughts come in my head
+
+Then they leave just as quickly
+
+It's really over
+
+**July 19, 2026**
+
+The flower breaks down
+
+Watch its petals hit the floor
+
+To make new soil
+
+**July 18, 2026**
+
+Love letters and notes
+
+They sit on the shelf unread
+
+All good things must end
+
+**July 17, 2026**
+
+Bike rolls on the bridge
+
+The hot air dark filled with smoke
+
+In my bed alone
+
+**July 16, 2026**
+
+Starburst on table
+
+Have one then one too many
+
+Now my stomach hurts
+
+**July 15, 2026**
+
+The air hot and thick
+
+Thunder claps and rains pours down
+
+Grey smoke fills the sky
+
+**July 14, 2026**
+
+Walk around the block
+
+Talk to my mom for awhile
+
+The sun burns my neck
+
+**July 13, 2026**
+
+Sweet green in the park
+
+Napkins and fork hit the ground
+
+Walk to work alone
+
+**July 12, 2026**
+
+Ice coffee with friend
+
+Heat melts ice before i drink
+
+Go home sun burnt cheeks
+
+**July 11, 2026**
+
+Small mist hits my face
+
+Close my eyes for a second
+
+The day is over
+
+**July 10, 2026**
+
+Got new retainers
+
+They squeeze my two bottom teeth
+
+Now 26 years
+
+**July 9, 2026**
+
+Warm rain comes falling
+
+Martinis at funny bar
+
+In bed head spinning
+
+**July 8, 2026**
+
+Walked around today
+
+Sun hit the back of my neck
+
+A hole in my shoe
+
 **July 7, 2026**
 
 New ones in office
