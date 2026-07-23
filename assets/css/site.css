@@ -8,7 +8,7 @@
 
 @media (max-width: 600px) {
     :root {
-        --photo-gap: 0.115rem;
+        --photo-gap: 0.5rem;
     }
 }
 
