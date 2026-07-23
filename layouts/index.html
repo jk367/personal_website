@@ -47,8 +47,6 @@
     .photo-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 0.25rem;
-        margin-top: 0.5rem;
     }
 
     .photo-item {
@@ -120,8 +118,6 @@
     @media (max-width: 600px) {
         .photo-grid {
             grid-template-columns: 1fr;
-            gap: 0.1rem;
-            min-height: 800px;
         }
 
         .article-title {
@@ -132,7 +128,6 @@
     @media (min-width: 601px) and (max-width: 900px) {
         .photo-grid {
             grid-template-columns: repeat(2, 1fr);
-            gap: 0.25rem;
         }
 
         .featured-section:last-child {
@@ -141,10 +136,6 @@
     }
 
     @media (max-width: 480px) {
-        .photo-grid {
-            gap: 0.1rem;
-        }
-
         .featured-section {
             margin-bottom: 0.75rem;
         }
@@ -179,115 +170,29 @@
     </div>
 </div>
 
-{{ $firstPhoto := true }}
 <div class="featured-section">
     <h2><a href="/photos/" class="section-title">Photos</a></h2>
     <div class="photo-grid" id="photo-grid">
-        <!-- Photos will be loaded by JavaScript -->
-        <noscript>
-            {{ $photoPages := where .Site.RegularPages "Section" "photos" }}
-            {{ range first 3 $photoPages }}
-                {{ if .Params.cloudflare_id }}
-                <div class="photo-item">
-                    <a href="{{ .Permalink }}">
-                        <picture>
-                            <source media="(max-width: 768px)" srcset="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/gridthumb">
-                            <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/griddisplay"
-                                 width="600"
-                                 height="400"
-                                 alt="{{ .Params.alt | default .Title }}"
-                                 {{ if $firstPhoto }}fetchpriority="high" loading="eager"{{ else }}loading="lazy"{{ end }}>
-                        </picture>
-                             {{ $firstPhoto = false }}
-                    </a>
-                </div>
-                {{ end }}
-            {{ else }}
-                <p>No featured photos available.</p>
-            {{ end }}
-        </noscript>
+        {{/* Shuffled at build time — rotates on every deploy */}}
+        {{ $photoPages := where (where .Site.RegularPages "Section" "photos") "Params.cloudflare_id" "!=" nil }}
+        {{ range $idx, $photo := first 3 (shuffle $photoPages) }}
+            <div class="photo-item">
+                <a href="{{ .Permalink }}">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/gridthumb">
+                        <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/griddisplay"
+                             width="600"
+                             height="400"
+                             alt="{{ .Params.alt | default .Title }}"
+                             {{ if eq $idx 0 }}fetchpriority="high" loading="eager"{{ else }}loading="lazy"{{ end }}>
+                    </picture>
+                </a>
+            </div>
+        {{ else }}
+            <p>No featured photos available.</p>
+        {{ end }}
     </div>
 </div>
-
-<!-- Embed photo data for JavaScript -->
-<script type="application/json" id="photo-data">
-{{ $photoPages := where .Site.RegularPages "Section" "photos" }}
-{{ $photos := slice }}
-{{ range $photoPages }}
-    {{ if and .Params.cloudflare_id (not .Params.draft) }}
-        {{ $photos = $photos | append (dict "permalink" .Permalink "cloudflare_id" .Params.cloudflare_id "title" .Title "alt" (default .Title .Params.alt)) }}
-    {{ end }}
-{{ end }}
-{{ $photos | jsonify | safeJS }}
-</script>
-
-<!-- Random photo selection script - optimized -->
-<script>
-(function() {
-    var photoDataEl = document.getElementById('photo-data');
-    if (!photoDataEl) return;
-
-    var photos;
-    try {
-        photos = JSON.parse(photoDataEl.textContent);
-    } catch (e) {
-        return;
-    }
-
-    if (!photos || photos.length === 0) return;
-
-    // Fisher-Yates shuffle - optimized
-    for (var i = photos.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = photos[i];
-        photos[i] = photos[j];
-        photos[j] = temp;
-    }
-
-    var selectedPhotos = photos.slice(0, 3);
-    var photoGrid = document.getElementById('photo-grid');
-    if (!photoGrid) return;
-
-    photoGrid.innerHTML = '';
-    var baseUrl = 'https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/';
-    var fragment = document.createDocumentFragment();
-
-    for (var idx = 0; idx < selectedPhotos.length; idx++) {
-        var photo = selectedPhotos[idx];
-        var photoItem = document.createElement('div');
-        photoItem.className = 'photo-item';
-
-        var link = document.createElement('a');
-        link.href = photo.permalink;
-
-        var picture = document.createElement('picture');
-        var source = document.createElement('source');
-        source.media = '(max-width: 768px)';
-        source.srcset = baseUrl + photo.cloudflare_id + '/gridthumb';
-
-        var img = document.createElement('img');
-        img.src = baseUrl + photo.cloudflare_id + '/griddisplay';
-        img.width = 600;
-        img.height = 400;
-        img.alt = photo.alt || photo.title;
-
-        if (idx === 0) {
-            img.setAttribute('fetchpriority', 'high');
-            img.loading = 'eager';
-        } else {
-            img.loading = 'lazy';
-        }
-
-        picture.appendChild(source);
-        picture.appendChild(img);
-        link.appendChild(picture);
-        photoItem.appendChild(link);
-        fragment.appendChild(photoItem);
-    }
-
-    photoGrid.appendChild(fragment);
-})();
-</script>
 
 <!-- Daily Haiku Section -->
 {{ $haikuPage := .Site.GetPage "/writing/daily haikus.md" }}

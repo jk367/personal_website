@@ -1,3 +1,26 @@
+/* Unified photo spacing — the single source of truth for every image
+   grid/stack (homepage, photos, series, categories, posters).
+   Change the tokens here, never in the per-template styles. */
+:root {
+    --photo-gap: 0.29rem;
+    --photo-block-margin: 0.75rem;
+}
+
+@media (max-width: 600px) {
+    :root {
+        --photo-gap: 0.115rem;
+    }
+}
+
+.photo-grid,
+.series-grid,
+.series-photos,
+.posters-grid {
+    gap: var(--photo-gap);
+    margin-top: var(--photo-block-margin);
+    margin-bottom: var(--photo-block-margin);
+}
+
 /* Reset and base styles */
 * {
     box-sizing: border-box;
@@ -14,7 +37,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: 'Garamond', serif;
+    font-family: 'Times New Roman', Times, serif;
     font-display: swap;
     font-size: 1em;
     line-height: 1.4;
@@ -123,7 +146,7 @@ button, .button {
     color: black;
     border: 1px solid black;
     padding: 0.2rem 0.5rem;
-    font-family: Garamond, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1em;
     transition: all 0.2s ease;
     cursor: pointer;

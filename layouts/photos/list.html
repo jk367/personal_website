@@ -22,7 +22,7 @@
     </a>
 </div>
 
-{{ $first := true }}
+{{ $shown := 0 }}
 <div class="photo-grid">
     {{ range .Pages.ByDate.Reverse }}
     {{ if .Params.cloudflare_id }}
@@ -34,10 +34,11 @@
                      width="600"
                      height="400"
                      alt="{{ .Params.alt | default .Title }}"
-                     {{ if $first }}fetchpriority="high" loading="eager"{{ $first = false }}{{ else }}loading="lazy"{{ end }}>
+                     {{ if eq $shown 0 }}fetchpriority="high" loading="eager"{{ else if lt $shown 6 }}loading="eager"{{ else }}loading="lazy"{{ end }}>
             </picture>
         </a>
     </div>
+    {{ $shown = add $shown 1 }}
     {{ end }}
     {{ end }}
 </div>
@@ -86,15 +87,13 @@
     .photo-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.25rem;
-        margin-top: 0.75rem;
-        min-height: 400px;
     }
 
     .photo-item {
         overflow: hidden;
         position: relative;
         aspect-ratio: 3/2;
+        background-color: #111; /* placeholder while lazy images load */
     }
     
     .photo-item img {
@@ -106,8 +105,6 @@
     @media (max-width: 768px) {
         .photo-grid {
             grid-template-columns: 1fr;
-            gap: 0.1rem;
-            min-height: 255px;
         }
     }
 </style>
