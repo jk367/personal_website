@@ -56,10 +56,10 @@
     <link rel="preconnect" href="https://imagedelivery.net" crossorigin>
     <link rel="dns-prefetch" href="https://imagedelivery.net">
 
-    {{/* Fingerprinted CSS: hashed filename changes on every edit, so the
-         year-long immutable edge cache never serves a stale stylesheet */}}
-    {{ $css := resources.Get "css/site.css" | fingerprint }}
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    {{/* Inlined CSS: small enough (~4KB) that shipping it in the HTML beats
+         a render-blocking request; also sidesteps stylesheet caching entirely */}}
+    {{ $css := resources.Get "css/site.css" | minify }}
+    <style>{{ $css.Content | safeCSS }}</style>
 
     <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
 
