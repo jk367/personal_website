@@ -5,6 +5,78 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**July 29, 2026**
+
+Happy birthday bro
+
+Two bottles with the family
+
+Then many pictures
+
+**July 28, 2026**
+
+Sitting at my desk
+
+Then using my computer
+
+Day passes away
+
+**July 27, 2026**
+
+Can't move and can't think
+
+My legs and ears like lead weights
+
+The night ends early
+
+**July 26, 2026**
+
+Nowadays today
+
+Danced laughed drank cried hugged and loved
+
+The best day so far
+
+**July 25, 2026**
+
+Sun kisses our face
+
+Pancakes with brother and friend
+
+The day ends softly
+
+**July 24, 2026**
+
+Dinner many friends
+
+Eat and drink stay awhile
+
+Dinner ends go home
+
+**July 23, 2026**
+
+My dirty windows
+
+How will i start to clean them
+
+They will stay dirty
+
+**July 22, 2026**
+
+Alone on the train
+
+Going up town then downtown
+
+Drink three diet cokes
+
+**July 21, 2026**
+
+Got caught in the rain
+
+Pants and socks completely wet
+
+I dried off inside
+
 **July 20, 2026**
 
 Thoughts come in my head
