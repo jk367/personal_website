@@ -5,6 +5,70 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**August 6, 2026**
+
+Wake up in a daze
+
+Big lovely dinner party
+
+Then see an old friend
+
+**August 5, 2026**
+
+surprise drink with friends
+
+Martinis and Negronis
+
+To bed very late
+
+**August 4, 2026**
+
+A full dripping nose
+
+Sore throat only getting worse
+
+Terrible headache
+
+**August 3, 2026**
+
+Wake up jfk
+
+The day passes in a haze
+
+Then back in my bed
+
+**August 2, 2026**
+
+Coffee with old friend
+
+The day trapped in the airport
+
+Bye California
+
+**August 1, 2026**
+
+Sitting on the rock
+
+All of my friends are nearby
+
+Warm sun tumbles down
+
+**July 31, 2026**
+
+Wake before the sun
+
+California air is soft
+
+Everything is right
+
+**July 30, 2026**
+
+Oh my computer
+
+Spent the day scrolling posting
+
+Turn it off with friends
+
 **July 29, 2026**
 
 Happy birthday bro
