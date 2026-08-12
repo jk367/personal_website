@@ -2,6 +2,7 @@
 
 require "date"
 require "json"
+require "open3"
 require "pathname"
 require "yaml"
 
@@ -48,6 +49,21 @@ if index && content
   writing = content["items"].select { |item| item["section"] == "writing" && item["kind"] == "page" }
   empty_writing = writing.select { |item| item["content"].to_s.strip.empty? }.map { |item| item["url"] }
   check.call(empty_writing.empty?, "Published writing has empty full-text content: #{empty_writing.join(', ')}")
+
+  daily_haiku = writing.find { |item| item["url"].end_with?("/writing/daily-haikus/") }
+  git_date, git_status = Open3.capture2(
+    "git", "-C", repo_dir.to_s, "log", "-1", "--format=%as", "--",
+    "content/writing/daily haikus.md"
+  )
+  check.call(git_status.success? && !git_date.strip.empty?, "Could not read Daily Haiku Git history")
+  if daily_haiku && git_status.success?
+    check.call(
+      daily_haiku["lastModified"] == git_date.strip,
+      "Daily Haiku lastModified is #{daily_haiku["lastModified"].inspect}; expected Git date #{git_date.strip.inspect}"
+    )
+  else
+    check.call(false, "Daily Haiku is missing from /ai-content.json")
+  end
 end
 
 html_files = build_dir.glob("**/*.html")
