@@ -1,0 +1,104 @@
+{{- $siteData := .Site.Data.site -}}
+{{- $sameAs := slice
+  $siteData.social.soundcloud
+  $siteData.social.goodreads
+  $siteData.social.discogs
+  $siteData.social.substack
+  $siteData.social.bandcamp
+  $siteData.social.twitter
+  $siteData.social.instagram
+-}}
+{{- $person := dict
+  "@type" "Person"
+  "name" $siteData.identity.publishing_name
+  "alternateName" $siteData.identity.full_name
+  "url" $siteData.identity.url
+  "description" $siteData.identity.one_line
+  "jobTitle" $siteData.identity.current_role
+  "sameAs" $sameAs
+  "knowsAbout" $siteData.topics
+-}}
+{{- $website := dict
+  "@type" "WebSite"
+  "name" (printf "%s Portfolio" $siteData.identity.publishing_name)
+  "url" $siteData.identity.url
+  "description" $siteData.identity.description
+  "author" (dict "@type" "Person" "name" $siteData.identity.publishing_name)
+-}}
+{{- $graph := slice $person $website -}}
+
+{{- if and (eq .Type "writing") (eq .Kind "page") -}}
+  {{- $article := dict
+    "@type" "BlogPosting"
+    "headline" .Title
+    "author" (dict "@type" "Person" "name" $siteData.identity.publishing_name "url" $siteData.identity.url)
+    "publisher" (dict "@type" "Person" "name" $siteData.identity.publishing_name "url" $siteData.identity.url)
+    "url" .Permalink
+    "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+    "description" (.Description | default (.Summary | plainify))
+    "wordCount" .WordCount
+    "keywords" (.Params.writing_categories | default (slice))
+  -}}
+  {{- if not .Date.IsZero -}}{{- $article = merge $article (dict "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")) -}}{{- end -}}
+  {{- if not .Lastmod.IsZero -}}{{- $article = merge $article (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) -}}{{- end -}}
+  {{- $graph = $graph | append $article -}}
+{{- end -}}
+
+{{- if and (eq .Type "photos") (eq .Kind "page") -}}
+  {{- $photoUrl := .Params.image -}}
+  {{- with .Params.cloudflare_id -}}
+    {{- $photoUrl = printf "https://imagedelivery.net/%s/%s/full" $siteData.brand.cloudflare_images_account . -}}
+  {{- end -}}
+  {{- $photo := dict
+    "@type" "Photograph"
+    "name" .Title
+    "creator" (dict "@type" "Person" "name" $siteData.identity.publishing_name)
+    "url" .Permalink
+    "contentUrl" $photoUrl
+    "description" (.Params.alt | default .Title)
+  -}}
+  {{- if not .Date.IsZero -}}{{- $photo = merge $photo (dict "datePublished" (.Date.Format "2006-01-02")) -}}{{- end -}}
+  {{- $graph = $graph | append $photo -}}
+{{- end -}}
+
+{{- if and (eq .Kind "page") (in (slice "portraits" "parties" "places") .Section) -}}
+  {{- $gallery := dict
+    "@type" "ImageGallery"
+    "name" .Title
+    "url" .Permalink
+    "creator" (dict "@type" "Person" "name" $siteData.identity.publishing_name)
+    "numberOfItems" (len (.Params.series_images | default (slice)))
+  -}}
+  {{- with .Params.cover_image -}}{{- $gallery = merge $gallery (dict "image" .) -}}{{- end -}}
+  {{- $graph = $graph | append $gallery -}}
+{{- end -}}
+
+{{- if not .IsHome -}}
+  {{- $breadcrumbItems := slice (dict
+    "@type" "ListItem"
+    "position" 1
+    "name" "Home"
+    "item" ("/" | absURL)
+  ) -}}
+  {{- $position := 2 -}}
+  {{- if .Section -}}
+    {{- $breadcrumbItems = $breadcrumbItems | append (dict
+      "@type" "ListItem"
+      "position" $position
+      "name" (humanize .Section)
+      "item" ((printf "/%s/" .Section) | absURL)
+    ) -}}
+    {{- $position = add $position 1 -}}
+  {{- end -}}
+  {{- if not .IsSection -}}
+    {{- $breadcrumbItems = $breadcrumbItems | append (dict
+      "@type" "ListItem"
+      "position" $position
+      "name" .Title
+      "item" .Permalink
+    ) -}}
+  {{- end -}}
+  {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "itemListElement" $breadcrumbItems) -}}
+{{- end -}}
+
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>

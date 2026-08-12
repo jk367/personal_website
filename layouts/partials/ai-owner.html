@@ -1,0 +1,10 @@
+{{- $siteData := .Site.Data.site -}}
+{{- return (dict
+  "name" $siteData.identity.publishing_name
+  "fullName" $siteData.identity.full_name
+  "url" $siteData.identity.url
+  "description" $siteData.identity.short_description
+  "email" $siteData.identity.email
+  "basedIn" $siteData.identity.based_in
+  "links" $siteData.social
+) -}}

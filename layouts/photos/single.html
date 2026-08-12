@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $imagesAccount := .Site.Data.site.brand.cloudflare_images_account }}
 <article class="single-photo">
   <h1>{{ .Title }}</h1>
   <div class="back-navigation">
@@ -6,7 +7,7 @@
   </div>
 
   {{ if .Params.cloudflare_id }}
-    <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/full"
+    <img src="https://imagedelivery.net/{{ $imagesAccount }}/{{ .Params.cloudflare_id }}/full"
          alt="{{ .Params.alt | default .Title }}"
          fetchpriority="high"
          loading="eager">

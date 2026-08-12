@@ -1,0 +1,27 @@
+{{- $page := .Site.GetPage "/writing/daily haikus.md" -}}
+{{- with $page -}}
+  {{- $pattern := `(?m)^\*\*([^*\r\n]+)\*\*[ \t]*\r?\n(?:[ \t]*\r?\n)*([^\r\n]+)\r?\n(?:[ \t]*\r?\n)*([^\r\n]+)\r?\n(?:[ \t]*\r?\n)*([^\r\n]+)` -}}
+  {{- $matches := findRESubmatch $pattern .RawContent -}}
+  {{- $today := now.Format "January 2, 2006" -}}
+  {{- $selected := slice -}}
+  {{- range $matches -}}
+    {{- if and (eq (len $selected) 0) (eq (trim (index . 1) " ") $today) -}}
+      {{- $selected = . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if and (eq (len $selected) 0) (gt (len $matches) 0) -}}
+    {{- $selected = index $matches 0 -}}
+  {{- end -}}
+  {{- if gt (len $selected) 4 -}}
+    {{- $date := trim (index $selected 1) " " -}}
+    <div class="featured-section" id="haiku-section" data-current="{{ eq $date $today }}">
+        <h2><a href="/writing/daily-haikus/" class="section-title">Daily Haiku</a></h2>
+        <div class="haiku-date">{{ $date }}</div>
+        <div class="haiku-content">
+            {{- range (slice (index $selected 2) (index $selected 3) (index $selected 4)) }}
+            <span class="haiku-line">{{ trim . " " }}</span>
+            {{- end }}
+        </div>
+    </div>
+  {{- end -}}
+{{- end -}}

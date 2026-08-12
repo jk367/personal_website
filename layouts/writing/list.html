@@ -6,9 +6,9 @@
 </div>
 
 <div class="category-buttons">
-    <button class="category-button active" data-category="all">All</button>
+    <button class="category-button active" data-category="all" aria-pressed="true">All</button>
     {{ range $name, $taxonomy := .Site.Taxonomies.writing_categories }}
-    <button class="category-button" data-category="{{ $name }}">{{ $name }}</button>
+    <button class="category-button" data-category="{{ $name }}" aria-pressed="false">{{ $name }}</button>
     {{ end }}
 </div>
 
@@ -30,11 +30,16 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', function() {
             const category = this.getAttribute('data-category');
             
-            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            categoryButtons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-pressed', 'false');
+            });
             this.classList.add('active');
+            this.setAttribute('aria-pressed', 'true');
 
             writingItems.forEach(item => {
-                if (category === 'all' || item.getAttribute('data-categories').includes(category)) {
+                const categories = item.getAttribute('data-categories').split(/\s+/).filter(Boolean);
+                if (category === 'all' || categories.includes(category)) {
                     item.style.display = '';
                 } else {
                     item.style.display = 'none';

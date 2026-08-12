@@ -1,0 +1,46 @@
+{{- $siteData := .Site.Data.site -}}
+{{- $items := slice -}}
+{{- range .Site.Pages.ByDate.Reverse -}}
+  {{- if or (eq .Kind "page") (eq .Kind "section") -}}
+    {{- $entry := dict
+      "title" .Title
+      "url" .Permalink
+      "kind" .Kind
+      "section" .Section
+      "type" .Type
+      "summary" (.Summary | plainify | htmlUnescape | truncate 240)
+      "wordCount" .WordCount
+    -}}
+    {{- if not .Date.IsZero -}}
+      {{- $entry = merge $entry (dict "date" (.Date.Format "2006-01-02")) -}}
+    {{- end -}}
+    {{- if not .Lastmod.IsZero -}}
+      {{- $entry = merge $entry (dict "lastModified" (.Lastmod.Format "2006-01-02")) -}}
+    {{- end -}}
+    {{- with .Params.description -}}{{- $entry = merge $entry (dict "description" .) -}}{{- end -}}
+    {{- with .Params.categories -}}{{- $entry = merge $entry (dict "categories" .) -}}{{- end -}}
+    {{- with .Params.writing_categories -}}{{- $entry = merge $entry (dict "writingCategories" .) -}}{{- end -}}
+    {{- with .Params.alt -}}{{- $entry = merge $entry (dict "alt" .) -}}{{- end -}}
+    {{- with .Params.image -}}{{- $entry = merge $entry (dict "image" .) -}}{{- end -}}
+    {{- with .Params.cloudflare_id -}}
+      {{- $entry = merge $entry (dict
+        "cloudflareImageId" .
+        "image" (printf "https://imagedelivery.net/%s/%s/full" $siteData.brand.cloudflare_images_account .)
+      ) -}}
+    {{- end -}}
+    {{- $items = $items | append $entry -}}
+  {{- end -}}
+{{- end -}}
+{{- $sectionCounts := dict -}}
+{{- range (slice "writing" "photos" "portraits" "parties" "places") -}}
+  {{- $sectionCounts = merge $sectionCounts (dict . (len (where $.Site.RegularPages "Section" .))) -}}
+{{- end -}}
+{{- dict
+  "schemaVersion" 2
+  "generatedAt" (now.Format "2006-01-02T15:04:05Z07:00")
+  "owner" (partial "ai-owner.html" .)
+  "sections" $siteData.sections
+  "sectionCounts" $sectionCounts
+  "itemCount" (len $items)
+  "items" $items
+  | jsonify -}}

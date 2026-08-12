@@ -19,12 +19,28 @@ mediaType = "application/json"
 baseName = "ai-nav"
 isPlainText = true
 
-[outputs]
-home = ["HTML", "RSS", "JSON", "AIIndex", "AIContent", "AINav"]
+[outputFormats.AIReadme]
+mediaType = "application/json"
+baseName = "ai-readme"
+isPlainText = true
 
-[params]
-  author = "j.m. kettle"
-  description = "Personal website of j.m. kettle"
+[outputFormats.AISitemap]
+mediaType = "text/plain"
+baseName = "ai-sitemap"
+isPlainText = true
+
+[outputFormats.LLMS]
+mediaType = "text/plain"
+baseName = "llms"
+isPlainText = true
+
+[outputFormats.Updates]
+mediaType = "application/json"
+baseName = "updates"
+isPlainText = true
+
+[outputs]
+home = ["HTML", "RSS", "JSON", "AIIndex", "AIContent", "AINav", "AIReadme", "AISitemap", "LLMS", "Updates"]
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -71,9 +87,8 @@ home = ["HTML", "RSS", "JSON", "AIIndex", "AIContent", "AINav"]
   [minify.tdewolff]
     [minify.tdewolff.html]
       keepWhitespace = false
-      keepConditionalComments = false
+      keepSpecialComments = false
       keepDefaultAttrVals = false
       keepDocumentTags = false
       keepEndTags = false
       keepQuotes = false
-

@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $imagesAccount := .Site.Data.site.brand.cloudflare_images_account }}
 <style>
     .homepage-header {
         margin-bottom: 0.5rem;
@@ -148,7 +149,7 @@
 </style>
 
 <div class="homepage-header">
-    <h1>J.M. Kettle</h1>
+    <h1>{{ .Site.Data.site.identity.publishing_name }}</h1>
     <p>I am a NYC based writer, photographer, and musician.</p>
 
     <p>I write about philosophy, sociology, technology, and fiction. I do event, studio, and editorial photography in black and white. I produce and DJ dance music under the name Kettle and throw a party in Brooklyn called stop1 every six weeks.</p>
@@ -179,8 +180,8 @@
             <div class="photo-item">
                 <a href="{{ .Permalink }}">
                     <picture>
-                        <source media="(max-width: 768px)" srcset="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/gridthumb">
-                        <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/griddisplay"
+                        <source media="(max-width: 768px)" srcset="https://imagedelivery.net/{{ $imagesAccount }}/{{ .Params.cloudflare_id }}/gridthumb">
+                        <img src="https://imagedelivery.net/{{ $imagesAccount }}/{{ .Params.cloudflare_id }}/griddisplay"
                              width="600"
                              height="400"
                              alt="{{ .Params.alt | default .Title }}"
@@ -194,72 +195,12 @@
     </div>
 </div>
 
-<!-- Daily Haiku Section -->
-{{ $haikuPage := .Site.GetPage "/writing/daily haikus.md" }}
-{{ if $haikuPage }}
-{{ $content := $haikuPage.RawContent }}
-{{ $lines := split $content "\n" }}
-
-{{ $today := now.Format "January 2, 2006" }}
-{{ $todayFormatted := printf "**%s**" $today }}
-
-{{ $haikuFound := false }}
-{{ $currentDate := "" }}
-{{ $haikuLines := slice }}
-{{ $searchingForToday := true }}
-
-<!-- First pass: Look for today's haiku -->
-{{ range $lines }}
-    {{ if and (hasPrefix . "**") (hasSuffix . "**") $searchingForToday }}
-        {{ $lineDate := trim (trim . "**") " " }}
-        {{ if eq $lineDate $today }}
-            {{ $currentDate = $lineDate }}
-            {{ $haikuLines = slice }}
-        {{ end }}
-    {{ else if and (ne . "") (eq $currentDate $today) (not $haikuFound) (not (hasPrefix . "---")) (not (hasPrefix . "title:")) (not (hasPrefix . "date:")) (not (hasPrefix . "writing_categories:")) (not (hasPrefix . "draft:")) (not (hasPrefix . "**")) }}
-        {{ $haikuLines = $haikuLines | append . }}
-        {{ if eq (len $haikuLines) 3 }}
-            {{ $haikuFound = true }}
-            {{ $searchingForToday = false }}
-        {{ end }}
-    {{ end }}
-{{ end }}
-
-{{ if not $haikuFound }}
-    {{ $currentDate = "" }}
-    {{ $haikuLines = slice }}
-    {{ $foundFirstDate := false }}
-    {{ range $lines }}
-        {{ if and (hasPrefix . "**") (hasSuffix . "**") (not $foundFirstDate) }}
-            {{ $currentDate = trim (trim . "**") " " }}
-            {{ $haikuLines = slice }}
-            {{ $foundFirstDate = true }}
-        {{ else if and (ne . "") (ne $currentDate "") $foundFirstDate (not $haikuFound) (not (hasPrefix . "---")) (not (hasPrefix . "title:")) (not (hasPrefix . "date:")) (not (hasPrefix . "writing_categories:")) (not (hasPrefix . "draft:")) (not (hasPrefix . "**")) }}
-            {{ $haikuLines = $haikuLines | append . }}
-            {{ if eq (len $haikuLines) 3 }}
-                {{ $haikuFound = true }}
-            {{ end }}
-        {{ end }}
-    {{ end }}
-{{ end }}
-
-{{ if $haikuFound }}
-<div class="featured-section" id="haiku-section">
-    <h2><a href="/writing/daily-haikus/" class="section-title">Daily Haiku</a></h2>
-    <div class="haiku-date">{{ $currentDate }}</div>
-    <div class="haiku-content">
-        {{ range $haikuLines }}
-        <span class="haiku-line">{{ . }}</span>
-        {{ end }}
-    </div>
-</div>
-{{ end }}
-{{ end }}
+{{ partial "home-haiku.html" . }}
 
 <div class="featured-section">
     <h2>Contact</h2>
     <div class="contact-content">
-        <a href="mailto:contact@jmkettle.com" class="contact-link">Email at contact@jmkettle.com</a>
+        <a href="mailto:{{ .Site.Data.site.identity.email }}" class="contact-link">Email at {{ .Site.Data.site.identity.email }}</a>
     </div>
 </div>
 {{ end }}

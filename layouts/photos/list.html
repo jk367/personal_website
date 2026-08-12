@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $imagesAccount := .Site.Data.site.brand.cloudflare_images_account }}
 <h1>Photos</h1>
 
 <div class="back-navigation">
@@ -29,8 +30,8 @@
     <div class="photo-item">
         <a href="{{ .Permalink }}">
             <picture>
-                <source media="(max-width: 768px)" srcset="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/gridthumb">
-                <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cloudflare_id }}/griddisplay"
+                <source media="(max-width: 768px)" srcset="https://imagedelivery.net/{{ $imagesAccount }}/{{ .Params.cloudflare_id }}/gridthumb">
+                <img src="https://imagedelivery.net/{{ $imagesAccount }}/{{ .Params.cloudflare_id }}/griddisplay"
                      width="600"
                      height="400"
                      alt="{{ .Params.alt | default .Title }}"

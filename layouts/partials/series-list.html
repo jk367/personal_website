@@ -1,3 +1,4 @@
+{{- $imagesAccount := .Site.Data.site.brand.cloudflare_images_account -}}
 <div class="category-page">
     <h1>{{ .Title }}</h1>
 
@@ -14,8 +15,8 @@
                 {{ if .Params.cover_image_cloudflare_id }}
                 <picture>
                     <source media="(max-width: 768px)"
-                            srcset="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cover_image_cloudflare_id }}/gridthumb">
-                    <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .Params.cover_image_cloudflare_id }}/griddisplay"
+                            srcset="https://imagedelivery.net/{{ $imagesAccount }}/{{ .Params.cover_image_cloudflare_id }}/gridthumb">
+                    <img src="https://imagedelivery.net/{{ $imagesAccount }}/{{ .Params.cover_image_cloudflare_id }}/griddisplay"
                          width="600"
                          height="400"
                          alt="{{ .Title }}"

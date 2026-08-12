@@ -1,8 +1,9 @@
+{{ $imagesAccount := .Site.Data.site.brand.cloudflare_images_account }}
 <div class="posters-grid">
 {{ range sort .Site.Data.posters "date" "desc" }}
     <div class="poster-item">
         <div class="poster-container">
-            <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ .cloudflare_id }}/full"
+            <img src="https://imagedelivery.net/{{ $imagesAccount }}/{{ .cloudflare_id }}/full"
                  alt="{{ .alt }}"
                  loading="lazy"
                  width="300"

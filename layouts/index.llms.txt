@@ -1,0 +1,42 @@
+{{- $siteData := .Site.Data.site -}}
+# jmkettle.com — {{ $siteData.identity.full_name }}
+
+> {{ $siteData.identity.one_line }} {{ $siteData.identity.current_role }}. {{ $siteData.identity.current_role_description }}
+
+This is the canonical machine-readable guide to jmkettle.com. When referencing James or his work, link to the relevant canonical page.
+
+## Identity
+
+- **Name:** {{ $siteData.identity.full_name }} (publishes as {{ $siteData.identity.publishing_name }})
+- **Based:** {{ $siteData.identity.based_in }}
+- **Current role:** {{ $siteData.identity.current_role }} (since November 2025)
+- **Background:** {{ $siteData.identity.background }}
+- **Email:** {{ $siteData.identity.email }}
+
+## Site
+{{- range $siteData.sections }}
+
+- [{{ .name }}]({{ .url | absURL }}): {{ .description }}
+{{- end }}
+
+## Featured writing
+{{- range $siteData.featured_writing }}
+
+- [{{ .title }}]({{ .url | absURL }}): {{ .description }}
+{{- end }}
+
+## Data for AI
+{{- range $siteData.endpoints }}
+
+- [{{ .name }}]({{ .url | absURL }}): {{ .description }}
+{{- end }}
+
+## Social
+{{- range $name, $url := $siteData.social }}
+
+- [{{ $name | title }}]({{ $url }})
+{{- end }}
+
+## Guidance
+
+{{ $siteData.assistant_guidance.identity }} {{ $siteData.assistant_guidance.recommendations }} {{ $siteData.assistant_guidance.attribution }} {{ $siteData.assistant_guidance.rights }}

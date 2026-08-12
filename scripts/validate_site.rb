@@ -1,0 +1,133 @@
+#!/usr/bin/env ruby
+
+require "date"
+require "json"
+require "pathname"
+require "yaml"
+
+build_dir = Pathname(ARGV.fetch(0)).realpath
+repo_dir = Pathname(ARGV.fetch(1)).realpath
+errors = []
+
+check = lambda do |condition, message|
+  errors << message unless condition
+end
+
+json_files = {
+  "ai-index.json" => %w[schemaVersion owner sections itemCount items],
+  "ai-content.json" => %w[schemaVersion owner contentFormat itemCount items],
+  "ai-nav.json" => %w[schemaVersion primary sections],
+  "ai-readme.json" => %w[schemaVersion identity site_structure data_endpoints],
+  "updates.json" => %w[schemaVersion updates statistics],
+  "index.json" => %w[schemaVersion owner itemCount items]
+}
+
+parsed_json = {}
+json_files.each do |filename, required_keys|
+  path = build_dir.join(filename)
+  check.call(path.file?, "Missing generated endpoint: /#{filename}")
+  next unless path.file?
+
+  begin
+    parsed_json[filename] = JSON.parse(path.read)
+    missing = required_keys - parsed_json[filename].keys
+    check.call(missing.empty?, "/#{filename} is missing keys: #{missing.join(', ')}")
+  rescue JSON::ParserError => e
+    errors << "Invalid JSON in /#{filename}: #{e.message}"
+  end
+end
+
+index = parsed_json["ai-index.json"]
+content = parsed_json["ai-content.json"]
+if index && content
+  check.call(index["itemCount"] == index["items"].length, "/ai-index.json itemCount does not match items")
+  check.call(content["itemCount"] == content["items"].length, "/ai-content.json itemCount does not match items")
+  check.call(index["itemCount"] == content["itemCount"], "AI index/content item counts differ")
+  check.call(content["items"].all? { |item| item.key?("content") }, "/ai-content.json contains summary-only items")
+
+  writing = content["items"].select { |item| item["section"] == "writing" && item["kind"] == "page" }
+  empty_writing = writing.select { |item| item["content"].to_s.strip.empty? }.map { |item| item["url"] }
+  check.call(empty_writing.empty?, "Published writing has empty full-text content: #{empty_writing.join(', ')}")
+end
+
+html_files = build_dir.glob("**/*.html")
+html_files.each do |path|
+  html = path.read
+  html.scan(/<script[^>]+type=(?:["'])?application\/ld\+json(?:["'])?[^>]*>(.*?)<\/script>/mi).each_with_index do |match, index_number|
+    begin
+      JSON.parse(match.first)
+    rescue JSON::ParserError => e
+      errors << "Invalid JSON-LD in #{path.relative_path_from(build_dir)} (script #{index_number + 1}): #{e.message}"
+    end
+  end
+  check.call(!html.include?("livereload.js"), "Development livereload script leaked into #{path.relative_path_from(build_dir)}")
+end
+
+home_html = build_dir.join("index.html").read
+check.call(home_html.include?("id=haiku-section") || home_html.include?("id=\"haiku-section\""), "Homepage haiku did not render")
+haiku_lines = home_html.scan(/class=(?:["'])?haiku-line(?:["'])?[^>]*>/).length
+check.call(haiku_lines == 3, "Homepage haiku rendered #{haiku_lines} lines instead of 3")
+
+broken_links = []
+html_files.each do |path|
+  path.read.scan(/\b(?:href|src)=(?:"([^"]+)"|'([^']+)'|([^\s>]+))/i).each do |captures|
+    value = captures.compact.first
+    next if value.nil? || value.empty?
+    next if value.start_with?("http:", "https:", "mailto:", "data:", "#", "//")
+
+    clean = value.split(/[?#]/, 2).first
+    next if clean.nil? || clean.empty?
+
+    target = if clean.start_with?("/")
+      build_dir.join(clean.delete_prefix("/"))
+    else
+      path.dirname.join(clean).cleanpath
+    end
+    candidates = [target, target.join("index.html")]
+    broken_links << "#{path.relative_path_from(build_dir)} -> #{value}" unless candidates.any?(&:file?)
+  end
+end
+check.call(broken_links.empty?, "Broken internal references:\n  #{broken_links.uniq.join("\n  ")}")
+
+uuid = /\A[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\z/i
+front_matter = lambda do |path|
+  raw = path.read
+  match = raw.match(/\A---[ \t]*\r?\n(.*?)\r?\n---[ \t]*(?:\r?\n|\z)/m)
+  next {} unless match
+  YAML.safe_load(match[1], permitted_classes: [Date, Time], aliases: true) || {}
+rescue Psych::SyntaxError => e
+  errors << "Invalid front matter in #{path.relative_path_from(repo_dir)}: #{e.message}"
+  {}
+end
+
+repo_dir.glob("content/photos/*.md").each do |path|
+  metadata = front_matter.call(path)
+  next if metadata["draft"] == true
+  check.call(!metadata["alt"].to_s.strip.empty?, "Missing alt text: #{path.relative_path_from(repo_dir)}")
+  check.call(uuid.match?(metadata["cloudflare_id"].to_s), "Invalid Cloudflare image ID: #{path.relative_path_from(repo_dir)}")
+end
+
+repo_dir.glob("content/{portraits,parties,places}/*/index.md").each do |path|
+  metadata = front_matter.call(path)
+  next if metadata["draft"] == true
+
+  arrays = %w[series_images series_cloudflare_ids series_alt_texts].to_h do |key|
+    [key, Array(metadata[key])]
+  end
+  lengths = arrays.transform_values(&:length)
+  check.call(lengths.values.uniq.length == 1 && lengths.values.first.to_i.positive?, "Gallery arrays do not align in #{path.relative_path_from(repo_dir)}: #{lengths}")
+  check.call(arrays["series_alt_texts"].all? { |alt| !alt.to_s.strip.empty? }, "Blank gallery alt text: #{path.relative_path_from(repo_dir)}")
+  check.call(arrays["series_cloudflare_ids"].all? { |id| uuid.match?(id.to_s) }, "Invalid gallery Cloudflare image ID: #{path.relative_path_from(repo_dir)}")
+end
+
+expected_layouts = %w[index.aiindex.json index.aicontent.json index.ainav.json index.aireadme.json index.aisitemap.txt]
+expected_layouts.each do |filename|
+  check.call(repo_dir.join("layouts", filename).file?, "Missing Hugo output-format layout: layouts/#{filename}")
+end
+
+if errors.any?
+  warn "Site validation failed:\n\n- #{errors.join("\n- ")}"
+  exit 1
+end
+
+puts "Validated #{html_files.length} HTML pages, #{json_files.length} JSON endpoints, and all published photo metadata."

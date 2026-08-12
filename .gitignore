@@ -1,2 +1,4 @@
 data/website_photos_sep30.csv
 .DS_Store
+.hugo_build.lock
+resources/_gen/

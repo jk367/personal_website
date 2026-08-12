@@ -1,0 +1,33 @@
+{{- $siteData := .Site.Data.site -}}
+{{ $siteData.identity.publishing_name | upper }} — AI SITEMAP
+=================================
+
+CANONICAL SITE: {{ $siteData.identity.url }}/
+
+MAIN SECTIONS:
+{{- range $siteData.sections }}
+- {{ .name }}: {{ .url | absURL }} — {{ .description }}
+  {{- range .subsections }}
+  - {{ .name }}: {{ .url | absURL }}
+  {{- end }}
+{{- end }}
+
+FEATURED WRITING:
+{{- range $siteData.featured_writing }}
+- {{ .title }}: {{ .url | absURL }} — {{ .description }}
+{{- end }}
+
+MACHINE-READABLE ENDPOINTS:
+{{- range $siteData.endpoints }}
+- {{ .name }}: {{ .url | absURL }} — {{ .description }}
+{{- end }}
+
+CONTACT: {{ $siteData.identity.email }}
+{{- range $name, $url := $siteData.social }}
+{{ $name | title }}: {{ $url }}
+{{- end }}
+
+ABOUT:
+{{ $siteData.identity.summary }}
+
+TOPICS: {{ delimit $siteData.topics ", " }}

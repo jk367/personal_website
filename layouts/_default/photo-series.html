@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $imagesAccount := .Site.Data.site.brand.cloudflare_images_account }}
 <article class="photo-series">
     <h1>{{ .Title }}</h1>
     
@@ -25,7 +26,7 @@
             {{ $cloudflareId := index $.Params.series_cloudflare_ids $index }}
             {{ $altText := index $.Params.series_alt_texts $index }}
             {{ $fallbackAlt := printf "%s - Photo %d" $.Title (add $index 1) }}
-            <img src="{{ if $cloudflareId }}https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/{{ $cloudflareId }}/full{{ else }}{{ $image }}{{ end }}"
+            <img src="{{ if $cloudflareId }}https://imagedelivery.net/{{ $imagesAccount }}/{{ $cloudflareId }}/full{{ else }}{{ $image }}{{ end }}"
                  alt="{{ if $altText }}{{ $altText }}{{ else }}{{ $fallbackAlt }}{{ end }}"
                  {{ if eq $index 0 }}fetchpriority="high"{{ else }}loading="lazy"{{ end }}
                  {{ if $cloudflareId }}onerror="this.src='{{ $image }}'"{{ end }}>

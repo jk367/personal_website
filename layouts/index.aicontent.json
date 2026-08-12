@@ -1,0 +1,47 @@
+{{- $siteData := .Site.Data.site -}}
+{{- $items := slice -}}
+{{- range .Site.Pages.ByDate.Reverse -}}
+  {{- if or (eq .Kind "page") (eq .Kind "section") -}}
+    {{- $entry := dict
+      "title" .Title
+      "url" .Permalink
+      "kind" .Kind
+      "section" .Section
+      "type" .Type
+      "summary" (.Summary | plainify | htmlUnescape)
+      "content" (partial "plain-content.html" .)
+      "wordCount" .WordCount
+    -}}
+    {{- if not .Date.IsZero -}}
+      {{- $entry = merge $entry (dict "date" (.Date.Format "2006-01-02")) -}}
+    {{- end -}}
+    {{- if not .Lastmod.IsZero -}}
+      {{- $entry = merge $entry (dict "lastModified" (.Lastmod.Format "2006-01-02")) -}}
+    {{- end -}}
+    {{- with .Params.description -}}{{- $entry = merge $entry (dict "description" .) -}}{{- end -}}
+    {{- with .Params.categories -}}{{- $entry = merge $entry (dict "categories" .) -}}{{- end -}}
+    {{- with .Params.writing_categories -}}{{- $entry = merge $entry (dict "writingCategories" .) -}}{{- end -}}
+    {{- with .Params.alt -}}{{- $entry = merge $entry (dict "alt" .) -}}{{- end -}}
+    {{- with .Params.image -}}{{- $entry = merge $entry (dict "image" .) -}}{{- end -}}
+    {{- with .Params.cloudflare_id -}}
+      {{- $entry = merge $entry (dict
+        "cloudflareImageId" .
+        "image" (printf "https://imagedelivery.net/%s/%s/full" $siteData.brand.cloudflare_images_account .)
+      ) -}}
+    {{- end -}}
+    {{- with .Params.cover_image -}}{{- $entry = merge $entry (dict "coverImage" .) -}}{{- end -}}
+    {{- with .Params.cover_image_cloudflare_id -}}{{- $entry = merge $entry (dict "coverImageCloudflareId" .) -}}{{- end -}}
+    {{- with .Params.series_images -}}{{- $entry = merge $entry (dict "images" .) -}}{{- end -}}
+    {{- with .Params.series_cloudflare_ids -}}{{- $entry = merge $entry (dict "cloudflareImageIds" .) -}}{{- end -}}
+    {{- with .Params.series_alt_texts -}}{{- $entry = merge $entry (dict "altTexts" .) -}}{{- end -}}
+    {{- $items = $items | append $entry -}}
+  {{- end -}}
+{{- end -}}
+{{- dict
+  "schemaVersion" 2
+  "generatedAt" (now.Format "2006-01-02T15:04:05Z07:00")
+  "owner" (partial "ai-owner.html" .)
+  "contentFormat" "plain_text"
+  "itemCount" (len $items)
+  "items" $items
+  | jsonify -}}

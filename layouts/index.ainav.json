@@ -1,0 +1,10 @@
+{{- $primary := slice -}}
+{{- range .Site.Menus.main -}}
+  {{- $primary = $primary | append (dict "name" .Name "url" .URL) -}}
+{{- end -}}
+{{- dict
+  "schemaVersion" 2
+  "generatedAt" (now.Format "2006-01-02T15:04:05Z07:00")
+  "primary" $primary
+  "sections" .Site.Data.site.sections
+  | jsonify -}}

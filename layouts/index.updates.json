@@ -1,0 +1,36 @@
+{{- $recent := slice -}}
+{{- range first 20 .Site.RegularPages.ByDate.Reverse -}}
+  {{- $recent = $recent | append (dict
+    "date" (.Date.Format "2006-01-02")
+    "type" "content"
+    "category" .Section
+    "title" .Title
+    "url" .RelPermalink
+    "description" (.Summary | plainify | htmlUnescape | truncate 200)
+  ) -}}
+{{- end -}}
+{{- $photos := where .Site.RegularPages "Section" "photos" -}}
+{{- $writing := where .Site.RegularPages "Section" "writing" -}}
+{{- $portraits := where .Site.RegularPages "Section" "portraits" -}}
+{{- $parties := where .Site.RegularPages "Section" "parties" -}}
+{{- $places := where .Site.RegularPages "Section" "places" -}}
+{{- $stats := dict
+  "total_photos" (len $photos)
+  "total_writing_pieces" (len $writing)
+  "total_portrait_galleries" (len $portraits)
+  "total_party_galleries" (len $parties)
+  "total_place_galleries" (len $places)
+-}}
+{{- if gt (len $photos) 0 -}}
+  {{- $stats = merge $stats (dict "last_photo_added" ((index ($photos.ByDate.Reverse) 0).Date.Format "2006-01-02")) -}}
+{{- end -}}
+{{- if gt (len $writing) 0 -}}
+  {{- $stats = merge $stats (dict "last_writing_added" ((index ($writing.ByDate.Reverse) 0).Date.Format "2006-01-02")) -}}
+{{- end -}}
+{{- dict
+  "schemaVersion" 2
+  "site" "jmkettle.com"
+  "generatedAt" (now.Format "2006-01-02T15:04:05Z07:00")
+  "updates" $recent
+  "statistics" $stats
+  | jsonify -}}

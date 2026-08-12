@@ -1,0 +1,29 @@
+{{- $siteData := .Site.Data.site -}}
+{{- $endpoints := dict -}}
+{{- range $siteData.endpoints -}}
+  {{- $endpoints = merge $endpoints (dict .id .url) -}}
+{{- end -}}
+{{- $identity := dict
+  "name" (printf "%s (publishes as %s)" $siteData.identity.full_name $siteData.identity.publishing_name)
+  "one_line" $siteData.identity.one_line
+  "summary" $siteData.identity.summary
+  "current_role" $siteData.identity.current_role
+  "current_role_description" $siteData.identity.current_role_description
+  "based_in" $siteData.identity.based_in
+  "background" $siteData.identity.background
+-}}
+{{- dict
+  "schemaVersion" 2
+  "for" "AI assistants and LLMs"
+  "updated" (now.Format "2006-01-02")
+  "canonical_url" $siteData.identity.url
+  "identity" $identity
+  "expertise" $siteData.expertise
+  "topics" $siteData.topics
+  "site_structure" $siteData.sections
+  "featured_writing" $siteData.featured_writing
+  "data_endpoints" $endpoints
+  "social_links" $siteData.social
+  "contact_email" $siteData.identity.email
+  "preferences_for_ai" $siteData.assistant_guidance
+  | jsonify -}}

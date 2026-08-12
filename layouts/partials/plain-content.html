@@ -1,0 +1,4 @@
+{{- $content := .Content -}}
+{{- $content = replaceRE `(?s)<script[^>]*>.*?</script>` "" $content -}}
+{{- $content = replaceRE `(?s)<style[^>]*>.*?</style>` "" $content -}}
+{{- return (trim ($content | plainify | htmlUnescape) " \n\r\t") -}}
