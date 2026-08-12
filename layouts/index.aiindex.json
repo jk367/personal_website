@@ -28,6 +28,13 @@
         "image" (printf "https://imagedelivery.net/%s/%s/full" $siteData.brand.cloudflare_images_account .)
       ) -}}
     {{- end -}}
+    {{- with .Params.cover_image -}}{{- $entry = merge $entry (dict "coverImage" .) -}}{{- end -}}
+    {{- with .Params.cover_image_cloudflare_id -}}{{- $entry = merge $entry (dict "coverImageCloudflareId" .) -}}{{- end -}}
+    {{- with .Params.series_images -}}{{- $entry = merge $entry (dict "imageCount" (len .)) -}}{{- end -}}
+    {{- with .Params.series_alt_texts -}}
+      {{- if gt (len .) 0 -}}{{- $entry = merge $entry (dict "coverAlt" (index . 0)) -}}{{- end -}}
+    {{- end -}}
+    {{- with .Params.soundcloud -}}{{- $entry = merge $entry (dict "soundcloud" .) -}}{{- end -}}
     {{- $items = $items | append $entry -}}
   {{- end -}}
 {{- end -}}

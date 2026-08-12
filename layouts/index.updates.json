@@ -1,13 +1,17 @@
 {{- $recent := slice -}}
-{{- range first 20 .Site.RegularPages.ByDate.Reverse -}}
-  {{- $recent = $recent | append (dict
-    "date" (.Date.Format "2006-01-02")
+{{- $contentPages := where .Site.Pages "Kind" "in" (slice "page" "section") -}}
+{{- range first 20 $contentPages.ByLastmod.Reverse -}}
+  {{- $entry := dict
+    "date" (.Lastmod.Format "2006-01-02")
+    "lastModified" (.Lastmod.Format "2006-01-02")
     "type" "content"
     "category" .Section
     "title" .Title
     "url" .RelPermalink
     "description" (.Summary | plainify | htmlUnescape | truncate 200)
-  ) -}}
+  -}}
+  {{- if not .Date.IsZero -}}{{- $entry = merge $entry (dict "publishedDate" (.Date.Format "2006-01-02")) -}}{{- end -}}
+  {{- $recent = $recent | append $entry -}}
 {{- end -}}
 {{- $photos := where .Site.RegularPages "Section" "photos" -}}
 {{- $writing := where .Site.RegularPages "Section" "writing" -}}
@@ -22,10 +26,16 @@
   "total_place_galleries" (len $places)
 -}}
 {{- if gt (len $photos) 0 -}}
-  {{- $stats = merge $stats (dict "last_photo_added" ((index ($photos.ByDate.Reverse) 0).Date.Format "2006-01-02")) -}}
+  {{- $stats = merge $stats (dict
+    "last_photo_added" ((index ($photos.ByDate.Reverse) 0).Date.Format "2006-01-02")
+    "last_photo_updated" ((index ($photos.ByLastmod.Reverse) 0).Lastmod.Format "2006-01-02")
+  ) -}}
 {{- end -}}
 {{- if gt (len $writing) 0 -}}
-  {{- $stats = merge $stats (dict "last_writing_added" ((index ($writing.ByDate.Reverse) 0).Date.Format "2006-01-02")) -}}
+  {{- $stats = merge $stats (dict
+    "last_writing_added" ((index ($writing.ByDate.Reverse) 0).Date.Format "2006-01-02")
+    "last_writing_updated" ((index ($writing.ByLastmod.Reverse) 0).Lastmod.Format "2006-01-02")
+  ) -}}
 {{- end -}}
 {{- dict
   "schemaVersion" 2

@@ -2,10 +2,8 @@
 baseURL = "https://jmkettle.com/"
 title = "j.m. kettle"
 languageCode = "en-us"
-enableGitInfo = true
-
 [frontmatter]
-lastmod = ["lastmod", ":git", "date", "publishDate"]
+lastmod = ["lastmod", "date", "publishDate"]
 
 [outputFormats]
 [outputFormats.AIIndex]

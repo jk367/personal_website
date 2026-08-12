@@ -34,6 +34,7 @@
     {{- with .Params.series_images -}}{{- $entry = merge $entry (dict "images" .) -}}{{- end -}}
     {{- with .Params.series_cloudflare_ids -}}{{- $entry = merge $entry (dict "cloudflareImageIds" .) -}}{{- end -}}
     {{- with .Params.series_alt_texts -}}{{- $entry = merge $entry (dict "altTexts" .) -}}{{- end -}}
+    {{- with .Params.soundcloud -}}{{- $entry = merge $entry (dict "soundcloud" .) -}}{{- end -}}
     {{- $items = $items | append $entry -}}
   {{- end -}}
 {{- end -}}

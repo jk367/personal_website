@@ -49,6 +49,8 @@ Parse generously. If a date is missing for any entry, ask the user to clarify be
 
 5. Write the updated file.
 
-6. Commit with a message summarizing the date range, e.g. `Add haikus for April 7–9, 2026`, and push to the current branch.
+6. Update the front matter `lastmod` field to the most recent haiku date in `YYYY-MM-DD` format. Add the field immediately after `date` if it is missing.
 
-7. Confirm to the user: list each date added and confirm the push succeeded.
+7. Commit with a message summarizing the date range, e.g. `Add haikus for April 7–9, 2026`, and push to the current branch.
+
+8. Confirm to the user: list each date added and confirm the push succeeded.

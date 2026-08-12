@@ -22,10 +22,8 @@ jobs:
       HUGO_SHA256: "372d2f0538b24d2bb9285f0583c1e3b02d023ec2c2b8eb90e5c3bbfb3139fb13"
 
     steps:
-      - name: Check out full Git history
+      - name: Check out repository
         uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
 
       - name: Install Hugo
         shell: bash

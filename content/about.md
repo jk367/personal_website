@@ -1,5 +1,6 @@
 ---
 title: "About"
+lastmod: 2026-04-27
 ---
 
 ## Bio <button class="sectionToggle" data-section="bio">Collapse bio</button>

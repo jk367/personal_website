@@ -2,13 +2,13 @@
 
 require "date"
 require "json"
-require "open3"
 require "pathname"
 require "yaml"
 
 build_dir = Pathname(ARGV.fetch(0)).realpath
 repo_dir = Pathname(ARGV.fetch(1)).realpath
 errors = []
+daily_haiku_item = nil
 
 check = lambda do |condition, message|
   errors << message unless condition
@@ -50,20 +50,24 @@ if index && content
   empty_writing = writing.select { |item| item["content"].to_s.strip.empty? }.map { |item| item["url"] }
   check.call(empty_writing.empty?, "Published writing has empty full-text content: #{empty_writing.join(', ')}")
 
-  daily_haiku = writing.find { |item| item["url"].end_with?("/writing/daily-haikus/") }
-  git_date, git_status = Open3.capture2(
-    "git", "-C", repo_dir.to_s, "log", "-1", "--format=%as", "--",
-    "content/writing/daily haikus.md"
-  )
-  check.call(git_status.success? && !git_date.strip.empty?, "Could not read Daily Haiku Git history")
-  if daily_haiku && git_status.success?
-    check.call(
-      daily_haiku["lastModified"] == git_date.strip,
-      "Daily Haiku lastModified is #{daily_haiku["lastModified"].inspect}; expected Git date #{git_date.strip.inspect}"
-    )
-  else
-    check.call(false, "Daily Haiku is missing from /ai-content.json")
+  daily_haiku_item = writing.find { |item| item["url"].end_with?("/writing/daily-haikus/") }
+  check.call(!daily_haiku_item.nil?, "Daily Haiku is missing from /ai-content.json")
+
+  modification_counts = index["items"].group_by { |item| item["lastModified"] }.transform_values(&:length)
+  check.call(modification_counts.length > 10, "Modification dates collapsed to #{modification_counts.length} distinct values; deployment may be using shallow Git history")
+
+  music = content["items"].find { |item| item["url"].end_with?("/music/") }
+  soundcloud = music && music["soundcloud"]
+  check.call(soundcloud.is_a?(Hash), "Music is missing structured SoundCloud metadata")
+  if soundcloud.is_a?(Hash)
+    %w[artist_url mixes_url tracks_url mixes_playlist_id tracks_playlist_id].each do |key|
+      check.call(!soundcloud[key].to_s.empty?, "Music SoundCloud metadata is missing #{key}")
+    end
   end
+
+  gallery = index["items"].find { |item| item["url"].end_with?("/portraits/alyssa/") }
+  check.call(gallery && gallery["imageCount"].to_i.positive?, "Compact AI index is missing gallery image counts")
+  check.call(gallery && !gallery["coverImage"].to_s.empty?, "Compact AI index is missing gallery cover images")
 end
 
 html_files = build_dir.glob("**/*.html")
@@ -77,6 +81,26 @@ html_files.each do |path|
     end
   end
   check.call(!html.include?("livereload.js"), "Development livereload script leaked into #{path.relative_path_from(build_dir)}")
+end
+
+now_html = build_dir.join("now/index.html").read
+check.call(now_html.include?("What I&rsquo;m focused on right now"), "/now/ did not render its page content")
+check.call(!now_html.include?("No content found"), "/now/ fell through to the empty list template")
+
+music_html = build_dir.join("music/index.html").read
+check.call(music_html.include?("https://soundcloud.com/kettle9999/sets/mixes"), "Music HTML is missing a crawlable mixes URL")
+check.call(music_html.include?("https://soundcloud.com/kettle9999/sets/tracks"), "Music HTML is missing a crawlable tracks URL")
+
+sitemap_dates = build_dir.join("sitemap.xml").read.scan(/<lastmod>([^<]+)/).flatten
+check.call(sitemap_dates.uniq.length > 10, "Sitemap modification dates collapsed to #{sitemap_dates.uniq.length} distinct values")
+
+updates = parsed_json["updates.json"]
+if updates
+  update_dates = updates["updates"].map { |item| item["lastModified"] }
+  check.call(update_dates == update_dates.sort.reverse, "/updates.json is not sorted by modification date")
+  recent_titles = updates["updates"].first(3).map { |item| item["title"].to_s.strip }
+  check.call(recent_titles.include?("Daily Haiku"), "Daily Haiku is missing from the latest updates")
+  check.call(recent_titles.include?("Music"), "Updated Music section is missing from the latest updates")
 end
 
 home_html = build_dir.join("index.html").read
@@ -108,12 +132,27 @@ check.call(broken_links.empty?, "Broken internal references:\n  #{broken_links.u
 uuid = /\A[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\z/i
 front_matter = lambda do |path|
   raw = path.read
-  match = raw.match(/\A---[ \t]*\r?\n(.*?)\r?\n---[ \t]*(?:\r?\n|\z)/m)
+  match = raw.match(/\A(?:\uFEFF)?[ \t\r\n]*---[ \t]*\r?\n(.*?)\r?\n---[ \t]*(?:\r?\n|\z)/m)
   next {} unless match
   YAML.safe_load(match[1], permitted_classes: [Date, Time], aliases: true) || {}
 rescue Psych::SyntaxError => e
   errors << "Invalid front matter in #{path.relative_path_from(repo_dir)}: #{e.message}"
   {}
+end
+
+repo_dir.glob("content/**/*.md").each do |path|
+  metadata = front_matter.call(path)
+  next if metadata["draft"] == true
+  check.call(metadata.key?("date") || metadata.key?("lastmod"), "Published content has no deployment-stable date source: #{path.relative_path_from(repo_dir)}")
+end
+
+daily_metadata = front_matter.call(repo_dir.join("content/writing/daily haikus.md"))
+expected_daily_lastmod = daily_metadata["lastmod"].to_s
+if daily_haiku_item
+  check.call(
+    daily_haiku_item["lastModified"] == expected_daily_lastmod,
+    "Daily Haiku lastModified is #{daily_haiku_item["lastModified"].inspect}; expected front matter #{expected_daily_lastmod.inspect}"
+  )
 end
 
 repo_dir.glob("content/photos/*.md").each do |path|

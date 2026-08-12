@@ -1,6 +1,7 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
+lastmod: 2026-08-12
 writing_categories: ["poetry"]
 draft: false
 ---

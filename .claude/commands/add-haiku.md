@@ -28,6 +28,8 @@ If no arguments were provided, ask the user for the three lines of the haiku.
 
 4. Write the updated file.
 
-5. Commit the change with a short, descriptive message (e.g. `Add haiku for April 9, 2026`) and push to the current branch.
+5. Update the front matter `lastmod` field to today's date in `YYYY-MM-DD` format. Add the field immediately after `date` if it is missing.
 
-6. Confirm to the user what was added and that the commit was pushed.
+6. Commit the change with a short, descriptive message (e.g. `Add haiku for April 9, 2026`) and push to the current branch.
+
+7. Confirm to the user what was added and that the commit was pushed.

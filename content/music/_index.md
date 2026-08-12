@@ -1,6 +1,13 @@
 ---
 title: "Music"
 date: 2024-07-30T11:23:36+02:00
+lastmod: 2026-08-12
+soundcloud:
+  artist_url: "https://soundcloud.com/kettle9999"
+  mixes_url: "https://soundcloud.com/kettle9999/sets/mixes"
+  mixes_playlist_id: 1959695677
+  tracks_url: "https://soundcloud.com/kettle9999/sets/tracks"
+  tracks_playlist_id: 1959698237
 draft: false
 ---
 
@@ -17,14 +24,14 @@ A warm, accessible, music-forward party for everyone. [@stop1nyc](https://instag
 ## Mixes
 <div class="soundcloud-lazy" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1959695677&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
     <div class="soundcloud-placeholder">
-        <p>Loading...</p>
+        <p>Loading... <a href="https://soundcloud.com/kettle9999/sets/mixes">Listen to mixes on SoundCloud</a></p>
     </div>
 </div>
 
 ## Tracks
 <div class="soundcloud-lazy" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1959698237&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
     <div class="soundcloud-placeholder">
-        <p>Loading...</p>
+        <p>Loading... <a href="https://soundcloud.com/kettle9999/sets/tracks">Listen to tracks on SoundCloud</a></p>
     </div>
 </div>
 

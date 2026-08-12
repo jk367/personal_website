@@ -73,6 +73,21 @@
   {{- $graph = $graph | append $gallery -}}
 {{- end -}}
 
+{{- if and (eq .Kind "section") (eq .Section "music") -}}
+  {{- with .Params.soundcloud -}}
+    {{- $graph = $graph | append (dict
+      "@type" "MusicGroup"
+      "name" "Kettle"
+      "url" $.Permalink
+      "sameAs" (slice .artist_url .mixes_url .tracks_url)
+      "subjectOf" (slice
+        (dict "@type" "MusicPlaylist" "name" "Kettle — Mixes" "url" .mixes_url)
+        (dict "@type" "MusicPlaylist" "name" "Kettle — Tracks" "url" .tracks_url)
+      )
+    ) -}}
+  {{- end -}}
+{{- end -}}
+
 {{- if not .IsHome -}}
   {{- $breadcrumbItems := slice (dict
     "@type" "ListItem"
