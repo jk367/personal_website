@@ -5,7 +5,54 @@
     <a href="/" class="back-button">← Back to Home</a>
 </div>
 
-<div class="content">
+{{ with .Params.intro }}
+<div class="about-intro">
+    {{ . | markdownify }}
+</div>
+{{ end }}
+
+{{ with .Params.current }}
+<section class="about-section">
+    <h2>Current</h2>
+    {{ range . }}
+    <article class="about-entry">
+        {{ with .title }}<h3>{{ . }}</h3>{{ end }}
+        {{ with .details }}<div>{{ . | markdownify }}</div>{{ end }}
+    </article>
+    {{ end }}
+</section>
+{{ end }}
+
+{{ with .Params.experience }}
+<section class="about-section">
+    <h2>Experience</h2>
+    {{ range . }}
+    <article class="about-entry">
+        {{ with .title }}<h3>{{ . }}</h3>{{ end }}
+        {{ with .dates }}<time>{{ . }}</time>{{ end }}
+        {{ with .details }}<div>{{ . | markdownify }}</div>{{ end }}
+    </article>
+    {{ end }}
+</section>
+{{ end }}
+
+{{ with .Params.education }}
+<section class="about-section">
+    <h2>Education</h2>
+    {{ range . }}
+    <article class="about-entry">
+        {{ with .title }}<h3>{{ . }}</h3>{{ end }}
+        {{ with .details }}<div>{{ . | markdownify }}</div>{{ end }}
+    </article>
+    {{ end }}
+</section>
+{{ end }}
+
+<div class="content about-body">
     {{ .Content }}
 </div>
+
+{{ with .Params.resume_url }}
+<p class="about-resume"><a href="{{ . }}">Résumé</a></p>
+{{ end }}
 {{ end }}

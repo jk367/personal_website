@@ -2,30 +2,21 @@
 # shortcode handles ordering, so position in this file doesn't matter.
 #
 # To add a new poster:
-#   1. Upload to Cloudflare Images, copy the UUID
-#   2. Append 3 lines below
+#   1. Add either a Cloudflare Images UUID or a local image path
+#   2. Add the event page URL and accessible alt text
 #   3. Commit + push
 
-- date: 2024-10-18
-  cloudflare_id: 103ecd23-4e63-4f5b-f35c-a8a748bdc200
-  alt: stop1 October 18 poster
+- date: 2026-06-20
+  image: /images/events/stop1/2026-06-20-stop1-pride.webp
+  alt: stop1 Pride poster for June 20, 2026
+  url: /events/stop1/2026-06-20/
 
-- date: 2024-09-06
-  cloudflare_id: ab83b072-4625-45b6-eb1b-4f22eebf7500
-  alt: stop1 September 6 poster
+- date: 2026-04-18
+  image: /images/events/stop1/2026-04-18-stop1-xl.webp
+  alt: stop1 XL poster for April 18, 2026
+  url: /events/stop1/2026-04-18/
 
-- date: 2024-07-19
-  cloudflare_id: 9b564127-a560-4843-d9d1-f67c942a5500
-  alt: stop1 July 19 poster
-
-- date: 2024-05-24
-  cloudflare_id: b4b5c23d-4a78-4785-d65c-3d663665ca00
-  alt: stop1 May 24 poster
-
-- date: 2024-04-05
-  cloudflare_id: 8916af0d-c4a4-4288-38e2-13b44bd9a400
-  alt: stop1 April 5 poster
-
-- date: 2024-02-15
-  cloudflare_id: ecf582ad-a60c-4b43-e36c-65e8d1c08600
-  alt: stop1 February 15 poster
+- date: 2025-11-22
+  image: /images/events/stop1/2025-11-22-stop1-one-year.webp
+  alt: stop1 one year poster for November 22, 2025
+  url: /events/stop1/2025-11-22/

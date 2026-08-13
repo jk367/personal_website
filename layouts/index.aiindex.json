@@ -34,12 +34,14 @@
     {{- with .Params.series_alt_texts -}}
       {{- if gt (len .) 0 -}}{{- $entry = merge $entry (dict "coverAlt" (index . 0)) -}}{{- end -}}
     {{- end -}}
+    {{- with .Params.event_series -}}{{- $entry = merge $entry (dict "eventSeries" .) -}}{{- end -}}
+    {{- with .Params.poster_alt -}}{{- $entry = merge $entry (dict "posterAlt" .) -}}{{- end -}}
     {{- with .Params.soundcloud -}}{{- $entry = merge $entry (dict "soundcloud" .) -}}{{- end -}}
     {{- $items = $items | append $entry -}}
   {{- end -}}
 {{- end -}}
 {{- $sectionCounts := dict -}}
-{{- range (slice "writing" "photos" "portraits" "parties" "places") -}}
+{{- range (slice "events" "writing" "photos" "portraits" "parties" "places") -}}
   {{- $sectionCounts = merge $sectionCounts (dict . (len (where $.Site.RegularPages "Section" .))) -}}
 {{- end -}}
 {{- dict

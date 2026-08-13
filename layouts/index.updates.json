@@ -18,7 +18,9 @@
 {{- $portraits := where .Site.RegularPages "Section" "portraits" -}}
 {{- $parties := where .Site.RegularPages "Section" "parties" -}}
 {{- $places := where .Site.RegularPages "Section" "places" -}}
+{{- $events := where .Site.RegularPages "Section" "events" -}}
 {{- $stats := dict
+  "total_event_pages" (len $events)
   "total_photos" (len $photos)
   "total_writing_pieces" (len $writing)
   "total_portrait_galleries" (len $portraits)

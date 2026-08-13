@@ -9,6 +9,12 @@ build_dir = Pathname(ARGV.fetch(0)).realpath
 repo_dir = Pathname(ARGV.fetch(1)).realpath
 errors = []
 daily_haiku_item = nil
+poster_data = YAML.safe_load(
+  repo_dir.join("data/posters.yaml").read,
+  permitted_classes: [Date],
+  aliases: true
+) || []
+expected_stop1_editions = poster_data.length
 
 check = lambda do |condition, message|
   errors << message unless condition
@@ -68,6 +74,16 @@ if index && content
   gallery = index["items"].find { |item| item["url"].end_with?("/portraits/alyssa/") }
   check.call(gallery && gallery["imageCount"].to_i.positive?, "Compact AI index is missing gallery image counts")
   check.call(gallery && !gallery["coverImage"].to_s.empty?, "Compact AI index is missing gallery cover images")
+
+  event_editions = index["items"].select { |item| item["eventSeries"] == "stop1" }
+  check.call(event_editions.length == expected_stop1_editions, "AI index contains #{event_editions.length} stop1 editions instead of #{expected_stop1_editions}")
+  check.call(
+    event_editions.all? do |item|
+      !item["posterAlt"].to_s.empty? &&
+        (!item["coverImageCloudflareId"].to_s.empty? || !item["coverImage"].to_s.empty?)
+    end,
+    "AI index is missing stop1 poster metadata"
+  )
 end
 
 html_files = build_dir.glob("**/*.html")
@@ -90,6 +106,7 @@ check.call(!now_html.include?("No content found"), "/now/ fell through to the em
 music_html = build_dir.join("music/index.html").read
 check.call(music_html.include?("https://soundcloud.com/kettle9999/sets/mixes"), "Music HTML is missing a crawlable mixes URL")
 check.call(music_html.include?("https://soundcloud.com/kettle9999/sets/tracks"), "Music HTML is missing a crawlable tracks URL")
+check.call(!music_html.include?("103ecd23-4e63-4f5b-f35c-a8a748bdc200"), "Music still contains the stop1 poster archive")
 
 sitemap_dates = build_dir.join("sitemap.xml").read.scan(/<lastmod>([^<]+)/).flatten
 check.call(sitemap_dates.uniq.length > 10, "Sitemap modification dates collapsed to #{sitemap_dates.uniq.length} distinct values")
@@ -98,7 +115,7 @@ updates = parsed_json["updates.json"]
 if updates
   update_dates = updates["updates"].map { |item| item["lastModified"] }
   check.call(update_dates == update_dates.sort.reverse, "/updates.json is not sorted by modification date")
-  recent_titles = updates["updates"].first(3).map { |item| item["title"].to_s.strip }
+  recent_titles = updates["updates"].first(10).map { |item| item["title"].to_s.strip }
   check.call(recent_titles.include?("Daily Haiku"), "Daily Haiku is missing from the latest updates")
   check.call(recent_titles.include?("Music"), "Updated Music section is missing from the latest updates")
 end
@@ -107,6 +124,29 @@ home_html = build_dir.join("index.html").read
 check.call(home_html.include?("id=haiku-section") || home_html.include?("id=\"haiku-section\""), "Homepage haiku did not render")
 haiku_lines = home_html.scan(/class=(?:["'])?haiku-line(?:["'])?[^>]*>/).length
 check.call(haiku_lines == 3, "Homepage haiku rendered #{haiku_lines} lines instead of 3")
+featured_event_links = home_html.scan(%r{href=(?:["'])?/events/stop1/\d{4}-\d{2}-\d{2}/}).uniq
+check.call(featured_event_links.length == 3, "Homepage rendered #{featured_event_links.length} linked stop1 posters instead of 3")
+%w[Bassiani Why\ I\ Water\ My\ Plant This\ Trail\ Will\ End].each do |title|
+  check.call(home_html.include?(title), "Homepage selected writing is missing #{title}")
+end
+
+events_html = build_dir.join("events/index.html").read
+check.call(events_html.include?("/events/stop1/"), "Events landing page is missing stop1")
+stop1_html = build_dir.join("events/stop1/index.html").read
+stop1_links = stop1_html.scan(%r{href=(?:["'])?/events/stop1/\d{4}-\d{2}-\d{2}/}).uniq
+check.call(stop1_links.length == expected_stop1_editions, "stop1 archive rendered #{stop1_links.length} linked editions instead of #{expected_stop1_editions}")
+
+poster_data.each do |poster|
+  next if poster["image"].to_s.empty?
+  image_path = repo_dir.join("static", poster["image"].delete_prefix("/"))
+  check.call(image_path.file?, "Missing local stop1 poster: #{poster['image']}")
+end
+
+navigation = parsed_json["ai-nav.json"]
+if navigation
+  primary_names = navigation["primary"].map { |item| item["name"] }
+  check.call(primary_names.include?("Events"), "AI navigation is missing Events")
+end
 
 broken_links = []
 html_files.each do |path|

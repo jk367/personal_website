@@ -11,15 +11,9 @@ soundcloud:
 draft: false
 ---
 
-I make electronic music under the name Kettle. I've been making music since 2016, mostly electronic but sometimes venture into other genres. I try not to box myself into one genre but play music with a constant emotional throughline, which is the inspiration of my party, stop1, which I throw every 6ish weeks in Brooklyn.
+I make electronic music under the name Kettle. I've been making music since 2016, mostly electronic but sometimes venture into other genres. I try not to box myself into one genre but play music with a constant emotional throughline.
 
 I've played at Hellphone, Trans Pecos, The Stranger, Wiggle Room, Leftbank (Tbilisi), and Pluto's Records (Tbilisi).
-
-## stop1
-
-A warm, accessible, music-forward party for everyone. [@stop1nyc](https://instagram.com/stop1nyc).
-
-{{< poster-grid >}}
 
 ## Mixes
 <div class="soundcloud-lazy" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1959695677&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">

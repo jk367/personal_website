@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ $imagesAccount := .Site.Data.site.brand.cloudflare_images_account }}
+<article class="event-page">
+    <h1>{{ .Title }}</h1>
+
+    <div class="back-navigation">
+        {{ if eq .Params.event_series "stop1" }}
+            <a href="/events/stop1/" class="back-button">← Back to stop1</a>
+        {{ else }}
+            <a href="/events/" class="back-button">← Back to Events</a>
+        {{ end }}
+    </div>
+
+    {{ $posterSrc := .Params.poster_image }}
+    {{ with .Params.cover_image_cloudflare_id }}
+        {{ $posterSrc = printf "https://imagedelivery.net/%s/%s/full" $imagesAccount . }}
+    {{ end }}
+    {{ with $posterSrc }}
+    <figure class="event-poster-single">
+        <img src="{{ . }}"
+             alt="{{ $.Params.poster_alt | default $.Title }}"
+             fetchpriority="high">
+    </figure>
+    {{ end }}
+
+    {{ with .Content }}<div class="event-notes">{{ . }}</div>{{ end }}
+</article>
+{{ end }}

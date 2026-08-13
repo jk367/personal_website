@@ -57,21 +57,25 @@ home = ["HTML", "RSS", "JSON", "AIIndex", "AIContent", "AINav", "AIReadme", "AIS
     url = "/"
     weight = 1
   [[menu.main]]
+    name = "Events"
+    url = "/events/"
+    weight = 2
+  [[menu.main]]
     name = "Writing"
     url = "/writing/"
-    weight = 2
+    weight = 3
   [[menu.main]]
     name = "Photos"
     url = "/photos/"
-    weight = 3
+    weight = 4
   [[menu.main]]
     name = "Music"
     url = "/music/"
-    weight = 4
+    weight = 5
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 5
+    weight = 6
 
 [sitemap]
   changefreq = "monthly"

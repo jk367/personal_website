@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="events-page">
+    <h1>{{ .Title }}</h1>
+
+    <div class="back-navigation">
+        {{ if eq .RelPermalink "/events/stop1/" }}
+            <a href="/events/" class="back-button">← Back to Events</a>
+        {{ else }}
+            <a href="/" class="back-button">← Back to Home</a>
+        {{ end }}
+    </div>
+
+    {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+    {{ if eq .RelPermalink "/events/stop1/" }}
+        {{ partial "event-poster-grid.html" (dict "site" .Site "showDates" true "class" "event-poster-grid--archive") }}
+    {{ else }}
+        <section class="event-series">
+            <h2><a href="/events/stop1/" class="section-title">stop1</a></h2>
+            {{ partial "event-poster-grid.html" (dict "site" .Site "limit" 3 "showDates" false "class" "event-poster-grid--featured") }}
+        </section>
+
+        {{ $standaloneEvents := where .Pages "Kind" "page" }}
+        {{ with $standaloneEvents }}
+        <div class="event-list">
+            {{ range .ByDate.Reverse }}
+            {{ $event := . }}
+            <article class="event-list-item">
+                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                {{ with .Params.cover_image_cloudflare_id }}
+                <a href="{{ $event.RelPermalink }}" aria-label="{{ $event.Title }}">
+                    <img src="https://imagedelivery.net/{{ $event.Site.Data.site.brand.cloudflare_images_account }}/{{ . }}/griddisplay"
+                         alt="{{ $event.Params.poster_alt | default $event.Title }}"
+                         loading="lazy">
+                </a>
+                {{ end }}
+            </article>
+            {{ end }}
+        </div>
+        {{ end }}
+    {{ end }}
+</div>
+{{ end }}

@@ -1,7 +1,17 @@
 ---
 title: "About"
-lastmod: 2026-04-27
+lastmod: 2026-08-13
+# Optional structured sections supported by layouts/about/single.html:
+# intro: ""
+# current: []
+# experience: []
+# education: []
+# resume_url: ""
 ---
+
+I am a New York City-based multidisciplinary creative and event producer. I write, take photos, and produce and DJ electronic music. I also throw an electronic music event called Stop1 based in Brooklyn.
+
+All of my pursuits center around learning, documenting, and affecting how people exist in the world. I produce events chiefly with an understanding of how humans respond to spaces, stimuli, and social scenes. My photography focuses on capturing moments and the inner life of my subjects, and I produce music and DJ with the purpose of fostering connection with people on the dance floor.
 
 ## Bio <button class="sectionToggle" data-section="bio">Collapse bio</button>
 

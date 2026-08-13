@@ -1,0 +1,26 @@
+{{- $site := .site -}}
+{{- $limit := .limit | default 0 -}}
+{{- $showDates := .showDates | default false -}}
+{{- $class := .class | default "" -}}
+{{- $posters := sort $site.Data.posters "date" "desc" -}}
+{{- if gt $limit 0 -}}
+    {{- $posters = first $limit $posters -}}
+{{- end -}}
+<div class="event-poster-grid {{ $class }}">
+    {{- range $idx, $poster := $posters }}
+    {{- $imageSrc := $poster.image -}}
+    {{- with $poster.cloudflare_id -}}
+        {{- $imageSrc = printf "https://imagedelivery.net/%s/%s/full" $site.Data.site.brand.cloudflare_images_account . -}}
+    {{- end -}}
+    <article class="event-poster">
+        <a href="{{ $poster.url }}">
+            <img src="{{ $imageSrc }}"
+                 alt="{{ $poster.alt }}"
+                 {{ if eq $idx 0 }}fetchpriority="high"{{ else }}loading="lazy"{{ end }}>
+        </a>
+        {{ if $showDates }}
+        <time datetime="{{ $poster.date }}">{{ (time $poster.date).Format "January 2, 2006" }}</time>
+        {{ end }}
+    </article>
+    {{- end }}
+</div>
