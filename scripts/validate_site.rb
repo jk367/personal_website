@@ -126,7 +126,7 @@ haiku_lines = home_html.scan(/class=(?:["'])?haiku-line(?:["'])?[^>]*>/).length
 check.call(haiku_lines == 3, "Homepage haiku rendered #{haiku_lines} lines instead of 3")
 featured_event_links = home_html.scan(%r{href=(?:["'])?/events/stop1/\d{4}-\d{2}-\d{2}/}).uniq
 check.call(featured_event_links.length == 3, "Homepage rendered #{featured_event_links.length} linked stop1 posters instead of 3")
-%w[Bassiani Why\ I\ Water\ My\ Plant This\ Trail\ Will\ End].each do |title|
+%w[Bassiani 100\ Haikus Goodbye\ Georgia].each do |title|
   check.call(home_html.include?(title), "Homepage selected writing is missing #{title}")
 end
 
