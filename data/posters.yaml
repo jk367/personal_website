@@ -16,7 +16,47 @@
   alt: stop1 XL poster for April 18, 2026
   url: /events/stop1/2026-04-18/
 
+- date: 2026-02-28
+  image: /images/events/stop1/2026-02-28-stop1.webp
+  alt: stop1 poster for February 28, 2026
+  url: /events/stop1/2026-02-28/
+
+- date: 2025-12-14
+  image: /images/events/stop1/2025-12-14-stop1-showcase.webp
+  alt: stop1 Showcase poster for December 14, 2025
+  url: /events/stop1/2025-12-14/
+
 - date: 2025-11-22
   image: /images/events/stop1/2025-11-22-stop1-one-year.webp
   alt: stop1 one year poster for November 22, 2025
   url: /events/stop1/2025-11-22/
+
+- date: 2024-10-18
+  cloudflare_id: 103ecd23-4e63-4f5b-f35c-a8a748bdc200
+  alt: stop1 October 18 poster
+  url: /events/stop1/2024-10-18/
+
+- date: 2024-09-06
+  cloudflare_id: ab83b072-4625-45b6-eb1b-4f22eebf7500
+  alt: stop1 September 6 poster
+  url: /events/stop1/2024-09-06/
+
+- date: 2024-07-19
+  cloudflare_id: 9b564127-a560-4843-d9d1-f67c942a5500
+  alt: stop1 July 19 poster
+  url: /events/stop1/2024-07-19/
+
+- date: 2024-05-24
+  cloudflare_id: b4b5c23d-4a78-4785-d65c-3d663665ca00
+  alt: stop1 May 24 poster
+  url: /events/stop1/2024-05-24/
+
+- date: 2024-04-05
+  cloudflare_id: 8916af0d-c4a4-4288-38e2-13b44bd9a400
+  alt: stop1 April 5 poster
+  url: /events/stop1/2024-04-05/
+
+- date: 2024-02-15
+  cloudflare_id: ecf582ad-a60c-4b43-e36c-65e8d1c08600
+  alt: stop1 February 15 poster
+  url: /events/stop1/2024-02-15/
