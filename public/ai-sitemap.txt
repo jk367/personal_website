@@ -1,46 +1,46 @@
-J.M. KETTLE - AI SITEMAP
-========================
+J.M. KETTLE — AI SITEMAP
+=================================
+
+CANONICAL SITE: https://jmkettle.com/
 
 MAIN SECTIONS:
-- Photos: https://jmkettle.com/photos/ (Black & white photography)
+- Events: https://jmkettle.com/events/ — stop1 and other gatherings
+- Writing: https://jmkettle.com/writing/ — Essays, poetry, and daily haiku
+- Photos: https://jmkettle.com/photos/ — Black-and-white photography
   - Portraits: https://jmkettle.com/portraits/
   - Parties: https://jmkettle.com/parties/
   - Places: https://jmkettle.com/places/
+- Music: https://jmkettle.com/music/ — DJ mixes, original productions, and the stop1 Brooklyn party series
+- About: https://jmkettle.com/about/ — Biography and contact information
+- Now: https://jmkettle.com/now/ — What James is currently focused on
 
-- Writing: https://jmkettle.com/writing/ (Essays, poetry, haikus)
-  - Daily Haikus: https://jmkettle.com/writing/daily-haikus/
-  - 100 Haikus: https://jmkettle.com/writing/100-haikus/
-  - Bassiani: https://jmkettle.com/writing/bassiani/
-  - Goodbye Georgia: https://jmkettle.com/writing/reflections-on-georgia/
-  - Things I Love: https://jmkettle.com/writing/i-love/
-  - 24 Years: https://jmkettle.com/writing/24-years/
-  - Kick Drums and VSCO Girls: https://jmkettle.com/writing/kick-drums-and-vsco-girls/
+FEATURED WRITING:
+- Bassiani: https://jmkettle.com/writing/bassiani/ — A long-form essay about the Tbilisi techno club.
+- 100 Haikus: https://jmkettle.com/writing/100-haikus/ — A collection of 100 haikus.
+- Goodbye Georgia: https://jmkettle.com/writing/reflections-on-georgia/ — Reflections on leaving Georgia.
+- My Garden: https://jmkettle.com/writing/my-garden/ — A short essay on patience and meditation.
+- Remember I Am Here: https://jmkettle.com/writing/remember-i-am-here/ — A short essay on presence.
+- Daily Haiku: https://jmkettle.com/writing/daily-haikus/ — The cumulative daily-haiku project.
 
-- Music: https://jmkettle.com/music/ (Mixes, productions, stop1 party series)
+MACHINE-READABLE ENDPOINTS:
+- AI readme: https://jmkettle.com/ai-readme.json — Canonical identity, site structure, and assistant guidance
+- Full content: https://jmkettle.com/ai-content.json — Full plain-text content and metadata for every published page
+- Site index: https://jmkettle.com/ai-index.json — Compact index of every published page
+- Navigation: https://jmkettle.com/ai-nav.json — Primary and secondary site navigation
+- AI sitemap: https://jmkettle.com/ai-sitemap.txt — Plain-text site map
+- llms.txt: https://jmkettle.com/llms.txt — Concise human- and machine-readable guide
+- Updates: https://jmkettle.com/updates.json — Automatically generated recent-content feed and site statistics
 
-- About: https://jmkettle.com/about/
+CONTACT: contact@jmkettle.com
+Bandcamp: https://bandcamp.com/jmkettle
+Discogs: https://www.discogs.com/user/jkettle/collection
+Goodreads: https://www.goodreads.com/user/show/176910457-j-m-kettle
+Instagram: https://instagram.com/jmwkettle
+Soundcloud: https://soundcloud.com/kettle9999
+Substack: https://jmkettle.substack.com/
+Twitter: https://twitter.com/jmkettle
 
-DATA ENDPOINTS FOR AI:
-- Complete content index: https://jmkettle.com/ai-content.json
-- Site structure index: https://jmkettle.com/ai-index.json
-- Navigation data: https://jmkettle.com/ai-nav.json
-- AI readme: https://jmkettle.com/ai-readme.json
-- This sitemap: https://jmkettle.com/ai-sitemap.txt
+ABOUT:
+James grew up in NYC, studied economics, computer science, and sociology at Columbia and Sciences Po, and taught math in Tbilisi, Georgia for seven months in 2023. He returned to NYC in January 2024 and joined Faraday in November 2025 as Business Operations Manager. He still shoots black-and-white portraits, runs the stop1 party series in Brooklyn, and DJs under the name Kettle.
 
-CONTACT & SOCIAL:
-- Email: contact@jmkettle.com
-- SoundCloud: https://soundcloud.com/kettle9999
-- Goodreads: https://www.goodreads.com/user/show/176910457-j-m-kettle
-- Discogs: https://www.discogs.com/user/jkettle/collection
-- Substack: https://jmkettle.substack.com/
-- Bandcamp: https://bandcamp.com/jmkettle
-- Twitter/X: https://twitter.com/jmkettle
-- Instagram: https://instagram.com/jmwkettle
-
-ABOUT J.M. KETTLE:
-NYC-based photographer, writer, and musician specializing in black and white
-photography and electronic music. Work focuses on portraits, nightlife photography,
-poetry (especially haiku), and techno/electronic music production.
-
-KEY TOPICS: Black & white photography, Electronic music, Poetry, Haiku, Techno,
-Georgia (country), Nightlife, NYC, Creative writing, Party culture
+TOPICS: Black-and-white photography, Electronic music, Creative writing, Techno, Georgia (country), Poetry, Haiku, Nightlife photography, Travel photography
