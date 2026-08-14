@@ -6,6 +6,62 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**August 13, 2026**
+
+The day passed again
+
+Everyone came to dinner
+
+Kitchen is a mess
+
+**August 12, 2026**
+
+Red lights in my room
+
+Starring up at the ceiling
+
+What even happened
+
+**August 11, 2026**
+
+Staring at my screen
+
+Yet another day goes by
+
+Need to change my life
+
+**August 10, 2026**
+
+Posting from my phone
+
+The day passes by quickly
+
+Drinks with someone new
+
+**August 9, 2026**
+
+New hole in my shoe
+
+Convinced to go to the club
+
+Then dinner with family
+
+**August 8, 2026**
+
+Spilt pepto bismol
+
+Sweat on the back neck
+
+Bagel with brother
+
+**August 7, 2026**
+
+Then the house was clean
+
+We all got rained on the bridge
+
+A very late night
+
 **August 6, 2026**
 
 Wake up in a daze
