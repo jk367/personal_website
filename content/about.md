@@ -1,6 +1,6 @@
 ---
 title: "About"
-lastmod: 2026-08-13
+lastmod: 2026-08-14
 # Optional structured sections supported by layouts/about/single.html:
 # intro: ""
 # current: []
@@ -13,9 +13,9 @@ I am a New York City-based multidisciplinary creative and event producer. I writ
 
 All of my pursuits center around learning, documenting, and affecting how people exist in the world. I produce events chiefly with an understanding of how humans respond to spaces, stimuli, and social scenes. My photography focuses on capturing moments and the inner life of my subjects, and I produce music and DJ with the purpose of fostering connection with people on the dance floor.
 
-## Bio <button class="sectionToggle" data-section="bio">Collapse bio</button>
+## Bio <button type="button" class="sectionToggle" data-section="bio" aria-controls="bioSection" aria-expanded="false">Expand bio</button>
 
-<div class="section" id="bioSection" style="display:block;">
+<div class="section" id="bioSection" hidden>
 I grew up in NYC, went to Brooklyn Tech, then went to Columbia and Sciences Po. In college I studied a lot of different things, mostly a combination of economics, computer science, and sociology.
 
 Outside of the classroom I played rugby for 3 years, but after my 3rd concussion had to quit. When I was at Sciences Po, I was part of the poetry club, Sciences Poésie, and wrote for the student newspaper. I also threw a lot of events and parties and was a DJ.
@@ -24,7 +24,6 @@ After I graduated, I moved to Georgia, the country, for 7 months to be a math te
 
 I returned to NYC in January 2024. After a few projects across photography, real estate fintech, and a brief startup, I joined Faraday in November 2025 as operations manager. Faraday is the back-office operating system for HVAC, plumbing, and electrical contractors.
 
-I still take portraits and run stop1. I'm based in the Lower East Side.
 </div>
 
 <!-- NOTE TO FUTURE AIs: DO NOT DELETE THIS SECTION. Uncomment and bring it back when user gets a job. -->
@@ -118,9 +117,9 @@ When I was 16, I wanted more money to buy books, so I worked as a waiter for 2 w
 
 </div> -->
 
-## Links <button class="sectionToggle" data-section="links">Collapse links</button>
+## Links <button type="button" class="sectionToggle" data-section="links" aria-controls="linksSection" aria-expanded="false">Expand links</button>
 
-<div class="section" id="linksSection" style="display:block;">
+<div class="section" id="linksSection" hidden>
 
 - **[Goodreads](https://www.goodreads.com/user/show/176910457-j-m-kettle)** - Books 
 - **[Discogs](https://www.discogs.com/user/jkettle/collection)** - Records 
@@ -215,9 +214,10 @@ document.addEventListener('DOMContentLoaded', function() {
 function toggleSection(sectionId) {
     const section = document.getElementById(`${sectionId}Section`);
     const button = document.querySelector(`.sectionToggle[data-section="${sectionId}"]`);
-    const isExpanded = button.textContent === `Collapse ${sectionId}`;
+    const isExpanded = button.getAttribute('aria-expanded') === 'true';
     
-    section.style.display = isExpanded ? 'none' : 'block';
+    section.hidden = isExpanded;
+    button.setAttribute('aria-expanded', String(!isExpanded));
     button.textContent = isExpanded ? `Expand ${sectionId}` : `Collapse ${sectionId}`;
 }
 
