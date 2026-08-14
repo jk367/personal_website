@@ -2,32 +2,43 @@
 # shortcode handles ordering, so position in this file doesn't matter.
 #
 # To add a new poster:
-#   1. Add either a Cloudflare Images UUID or a local image path
-#   2. Add the event page URL and accessible alt text
-#   3. Commit + push
+#   1. Add either a Cloudflare Images UUID or local 480px/800px image paths
+#   2. Keep the original local image for social previews
+#   3. Add the event page URL and accessible alt text
+#   4. Commit + push
 
 - date: 2026-06-20
   image: /images/events/stop1/2026-06-20-stop1-pride.webp
+  image_small: /images/events/stop1/2026-06-20-stop1-pride-480.webp
+  image_medium: /images/events/stop1/2026-06-20-stop1-pride-800.webp
   alt: stop1 Pride poster for June 20, 2026
   url: /events/stop1/2026-06-20/
 
 - date: 2026-04-18
   image: /images/events/stop1/2026-04-18-stop1-xl.webp
+  image_small: /images/events/stop1/2026-04-18-stop1-xl-480.webp
+  image_medium: /images/events/stop1/2026-04-18-stop1-xl-800.webp
   alt: stop1 XL poster for April 18, 2026
   url: /events/stop1/2026-04-18/
 
 - date: 2026-02-28
   image: /images/events/stop1/2026-02-28-stop1.webp
+  image_small: /images/events/stop1/2026-02-28-stop1-480.webp
+  image_medium: /images/events/stop1/2026-02-28-stop1-800.webp
   alt: stop1 poster for February 28, 2026
   url: /events/stop1/2026-02-28/
 
 - date: 2025-12-14
   image: /images/events/stop1/2025-12-14-stop1-showcase.webp
+  image_small: /images/events/stop1/2025-12-14-stop1-showcase-480.webp
+  image_medium: /images/events/stop1/2025-12-14-stop1-showcase-800.webp
   alt: stop1 Showcase poster for December 14, 2025
   url: /events/stop1/2025-12-14/
 
 - date: 2025-11-22
   image: /images/events/stop1/2025-11-22-stop1-one-year.webp
+  image_small: /images/events/stop1/2025-11-22-stop1-one-year-480.webp
+  image_medium: /images/events/stop1/2025-11-22-stop1-one-year-800.webp
   alt: stop1 one year poster for November 22, 2025
   url: /events/stop1/2025-11-22/
 

@@ -12,12 +12,22 @@
     </div>
 
     {{ $posterSrc := .Params.poster_image }}
+    {{ $posterSmall := replaceRE `\.webp$` `-480.webp` $posterSrc }}
+    {{ $posterMedium := replaceRE `\.webp$` `-800.webp` $posterSrc }}
+    {{ $posterSmallWidth := "480w" }}
+    {{ $posterMediumWidth := "800w" }}
     {{ with .Params.cover_image_cloudflare_id }}
         {{ $posterSrc = printf "https://imagedelivery.net/%s/%s/full" $imagesAccount . }}
+        {{ $posterSmall = printf "https://imagedelivery.net/%s/%s/gridthumb" $imagesAccount . }}
+        {{ $posterMedium = printf "https://imagedelivery.net/%s/%s/griddisplay" $imagesAccount . }}
+        {{ $posterSmallWidth = "400w" }}
+        {{ $posterMediumWidth = "600w" }}
     {{ end }}
     {{ with $posterSrc }}
     <figure class="event-poster-single">
-        <img src="{{ . }}"
+        <img src="{{ $posterMedium }}"
+             srcset="{{ $posterSmall }} {{ $posterSmallWidth }}, {{ $posterMedium }} {{ $posterMediumWidth }}"
+             sizes="(max-width: 600px) calc(100vw - 1.25rem), 34rem"
              alt="{{ $.Params.poster_alt | default $.Title }}"
              fetchpriority="high">
     </figure>
