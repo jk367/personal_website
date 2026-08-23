@@ -6,6 +6,86 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**August 23, 2026**
+
+Chip crumbs on my shirt
+
+Shirt smells like beer and the sea
+
+Finally to bed
+
+**August 22, 2026**
+
+They say when in Rome
+
+Spent all night but no parking
+
+A misguided rave
+
+**August 21, 2026**
+
+Breakfast with the parents
+
+A long drive to the airport
+
+Can't sleep on the plane
+
+**August 20, 2026**
+
+Rain floods the city
+
+I forgot my umbrella
+
+Then soaked through my shirt
+
+**August 19, 2026**
+
+A boring office
+
+But the best party ever
+
+Then go to sleep late
+
+**August 18, 2026**
+
+The day slipped away
+
+Looking back i made a friend
+
+Saw my family too
+
+**August 17, 2026**
+
+Fold papers all day
+
+Movie with my brother
+
+A bottle of wine
+
+**August 16, 2026**
+
+Lunch with an old friend
+
+In the park with a slight rain
+
+At mansions with friends
+
+**August 15, 2026**
+
+Took lots of photos
+
+Then to a big house party
+
+Too late in the bar
+
+**August 14, 2026**
+
+Weather was perfect
+
+Bar club then another club
+
+It was a long night
+
 **August 13, 2026**
 
 The day passed again
