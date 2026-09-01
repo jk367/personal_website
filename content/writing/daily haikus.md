@@ -6,6 +6,70 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**August 31, 2026**
+
+Breakfast dinner than coffee
+
+Old friends come back in my life
+
+Sun sets orange lights
+
+**August 30, 2026**
+
+Woke up late again
+
+Walked around Paris alone
+
+Dinner is my treat
+
+**August 29, 2026**
+
+Dinner with old friend
+
+I'm again in a warehouse
+
+Again a party
+
+**August 28, 2026**
+
+Breakfast with parents
+
+Then a long journey alone
+
+Now back in Paris
+
+**August 27, 2026**
+
+Sun burns intensely
+
+Fine grain of sand in my shoe
+
+Rest my head last time
+
+**August 26, 2026**
+
+Another perfect beach
+
+Dinner with family again
+
+I will miss these days
+
+**August 25, 2026**
+
+A nap on the beach
+
+Chatting about past loves
+
+A drink with new friends
+
+**August 24, 2026**
+
+Hot sun in my eyes
+
+Children running on the sand
+
+Full fish for dinner
+
 **August 23, 2026**
 
 Chip crumbs on my shirt
