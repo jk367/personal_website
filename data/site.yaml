@@ -50,7 +50,7 @@ sections:
   - id: "events"
     name: "Events"
     url: "/events/"
-    description: "stop1 and other gatherings"
+    description: "The stop1 party series"
   - id: "writing"
     name: "Writing"
     url: "/writing/"
