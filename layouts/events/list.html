@@ -19,25 +19,6 @@
             <h2><a href="/events/stop1/" class="section-title">stop1</a></h2>
             {{ partial "event-poster-grid.html" (dict "site" .Site "limit" 3 "showDates" false "class" "event-poster-grid--featured") }}
         </section>
-
-        {{ $standaloneEvents := where .Pages "Kind" "page" }}
-        {{ with $standaloneEvents }}
-        <div class="event-list">
-            {{ range .ByDate.Reverse }}
-            {{ $event := . }}
-            <article class="event-list-item">
-                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                {{ with .Params.cover_image_cloudflare_id }}
-                <a href="{{ $event.RelPermalink }}" aria-label="{{ $event.Title }}">
-                    <img src="https://imagedelivery.net/{{ $event.Site.Data.site.brand.cloudflare_images_account }}/{{ . }}/griddisplay"
-                         alt="{{ $event.Params.poster_alt | default $event.Title }}"
-                         loading="lazy">
-                </a>
-                {{ end }}
-            </article>
-            {{ end }}
-        </div>
-        {{ end }}
     {{ end }}
 </div>
 {{ end }}
