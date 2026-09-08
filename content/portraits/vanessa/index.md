@@ -17,9 +17,9 @@ series_cloudflare_ids:
   - "9b59158e-1a5e-4e04-71e1-113a92174800"
   - "93c45fb3-7758-46ec-8e97-68f33a239000"
 series_alt_texts:
-  - "portrait of vanessa"
-  - "portrait of vanessa"
-  - "portrait of vanessa"
-  - "portrait of vanessa"
-  - "portrait of vanessa"
+  - "Vanessa reclining against pillows with hands resting over a light tank top"
+  - "Vanessa lying on the floor and turning to look up at the camera"
+  - "Close portrait of Vanessa against a light wall with a strong shadow"
+  - "Vanessa seated by a window with legs raised over a folding chair"
+  - "Vanessa looking up toward the camera in a light printed T-shirt"
 ---

@@ -1,0 +1,22 @@
+{{- $source := .src -}}
+{{- $image := index site.Data.image_delivery $source -}}
+{{- $srcset := slice -}}
+{{- $displaySource := $source -}}
+{{- with $image -}}
+    {{- range .variants -}}
+        {{- $srcset = $srcset | append (printf "%s %dw" .url (int .width)) -}}
+        {{- $displaySource = .url -}}
+    {{- end -}}
+    {{- $largest := index .variants (sub (len .variants) 1) -}}
+    {{- if gt .width $largest.width -}}
+        {{- $srcset = $srcset | append (printf "%s %dw" $source (int .width)) -}}
+    {{- end -}}
+{{- end -}}
+<img src="{{ $displaySource }}"
+     {{ with $srcset }}srcset="{{ delimit . ", " }}" sizes="{{ $.sizes | default "(max-width: 480px) calc(100vw - 1.25rem), (max-width: 600px) calc(100vw - 1.5rem), (max-width: 800px) calc(100vw - 2.5rem), 760px" }}"{{ end }}
+     {{ with $image }}width="{{ int .width }}" height="{{ int .height }}"{{ end }}
+     alt="{{ .alt }}"
+     {{ if .eager }}loading="eager"{{ else }}loading="lazy"{{ end }}
+     {{ if .priority }}fetchpriority="high"{{ end }}
+     decoding="async"
+     {{ with .fallback }}onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='{{ . }}'"{{ end }}>

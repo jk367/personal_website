@@ -17,9 +17,9 @@ series_cloudflare_ids:
   - "9566ed3e-2019-483d-19f6-df6c9003be00"
   - "ee188150-ca53-4ffe-547e-e2d4f63fc000"
 series_alt_texts:
-  - "portrait of magdalene"
-  - "portrait of magdalene"
-  - "portrait of magdalene"
-  - "portrait of magdalene"
-  - "portrait of magdalene"
+  - "Magdalene turning toward the camera with long hair partly covering the face"
+  - "Close portrait of Magdalene facing the camera against a dark backdrop"
+  - "Magdalene facing the camera in a thin-strapped top against a light backdrop"
+  - "Magdalene looking up at the camera in a strapless dark dress"
+  - "Magdalene with bare shoulders, facing the camera against a light wall"
 ---

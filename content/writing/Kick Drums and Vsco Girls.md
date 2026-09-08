@@ -2,7 +2,7 @@
 ---
 title: "Kick Drums and Vsco Girls"
 date: 2023-05-25T11:23:36+02:00
-writing_categories: ["nightlife"]
+writing_categories: ["essay", "nightlife"]
 draft: false
 
 ---

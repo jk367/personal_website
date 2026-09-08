@@ -1,0 +1,30 @@
+{{- $description := .Description -}}
+{{- if not $description -}}
+    {{- if .IsHome -}}
+        {{- $description = .Site.Data.site.identity.description -}}
+    {{- else if eq .Kind "404" -}}
+        {{- $description = "This page could not be found. Browse writing, photography, events, and music by J.M. Kettle." -}}
+    {{- else if eq .Kind "taxonomy" -}}
+        {{- $description = printf "Browse %s by J.M. Kettle." (partial "page-title.html" .) -}}
+    {{- else if eq .Kind "term" -}}
+        {{- $description = printf "Browse %s in %s by J.M. Kettle." .Title (replace .Data.Plural "_" " ") -}}
+    {{- else if .Params.series_images -}}
+        {{- $description = printf "%s: a %d-photograph %s series by J.M. Kettle." .Title (len .Params.series_images) (cond (eq .Section "portraits") "portrait" (cond (eq .Section "parties") "nightlife" "travel")) -}}
+    {{- else if .Params.alt -}}
+        {{- $description = printf "%s — %s. A photograph by J.M. Kettle." .Title .Params.alt -}}
+    {{- else if .Params.poster_alt -}}
+        {{- $description = printf "%s. Poster and event archive for the Stop1 party series in Brooklyn." .Params.poster_alt -}}
+    {{- else -}}
+        {{- range .Site.Data.site.sections -}}
+            {{- if eq .url $.RelPermalink -}}{{- $description = printf "%s by J.M. Kettle." .description -}}{{- end -}}
+        {{- end -}}
+        {{- range .Site.Data.site.featured_writing -}}
+            {{- if eq .url $.RelPermalink -}}{{- $description = printf "%s — %s By J.M. Kettle." .title .description -}}{{- end -}}
+        {{- end -}}
+        {{- if not $description -}}
+            {{- $text := partial "plain-content.html" . -}}
+            {{- $description = cond (ne $text "") $text (printf "%s by J.M. Kettle." .Title) -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+{{- return (replaceRE `\s+` " " $description | plainify | htmlUnescape | truncate 160) -}}

@@ -17,9 +17,9 @@ series_cloudflare_ids:
   - "fbe402d9-f194-4750-2685-955375736000"
   - "6945a48c-2792-47cd-84f0-c7748a985300"
 series_alt_texts:
-  - "portrait of marco"
-  - "portrait of marco"
-  - "portrait of marco"
-  - "portrait of marco"
-  - "portrait of marco"
+  - "Marco looking down in a buttoned leather jacket"
+  - "Marco facing the camera in a leather jacket, with one side of the face brightly lit"
+  - "Marco laughing with eyes closed against a dark backdrop"
+  - "Marco leaning forward with eyes lowered in a close portrait"
+  - "Marco leaning forward and looking toward the camera"
 ---

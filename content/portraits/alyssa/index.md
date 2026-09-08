@@ -17,9 +17,9 @@ series_cloudflare_ids:
   - "e09c7b6d-63c6-49bd-87d3-8ab7e3af1d00"
   - "54504fac-232a-4070-410f-87e9fa8ceb00"
 series_alt_texts:
-  - "portrait of alyssa"
-  - "portrait of alyssa"
-  - "portrait of alyssa"
-  - "portrait of alyssa"
-  - "portrait of alyssa"
+  - "Alyssa looking toward the camera with a tattooed forearm across the forehead"
+  - "Alyssa seated with one shoulder turned toward the camera"
+  - "Alyssa seated below the camera with a hand at the neck"
+  - "Alyssa looking up with a leopard-patterned jacket falling from the shoulders"
+  - "Alyssa standing in a dark tank top with eyes lowered"
 ---

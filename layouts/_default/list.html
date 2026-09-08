@@ -1,6 +1,9 @@
 {{ define "main" }}
+{{ if and (eq .Kind "term") (eq .Data.Plural "writing_categories") }}
+{{ partial "writing-list.html" . }}
+{{ else }}
 <div class="content-list">
-    <h1>{{ .Title }}</h1>
+    <h1>{{ partial "page-title.html" . }}</h1>
     
     {{ range .Pages }}
         <article class="list-item">
@@ -15,4 +18,5 @@
     {{ end }}
 </div>
 
+{{ end }}
 {{ end }}

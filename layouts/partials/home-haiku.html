@@ -15,7 +15,7 @@
   {{- if gt (len $selected) 4 -}}
     {{- $date := trim (index $selected 1) " " -}}
     <div class="featured-section" id="haiku-section" data-current="{{ eq $date $today }}">
-        <h2><a href="/writing/daily-haikus/" class="section-title">Daily Haiku</a></h2>
+        <h2><a href="/writing/daily-haikus/#haiku-{{ partial "haiku-date.html" $date }}" class="section-title">Daily Haiku</a></h2>
         <div class="haiku-date">{{ $date }}</div>
         <div class="haiku-content">
             {{- range (slice (index $selected 2) (index $selected 3) (index $selected 4)) }}

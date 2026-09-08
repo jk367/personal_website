@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require "date"
+require "digest"
 require "json"
 require "pathname"
 require "yaml"
@@ -104,9 +105,65 @@ check.call(now_html.include?("What I&rsquo;m focused on right now"), "/now/ did 
 check.call(!now_html.include?("No content found"), "/now/ fell through to the empty list template")
 
 music_html = build_dir.join("music/index.html").read
-check.call(music_html.include?("https://soundcloud.com/kettle9999/sets/mixes"), "Music HTML is missing a crawlable mixes URL")
-check.call(music_html.include?("https://soundcloud.com/kettle9999/sets/tracks"), "Music HTML is missing a crawlable tracks URL")
+check.call(music_html.include?("https://soundcloud.com/kettle9999/sets/j-m-kettle-mixes"), "Music HTML is missing a crawlable mixes URL")
+check.call(music_html.include?("https://soundcloud.com/kettle9999/sets/j-m-kettle-tracks"), "Music HTML is missing a crawlable tracks URL")
 check.call(!music_html.include?("103ecd23-4e63-4f5b-f35c-a8a748bdc200"), "Music still contains the stop1 poster archive")
+
+not_found = build_dir.join("404.html")
+check.call(not_found.file?, "Missing 404.html: Pages would serve the homepage for unknown routes")
+if not_found.file?
+  check.call(not_found.read.include?("Page not found"), "404 page does not explain the missing address")
+  check.call(not_found.read.match?(/name=["']?robots[^>]+noindex/), "404 page must not be indexed")
+end
+redirects = build_dir.join("_redirects")
+check.call(redirects.file? && redirects.read.include?("/projects/stop1/ /events/stop1/ 301"), "Legacy Stop1 route is missing its permanent redirect")
+
+essay_html = build_dir.join("writing_categories/essay/index.html").read
+%w[bassiani reflections-on-georgia 24-years kick-drums-and-vsco-girls].each do |slug|
+  check.call(essay_html.include?("/writing/#{slug}/"), "Essay category omits /writing/#{slug}/")
+end
+check.call(essay_html.match?(%r{href=["']?/writing_categories/essay/[^>]+aria-current}), "Essay filter does not expose its selected state")
+check.call(build_dir.join("photos/father_and_son/index.html").read.include?("My Georgian family"), "The authored father and son caption is hidden")
+
+image_manifest = JSON.parse(repo_dir.join("data/image_delivery.json").read)
+image_manifest.each do |source, metadata|
+  width, height = metadata.values_at("width", "height")
+  check.call(width.to_i.positive? && height.to_i.positive?, "Missing image dimensions for #{source}")
+  metadata.fetch("variants").each do |variant|
+    path = build_dir.join(variant.fetch("url").delete_prefix("/"))
+    check.call(path.file?, "Missing responsive image #{variant['url']}")
+    next unless path.file?
+    hash = Digest::SHA256.file(path).hexdigest[0, 20]
+    check.call(path.basename.to_s.start_with?(hash), "Image filename is not content-versioned: #{path}")
+    expected_height = (height.to_f * variant["width"] / width).round
+    check.call((variant["height"] - expected_height).abs <= 1, "Responsive image changes the composition: #{variant['url']}")
+    check.call(variant["width"] <= width, "Responsive image upscales its source: #{variant['url']}")
+  end
+end
+
+poster_data.each do |poster|
+  next unless poster["cloudflare_id"]
+  html = build_dir.join(poster["url"].delete_prefix("/"), "index.html").read
+  source = image_manifest.keys.find { |url| url.include?("/#{poster['cloudflare_id']}/full") }
+  check.call(!source.nil?, "Legacy poster is missing full-image metadata: #{poster['url']}")
+  check.call(!html.include?("/gridthumb") && !html.include?("/griddisplay"), "Legacy poster still uses a cropped thumbnail: #{poster['url']}")
+end
+
+descriptions = []
+html_files.each do |path|
+  html = path.read
+  next unless html.include?("ai:full-index") # Exclude standalone utilities and aliases.
+  description = html[/<meta name=["']?description["']? content=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/, 1]
+  descriptions << description if description
+  next if path.basename.to_s == "404.html"
+  check.call(html.include?("id=main-content") || html.include?("id=\"main-content\""), "Missing skip-link destination: #{path}")
+  if html.match?(/class=["']?(?:photo-series|single-photo)/)
+    html.scan(/<img\b[^>]*>/).each do |image|
+      check.call(image.match?(/\bwidth=["']?\d+/) && image.match?(/\bheight=["']?\d+/), "Unreserved photograph dimensions: #{path}")
+    end
+  end
+end
+check.call(descriptions.uniq.length > 40, "Page descriptions have collapsed to generic site copy")
 
 sitemap_dates = build_dir.join("sitemap.xml").read.scan(/<lastmod>([^<]+)/).flatten
 check.call(sitemap_dates.uniq.length > 10, "Sitemap modification dates collapsed to #{sitemap_dates.uniq.length} distinct values")
@@ -188,6 +245,11 @@ end
 
 daily_metadata = front_matter.call(repo_dir.join("content/writing/daily haikus.md"))
 expected_daily_lastmod = daily_metadata["lastmod"].to_s
+haiku_dates = repo_dir.join("content/writing/daily haikus.md").read.scan(/^\*\*([A-Za-z]+ \d{1,2}, \d{4})\*\*/).flatten.map { |date| Date.strptime(date, "%B %d, %Y") }
+check.call(Date.parse(expected_daily_lastmod) >= haiku_dates.max, "Daily Haiku lastmod is older than its newest poem")
+haiku_html = build_dir.join("writing/daily-haikus/index.html").read
+anchors = haiku_html.scan(/id=["']?(haiku-\d{4}-\d{2}-\d{2})/).flatten
+check.call(anchors.sort == haiku_dates.map { |date| "haiku-#{date.iso8601}" }.sort, "Haiku date anchors are missing or duplicated")
 if daily_haiku_item
   check.call(
     daily_haiku_item["lastModified"] == expected_daily_lastmod,

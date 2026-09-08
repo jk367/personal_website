@@ -1,7 +1,7 @@
 ---
 title: "Bassiani"
 date: 2023-07-18T11:23:36+02:00
-writing_categories: ["nightlife", "georgia"]
+writing_categories: ["essay", "nightlife", "georgia"]
 draft: false
 
 ---

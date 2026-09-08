@@ -1,0 +1,13 @@
+{{- $title := trim .Title " " -}}
+{{- if eq .Kind "taxonomy" -}}
+    {{- $title = cond (eq .Data.Plural "writing_categories") "Writing categories" "Photo categories" -}}
+{{- else if eq .Kind "term" -}}
+    {{- $title = printf "%s — %s" $title (cond (eq .Data.Plural "writing_categories") "Writing" "Photography") -}}
+{{- else if and (eq .Kind "page") (eq .Section "photos") -}}
+    {{- $title = printf "%s — Photograph" $title -}}
+{{- else if .Params.series_images -}}
+    {{- $title = printf "%s — %s series" $title (cond (eq .Section "portraits") "Portrait" (cond (eq .Section "parties") "Nightlife" "Travel")) -}}
+{{- else if .Params.event_series -}}
+    {{- $title = printf "%s — Stop1" $title -}}
+{{- end -}}
+{{- return $title -}}

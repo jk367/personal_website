@@ -1,4 +1,6 @@
 {{- $siteData := .Site.Data.site -}}
+{{- $description := partial "page-description.html" . -}}
+{{- $pageTitle := partial "page-title.html" . -}}
 {{- $sectionNames := slice -}}
 {{- range $siteData.sections -}}{{- $sectionNames = $sectionNames | append .name -}}{{- end -}}
 <!DOCTYPE html>
@@ -6,12 +8,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ .Description | default $siteData.identity.description }}">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="description" content="{{ $description }}">
+    <meta name="robots" content="{{ if eq .Kind "404" }}noindex, follow{{ else }}index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1{{ end }}">
     <meta name="theme-color" content="#ffffff">
     <meta name="author" content="{{ $siteData.identity.publishing_name }}">
     {{ if .Keywords }}<meta name="keywords" content="{{ delimit .Keywords ", " }}">{{ end }}
-    <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ $siteData.identity.publishing_name }}</title>
+    <title>{{ if $pageTitle }}{{ $pageTitle }} - {{ end }}{{ $siteData.identity.publishing_name }}</title>
 
     <!-- AI Assistant Hints (invisible to users) -->
     <meta name="ai:site-structure" content="{{ delimit $sectionNames ", " }}">
@@ -23,8 +25,8 @@
     <!-- OpenGraph Meta Tags -->
     <meta property="og:site_name" content="{{ $siteData.identity.publishing_name }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ if .Title }}{{ .Title }} - {{ end }}{{ $siteData.identity.publishing_name }}">
-    <meta property="og:description" content="{{ .Description | default $siteData.identity.description }}">
+    <meta property="og:title" content="{{ if $pageTitle }}{{ $pageTitle }} - {{ end }}{{ $siteData.identity.publishing_name }}">
+    <meta property="og:description" content="{{ $description }}">
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:locale" content="en_US">
     {{/* Social preview image: page's own photo if it has one, site-wide default otherwise */}}
@@ -34,9 +36,9 @@
     {{ else if .Params.cover_image_cloudflare_id }}
         {{ $ogImage = printf "https://imagedelivery.net/%s/%s/public" $siteData.brand.cloudflare_images_account .Params.cover_image_cloudflare_id }}
     {{ else if .Params.cover_image }}
-        {{ $ogImage = .Params.cover_image }}
+        {{ $ogImage = .Params.cover_image | absURL }}
     {{ else if .Params.image }}
-        {{ $ogImage = .Params.image }}
+        {{ $ogImage = .Params.image | absURL }}
     {{ end }}
     <meta property="og:image" content="{{ $ogImage }}">
 
@@ -44,8 +46,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="{{ $siteData.social_handles.twitter }}">
     <meta name="twitter:creator" content="{{ $siteData.social_handles.twitter }}">
-    <meta name="twitter:title" content="{{ if .Title }}{{ .Title }} - {{ end }}{{ $siteData.identity.publishing_name }}">
-    <meta name="twitter:description" content="{{ .Description | default $siteData.identity.description }}">
+    <meta name="twitter:title" content="{{ if $pageTitle }}{{ $pageTitle }} - {{ end }}{{ $siteData.identity.publishing_name }}">
+    <meta name="twitter:description" content="{{ $description }}">
     <meta name="twitter:image" content="{{ $ogImage }}">
 
     <!-- AI-readable structured data endpoints -->
@@ -73,14 +75,15 @@
     <!-- Schema.org structured data -->
     {{ partial "structured-data.html" . }}
 </head>
-<body>
+<body id="top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
                 {{ $currentPage := . }}
                 {{ range site.Menus.main }}
                     <li>
-                        <a href="{{ .URL }}" {{ if $currentPage.IsMenuCurrent "main" . }}style="font-weight: bold;" aria-current="page"{{ end }}>
+                        <a href="{{ .URL }}" {{ if eq $currentPage.RelPermalink .URL }}aria-current="page"{{ else if or (and (eq .URL "/photos/") (in (slice "photos" "portraits" "parties" "places" "categories") $currentPage.Section)) (and (eq .URL "/writing/") (in (slice "writing" "writing_categories") $currentPage.Section)) (and (ne .URL "/") (hasPrefix $currentPage.RelPermalink .URL)) }}aria-current="location"{{ end }}>
                             {{ .Name }}
                         </a>
                     </li>
@@ -95,14 +98,14 @@
     </header>
     
     <div class="container">
-        <main>
+        <main id="main-content" tabindex="-1">
             {{ block "main" . }}{{ end }}
         </main>
     </div>
 
     <footer>
         <p>
-            <a href="#" id="backToTopLink">back to top</a>
+            <a href="#top" id="backToTopLink">back to top</a>
         </p>
         <p>&copy; {{ now.Year }} <a href="/" class="footer-link">{{ $siteData.identity.publishing_name }}</a>
             <a href="{{ $siteData.social.substack }}" class="footer-link social-icon" target="_blank" rel="noopener noreferrer" title="Substack" aria-label="Substack">
@@ -122,22 +125,5 @@
             </a>
         </p>
     </footer>
-
-    <script>
-        // Combine scripts to reduce parsing overhead
-        (function() {
-            // Back to top functionality
-            document.addEventListener('DOMContentLoaded', function() {
-                var backToTop = document.getElementById('backToTopLink');
-                if (backToTop) {
-                    backToTop.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        window.scrollTo({top: 0, behavior: 'smooth'});
-                    });
-                }
-            });
-
-        })();
-    </script>
 </body>
 </html>

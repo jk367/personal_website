@@ -1,6 +1,6 @@
 ---
 title: "About"
-lastmod: 2026-08-14
+lastmod: 2026-09-08
 # Optional structured sections supported by layouts/about/single.html:
 # intro: ""
 # current: []
@@ -125,7 +125,7 @@ When I was 16, I wanted more money to buy books, so I worked as a waiter for 2 w
 - **[Discogs](https://www.discogs.com/user/jkettle/collection)** - Records 
 - **[Substack](https://jmkettle.substack.com/)** - Substack 
 - **[SoundCloud](https://soundcloud.com/kettle9999)** - Music
-- **[BandCamp](https://bandcamp.com/jmkettle)** - Tracks
+- **[Bandcamp](https://bandcamp.com/jmkettle)** - Collection
 
 </div>
 
@@ -135,8 +135,9 @@ If you want to get in touch, you can email me at contact@jmkettle.com
 <div style="text-align: center;">
     <img src="https://imagedelivery.net/AdXrFVpOozxXjKClzp0UEQ/8a0c2ad5-745a-49fb-0f7c-629e51ce6300/full"
          alt="Business Card"
+         width="621" height="823" loading="lazy"
          style="max-width: 50%; height: auto; display: inline-block;"
-         onerror="this.src='https://photos.jmkettle.com/business_card.jpeg'">
+         onerror="this.onerror=null; this.src='https://photos.jmkettle.com/business_card.jpeg'">
 </div>
 
 <style>
@@ -196,6 +197,8 @@ If you want to get in touch, you can email me at contact@jmkettle.com
         border-bottom: 1px solid black;
     }
 </style>
+
+<noscript><style>.section[hidden] { display: block; } .sectionToggle { display: none; }</style></noscript>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {

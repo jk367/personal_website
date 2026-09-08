@@ -17,9 +17,9 @@ series_cloudflare_ids:
   - "150ec36f-cef0-4129-9e08-f97e5e2d8300"
   - "a5fc2907-ee7a-41f1-da39-6d259c924400"
 series_alt_texts:
-  - "portrait of charlie"
-  - "portrait of charlie"
-  - "portrait of charlie"
-  - "portrait of charlie"
-  - "portrait of charlie"
+  - "Charlie seen from behind, with bare shoulders against the sky and sea"
+  - "Charlie drinking from a bottle in profile by the sea"
+  - "Charlie walking out of the water beside rocks"
+  - "Charlie brushing a hand through wet hair on a rocky shore"
+  - "Charlie reclining shirtless on sunlit rocks"
 ---

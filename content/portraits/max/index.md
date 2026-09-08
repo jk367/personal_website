@@ -18,9 +18,9 @@ series_cloudflare_ids:
   - "c112008d-2629-44f5-4437-6b5e0581a800"
   - "8bdcb068-176c-465b-02c8-a9e5f1b6cd00"
 series_alt_texts:
-  - "portrait of max"
-  - "portrait of max"
-  - "portrait of max"
-  - "portrait of max"
-  - "portrait of max"
+  - "Max standing with hands on hips at the edge of a bay filled with boats"
+  - "Max looking to one side beneath trees by the shore"
+  - "Close view of Max’s bare back with flecks of sand on the skin"
+  - "Max seated on a sofa in a white tank top, holding a phone"
+  - "Max seen from behind leaning out of an open window toward the street"
 ---

@@ -17,9 +17,9 @@ series_cloudflare_ids:
   - "6fd30139-9983-4af3-0201-e76565557a00"
   - "f1040e7a-9949-45aa-3126-3eb0a831f000"
 series_alt_texts:
-  - "portrait of gotho"
-  - "portrait of gotho"
-  - "portrait of gotho"
-  - "portrait of gotho"
-  - "portrait of gotho"
+  - "Gotho resting beside a pole with tattooed arms raised around it"
+  - "Close view of Gotho’s tattooed legs and black lace beside a pole"
+  - "Close view of lace clothing and a lettering tattoo across Gotho’s abdomen"
+  - "Gotho’s raised legs in glittering platform heels"
+  - "Close portrait of Gotho facing the camera, with tattoos visible at the shoulders"
 ---

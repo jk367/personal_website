@@ -35,7 +35,7 @@
     "publisher" (dict "@type" "Person" "name" $siteData.identity.publishing_name "url" $siteData.identity.url)
     "url" .Permalink
     "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
-    "description" (.Description | default (.Summary | plainify))
+    "description" (partial "page-description.html" .)
     "wordCount" .WordCount
     "keywords" (.Params.writing_categories | default (slice))
   -}}

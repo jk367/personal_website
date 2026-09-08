@@ -32,14 +32,8 @@
         {{ range $idx, $photo := first 3 (shuffle $photoPages) }}
             <div class="photo-item">
                 <a href="{{ .Permalink }}">
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="https://imagedelivery.net/{{ $imagesAccount }}/{{ .Params.cloudflare_id }}/gridthumb">
-                        <img src="https://imagedelivery.net/{{ $imagesAccount }}/{{ .Params.cloudflare_id }}/gridthumb"
-                             width="600"
-                             height="400"
-                             alt="{{ .Params.alt | default .Title }}"
-                             {{ if eq $idx 0 }}fetchpriority="high" loading="eager"{{ else }}loading="lazy"{{ end }}>
-                    </picture>
+            {{ $source := printf "https://imagedelivery.net/%s/%s/full" $imagesAccount .Params.cloudflare_id }}
+            {{ partial "responsive-image.html" (dict "src" $source "alt" (.Params.alt | default .Title) "eager" (eq $idx 0) "priority" (eq $idx 0) "sizes" "(max-width: 480px) calc(100vw - 1.25rem), (max-width: 600px) calc(100vw - 1.5rem), 250px") }}
                 </a>
             </div>
         {{ else }}

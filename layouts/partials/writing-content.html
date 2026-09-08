@@ -1,0 +1,9 @@
+{{- $content := .Content -}}
+{{- if eq .RelPermalink "/writing/daily-haikus/" -}}
+    {{- range findRESubmatch `<p><strong>([A-Za-z]+ [0-9]{1,2}, [0-9]{4})</strong></p>` $content -}}
+        {{- $date := partial "haiku-date.html" (index . 1) -}}
+        {{- $replacement := printf `<p id="haiku-%s"><strong>%s</strong></p>` $date (index . 1) -}}
+        {{- $content = replace $content (index . 0) $replacement -}}
+    {{- end -}}
+{{- end -}}
+{{- return ($content | safeHTML) -}}
