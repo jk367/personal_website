@@ -6,6 +6,62 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**September 7, 2026**
+
+Long walk then a drink
+
+Open up to an old friend
+
+Too much Chinese food
+
+**September 6, 2026**
+
+Very slow morning
+
+Then to a party again
+
+Really need to sleep
+
+**September 5, 2026**
+
+Coffee with a friend
+
+Spent the day without my phone
+
+End with a party
+
+**September 4, 2026**
+
+Computer stayed on
+
+Didn't type a single word
+
+The day is over
+
+**September 3, 2026**
+
+The office again
+
+Soft light sneaks from the window
+
+Pain under my eye
+
+**September 2, 2026**
+
+Now reality
+
+And the office looks the same
+
+Too much wine with friends
+
+**September 1, 2026**
+
+A quiche and croissant
+
+Then eight hours on a plane
+
+Dinner with old friends
+
 **August 31, 2026**
 
 Breakfast dinner than coffee
