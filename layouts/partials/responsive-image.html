@@ -1,22 +1,24 @@
 {{- $source := .src -}}
 {{- $image := index site.Data.image_delivery $source -}}
 {{- $srcset := slice -}}
+{{- $avifSrcset := slice -}}
+{{- $sizes := .sizes | default "(max-width: 480px) calc(100vw - 1.25rem), (max-width: 600px) calc(100vw - 1.5rem), (max-width: 800px) calc(100vw - 2.5rem), 760px" -}}
 {{- $displaySource := $source -}}
 {{- with $image -}}
     {{- range .variants -}}
         {{- $srcset = $srcset | append (printf "%s %dw" .url (int .width)) -}}
-        {{- $displaySource = .url -}}
-    {{- end -}}
-    {{- $largest := index .variants (sub (len .variants) 1) -}}
-    {{- if gt .width $largest.width -}}
-        {{- $srcset = $srcset | append (printf "%s %dw" $source (int .width)) -}}
+        {{- $avifSrcset = $avifSrcset | append (printf "%s %dw" .avif_url (int .width)) -}}
+        {{- if le .width 800 -}}{{- $displaySource = .url -}}{{- end -}}
     {{- end -}}
 {{- end -}}
+<picture>
+{{ with $avifSrcset }}<source type="image/avif" srcset="{{ delimit . ", " }}" sizes="{{ $sizes }}">{{ end }}
 <img src="{{ $displaySource }}"
-     {{ with $srcset }}srcset="{{ delimit . ", " }}" sizes="{{ $.sizes | default "(max-width: 480px) calc(100vw - 1.25rem), (max-width: 600px) calc(100vw - 1.5rem), (max-width: 800px) calc(100vw - 2.5rem), 760px" }}"{{ end }}
+     {{ with $srcset }}srcset="{{ delimit . ", " }}" sizes="{{ $sizes }}"{{ end }}
      {{ with $image }}width="{{ int .width }}" height="{{ int .height }}"{{ end }}
      alt="{{ .alt }}"
      {{ if .eager }}loading="eager"{{ else }}loading="lazy"{{ end }}
      {{ if .priority }}fetchpriority="high"{{ end }}
      decoding="async"
-     {{ with .fallback }}onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='{{ . }}'"{{ end }}>
+     {{ with .fallback }}onerror="this.onerror=null; this.parentElement.querySelectorAll('source').forEach(source => source.remove()); this.removeAttribute('srcset'); this.src='{{ . }}'"{{ end }}>
+</picture>

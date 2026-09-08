@@ -129,12 +129,15 @@ image_manifest = JSON.parse(repo_dir.join("data/image_delivery.json").read)
 image_manifest.each do |source, metadata|
   width, height = metadata.values_at("width", "height")
   check.call(width.to_i.positive? && height.to_i.positive?, "Missing image dimensions for #{source}")
+  check.call(metadata.fetch("variants").last.fetch("width") == [width, 1600].min, "Missing optimized high-density image for #{source}")
   metadata.fetch("variants").each do |variant|
-    path = build_dir.join(variant.fetch("url").delete_prefix("/"))
-    check.call(path.file?, "Missing responsive image #{variant['url']}")
-    next unless path.file?
-    hash = Digest::SHA256.file(path).hexdigest[0, 20]
-    check.call(path.basename.to_s.start_with?(hash), "Image filename is not content-versioned: #{path}")
+    %w[url avif_url].each do |format_key|
+      path = build_dir.join(variant.fetch(format_key).delete_prefix("/"))
+      check.call(path.file?, "Missing responsive image #{variant[format_key]}")
+      next unless path.file?
+      hash = Digest::SHA256.file(path).hexdigest[0, 20]
+      check.call(path.basename.to_s.start_with?(hash), "Image filename is not content-versioned: #{path}")
+    end
     expected_height = (height.to_f * variant["width"] / width).round
     check.call((variant["height"] - expected_height).abs <= 1, "Responsive image changes the composition: #{variant['url']}")
     check.call(variant["width"] <= width, "Responsive image upscales its source: #{variant['url']}")
@@ -153,6 +156,11 @@ descriptions = []
 html_files.each do |path|
   html = path.read
   next unless html.include?("ai:full-index") # Exclude standalone utilities and aliases.
+  html.scan(/\bsrcset=(?:"([^"]*)"|'([^']*)')/).each do |captures|
+    captures.compact.first.split(",").each do |candidate|
+      check.call(candidate.strip.start_with?("/images/optimized/"), "Unoptimized original in responsive image candidates: #{path}")
+    end
+  end
   description = html[/<meta name=["']?description["']? content=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/, 1]
   descriptions << description if description
   next if path.basename.to_s == "404.html"
@@ -178,6 +186,8 @@ if updates
 end
 
 home_html = build_dir.join("index.html").read
+check.call(home_html.scan(/\bfetchpriority=["']?high/).length == 1, "Homepage images compete with the opening poster for high priority")
+check.call(home_html.scan(/\bloading=["']?eager/).length == 1, "Homepage eagerly loads images below the opening poster")
 check.call(home_html.include?("id=haiku-section") || home_html.include?("id=\"haiku-section\""), "Homepage haiku did not render")
 haiku_lines = home_html.scan(/class=(?:["'])?haiku-line(?:["'])?[^>]*>/).length
 check.call(haiku_lines == 3, "Homepage haiku rendered #{haiku_lines} lines instead of 3")

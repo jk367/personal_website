@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh checked-in responsive images and dimensions. Requires Pillow and Ruby.
+"""Refresh responsive images and dimensions. Requires Pillow with AVIF and Ruby.
 
 Run after adding/changing image metadata, never during deployment. Downloads are
 cached outside the repository; Hugo builds remain offline and reproducible.
@@ -14,7 +14,7 @@ import subprocess
 import tempfile
 from urllib.parse import urlparse
 
-from PIL import Image, ImageOps
+from PIL import Image, ImageOps, features
 
 ROOT = Path(__file__).resolve().parents[1]
 RUBY_METADATA = r'''
@@ -35,6 +35,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--refresh", action="store_true", help="Download sources again")
     args = parser.parse_args()
+    if not features.check("avif"):
+        parser.error("Pillow must include AVIF support to generate both image formats")
     metadata = json.loads(subprocess.check_output(["ruby", "-e", RUBY_METADATA], cwd=ROOT))
     account = metadata["account"]
     cloudflare = lambda image_id, variant="full": f"https://imagedelivery.net/{account}/{image_id}/{variant}"
@@ -78,14 +80,20 @@ def main():
         photo.load()
         width, height = photo.size
         variants = []
-        for target in sorted({min(width, 480), min(width, 800)}):
+        for target in sorted({min(width, size) for size in (480, 800, 1200, 1600)}):
             resized = photo.resize((target, round(height * target / width)), Image.Resampling.LANCZOS)
-            encoded = io.BytesIO()
-            resized.save(encoded, "WEBP", quality=90, method=6)
-            payload = encoded.getvalue()
-            filename = f"{hashlib.sha256(payload).hexdigest()[:20]}-{target}.webp"
-            (output / filename).write_bytes(payload)
-            variants.append({"url": f"/images/optimized/{filename}", "width": target, "height": resized.height})
+            variant = {"width": target, "height": resized.height}
+            for image_format, options, key in (
+                ("WEBP", {"quality": 78, "method": 6}, "url"),
+                ("AVIF", {"quality": 60, "speed": 6, "max_threads": 1}, "avif_url"),
+            ):
+                encoded = io.BytesIO()
+                resized.save(encoded, image_format, **options)
+                payload = encoded.getvalue()
+                filename = f"{hashlib.sha256(payload).hexdigest()[:20]}-{target}.{image_format.lower()}"
+                (output / filename).write_bytes(payload)
+                variant[key] = f"/images/optimized/{filename}"
+            variants.append(variant)
         return source, {"width": width, "height": height, "variants": variants}
 
     results = {}
