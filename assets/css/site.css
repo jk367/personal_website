@@ -190,6 +190,10 @@ picture img {
     transition: transform 0.3s ease;
 }
 
+.photo-grid picture {
+    height: 100%;
+}
+
 .photo-grid a:hover img {
     transform: scale(1.02);
 }
@@ -442,6 +446,10 @@ article:last-child {
 
 .event-poster a:hover img {
     transform: scale(1.015);
+}
+
+.homepage-events .event-poster:nth-child(2) img {
+    object-fit: cover;
 }
 
 .event-poster time {

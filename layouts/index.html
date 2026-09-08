@@ -33,7 +33,7 @@
             <div class="photo-item">
                 <a href="{{ .Permalink }}">
             {{ $source := printf "https://imagedelivery.net/%s/%s/full" $imagesAccount .Params.cloudflare_id }}
-            {{ partial "responsive-image.html" (dict "src" $source "alt" (.Params.alt | default .Title) "eager" (eq $idx 0) "priority" (eq $idx 0) "sizes" "(max-width: 480px) calc(100vw - 1.25rem), (max-width: 600px) calc(100vw - 1.5rem), 250px") }}
+            {{ partial "responsive-image.html" (dict "src" $source "alt" (.Params.alt | default .Title) "sizes" "(max-width: 480px) calc(100vw - 1.25rem), (max-width: 600px) calc(100vw - 1.5rem), 250px") }}
                 </a>
             </div>
         {{ else }}

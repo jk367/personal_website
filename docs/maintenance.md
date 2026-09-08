@@ -30,11 +30,13 @@ After adding or replacing an image, run:
 python3 scripts/prepare_images.py
 ```
 
-This command requires Python with Pillow, Ruby, curl, and network access. It reads published content, downloads image sources to the system temporary directory, and writes uncropped 480px/800px WebP versions plus measured dimensions. Original gallery covers are resized from the existing cover source to preserve their composition. Pre-cropped Cloudflare covers retain their existing crop. Larger displays can select the original source from `srcset`.
+This command requires Python with AVIF-enabled Pillow, Ruby, curl, and network access. It reads published content, downloads image sources to the system temporary directory, and writes uncropped 480px/800px/1200px/1600px versions, capped at the source width. AVIF at quality 60 is preferred, with WebP at quality 78 as the browser fallback. Original gallery covers are resized from the existing cover source to preserve their composition. Pre-cropped Cloudflare covers retain their existing crop. Only optimized files belong in `srcset`: offering a large original caused high-density phones to download oversized files.
 
 Use `--refresh` if an image was replaced at the same source URL. Every generated variant has a content hash in its filename, making the one-year immutable cache safe. Commit the generated manifest and its referenced files together. Normal Hugo builds require no image downloads, Python packages, or Cloudflare account settings. Do not remove old image files unless you have confirmed they are unreferenced and no longer need to support a cached page.
 
-Check detail pages at mobile and desktop widths. Posters must include all printed information. Grids may frame photographs using their existing CSS; full detail pages must preserve the complete source proportions. Prefer original art over automatic re-cropping.
+Check detail pages at mobile and desktop widths. Poster detail pages must include all printed information. The second homepage poster fills its frame with an approved CSS crop; archive posters retain their complete composition. Grids may frame photographs using their existing CSS; full detail pages must preserve the complete source proportions. Prefer original art over automatic re-cropping.
+
+Only the opening homepage poster loads eagerly with high priority; the photographs farther down use native lazy loading. Check mobile performance with Lighthouse at both the default pixel density and 3x density, recording image bytes and Largest Contentful Paint. Use the same deployment and test conditions for comparisons; the homepage photographs shuffle between builds, so total page bytes can change with the selection. Inspect the resulting images as well as the score.
 
 ## Writing and haikus
 
