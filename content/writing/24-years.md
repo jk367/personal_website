@@ -1,7 +1,7 @@
 ---
 title: "24 Years - Some Reflections"
 date: 2023-11-20T11:23:36+02:00
-writing_categories: ["philosophy"]
+writing_categories: ["essay", "philosophy"]
 draft: false
 
 ---

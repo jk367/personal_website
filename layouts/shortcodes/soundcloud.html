@@ -1,0 +1,8 @@
+{{- $kind := .Get "kind" -}}
+{{- $settings := .Page.Params.soundcloud -}}
+{{- $url := index $settings (printf "%s_url" $kind) -}}
+{{- $playlist := index $settings (printf "%s_playlist_id" $kind) -}}
+<div class="soundcloud-lazy" data-title="Kettle — {{ title $kind }} on SoundCloud" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $playlist }}&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=false">
+    <div class="soundcloud-placeholder"><p>Loading…</p></div>
+    <p class="soundcloud-direct"><a href="{{ $url }}">Listen to {{ $kind }} on SoundCloud</a></p>
+</div>

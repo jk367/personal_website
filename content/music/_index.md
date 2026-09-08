@@ -1,12 +1,12 @@
 ---
 title: "Music"
 date: 2024-07-30T11:23:36+02:00
-lastmod: 2026-08-12
+lastmod: 2026-09-08
 soundcloud:
   artist_url: "https://soundcloud.com/kettle9999"
-  mixes_url: "https://soundcloud.com/kettle9999/sets/mixes"
+  mixes_url: "https://soundcloud.com/kettle9999/sets/j-m-kettle-mixes"
   mixes_playlist_id: 1959695677
-  tracks_url: "https://soundcloud.com/kettle9999/sets/tracks"
+  tracks_url: "https://soundcloud.com/kettle9999/sets/j-m-kettle-tracks"
   tracks_playlist_id: 1959698237
 draft: false
 ---
@@ -16,67 +16,7 @@ I make electronic music under the name Kettle. I've been making music since 2016
 I've played at Hellphone, Trans Pecos, The Stranger, Wiggle Room, Leftbank (Tbilisi), and Pluto's Records (Tbilisi).
 
 ## Mixes
-<div class="soundcloud-lazy" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1959695677&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
-    <div class="soundcloud-placeholder">
-        <p>Loading... <a href="https://soundcloud.com/kettle9999/sets/mixes">Listen to mixes on SoundCloud</a></p>
-    </div>
-</div>
+{{< soundcloud kind="mixes" >}}
 
 ## Tracks
-<div class="soundcloud-lazy" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1959698237&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
-    <div class="soundcloud-placeholder">
-        <p>Loading... <a href="https://soundcloud.com/kettle9999/sets/tracks">Listen to tracks on SoundCloud</a></p>
-    </div>
-</div>
-
-<style>
-.soundcloud-placeholder {
-    width: 100%;
-    height: 450px;
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ddd;
-}
-
-.soundcloud-placeholder p {
-    color: #666;
-    font-style: italic;
-}
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const lazyEmbeds = document.querySelectorAll('.soundcloud-lazy');
-
-    const loadSoundCloud = (embed) => {
-        const iframe = document.createElement('iframe');
-        iframe.src = embed.dataset.src;
-        iframe.width = '100%';
-        iframe.height = '450';
-        iframe.frameBorder = 'no';
-        iframe.scrolling = 'no';
-        iframe.allow = 'autoplay';
-
-        embed.innerHTML = '';
-        embed.appendChild(iframe);
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !entry.target.classList.contains('loaded')) {
-                loadSoundCloud(entry.target);
-                entry.target.classList.add('loaded');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        rootMargin: '100px'
-    });
-
-    lazyEmbeds.forEach(embed => {
-        observer.observe(embed);
-    });
-});
-</script>
+{{< soundcloud kind="tracks" >}}

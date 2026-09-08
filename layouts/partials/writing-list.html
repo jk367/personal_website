@@ -1,0 +1,22 @@
+<h1>Writing</h1>
+
+<div class="back-navigation">
+    <a href="/" class="back-button">← Back to Home</a>
+</div>
+
+{{ $current := .RelPermalink }}
+<div class="category-buttons writing-filters" role="navigation" aria-label="Writing categories">
+    <a href="/writing/" class="button category-button{{ if eq $current "/writing/" }} active{{ end }}" {{ if eq $current "/writing/" }}aria-current="page"{{ end }}>All</a>
+    {{ range $name, $taxonomy := .Site.Taxonomies.writing_categories }}
+    <a href="{{ $taxonomy.Page.RelPermalink }}" class="button category-button{{ if eq $current $taxonomy.Page.RelPermalink }} active{{ end }}" {{ if eq $current $taxonomy.Page.RelPermalink }}aria-current="page"{{ end }}>{{ $name }}</a>
+    {{ end }}
+</div>
+
+<div class="writing-list">
+    {{ range .Pages }}
+    <div class="writing-item">
+        <h2 class="writing-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <span class="writing-date">{{ .Date.Format "January 2, 2006" }}</span>
+    </div>
+    {{ end }}
+</div>

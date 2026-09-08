@@ -17,9 +17,9 @@ series_cloudflare_ids:
   - "4b0c6fc7-dd80-455e-a7aa-8195e46ea000"
   - "c91a4725-8574-435d-1a82-8820d32e7b00"
 series_alt_texts:
-  - "portrait of james"
-  - "portrait of james"
-  - "portrait of james"
-  - "portrait of james"
-  - "portrait of james"
+  - "James small in the lower part of a wide, dark frame"
+  - "James leaning forward in a dark sweater against a light backdrop"
+  - "Close portrait of James looking into the camera with one side of the face in shadow"
+  - "James seen from behind in a tank top, with a hand at the back of the neck"
+  - "James turning slightly toward the camera against a dark background"
 ---

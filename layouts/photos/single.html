@@ -7,13 +7,12 @@
   </div>
 
   {{ if .Params.cloudflare_id }}
-    <img src="https://imagedelivery.net/{{ $imagesAccount }}/{{ .Params.cloudflare_id }}/full"
-         alt="{{ .Params.alt | default .Title }}"
-         fetchpriority="high"
-         loading="eager">
+    {{ $source := printf "https://imagedelivery.net/%s/%s/full" $imagesAccount .Params.cloudflare_id }}
+    {{ partial "responsive-image.html" (dict "src" $source "alt" (.Params.alt | default .Title) "eager" true "priority" true "fallback" .Params.image) }}
   {{ end }}
+    {{ with .Content }}<div class="photo-content">{{ . }}</div>{{ end }}
     {{ with .Date }}
-    <time>{{ .Format "January 2, 2006" }}</time>
+    <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>
     {{ end }}
 </article>
 

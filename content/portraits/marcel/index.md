@@ -17,9 +17,9 @@ series_cloudflare_ids:
   - "1255df0b-d944-498d-53a7-ed23fb404900"
   - "bd971c13-c034-4525-c7ef-d598b6e06e00"
 series_alt_texts:
-  - "portrait of marcel"
-  - "portrait of marcel"
-  - "portrait of marcel"
-  - "portrait of marcel"
-  - "portrait of marcel"
+  - "Marcel with arms raised above the head, looking to one side"
+  - "Marcel turning the head in a softly blurred close portrait"
+  - "Marcel in a patterned shirt with one foot resting on a stool in the studio"
+  - "Marcel facing the camera in a collared shirt with large light spots"
+  - "Wide view of Marcel standing with hands behind the head on a studio backdrop"
 ---

@@ -17,9 +17,9 @@ series_cloudflare_ids:
   - "1f44a497-8c5f-41a8-0ba9-fbe96a211500"
   - "98184de6-2214-4694-3157-3f4b444a7400"
 series_alt_texts:
-  - "portrait of tristan"
-  - "portrait of tristan"
-  - "portrait of tristan"
-  - "portrait of tristan"
-  - "portrait of tristan"
+  - "Close portrait of Tristan with eyes closed and mouth wide open"
+  - "Tristan leaning toward the camera in a checked shirt"
+  - "A hand holding a light canvas shoe with its sole facing upward"
+  - "Tristan seated on the floor with both arms extended toward the camera"
+  - "Overhead view of bent legs in light trousers, with one bare foot and one dark boot"
 ---

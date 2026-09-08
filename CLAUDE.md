@@ -1,5 +1,10 @@
 # CLAUDE.md - AI Assistant Guide for jmkettle.com
 
+> Current maintenance reference (September 8, 2026): see
+> [docs/maintenance.md](docs/maintenance.md) for the actual content structure,
+> responsive image workflow, metadata, redirects, and validation commands.
+> Some paths and architecture descriptions in the original guide below are historical.
+
 This document provides comprehensive guidance for AI assistants working with the jmkettle.com personal website codebase.
 
 ## Project Overview

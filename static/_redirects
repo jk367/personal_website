@@ -1,0 +1,5 @@
+# Previously published project routes. Unknown addresses must remain 404s.
+/projects/stop1 /events/stop1/ 301
+/projects/stop1/ /events/stop1/ 301
+/projects/music /music/ 301
+/projects/music/ /music/ 301

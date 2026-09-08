@@ -17,9 +17,9 @@ series_cloudflare_ids:
   - "075516b8-d648-41bb-bda1-943b57bf6500"
   - "313dd4a9-6ac8-4063-c057-f2a1c6d4e700"
 series_alt_texts:
-  - "portrait of pedro"
-  - "portrait of pedro"
-  - "portrait of pedro"
-  - "portrait of pedro"
-  - "portrait of pedro"
+  - "Pedro’s dark jacket, necklace, and belt, with the face cropped out of the frame"
+  - "Pedro leaning toward the camera with curly hair and a dark shirt"
+  - "Pedro looking down with a hand raised to the mouth"
+  - "Pedro seated facing the camera with a pendant necklace over a dark shirt"
+  - "Pedro in profile with head lowered and shoulders leaning forward"
 ---

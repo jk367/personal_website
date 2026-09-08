@@ -9,24 +9,14 @@
 <div class="event-poster-grid {{ $class }}">
     {{- range $idx, $poster := $posters }}
     {{- $imageSrc := $poster.image -}}
-    {{- $imageSmall := $poster.image_small | default $imageSrc -}}
-    {{- $imageMedium := $poster.image_medium | default $imageSrc -}}
-    {{- $imageSmallWidth := "480w" -}}
-    {{- $imageMediumWidth := "800w" -}}
     {{- with $poster.cloudflare_id -}}
         {{- $imageSrc = printf "https://imagedelivery.net/%s/%s/full" $site.Data.site.brand.cloudflare_images_account . -}}
-        {{- $imageSmall = printf "https://imagedelivery.net/%s/%s/gridthumb" $site.Data.site.brand.cloudflare_images_account . -}}
-        {{- $imageMedium = printf "https://imagedelivery.net/%s/%s/griddisplay" $site.Data.site.brand.cloudflare_images_account . -}}
-        {{- $imageSmallWidth = "400w" -}}
-        {{- $imageMediumWidth = "600w" -}}
     {{- end -}}
     <article class="event-poster">
         <a href="{{ $poster.url }}">
-            <img src="{{ $imageMedium }}"
-                 srcset="{{ $imageSmall }} {{ $imageSmallWidth }}, {{ $imageMedium }} {{ $imageMediumWidth }}"
-                 sizes="(max-width: 600px) calc(100vw - 1.5rem), 250px"
-                 alt="{{ $poster.alt }}"
-                 {{ if eq $idx 0 }}fetchpriority="high"{{ else }}loading="lazy"{{ end }}>
+            {{ $sizes := "(max-width: 480px) calc((100vw - 1.75rem) / 2), (max-width: 600px) calc((100vw - 2rem) / 2), 250px" }}
+            {{ if in $class "--featured" }}{{ $sizes = "(max-width: 480px) calc(100vw - 1.25rem), (max-width: 600px) calc(100vw - 1.5rem), 250px" }}{{ end }}
+            {{ partial "responsive-image.html" (dict "src" $imageSrc "alt" $poster.alt "eager" (eq $idx 0) "priority" (eq $idx 0) "sizes" $sizes) }}
         </a>
         {{ if $showDates }}
         <time datetime="{{ $poster.date }}">{{ (time $poster.date).Format "January 2, 2006" }}</time>
