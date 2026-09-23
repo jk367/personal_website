@@ -6,6 +6,126 @@ writing_categories: ["poetry"]
 draft: false
 ---
 
+**September 22, 2026**
+
+Spilt some coffee grounds
+
+An extra slice of pizza
+
+Drinks with a stranger
+
+**September 21, 2026**
+
+Light beams in office
+
+Shared a beer with my brother
+
+Made some measurements
+
+**September 20, 2026**
+
+Pacing in my room
+
+Day slips between my fingers
+
+A stop1 dinner
+
+**September 19, 2026**
+
+Woke up to the club
+
+Took some photos of friends
+
+Stayed out much to late
+
+**September 18, 2026**
+
+Good bye to new friends
+
+Sat around but then no work
+
+Made it to Brooklyn
+
+**September 17, 2026**
+
+Back in the office
+
+Last dinner with German friends
+
+Might have met someone
+
+**September 16, 2026**
+
+Woke up crusted eyes
+
+Put my life back together
+
+A new friend today
+
+**September 15, 2026**
+
+Reality hits
+
+Warm sun hit my big smile
+
+Drinks with some new friends
+
+**September 14, 2026**
+
+Rode the after glow
+
+Spent the day fixing my life
+
+Ate steak with parents
+
+**September 13, 2026**
+
+Party is over
+
+Tired ravers ride the bus
+
+Take an uber home
+
+**September 12, 2026**
+
+Music by lake side
+
+Dancing in the rain with friends
+
+Sun peaks the trees
+
+**September 11, 2026**
+
+Adult summer camp
+
+Took a nap at bossa stage
+
+Woke up near my friends
+
+**September 10, 2026**
+
+A light through the trees
+
+Music friends and family
+
+Sustain then release
+
+**September 9, 2026**
+
+Calm before the storm
+
+The air is thin getting cold
+
+My plants are dying
+
+**September 8, 2026**
+
+Quick citibike ride
+
+Mom and dad made branzino
+
+Hello fast goodbye
+
 **September 7, 2026**
 
 Long walk then a drink
