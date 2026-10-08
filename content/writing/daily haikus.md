@@ -1,10 +1,130 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-09-07
+lastmod: 2026-10-07
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**October 7, 2026**
+
+Lost my watch on plane
+
+Mom made us guacamole
+
+Back in my own bed
+
+**October 6, 2026**
+
+Raining in Florida
+
+I made a thousand dollars
+
+Three margaritas
+
+**October 5, 2026**
+
+Woke up before dawn
+
+Run around the expo hall
+
+Alone in hotel
+
+**October 4, 2026**
+
+Late lunch with roommate
+
+Walking home in the soft rain
+
+Let the moment pass
+
+**October 3, 2026**
+
+Bagel in the park
+
+Fish in a friends apartment
+
+Rave by the river
+
+**October 2, 2026**
+
+An evening with friends
+
+A few drinks then to a flat
+
+Completely perfect
+
+**October 1, 2026**
+
+An empty office
+
+A computer with no charge
+
+New friends at the club
+
+**September 30, 2026**
+
+Sun was warm and shining
+
+Staring at my screen all day
+
+Movie then pizza
+
+**September 29, 2026**
+
+I was riled up
+
+Then spaghetti with parents
+
+A drink with a friend
+
+**September 28, 2026**
+
+Woke up still tired
+
+The rain making my shirt wet
+
+at pizza alone
+
+**September 27, 2026**
+
+Breakfast with parents
+
+Picking up then dropping off
+
+Goodbye to new friend
+
+**September 26, 2026**
+
+We hang up the tarps
+
+Then we fill the room with fog
+
+Then we all go home
+
+**September 25, 2026**
+
+Rain is said to come
+
+Showing a new friend around
+
+Another late night
+
+**September 24, 2026**
+
+Rain in the future
+
+Made a new friend from Texas
+
+Drank slightly too much
+
+**September 23, 2026**
+
+Coffee with a friend
+
+Steak dinner with the parents
+
+Went to bed too late
 
 **September 22, 2026**
 
