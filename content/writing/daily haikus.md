@@ -1,10 +1,58 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-10-07
+lastmod: 2026-10-13
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**October 13, 2026**
+
+Cough in the morning
+
+Sun peaking through the window
+
+But no plans tonight
+
+**October 12, 2026**
+
+Looking at my screen
+
+I put down my phone again
+
+Then look at my screen
+
+**October 11, 2026**
+
+Spent the day in bed
+
+Too much sushi and shake shake
+
+Up too late again
+
+**October 10, 2026**
+
+Baked chicken and beans
+
+Life inside the studio
+
+Back to newtown creek
+
+**October 9, 2026**
+
+Emails sent from home
+
+Brothers party in Greenpoint
+
+New friend in the club
+
+**October 8, 2026**
+
+Bagel and cookie
+
+Pacing back and forth all day
+
+Sun sets earlier
 
 **October 7, 2026**
 
