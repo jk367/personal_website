@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-10-15
+lastmod: 2026-10-16
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**October 16, 2026**
+
+A walk with Rowan
+
+Photos at Albert’s party
+
+Until the sun rise
 
 **October 15, 2026**
 
