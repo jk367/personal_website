@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-10-16
+lastmod: 2026-10-17
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**October 17, 2026**
+
+Eyes crusted over
+
+Baked chicken with rice and beans
+
+Air freezes my ears
 
 **October 16, 2026**
 
