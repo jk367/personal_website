@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-10-17
+lastmod: 2026-10-18
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**October 18, 2026**
+
+Morning rave with girl
+
+Sun warms the east village park
+
+My room is ice cold
 
 **October 17, 2026**
 
