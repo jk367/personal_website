@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-10-18
+lastmod: 2026-10-19
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**October 19, 2026**
+
+Looking at bright screen
+
+At parents house for dinner
+
+We all look at phones
 
 **October 18, 2026**
 
