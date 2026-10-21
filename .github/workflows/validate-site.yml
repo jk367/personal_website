@@ -18,8 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
-      HUGO_VERSION: "0.154.5"
-      HUGO_SHA256: "372d2f0538b24d2bb9285f0583c1e3b02d023ec2c2b8eb90e5c3bbfb3139fb13"
+      HUGO_VERSION: "0.168.0"
+      HUGO_SHA256: "787f100057328824f38c6ad7c87ff10d6451ae0a7bc39cedaad0dd2bcde17e53"
 
     steps:
       - name: Check out repository

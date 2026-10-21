@@ -1,6 +1,14 @@
 # Maintaining jmkettle.com
 
-This is a Hugo site with vanilla JavaScript and shared CSS in `assets/css/site.css`, inlined by the base template. The current build is tested with Hugo 0.154.5. Preserve the existing typography, page structure, and photographs.
+This is a Hugo site with vanilla JavaScript and shared CSS in `assets/css/site.css`, inlined by the base template. The current build is tested with Hugo 0.168.0. Preserve the existing typography, page structure, and photographs.
+
+## Hugo version and deployment
+
+The GitHub Actions validation workflow pins Hugo 0.168.0 and verifies the SHA-256 checksum of the official extended Linux archive before installation. Update the version and checksum together.
+
+Cloudflare Pages builds independently of GitHub Actions. Keep `HUGO_VERSION` set to `0.168.0` in both the Production and Preview environments under the Pages project's settings. Changing the workflow alone does not update Pages. Verify the version in each deployment's build log after changing these settings, and rebuild production only after validation and preview checks pass.
+
+Hugo 0.168.0 includes security fixes for theme/module sandboxing and HTML/JavaScript escaping. Continue to review any new third-party themes, modules, or build scripts before running them with access to credentials or private files.
 
 ## Source of truth
 
