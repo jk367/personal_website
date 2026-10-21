@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-10-19
+lastmod: 2026-10-20
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**October 20, 2026**
+
+Restless on my phone
+
+Drinks with a old and new friend
+
+To bed late again
 
 **October 19, 2026**
 
