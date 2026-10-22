@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-10-20
+lastmod: 2026-10-21
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**October 21, 2026**
+
+Restless in office
+
+We all go to the party
+
+The cold air comes in
 
 **October 20, 2026**
 
