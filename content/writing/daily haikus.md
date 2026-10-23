@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-10-21
+lastmod: 2026-10-22
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**October 22, 2026**
+
+Twitching in my seat
+
+Going through a one way door
+
+See friends at the club
 
 **October 21, 2026**
 
