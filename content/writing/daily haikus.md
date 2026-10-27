@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-10-25
+lastmod: 2026-10-26
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**October 26, 2026**
+
+Pull out my hair
+
+The sun set before i left
+
+Photos with a friend
 
 **October 25, 2026**
 
