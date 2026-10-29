@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-10-27
+lastmod: 2026-10-28
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**October 28, 2026**
+
+Stuck in a phone Booth
+
+chicken sandwich with a friend
+
+Bags under my eyes
 
 **October 27, 2026**
 
