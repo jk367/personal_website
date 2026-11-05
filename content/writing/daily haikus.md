@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-03
+lastmod: 2026-11-04
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 4, 2026**
+
+Get in the office
+
+Then get under the covers
+
+Where did the day go
 
 **November 3, 2026**
 
