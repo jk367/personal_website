@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-04
+lastmod: 2026-11-05
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 5, 2026**
+
+Rain taps on window
+
+Pitter patter all night long
+
+Need to change my life
 
 **November 4, 2026**
 
