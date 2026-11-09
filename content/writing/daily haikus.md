@@ -1,10 +1,26 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-06
+lastmod: 2026-11-08
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 8, 2026**
+
+Break fast burrito 
+
+My brother lays on his bed 
+
+Nice birthday dinner
+
+**November 7, 2026**
+
+The Williamsburg bridge 
+
+The club monitors rumble 
+
+Facing tomorrow
 
 **November 6, 2026**
 
