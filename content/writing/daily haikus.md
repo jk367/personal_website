@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-08
+lastmod: 2026-11-09
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 9, 2026**
+
+Ate sweet green salad 
+
+Sun set before going home 
+
+Friend back from China
 
 **November 8, 2026**
 
