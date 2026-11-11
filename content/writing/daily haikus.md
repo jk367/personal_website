@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-09
+lastmod: 2026-11-10
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 10, 2026**
+
+Look at the ceiling
+
+There is a small crack and pipes
+
+Then look at my phone
 
 **November 9, 2026**
 
