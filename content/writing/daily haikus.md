@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-10
+lastmod: 2026-11-11
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 11, 2026**
+
+Didn’t go to work
+
+Used my computer all day
+
+Warm sun hit my face
 
 **November 10, 2026**
 
