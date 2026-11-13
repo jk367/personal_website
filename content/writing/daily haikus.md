@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-11
+lastmod: 2026-11-12
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 12, 2026**
+
+Rain gets in my shoes
+
+An old friend messages me
+
+Then to bed too late
 
 **November 11, 2026**
 
