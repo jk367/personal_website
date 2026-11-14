@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-12
+lastmod: 2026-11-13
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 13, 2026**
+
+French fries and tuna
+
+Rain falls sides and freezes
+
+Go to bed early
 
 **November 12, 2026**
 
