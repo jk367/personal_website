@@ -10,7 +10,7 @@ draft: false
 
 French fries and tuna
 
-Rain falls sides and freezes
+Rain falls sideways and freezes
 
 Go to bed early
 
