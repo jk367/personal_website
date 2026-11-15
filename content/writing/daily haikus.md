@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-13
+lastmod: 2026-11-14
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 14, 2026**
+
+Sandwich with a friend
+
+a bottle of wine or two
+
+Light peers through the roof
 
 **November 13, 2026**
 
