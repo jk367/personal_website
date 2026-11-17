@@ -1,10 +1,26 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-14
+lastmod: 2026-11-16
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 16, 2026**
+
+Thai food for my friends
+
+Julian brought rice pudding
+
+Kitchen is a mess
+
+**November 15, 2026**
+
+Woke up sun was out
+
+Then mom made guacamole
+
+Hands freeze in cold air
 
 **November 14, 2026**
 
