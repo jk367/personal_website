@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-16
+lastmod: 2026-11-17
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 17, 2026**
+
+Leaf falls from a tree
+
+Turn around but hear no wind
+
+Another leaf falls
 
 **November 16, 2026**
 
