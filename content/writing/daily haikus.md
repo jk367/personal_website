@@ -14,6 +14,14 @@ Surrounded by my old friends
 
 We saw a movie
 
+**November 18, 2026**
+
+Warm grease from pizza
+
+Slow cool air touches my face
+
+I close my window
+
 **November 17, 2026**
 
 Leaf falls from a tree
