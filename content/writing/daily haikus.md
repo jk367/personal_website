@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-17
+lastmod: 2026-11-19
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 19, 2026**
+
+I’m twenty seven
+
+Surrounded by my old friends
+
+We saw a movie
 
 **November 17, 2026**
 
