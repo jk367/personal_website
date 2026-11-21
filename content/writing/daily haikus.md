@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-19
+lastmod: 2026-11-20
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 20, 2026**
+
+In a music box
+
+Played music for all my friends
+
+Off to a party
 
 **November 19, 2026**
 
