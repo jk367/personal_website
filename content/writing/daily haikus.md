@@ -1,10 +1,26 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-20
+lastmod: 2026-11-22
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 22, 2026**
+
+Didn’t get much sleep
+
+And the day started late
+
+Then it was over
+
+**November 21, 2026**
+
+Lighting equipment
+
+Sound system and selling drinks
+
+Then the party ends
 
 **November 20, 2026**
 
