@@ -1,10 +1,26 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-22
+lastmod: 2026-11-24
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 24, 2026**
+
+My eyes glaze over
+
+Looking up at the ceiling
+
+Don’t do anything
+
+**November 23, 2026**
+
+I am so tired
+
+All i want to do is sleep
+
+I am so tired
 
 **November 22, 2026**
 
