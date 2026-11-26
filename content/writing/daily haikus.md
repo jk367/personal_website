@@ -1,10 +1,18 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-24
+lastmod: 2026-11-25
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 25, 2026**
+
+Hard conversations
+
+Cold air seeps through my window
+
+The sun starts to rise
 
 **November 24, 2026**
 
