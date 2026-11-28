@@ -1,10 +1,26 @@
 ---
 title: "Daily Haiku "
 date: 2025-05-25T11:23:36+02:00
-lastmod: 2026-11-25
+lastmod: 2026-11-27
 writing_categories: ["poetry"]
 draft: false
 ---
+
+**November 27, 2026**
+
+An empty office
+
+In bed selecting photos
+
+Then see an old friend
+
+**November 26, 2026**
+
+Shucking some oysters
+
+We all cut up the turkey
+
+One more glass of wine
 
 **November 25, 2026**
 
